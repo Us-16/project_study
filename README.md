@@ -1,8 +1,4 @@
 # project_study
 
--testing
-- testing2
-- testing3
-- test24
-- dasdasdadasdasd
-- sodlfmadmf sork akdmadknqfdjkqnfjkqbnfkjnqklf
+- token 이용해서 로그인 및 git 연결부탁 드립니다.
+- 커밋 시, 가능하면 어느부분이 구현이 되었는지를 짧게 적어주시면 좋습니다.
