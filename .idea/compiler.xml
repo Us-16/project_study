@@ -9,10 +9,5 @@
         </processorPath>
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="app" target="17" />
-      <module name="app.main" target="17" />
-      <module name="app.test" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
