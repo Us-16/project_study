@@ -1,4 +1,5 @@
 .gradle
 .idea
 
-**.properties
+**/application.properties
+**/application-oauth.properties

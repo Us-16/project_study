@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="당부사항">
+      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/question_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/domain/user/SiteUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/domain/user/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/domain/user/UserCreateForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/domain/user/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/domain/user/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/domain/user/UserSecurityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/domain/user/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/naver/NaverLoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/login_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/signup_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/test-naver-callback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/test-naver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/test.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/TimeEntity.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/User$UserBuilder.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/User.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/UserRepository.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/domain/user/SiteUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/domain/user/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/domain/user/UserCreateForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/domain/user/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/domain/user/UserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/domain/user/UserSecurityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/domain/user/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/naver/NaverLoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/login_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/signup_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/test-naver-callback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/test-naver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/test.mustache" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/app">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2K5WhPbulYgsLIDEtezz0NfmvRs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "문제",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "6fd232251ba9e66f5bc7137b177b960b"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.app.user" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="app.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.app.AppApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AppApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="" />
+      <created>1673265043760</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673265043760</updated>
+      <workItem from="1673265046619" duration="95000" />
+      <workItem from="1673267741524" duration="4538000" />
+      <workItem from="1673324115989" duration="2944000" />
+    </task>
+    <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
+      <created>1673265067801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673265067801</updated>
+    </task>
+    <task id="LOCAL-00002" summary="당부사항">
+      <created>1673267812508</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673267812508</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ㅇㅁㄴㅇㅁㄴㅇ" />
+    <MESSAGE value="당부사항" />
+    <option name="LAST_COMMIT_MESSAGE" value="당부사항" />
+  </component>
+</project>
