@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@RequiredArgsConstructor
 @Service
+@RequiredArgsConstructor
 public class QuestionService {
     private final QuestionRepository questionRepository;
 
@@ -16,12 +16,12 @@ public class QuestionService {
         return this.questionRepository.findAll();
     }
 
-    public Question getQuestion(Integer id){
+    public Question getQuestion(Long id){
         Optional<Question> question = this.questionRepository.findById(id);
         if(question.isPresent()){
             return question.get();
         }else{
-            throw new DataNotFoundException("question not found");
+            throw new DataNotFoundException("qeustion not found");
         }
     }
 }
