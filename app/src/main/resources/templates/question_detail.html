@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -15,9 +15,32 @@
         </ul>
     </div>
 
-    <form th:action="@{|/answer/create/${question.id}|}" method="post">
-        <textarea name="content" id="content" cols="15" rows="10"></textarea>
+    <div class="my-3">
+        <a th:href="@{|/question/modify/${question.id}|}" sec:authorize="isAuthenticated()"
+        th:if="${question.author != null and #authentication.getPrincipal().getUsername() == question.author.username}"
+        th:text="수정"></a>
+        <a href="javascript:void(0);" th:data-uri="@{|/question/delete/${question.id}|}" id="delete"
+        sec:authorize="isAuthenticated()" th:if="${question.author!=null and #authentication.getPrincipal().getUsername() == question.author.username}"
+        th:text="삭제"></a>
+    </div>
+
+    <form th:action="@{|/answer/create/${question.id}|}" th:object="${answerForm}" method="post">
+        <div class="alert alert-danger" role="alert" th:if="${#fields.hasAnyErrors()}">
+            <div th:each="err : ${#fields.allErrors()}" th:text="${err}"></div>
+        </div>
+        <textarea sec:authorize="isAnonymous()" disabled th:field="*{content}" cols="15" rows="10"></textarea>
+        <textarea sec:authorize="isAuthenticated()" th:field="*{content}" rows="10"></textarea>
         <input type="submit" value="답변등록">
     </form>
 </body>
+<script type="text/javascript">
+    const delete_elements = document.getElementById("delete");
+    Array.from(delete_elements).forEach(function (element){
+        element.addEventListener('click', function (){
+            if(confirm("정말로 삭제하시겠습니까?")){
+                location.href = this.dataset.uri;
+            }
+        })
+    })
+</script>
 </html>
