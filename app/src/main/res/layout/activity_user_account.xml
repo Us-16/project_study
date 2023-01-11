@@ -2,34 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".LoginActivity">
+    tools:context=".User_account">
+
 
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_margin="150dp"
-        android:text="로그인화면~"
         android:gravity="center"
-        android:textSize="45sp" />
+        android:text="직업을 선택해 주세요"
+        android:textSize="30sp" />
 
     <LinearLayout
-        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="UselessParent">
 
-        <ImageButton
-            android:id="@+id/btn_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/kakao_login_img2"
-            tools:ignore="ContentDescription" />
-
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_student"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:text="학생"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_teacher"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:text="학생"
+        tools:ignore="ContentDescription" />
 
 
 </LinearLayout>
