@@ -29,7 +29,8 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:hint="여기에 입력해 주세요(ex.16s)"/>
+        android:hint="여기에 입력해 주세요(ex.16s)"
+        android:id="@+id/text_nickname"/>
 
     <Button
         android:layout_width="150dp"
