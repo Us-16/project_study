@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".User_account_3">
+    tools:context=".User_account_4">
 
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_margin="150dp"
         android:gravity="center"
-        android:text="학년을 입력해 주세요"
+        android:text="학교을 입력해 주세요"
         android:textSize="22sp" />
 
 
@@ -28,17 +28,12 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:hint="여기에 입력해 주세요(ex.고1 : 1)"
-        android:id="@+id/text_grade"/>
+        android:hint="여기에 입력해 주세요(ex.?)"/>
 
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_nextpage2"
+        android:id="@+id/btn_nextpage3"
         android:layout_gravity="right"
         android:text="다음페이지"/>
-
-
-
-
 </LinearLayout>

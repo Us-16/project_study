@@ -1,4 +1,4 @@
-package com.example.a16sserver;
+package com.example.a16sserver; // 닉네임 화면
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +19,6 @@ public class User_account_2 extends AppCompatActivity {
         setContentView(R.layout.activity_user_account2);
 
         text_nickname = (EditText)findViewById(R.id.text_nickname);
-
         Button btn_nextpage1 = (Button) findViewById(R.id.btn_nextpage1); // 다음페이지 버튼
         btn_nextpage1.setOnClickListener(new View.OnClickListener() {
             @Override
