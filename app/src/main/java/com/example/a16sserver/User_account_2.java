@@ -7,21 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class User_account extends AppCompatActivity {
+public class User_account_2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_account);
+        setContentView(R.layout.activity_user_account2);
 
-        Button btn_student = (Button) findViewById(R.id.btn_student);
-        btn_student.setOnClickListener(new View.OnClickListener() {
+        Button btn_nextpage1 = (Button) findViewById(R.id.btn_nextpage1);
+        btn_nextpage1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),User_account_2.class);
+                Intent intent = new Intent(getApplicationContext(),User_account_3.class);
                 startActivity(intent);
             }
         });
-
     }
 }

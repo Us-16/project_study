@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:gravity="center"
-    tools:context=".User_account">
-
+    android:orientation="vertical"
+    tools:context=".User_account_3">
 
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_margin="150dp"
         android:gravity="center"
-        android:text="직업을 선택해 주세요"
-        android:textSize="30sp" />
+        android:text="학년을 입력해 주세요"
+        android:textSize="22sp" />
+
 
     <LinearLayout
         android:layout_gravity="center"
@@ -24,20 +25,17 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_student"
-        android:layout_width="236dp"
+    <EditText
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="학생"
-        tools:ignore="ContentDescription" />
+        android:hint="여기에 입력해 주세요(ex.고1 : 1)"/>
 
     <Button
-        android:layout_marginTop="50dp"
-        android:id="@+id/btn_teacher"
-        android:layout_width="236dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="강사"
-        tools:ignore="ContentDescription" />
+        android:id="@+id/btn_nextpage2"
+        android:layout_gravity="right"
+        android:text="다음페이지"/>
 
 
 </LinearLayout>
