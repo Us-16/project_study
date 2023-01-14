@@ -24,16 +24,19 @@ public class User_account_3 extends AppCompatActivity {
                 String tmp_grade = text_grade.getText().toString();//닉네임을 tmp_nickname에 우선저장.(데베 저장안했으니까 아직!)
                 Intent intent = new Intent(getApplicationContext(),User_account_4.class); // 다음화면으로 넘기기위한 intent 선언
 
-                if (tmp_grade.equals("")){
-                    showToast("입력값이 비었습니다.");
+                if (tmp_grade.equals("")){  //입력값이 공백이면!
+                    showToast("입력값이 비었습니다."); //토스트메세지 함수 부르기
+                }
+                else if(tmp_grade.equals("1")||tmp_grade.equals("2")||tmp_grade.equals("3")){ //1,2,3 중 하나면 다음액티비티로
+                    System.out.println(tmp_grade);
+                    startActivity(intent); //다음액티비티로 넘어감.
                 }
                 else{
-                    System.out.println(tmp_grade);
-                    startActivity(intent);
+                    showToast("1,2,3 중 하나를 입력해주세요"); //토스트메세지 함수 부르기
                 }
 
             }
-            void showToast(String msg){
+            void showToast(String msg){ // 토스트메세지 함수
                 Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_SHORT).show();
             }
         });

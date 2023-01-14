@@ -1,4 +1,4 @@
-package com.example.a16sserver;
+package com.example.a16sserver;//로그인화면
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/img_home"
+        android:title="홈"
+        android:icon="@drawable/img_home"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/img_add"
+        android:title="문제담기"
+        android:icon="@drawable/img_add"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/img_quiz"
+        android:title="문제풀기"
+        android:icon="@drawable/img_quiz"
+        android:enabled="true"
+        />
+
+</menu>
