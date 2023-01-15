@@ -4,7 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home_portfolio">
+    tools:context=".Main_activity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/menu_frame_layout"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
@@ -12,17 +17,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:background="#fff"
-            app:menu="@menu/menu_home_portfolio"
-            android:id="@+id/bottomNavi"/>
-
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/home_frame_empty"/>
-
-
-
-
+            app:menu="@menu/bottom_menu"
+            android:id="@+id/menu_bottom_navigation"/>
 
 </RelativeLayout>

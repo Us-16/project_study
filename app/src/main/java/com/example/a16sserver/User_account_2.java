@@ -26,7 +26,11 @@ public class User_account_2 extends AppCompatActivity {
                 String tmp_nickname = text_nickname.getText().toString();//닉네임을 tmp_nickname에 우선저장.(데베 저장안했으니까 아직!)
                 Intent intent = new Intent(getApplicationContext(),User_account_3.class); // 다음화면으로 넘기기위한 intent 선언
                 System.out.println(tmp_nickname);
+                //Intent home_intent = new Intent(getApplicationContext(),Main_activity.class);
+                //home_intent.putExtra("닉네임",tmp_nickname); // 홈에서 사용할 닉네임 보냄
+
                 startActivity(intent);
+                //startActivity(home_intent);
 
 
 

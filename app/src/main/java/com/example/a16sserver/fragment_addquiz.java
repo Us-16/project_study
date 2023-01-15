@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class home_fragment extends Fragment {
+public class fragment_addquiz extends Fragment {
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.home_fragment, container, false);
+        ViewGroup rootView = (ViewGroup)inflater.inflate(R.layout.fragment_addquiz,container,false);
+
+        return rootView;
     }
 }
