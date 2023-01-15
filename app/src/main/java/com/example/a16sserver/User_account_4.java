@@ -30,12 +30,9 @@ public class User_account_4 extends AppCompatActivity {
                 if (tmp_school.equals("")){  //입력값이 공백이면!
                     showToast("입력값이 비었습니다."); //토스트메세지 함수 부르기
                 }
-                else if(tmp_school.equals("1")||tmp_school.equals("2")||tmp_school.equals("3")){ //1,2,3 중 하나면 다음액티비티로
+                else{
                     System.out.println(text_school);
                     startActivity(intent); //다음액티비티로 넘어감.
-                }
-                else{
-                    showToast("1,2,3 중 하나를 입력해주세요"); //토스트메세지 함수 부르기
                 }
 
 

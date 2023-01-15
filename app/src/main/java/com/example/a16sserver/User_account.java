@@ -1,4 +1,4 @@
-package com.example.a16sserver;
+package com.example.a16sserver; //직업선택화면
 
 import androidx.appcompat.app.AppCompatActivity;
 

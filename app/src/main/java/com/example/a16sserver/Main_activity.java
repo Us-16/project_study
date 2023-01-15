@@ -17,6 +17,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Main_activity extends AppCompatActivity {
     private FragmentManager fragmentManager = getSupportFragmentManager();
+    //각 다른 세 화면 선언
     private fragment_home fragment_home_1 = new fragment_home();
     private fragment_addquiz fragment_addquiz_2 = new fragment_addquiz();
     private fragment_myquiz fragment_myquiz_3 = new fragment_myquiz();
@@ -29,13 +30,16 @@ public class Main_activity extends AppCompatActivity {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.menu_frame_layout, fragment_home_1).commitAllowingStateLoss();
 
+        //----------네비게이션 바 연결
         BottomNavigationView bottomNavigationView = findViewById(R.id.menu_bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        //--------------
             @Override
+            //----------------------------네비게이션 바 눌렀을 때 동작
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
-
+                // 버튼마다 다른 동작
                 switch(menuItem.getItemId()){
                     case R.id.menu_home:
                         transaction.replace(R.id.menu_frame_layout,fragment_home_1).commitAllowingStateLoss();
@@ -50,6 +54,7 @@ public class Main_activity extends AppCompatActivity {
                 }
                 return true;
             }
+            //-----------------------------------
         });
 
     }
