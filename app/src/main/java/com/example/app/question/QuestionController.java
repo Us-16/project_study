@@ -27,27 +27,27 @@ public class QuestionController {
     public String list(Model model){
         List<Question> questionList = this.questionService.getList();
         model.addAttribute("questionList", questionList);
-        return "question_list";
+        return "content/question/question_list";
     }
 
     @GetMapping(value="/detail/{id}")
     public String detail(Model model, @PathVariable("id") Long id, AnswerForm answerForm){
         Question question = this.questionService.getQuestion(id);
         model.addAttribute("question", question);
-        return "question_detail";
+        return "content/question/question_detail";
     }
 
     @PreAuthorize("isAuthenticated()")
     @GetMapping("/create")
     public String questionCreate(QuestionForm questionForm){
-        return "question_form";
+        return "content/question/question_form";
     }
 
     @PreAuthorize("isAuthenticated()")
     @PostMapping("/create")
     public String questionCreate(@Valid QuestionForm questionForm, BindingResult bindingResult, Principal principal){
         if(bindingResult.hasErrors()){
-            return "question_form";
+            return "content/question/question_form";
         }
         SiteUser siteUser = this.userService.getUser(principal.getName());
         this.questionService.create(questionForm.getSubject(), questionForm.getContent(), siteUser);
@@ -63,14 +63,14 @@ public class QuestionController {
         }
         questionForm.setSubject(question.getSubject());
         questionForm.setContent(question.getContent());
-        return "question_form";
+        return "content/question/question_form";
     }
 
     @PreAuthorize("isAuthenticated()")
     @PostMapping("/modify/{id}")
     public String questionModify(@Valid QuestionForm questionForm, BindingResult bindingResult, Principal principal, @PathVariable("id") Long id){
         if(bindingResult.hasErrors()){
-            return "question_form";
+            return "content/question/question_form";
         }
         Question question = this.questionService.getQuestion(id);
         if(!question.getAuthor().getUsername().equals(principal.getName())){

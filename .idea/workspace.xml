@@ -4,34 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="login/logout 기본">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/question_form.html" afterDir="false" />
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="after meet">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/LoginSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/layout/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/Answer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/MainController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/Question.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/question_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/question_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/question_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/SecurityConfig.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/form_errors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/login_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/question_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/question_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/signup_form.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/question_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/form_errors.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/error/form_errors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/login_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/signup_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/signup_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +69,7 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -68,7 +77,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="springboot" />
+        <entry key="$PROJECT_DIR$" value="spring_android" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -122,6 +131,13 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.app.user" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/error" />
+      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/login" />
+      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/question" />
+      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content" />
+      <recent name="$PROJECT_DIR$/app/src/main/resources/templates" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -140,10 +156,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AppApplication" />
-        <item itemvalue="Spring Boot.AppApplication" />
-        <item itemvalue="Spring Boot.AppApplication" />
-        <item itemvalue="Spring Boot.AppApplication" />
-        <item itemvalue="Spring Boot.AppApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -157,8 +169,10 @@
       <updated>1673265043760</updated>
       <workItem from="1673265046619" duration="95000" />
       <workItem from="1673267741524" duration="4538000" />
-      <workItem from="1673324115989" duration="14180000" />
-      <workItem from="1673403864512" duration="152000" />
+      <workItem from="1673324115989" duration="10920000" />
+      <workItem from="1673575876164" duration="5274000" />
+      <workItem from="1673681730697" duration="8164000" />
+      <workItem from="1673708906407" duration="3972000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -188,21 +202,7 @@
       <option name="project" value="LOCAL" />
       <updated>1673328770659</updated>
     </task>
-    <task id="LOCAL-00005" summary="login/logout 기본">
-      <created>1673351023856</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1673351023856</updated>
-    </task>
-    <task id="LOCAL-00006" summary="login/logout 기본">
-      <created>1673351047608</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1673351047608</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +224,10 @@
     <MESSAGE value="당부사항" />
     <MESSAGE value="create 해결 + gitignore 확인" />
     <MESSAGE value="git ignore 재확인" />
-    <MESSAGE value="login/logout 기본" />
-    <option name="LAST_COMMIT_MESSAGE" value="login/logout 기본" />
+    <option name="LAST_COMMIT_MESSAGE" value="git ignore 재확인" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

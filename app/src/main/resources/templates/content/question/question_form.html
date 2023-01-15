@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-  <div>
+<html layout:decorate="~{layout/base}" xmlns:layout="http://www.w3.org/1999/xhtml">
+  <div layout:fragment="content">
     <h5 class="my-3 border-bottom pb-2">질문등록</h5>
     <form th:object="${questionForm}" method="post">
       <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
-      <div class="alert alert-dnager" role="alert" th:if="${#fields.hasAnyErrors()}">
-        <div th:each="err : ${#fields.allErrors()}" th:text="${err}"></div>
+      <div class="alert alert-danger" role="alert" th:if="${#fields.hasAnyErrors()}">
+        <div th:replace="~{error/form_errors::formErrorsFragment}"></div>
       </div>
       <div class="mb-3">
         <label for="subject" class="form-label">제목</label>
@@ -23,5 +17,4 @@
       <input type="submit" value="저장하기" class="btn btn-primary my-2">
     </form>
   </div>
-</body>
 </html>

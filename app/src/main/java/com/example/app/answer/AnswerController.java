@@ -31,7 +31,7 @@ public class AnswerController {
         SiteUser siteUser = this.userService.getUser(principal.getName());
         if(bindingResult.hasErrors()){
             model.addAttribute("question", question);
-            return "question_detail";
+            return "content/question/question_detail";
         }
         this.answerService.create(question, answerForm.getContent(), siteUser);
         return String.format("redirect:/question/detail/%s", id);

@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html layout:decorate="~{layout/base}" xmlns:layout="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content">
     <table>
         <thead>
         <tr>
@@ -22,5 +17,5 @@
         </tbody>
     </table>
     <a th:href="@{/question/create}" class="btn btn-primary">문제 등록</a>
-</body>
+</div>
 </html>
