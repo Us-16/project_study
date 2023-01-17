@@ -17,7 +17,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Main_activity extends AppCompatActivity {
     private FragmentManager fragmentManager = getSupportFragmentManager();
-    //각 다른 세 화면 선언
+    //각 다른 세 화면 선언(홈,문제담기,내문제 화면)
     private fragment_home fragment_home_1 = new fragment_home();
     private fragment_addquiz fragment_addquiz_2 = new fragment_addquiz();
     private fragment_myquiz fragment_myquiz_3 = new fragment_myquiz();
@@ -27,7 +27,8 @@ public class Main_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        FragmentTransaction transaction = fragmentManager.beginTransaction(); //지워도 되는지 확인해보기
+        //디폴트로 띄울 화면 fragment_home_1(fragment_home의 변수)
         transaction.replace(R.id.menu_frame_layout, fragment_home_1).commitAllowingStateLoss();
 
         //----------네비게이션 바 연결

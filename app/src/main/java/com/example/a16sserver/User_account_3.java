@@ -18,6 +18,7 @@ public class User_account_3 extends AppCompatActivity {
 
         text_grade = (EditText) findViewById(R.id.text_grade);
         Button btn_nextpage2 = (Button)findViewById(R.id.btn_nextpage2);
+        ////---------버튼 클릭 시 동작 구현--------------------------------------------
         btn_nextpage2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,6 +38,7 @@ public class User_account_3 extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_SHORT).show();
             }
         });
+        /////////---------------------------------------------------------
 
 
     }

@@ -1,15 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".fragment_addquiz">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="문제선택"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background_round_quizselect"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:padding="30dp">
+
+            <android.widget.Button
+                android:id="@+id/btn_quiz1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="일반문제"
+                android:textSize="30dp"
+                android:background="@drawable/layout_background_round_quizselect"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background_round_quizselect"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:padding="30dp">
+
+            <android.widget.Button
+                android:id="@+id/btn_quiz2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="모의고사"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@drawable/layout_background_round_quizselect"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="문제담기화면"
-        android:textSize="80sp"/>
+        android:background="@drawable/layout_background_round_gray"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="empty"
+            android:textSize="40dp"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
