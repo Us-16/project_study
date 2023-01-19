@@ -4,42 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="after meet">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/LoginSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/link.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/layout/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="LoginSuccessHandler 해결">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/QuestionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/form_errors.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/login_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/question_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/question_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/signup_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/AppApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/DataNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/Answer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/Question.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/SiteUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserCreateForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserSecurityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/form_errors.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/error/form_errors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/login_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/signup_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/signup_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +164,8 @@
       <workItem from="1673575876164" duration="5274000" />
       <workItem from="1673681730697" duration="8164000" />
       <workItem from="1673708906407" duration="3972000" />
+      <workItem from="1674038367088" duration="4554000" />
+      <workItem from="1674126588067" duration="4527000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
