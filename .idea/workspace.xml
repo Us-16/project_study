@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="Retrofit2 이용한 json 보내기 해결">
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/link.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/login_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/signup_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/error/form_errors.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/layout/base.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,11 +98,11 @@
       <recent name="com.example.app.user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/resources" />
       <recent name="$PROJECT_DIR$/app/src/main/resources/templates/error" />
       <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/login" />
       <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/question" />
       <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content" />
-      <recent name="$PROJECT_DIR$/app/src/main/resources/templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -152,7 +140,7 @@
       <workItem from="1673681730697" duration="8164000" />
       <workItem from="1673708906407" duration="3972000" />
       <workItem from="1674038367088" duration="4554000" />
-      <workItem from="1674126588067" duration="5249000" />
+      <workItem from="1674126588067" duration="6094000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -189,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674132224142</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것">
+      <created>1674132842555</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674132842555</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +207,8 @@
     <MESSAGE value="create 해결 + gitignore 확인" />
     <MESSAGE value="git ignore 재확인" />
     <MESSAGE value="Retrofit2 이용한 json 보내기 해결" />
-    <option name="LAST_COMMIT_MESSAGE" value="Retrofit2 이용한 json 보내기 해결" />
+    <MESSAGE value="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것" />
+    <option name="LAST_COMMIT_MESSAGE" value="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,0 +1,164 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"d3daa535-ba05-4c8a-98a1-3c29a461ea4a\" name=\"변경\" comment=\"git ignore 재확인\">\n      <change afterPath=\"$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/app/src/main/java/com/example/app/user/SiteUser.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserCreateForm.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserRepository.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserRole.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserSecurityService.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/app/src/main/resources/templates/form_errors.html\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/app/src/main/resources/templates/login_form.html\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/app/src/main/resources/templates/signup_form.html\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/.gitignore\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/.gitignore\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/build.gradle\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/build.gradle\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/build/resources/main/templates/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/build/resources/main/templates/index.html\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/AnswerController.class.uniqueId0\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/src/main/resources/application-oauth.properties\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/src/main/resources/application-oauth.properties\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/src/main/resources/templates/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/src/main/resources/templates/index.html\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$/app\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <projects_view>\n          <tree_state>\n            <expand />\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Interface\" />\n        <option value=\"HTML File\" />\n        <option value=\"Enum\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"JpbToolWindowState\">\n    <option name=\"myId2FirstActivated\">\n      <map>\n        <entry key=\"com.haulmont.jpb.jpaInspector\" value=\"true\" />\n        <entry key=\"com.haulmont.jpb.jpaPalette\" value=\"true\" />\n        <entry key=\"com.haulmont.jpb.jpaStructure\" value=\"true\" />\n      </map>\n    </option>\n    <option name=\"myId2Visible\">\n      <map>\n        <entry key=\"com.haulmont.jpb.jpaInspector\" value=\"false\" />\n        <entry key=\"com.haulmont.jpb.jpaPalette\" value=\"false\" />\n        <entry key=\"com.haulmont.jpb.jpaStructure\" value=\"false\" />\n      </map>\n    </option>\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2K5WhPbulYgsLIDEtezz0NfmvRs\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\n    \"RequestMappingsPanelOrder0\": \"0\",\n    \"RequestMappingsPanelOrder1\": \"1\",\n    \"RequestMappingsPanelWidth0\": \"75\",\n    \"RequestMappingsPanelWidth1\": \"75\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"project.structure.last.edited\": \"문제\",\n    \"project.structure.proportion\": \"0.0\",\n    \"project.structure.side.proportion\": \"0.2\",\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\",\n    \"spring.configuration.checksum\": \"6fd232251ba9e66f5bc7137b177b960b\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CreateClassDialog.RecentsKey\">\n      <recent name=\"com.example.app.user\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"AppApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"app.main\" />\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.example.app.AppApplication\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.example.app.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Spring Boot.AppApplication\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"애플리케이션 수준\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"디폴트 작업\">\n      <changelist id=\"d3daa535-ba05-4c8a-98a1-3c29a461ea4a\" name=\"변경\" comment=\"\" />\n      <created>1673265043760</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1673265043760</updated>\n      <workItem from=\"1673265046619\" duration=\"95000\" />\n      <workItem from=\"1673267741524\" duration=\"4538000\" />\n      <workItem from=\"1673324115989\" duration=\"10920000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"ㅇㅁㄴㅇㅁㄴㅇ\">\n      <created>1673265067801</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1673265067801</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"당부사항\">\n      <created>1673267812508</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1673267812508</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"create 해결 + gitignore 확인\">\n      <created>1673328645538</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1673328645538</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"git ignore 재확인\">\n      <created>1673328770659</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1673328770659</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"5\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"ㅇㅁㄴㅇㅁㄴㅇ\" />\n    <MESSAGE value=\"당부사항\" />\n    <MESSAGE value=\"create 해결 + gitignore 확인\" />\n    <MESSAGE value=\"git ignore 재확인\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"git ignore 재확인\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 49e35d1b246faf844b2eca222a7ab2435d117b13)
++++ b/.idea/workspace.xml	(date 1674034925028)
+@@ -4,27 +4,42 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="git ignore 재확인">
+-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/SiteUser.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserCreateForm.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserRepository.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserRole.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserSecurityService.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/form_errors.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/login_form.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/signup_form.html" afterDir="false" />
++    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="after meet">
++      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/LoginSuccessHandler.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/link.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/style.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_detail.html" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/footer.html" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/header.html" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/layout/base.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/index.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/AnswerController.class.uniqueId0" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/MainController.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerController.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserController.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/form_errors.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/index.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/login_form.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/question_detail.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/question_list.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/signup_form.html" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/application-oauth.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/application-oauth.properties" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/MainController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/form_errors.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/error/form_errors.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/index.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/login_form.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_detail.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_form.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/signup_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/signup_form.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -52,8 +67,9 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="Interface" />
+-        <option value="HTML File" />
+         <option value="Enum" />
++        <option value="HTML File" />
++        <option value="JavaScript File" />
+         <option value="Class" />
+       </list>
+     </option>
+@@ -61,7 +77,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="main" />
++        <entry key="$PROJECT_DIR$" value="spring_android" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -93,27 +109,34 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "RequestMappingsPanelOrder0": "0",
+-    "RequestMappingsPanelOrder1": "1",
+-    "RequestMappingsPanelWidth0": "75",
+-    "RequestMappingsPanelWidth1": "75",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "project.structure.last.edited": "문제",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.2",
+-    "settings.editor.selected.configurable": "preferences.pluginManager",
+-    "spring.configuration.checksum": "6fd232251ba9e66f5bc7137b177b960b"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
++    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
++    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
++    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
++    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;문제&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
++    &quot;spring.configuration.checksum&quot;: &quot;6fd232251ba9e66f5bc7137b177b960b&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CreateClassDialog.RecentsKey">
+       <recent name="com.example.app.user" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/error" />
++      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/login" />
++      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/question" />
++      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content" />
++      <recent name="$PROJECT_DIR$/app/src/main/resources/templates" />
+     </key>
+   </component>
+   <component name="RunManager">
+@@ -147,6 +170,9 @@
+       <workItem from="1673265046619" duration="95000" />
+       <workItem from="1673267741524" duration="4538000" />
+       <workItem from="1673324115989" duration="10920000" />
++      <workItem from="1673575876164" duration="5274000" />
++      <workItem from="1673681730697" duration="8164000" />
++      <workItem from="1673708906407" duration="3972000" />
+     </task>
+     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
+       <created>1673265067801</created>
+@@ -200,4 +226,8 @@
+     <MESSAGE value="git ignore 재확인" />
+     <option name="LAST_COMMIT_MESSAGE" value="git ignore 재확인" />
+   </component>
++  <component name="XSLT-Support.FileAssociations.UIState">
++    <expand />
++    <select />
++  </component>
+ </project>
+\ No newline at end of file
