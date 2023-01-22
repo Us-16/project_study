@@ -4,8 +4,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것">
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="01.20.before work">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/TeacherRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/floatingButton.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_12_8_47_PM__________1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/Answer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/answer/AnswerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/SiteUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserCreateForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserCreateForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserSecurityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserSecurityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/login/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/login/login_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/login/signup_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/login/signup_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/fragment/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/fragment/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/fragment/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/fragment/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/layout/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/layout/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/BoardApiController.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/BoardApiController.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/QuestionDTO.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/answer/AnswerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/SiteUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserCreateForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserCreateForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserSecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/login_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/signup_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/login/signup_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/layout/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/layout/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +87,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,6 +102,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -105,7 +161,30 @@
       <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.AppApplication">
+    <configuration name="AppApplicationTests.testJap" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.app.AppApplicationTests.testJap&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="app.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.app.AppApplication" />
@@ -122,6 +201,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AppApplication" />
+        <item itemvalue="Gradle.AppApplicationTests.testJap" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +221,10 @@
       <workItem from="1673708906407" duration="3972000" />
       <workItem from="1674038367088" duration="4554000" />
       <workItem from="1674126588067" duration="6094000" />
+      <workItem from="1674181117451" duration="10074000" />
+      <workItem from="1674209719744" duration="12663000" />
+      <workItem from="1674308402752" duration="5589000" />
+      <workItem from="1674394718135" duration="4589000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>

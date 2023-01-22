@@ -1,7 +1,7 @@
 package com.example.app.question;
 
 import com.example.app.answer.Answer;
-import com.example.app.user.SiteUser;
+import com.example.app.user.Teacher;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -31,5 +31,5 @@ public class Question {
     private LocalDateTime modifyDate;
 
     @ManyToOne
-    private SiteUser author;
+    private Teacher author;
 }

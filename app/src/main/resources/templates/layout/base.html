@@ -11,11 +11,13 @@
 <body>
 <!--navi-->
 <th:block th:replace="~{fragment/header :: headerFragment}"></th:block>
+<th:block th:replace="~{fragment/floatingButton :: floatingButton}"></th:block>
 
 <!--content-->
 <section>
     <th:block layout:fragment="content"></th:block>
 </section>
+
 
 <!--footer-->
 <th:block th:replace="~{fragment/footer :: footerFragment}"></th:block>

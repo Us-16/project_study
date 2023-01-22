@@ -1,23 +1,26 @@
 <html xmlns:sec="http://www.w3.org/1999/xhtml">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" th:fragment="headerFragment" >
+<nav class="navbar navbar-expand-lg bg-body-tertiary" th:fragment="headerFragment">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">제목이 뭐야</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="/">미정</a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/user/login}">로그인</a>
-                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/user/logout}">로그아웃</a>
+                    <a class="nav-link active" aria-current="page" th:href="@{/question/list}">문제 내러 가기</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" th:href="@{/question/list}">게시판</a>
+                    <a class="nav-link" href="/user/signup">회원가입해요!</a>
                 </li>
             </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <a type="button" class="login_button btn btn-outline-secondary" sec:authorize="isAnonymous()" th:href="@{/user/login}">로그인</a>
+            <a type="button" class="login_button btn btn-secondary" sec:authorize="isAuthenticated()" th:href="@{/user/logout}">로그아웃</a>
         </div>
     </div>
 </nav>
-</html>

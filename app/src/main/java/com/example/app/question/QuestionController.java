@@ -1,10 +1,12 @@
 package com.example.app.question;
 
 import com.example.app.answer.AnswerForm;
-import com.example.app.user.SiteUser;
+import com.example.app.user.Teacher;
 import com.example.app.user.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -16,6 +18,7 @@ import org.springframework.web.server.ResponseStatusException;
 import java.security.Principal;
 import java.util.List;
 
+@Slf4j
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/question")
@@ -24,9 +27,11 @@ public class QuestionController {
     private final UserService userService;
 
     @GetMapping("/list")
-    public String list(Model model){
-        List<Question> questionList = this.questionService.getList();
-        model.addAttribute("questionList", questionList);
+    public String list(Model model, @RequestParam(value="page", defaultValue = "0") int page){
+        Page<Question> paging = this.questionService.getList(page);
+        model.addAttribute("paging", paging);
+        log.info(paging.toString());
+
         return "content/question/question_list";
     }
 
@@ -49,8 +54,9 @@ public class QuestionController {
         if(bindingResult.hasErrors()){
             return "content/question/question_form";
         }
-        SiteUser siteUser = this.userService.getUser(principal.getName());
-        this.questionService.create(questionForm.getSubject(), questionForm.getContent(), siteUser);
+        //SiteUser siteUser = this.userService.getUser(principal.getName());
+        Teacher teacher = this.userService.getTeacher(principal.getName());
+        this.questionService.create(questionForm.getSubject(), questionForm.getContent(), teacher);
         return "redirect:/question/list";
     }
 

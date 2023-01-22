@@ -1,7 +1,7 @@
 package com.example.app.answer;
 
 import com.example.app.question.Question;
-import com.example.app.user.SiteUser;
+import com.example.app.user.Teacher;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 public class AnswerService {
     private final AnswerRepository answerRepository;
 
-    public void create(Question question, String content, SiteUser author){
+    public void create(Question question, String content, Teacher author){
         Answer answer = new Answer();
         answer.setContent(content);
         answer.setCreateDate(LocalDateTime.now());

@@ -1,3 +1,84 @@
-#container{
-    margin: auto 20px;
+footer {
+    display: block;
+    width:85%;
+    margin: auto;
+    height: 100px;
+}
+section{
+    display: block;
+    margin: auto;
+    width:85%;
+    min-height: 80vh;
+}
+.login_button{
+    margin: auto 10px;
+}
+#login_container{
+    padding-top: 15vh;
+    margin: auto;
+    width: 20em;
+}
+#login_container > #find_id{
+    text-decoration: none;
+    color: #424242;
+    float: bottom;
+}
+
+#signup_container{
+    padding-top: 3vh;
+    margin: auto;
+    width: 30em;
+    font-size: 1.1em;
+}
+#question_list_header{
+    margin-top: 1vh;
+    width: 100%;
+}
+#question_list_header > h1{
+    float:left;
+    width: 90%;
+}
+#question_list_header > a{
+    margin-top: 1.5vh;
+    clear: bottom;
+    width:100px;
+}
+#question_table{
+    width:100%;
+}
+#question_table > thead{
+    background-color: #1f004b;
+    color: #fff;
+    text-align: center;
+}
+#question_table > tbody > tr > td > a{
+    text-decoration: none;
+    color:#000;
+}
+
+#floatingButton{
+    position: fixed;
+
+    background-color: #6b00ff;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+
+    right: 3em;
+    bottom:10em;
+
+    box-shadow: 3px 3px 3px 1px grey;
+}
+#floatingButton > span{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 3em;
+}
+
+.navbar{
+    /*background: linear-gradient(45deg, #55ffff, #3776ff); 어쨋든 그라데이션 이렇게 둔다아*/
 }
