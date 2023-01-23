@@ -38,12 +38,9 @@ section{
     float:left;
     width: 90%;
 }
-#question_list_header > a{
-    margin-top: 1.5vh;
-    clear: bottom;
-    width:100px;
-}
+
 #question_table{
+    margin: 10px auto;
     width:100%;
 }
 #question_table > thead{
@@ -60,23 +57,27 @@ section{
     position: fixed;
 
     background-color: #6b00ff;
-    width:60px;
-    height:60px;
-    border-radius: 50%;
+    width:100px;
+    height:40px;
+    border-radius: 5%;
 
-    right: 3em;
-    bottom:10em;
+    right: 100px;
+    bottom: 110px;
 
-    box-shadow: 3px 3px 3px 1px grey;
+    box-shadow: 3px 3px 5px 1px grey;
+
+    transition: right 0.2s ease-in-out;
 }
+
 #floatingButton > span{
+    width:75px;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     color: white;
-    font-size: 3em;
+    font-size: 1em;
 }
 
 .navbar{

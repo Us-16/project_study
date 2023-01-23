@@ -16,7 +16,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.security.Principal;
-import java.util.List;
+import java.time.LocalDateTime;
+import java.util.Calendar;
+import java.util.Date;
+
 
 @Slf4j
 @Controller
@@ -29,6 +32,8 @@ public class QuestionController {
     @GetMapping("/list")
     public String list(Model model, @RequestParam(value="page", defaultValue = "0") int page){
         Page<Question> paging = this.questionService.getList(page);
+
+        model.addAttribute("now", LocalDateTime.now());
         model.addAttribute("paging", paging);
         log.info(paging.toString());
 

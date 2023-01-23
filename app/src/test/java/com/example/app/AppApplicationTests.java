@@ -14,7 +14,7 @@ class AppApplicationTests {
 
 	@Test
 	void testJap(){
-		for(int i=1; i<= 300; i++){
+		for(int i=1; i<= 700000; i++){
 			String subject = String.format("테스트 데이터: [%03d]", i);
 			String content = "테스트용입니다.";
 			this.questionService.create(subject, content);
