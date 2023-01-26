@@ -2,13 +2,14 @@ package com.example.app.android;
 
 import com.example.app.question.Question;
 import com.example.app.question.QuestionService;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @Slf4j
@@ -18,7 +19,6 @@ public class BoardApiController {
     @Autowired
     private QuestionService questionService;
 
-
     @GetMapping("/question")
     List<QuestionDTO> questionList() {
         List<Question> questionList = this.questionService.getList();
@@ -26,10 +26,28 @@ public class BoardApiController {
         QuestionDTO questionDTO;
         for(Question q : questionList){
             questionDTO = new QuestionDTO(q);
-            log.info(questionDTO.toString());
             resultList.add(questionDTO);
         }
 
+        log.info("QuestionList Send");
         return resultList;
     }
+
+//    @PostMapping("/posts")
+//    public Result test(@RequestBody Result result){
+//        System.out.println(result);
+//        return result;
+//    }
+
+    @PostMapping("/posts")
+    public void test(@RequestBody HashMap<String, Object> map){
+        System.out.println(map);
+
+    }
+//    @PostMapping("/posts/map")
+//    public void test(@RequestBody HashMap<String, Object> map){
+//        System.out.println("map : " + map);
+//    }
+
+
 }

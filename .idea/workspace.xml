@@ -4,21 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="add(floatingButton) html&#10;- add floatingButton component&#10;- fixed main some Pages">
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/questionList.js" afterDir="false" />
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/PostAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/PostCaller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/PostsCallerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/PostsRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/PostsResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/RetrofitRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/RetrofitUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_41_PM,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]1/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_41_PM,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]1/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_41_PM,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_41_PM__________1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_42_PM,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_42_PM__________.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/layout/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/layout/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/BoardApiController.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/floatingButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/floatingButton.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/layout/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/layout/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
     </list>
@@ -35,6 +49,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -49,9 +66,9 @@
       <list>
         <option value="Enum" />
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -122,7 +139,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.AppApplication">
-    <configuration name="AppApplicationTests.testJap (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
@@ -135,7 +152,76 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.app.AppApplicationTests.testJap&quot;" />
+            <option value="&quot;com.example.app.AppApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppApplicationTests.callPostList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.app.AppApplicationTests.callPostList&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppApplicationTests.createPost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.app.AppApplicationTests.createPost&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppApplicationTests.createPost2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.app.AppApplicationTests.createPost2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -161,7 +247,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AppApplication" />
-        <item itemvalue="Gradle.AppApplicationTests.testJap (1)" />
+        <item itemvalue="Gradle.AppApplicationTests" />
+        <item itemvalue="Gradle.AppApplicationTests.createPost2" />
+        <item itemvalue="Gradle.AppApplicationTests.createPost" />
+        <item itemvalue="Gradle.AppApplicationTests.callPostList" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +273,15 @@
       <workItem from="1674181117451" duration="10074000" />
       <workItem from="1674209719744" duration="12663000" />
       <workItem from="1674308402752" duration="5589000" />
-      <workItem from="1674394718135" duration="14342000" />
+      <workItem from="1674394718135" duration="14475000" />
+      <workItem from="1674460661672" duration="2099000" />
+      <workItem from="1674470881628" duration="430000" />
+      <workItem from="1674476372059" duration="6016000" />
+      <workItem from="1674532289561" duration="4928000" />
+      <workItem from="1674643743431" duration="2441000" />
+      <workItem from="1674650290744" duration="170000" />
+      <workItem from="1674696627819" duration="8812000" />
+      <workItem from="1674740993812" duration="5305000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -235,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674399621143</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)">
+      <created>1674460069481</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674460069481</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +364,8 @@
     <MESSAGE value="Retrofit2 이용한 json 보내기 해결" />
     <MESSAGE value="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것" />
     <MESSAGE value="add(floatingButton) html&#10;- add floatingButton component&#10;- fixed main some Pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add(floatingButton) html&#10;- add floatingButton component&#10;- fixed main some Pages" />
+    <MESSAGE value="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

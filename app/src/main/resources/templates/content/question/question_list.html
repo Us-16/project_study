@@ -1,5 +1,6 @@
 <html layout:decorate="~{layout/base}" xmlns:layout="http://www.w3.org/1999/xhtml">
 <div layout:fragment="content" id="question_list_container">
+    <th:block th:replace="~{fragment/floatingButton :: floatingButton}"></th:block>
 
     <!--    QuestionList Header-->
     <div id="question_list_header">
@@ -21,7 +22,7 @@
         <tr th:each="question, loop : ${paging}">
             <td th:text="${question.id}" style="text-align: center; font-size: 0.7em"></td>
             <!--문제유형-->
-            <td th:text="${now} - ${question.createDate}"></td>
+            <td></td>
             <td>
                 <a th:href="@{|/question/detail/${question.id}|}" th:text="${question.subject}" ></a>
             </td>
