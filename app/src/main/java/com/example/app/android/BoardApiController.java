@@ -40,14 +40,11 @@ public class BoardApiController {
 //    }
 
     @PostMapping("/posts")
-    public void test(@RequestBody HashMap<String, Object> map){
-        System.out.println(map);
-
+    public void test(@RequestBody  Result result){
+        //해치웠다아아아아아아아!!!!
+        System.out.println(result);
+        System.out.println(result.getUser_id());
+        System.out.println(result.getUser_pw());
     }
-//    @PostMapping("/posts/map")
-//    public void test(@RequestBody HashMap<String, Object> map){
-//        System.out.println("map : " + map);
-//    }
-
 
 }

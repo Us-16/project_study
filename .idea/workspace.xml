@@ -4,37 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/PostAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/PostCaller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/PostsCallerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/PostsRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/PostsResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/RetrofitRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/jsonplaceholderexample/RetrofitUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_41_PM,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]1/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_41_PM,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]1/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_41_PM,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_41_PM__________1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_42_PM,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023_01_18_6_42_PM__________.xml" beforeDir="false" />
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="fix&#10;- little">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/layout/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/layout/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/layout/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/layout/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +115,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.AppApplication">
-    <configuration name="AppApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppApplicationTests (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
@@ -247,7 +223,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AppApplication" />
-        <item itemvalue="Gradle.AppApplicationTests" />
+        <item itemvalue="Gradle.AppApplicationTests (1)" />
         <item itemvalue="Gradle.AppApplicationTests.createPost2" />
         <item itemvalue="Gradle.AppApplicationTests.createPost" />
         <item itemvalue="Gradle.AppApplicationTests.callPostList" />
@@ -282,6 +258,10 @@
       <workItem from="1674650290744" duration="170000" />
       <workItem from="1674696627819" duration="8812000" />
       <workItem from="1674740993812" duration="5305000" />
+      <workItem from="1674747314221" duration="64000" />
+      <workItem from="1674749297728" duration="1243000" />
+      <workItem from="1674785867951" duration="475000" />
+      <workItem from="1674807540645" duration="5203000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -339,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674460069481</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix&#10;- little">
+      <created>1674747362135</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674747362135</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +352,8 @@
     <MESSAGE value="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것" />
     <MESSAGE value="add(floatingButton) html&#10;- add floatingButton component&#10;- fixed main some Pages" />
     <MESSAGE value="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)" />
+    <MESSAGE value="fix&#10;- little" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix&#10;- little" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

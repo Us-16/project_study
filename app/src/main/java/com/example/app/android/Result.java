@@ -7,7 +7,7 @@ import lombok.ToString;
 
 @Data
 public class Result {
-    private String code;
-    private String message;
+    private String user_id;
+    private String user_pw;
 
 }
