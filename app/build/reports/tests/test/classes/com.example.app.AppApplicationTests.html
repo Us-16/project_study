@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AppApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AppApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.app.html">com.example.app</a> &gt; AppApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.736s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">단일 포스트 조회</td>
+<td class="success">CallSinglePost()</td>
+<td class="success">0.531s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">포스트 리스트 조회</td>
+<td class="success">callPostList()</td>
+<td class="success">0.529s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">포스트 생성</td>
+<td class="success">createPost()</td>
+<td class="success">0.528s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">포스트 생성2</td>
+<td class="success">createPost2()</td>
+<td class="success">1.148s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>17:21:15.384 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [AppApplicationTests]: using SpringBootContextLoader
+17:21:15.391 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.app.AppApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:21:15.391 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.app.AppApplicationTests]: AppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:21:15.417 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [AppApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+17:21:15.580 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/janghyolim/Code/project_study/app/build/classes/java/main/com/example/app/AppApplication.class]
+17:21:15.604 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.app.AppApplication for test class com.example.app.AppApplicationTests
+17:21:15.749 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [AppApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+17:21:15.751 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [AppApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.1)
+
+2023-01-27T17:21:16.079+09:00  INFO 2972 --- [    Test worker] com.example.app.AppApplicationTests      : Starting AppApplicationTests using Java 17.0.5 with PID 2972 (started by janghyolim in /Users/janghyolim/Code/project_study/app)
+2023-01-27T17:21:16.081+09:00  INFO 2972 --- [    Test worker] com.example.app.AppApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-01-27T17:21:17.078+09:00  INFO 2972 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-27T17:21:17.200+09:00  INFO 2972 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
+2023-01-27T17:21:18.463+09:00  INFO 2972 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-27T17:21:18.541+09:00  INFO 2972 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-27T17:21:18.734+09:00  WARN 2972 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-27T17:21:18.827+09:00  INFO 2972 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-27T17:21:19.110+09:00  INFO 2972 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ec3a4c2
+2023-01-27T17:21:19.112+09:00  INFO 2972 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-27T17:21:19.128+09:00  INFO 2972 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-27T17:21:19.129+09:00  WARN 2972 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-01-27T17:21:20.359+09:00  INFO 2972 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-27T17:21:20.369+09:00  INFO 2972 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-27T17:21:21.143+09:00  WARN 2972 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-27T17:21:21.661+09:00  INFO 2972 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63e81ac6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45775a15, org.springframework.security.web.context.SecurityContextHolderFilter@6c9e7af2, org.springframework.security.web.header.HeaderWriterFilter@c651286, org.springframework.security.web.csrf.CsrfFilter@65029fc, org.springframework.security.web.authentication.logout.LogoutFilter@5e0b7f58, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7fb313e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@af04d6d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2740585b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2396dc4e, org.springframework.security.web.access.ExceptionTranslationFilter@7da40bf4, org.springframework.security.web.access.intercept.AuthorizationFilter@16718e1b]
+2023-01-27T17:21:23.463+09:00  INFO 2972 --- [    Test worker] com.example.app.AppApplicationTests      : Started AppApplicationTests in 7.638 seconds (process running for 9.457)
+2023-01-27T17:21:23.735+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : --&gt; POST https://jsonplaceholder.typicode.com/posts
+2023-01-27T17:21:23.735+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : Content-Type: application/x-www-form-urlencoded
+2023-01-27T17:21:23.736+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : Content-Length: 34
+2023-01-27T17:21:23.737+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : 
+2023-01-27T17:21:23.738+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : userId=30&amp;title=Hello&amp;body=welcome
+2023-01-27T17:21:23.738+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : --&gt; END POST (34-byte body)
+2023-01-27T17:21:24.640+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : &lt;-- 201 https://jsonplaceholder.typicode.com/posts (901ms)
+2023-01-27T17:21:24.640+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : date: Fri, 27 Jan 2023 08:21:24 GMT
+2023-01-27T17:21:24.640+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : content-type: application/json; charset=utf-8
+2023-01-27T17:21:24.640+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : content-length: 74
+2023-01-27T17:21:24.640+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : location: http://jsonplaceholder.typicode.com/posts/101
+2023-01-27T17:21:24.640+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-powered-by: Express
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-limit: 1000
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-remaining: 999
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-reset: 1674807709
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : access-control-allow-credentials: true
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cache-control: no-cache
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : pragma: no-cache
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : expires: -1
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : access-control-expose-headers: Location
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-content-type-options: nosniff
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : etag: W/&quot;4a-nDGswb0Y/qt0Kz7CYBepWXx7OjE&quot;
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : via: 1.1 vegur
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cf-cache-status: DYNAMIC
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : report-to: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=mBaEAsM6l6kpiTxGN6tSiUuP23I%2F4JQavh3GBQ2EyMylDSVBPehSMuqpuShrRSMtfX8NaQKauXAt5OV9GSqH8yZ9F82XCePgKXCtaajgHcRV8ZK905rFAd9TA8zf6CtTAzfSRXI8De9vcmmAT7Zm&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : nel: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : server: cloudflare
+2023-01-27T17:21:24.641+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cf-ray: 7900131b4a0004b9-HKG
+2023-01-27T17:21:24.642+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+2023-01-27T17:21:24.642+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : 
+2023-01-27T17:21:24.642+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : {
+  &quot;userId&quot;: &quot;30&quot;,
+  &quot;title&quot;: &quot;Hello&quot;,
+  &quot;body&quot;: &quot;welcome&quot;,
+  &quot;id&quot;: 101
+}
+2023-01-27T17:21:24.642+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : &lt;-- END HTTP (74-byte body)
+2023-01-27T17:21:24.655+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : --&gt; GET https://jsonplaceholder.typicode.com/posts?userId=1
+2023-01-27T17:21:24.655+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : --&gt; END GET
+2023-01-27T17:21:25.176+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : &lt;-- 200 https://jsonplaceholder.typicode.com/posts?userId=1 (520ms)
+2023-01-27T17:21:25.176+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : date: Fri, 27 Jan 2023 08:21:25 GMT
+2023-01-27T17:21:25.176+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : content-type: application/json; charset=utf-8
+2023-01-27T17:21:25.176+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-powered-by: Express
+2023-01-27T17:21:25.176+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-limit: 1000
+2023-01-27T17:21:25.176+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-remaining: 998
+2023-01-27T17:21:25.176+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-reset: 1674807709
+2023-01-27T17:21:25.176+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : vary: Origin, Accept-Encoding
+2023-01-27T17:21:25.176+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : access-control-allow-credentials: true
+2023-01-27T17:21:25.177+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cache-control: max-age=43200
+2023-01-27T17:21:25.177+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : pragma: no-cache
+2023-01-27T17:21:25.177+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : expires: -1
+2023-01-27T17:21:25.177+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-content-type-options: nosniff
+2023-01-27T17:21:25.177+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : etag: W/&quot;aa6-j2NSH739l9uq40OywFMn7Y0C/iY&quot;
+2023-01-27T17:21:25.177+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : via: 1.1 vegur
+2023-01-27T17:21:25.177+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cf-cache-status: MISS
+2023-01-27T17:21:25.177+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : report-to: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=4hBy2mIQW8dWEAttSiE2T3JhF0kEtlEcMwN%2BQJ%2Ffeyu8sdugB2pNjjtCYHeJKZK3LsiA20Kb30m%2BHcNtszJ88TT6UsZNMlezMpdVLhYYbuYkWD%2BTl48t6xBhpl988ZY1cqrzeY%2Bv4tmfAkWvJQVh&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2023-01-27T17:21:25.177+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : nel: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2023-01-27T17:21:25.177+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : server: cloudflare
+2023-01-27T17:21:25.178+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cf-ray: 7900131e8ec904b9-HKG
+2023-01-27T17:21:25.178+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+2023-01-27T17:21:25.178+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : 
+2023-01-27T17:21:25.178+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : [
+  {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 1,
+    &quot;title&quot;: &quot;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&quot;,
+    &quot;body&quot;: &quot;quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto&quot;
+  },
+  {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 2,
+    &quot;title&quot;: &quot;qui est esse&quot;,
+    &quot;body&quot;: &quot;est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla&quot;
+  },
+  {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 3,
+    &quot;title&quot;: &quot;ea molestias quasi exercitationem repellat qui ipsa sit aut&quot;,
+    &quot;body&quot;: &quot;et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut&quot;
+  },
+  {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 4,
+    &quot;title&quot;: &quot;eum et est occaecati&quot;,
+    &quot;body&quot;: &quot;ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit&quot;
+  },
+  {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 5,
+    &quot;title&quot;: &quot;nesciunt quas odio&quot;,
+    &quot;body&quot;: &quot;repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque&quot;
+  },
+  {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 6,
+    &quot;title&quot;: &quot;dolorem eum magni eos aperiam quia&quot;,
+    &quot;body&quot;: &quot;ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae&quot;
+  },
+  {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 7,
+    &quot;title&quot;: &quot;magnam facilis autem&quot;,
+    &quot;body&quot;: &quot;dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas&quot;
+  },
+  {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 8,
+    &quot;title&quot;: &quot;dolorem dolore est ipsam&quot;,
+    &quot;body&quot;: &quot;dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae&quot;
+  },
+  {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 9,
+    &quot;title&quot;: &quot;nesciunt iure omnis dolorem tempora et accusantium&quot;,
+    &quot;body&quot;: &quot;consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas&quot;
+  },
+  {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 10,
+    &quot;title&quot;: &quot;optio molestias id quia eum&quot;,
+    &quot;body&quot;: &quot;quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error&quot;
+  }
+]
+2023-01-27T17:21:25.179+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : &lt;-- END HTTP (2726-byte body)
+2023-01-27T17:21:25.185+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : --&gt; GET https://jsonplaceholder.typicode.com/posts/30
+2023-01-27T17:21:25.186+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : --&gt; END GET
+2023-01-27T17:21:25.704+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : &lt;-- 200 https://jsonplaceholder.typicode.com/posts/30 (518ms)
+2023-01-27T17:21:25.704+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : date: Fri, 27 Jan 2023 08:21:25 GMT
+2023-01-27T17:21:25.704+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : content-type: application/json; charset=utf-8
+2023-01-27T17:21:25.705+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-powered-by: Express
+2023-01-27T17:21:25.705+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-limit: 1000
+2023-01-27T17:21:25.705+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-remaining: 997
+2023-01-27T17:21:25.705+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-reset: 1674807709
+2023-01-27T17:21:25.706+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : vary: Origin, Accept-Encoding
+2023-01-27T17:21:25.706+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : access-control-allow-credentials: true
+2023-01-27T17:21:25.706+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cache-control: max-age=43200
+2023-01-27T17:21:25.706+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : pragma: no-cache
+2023-01-27T17:21:25.706+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : expires: -1
+2023-01-27T17:21:25.706+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-content-type-options: nosniff
+2023-01-27T17:21:25.706+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : etag: W/&quot;ea-p/fED6+/tICtAVNeMV6EIhtgIes&quot;
+2023-01-27T17:21:25.706+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : via: 1.1 vegur
+2023-01-27T17:21:25.707+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cf-cache-status: MISS
+2023-01-27T17:21:25.707+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : report-to: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=VBUAWoy1tfns5sGXQfSKcbzdaunpxwHBQBj47lI4IG8Mj2cId42RVunJ7MRmHLDVdkFT%2B6YZjFRBtbf9nCeoipYe1cW%2BXaV6sJXuyT6ltT%2B85HyI%2F1kby3l9mLdlLJTRjczDdfnCoat1q7peEF3V&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2023-01-27T17:21:25.707+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : nel: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2023-01-27T17:21:25.707+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : server: cloudflare
+2023-01-27T17:21:25.707+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cf-ray: 79001321cb9b04b9-HKG
+2023-01-27T17:21:25.707+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+2023-01-27T17:21:25.708+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : 
+2023-01-27T17:21:25.708+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : {
+  &quot;userId&quot;: 3,
+  &quot;id&quot;: 30,
+  &quot;title&quot;: &quot;a quo magni similique perferendis&quot;,
+  &quot;body&quot;: &quot;alias dolor cumque\nimpedit blanditiis non eveniet odio maxime\nblanditiis amet eius quis tempora quia autem rem\na provident perspiciatis quia&quot;
+}
+2023-01-27T17:21:25.708+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : &lt;-- END HTTP (234-byte body)
+2023-01-27T17:21:25.727+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : --&gt; POST https://jsonplaceholder.typicode.com/posts
+2023-01-27T17:21:25.729+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : Content-Type: application/json; charset=UTF-8
+2023-01-27T17:21:25.730+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : Content-Length: 46
+2023-01-27T17:21:25.730+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : 
+2023-01-27T17:21:25.730+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : {&quot;userId&quot;:30,&quot;title&quot;:&quot;Hello&quot;,&quot;body&quot;:&quot;welcome&quot;}
+2023-01-27T17:21:25.730+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : --&gt; END POST (46-byte body)
+2023-01-27T17:21:26.237+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : &lt;-- 201 https://jsonplaceholder.typicode.com/posts (507ms)
+2023-01-27T17:21:26.238+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : date: Fri, 27 Jan 2023 08:21:26 GMT
+2023-01-27T17:21:26.238+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : content-type: application/json; charset=utf-8
+2023-01-27T17:21:26.238+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : content-length: 72
+2023-01-27T17:21:26.238+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : location: http://jsonplaceholder.typicode.com/posts/101
+2023-01-27T17:21:26.238+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-powered-by: Express
+2023-01-27T17:21:26.238+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-limit: 1000
+2023-01-27T17:21:26.238+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-remaining: 996
+2023-01-27T17:21:26.238+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-ratelimit-reset: 1674807709
+2023-01-27T17:21:26.238+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+2023-01-27T17:21:26.238+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : access-control-allow-credentials: true
+2023-01-27T17:21:26.239+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cache-control: no-cache
+2023-01-27T17:21:26.239+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : pragma: no-cache
+2023-01-27T17:21:26.239+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : expires: -1
+2023-01-27T17:21:26.239+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : access-control-expose-headers: Location
+2023-01-27T17:21:26.239+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : x-content-type-options: nosniff
+2023-01-27T17:21:26.239+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : etag: W/&quot;48-BsRcS4b26tUAj09NsMoxfm1sU2M&quot;
+2023-01-27T17:21:26.239+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : via: 1.1 vegur
+2023-01-27T17:21:26.239+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cf-cache-status: DYNAMIC
+2023-01-27T17:21:26.239+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : report-to: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=5R9xSS52E8GXpiz6xjhSB%2F5ZigZphHUYk266SxKS5qe1TKR2f9l4gkvSuE%2Fbhpy7ka%2B8rC%2Bcamfv5D7r8qkEDqcTiQZj1jIT2%2FqPgx6q619N55NrboO14onYKSMsh7NuZKRUBVss4MZ1zR4DJvmq&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2023-01-27T17:21:26.239+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : nel: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2023-01-27T17:21:26.240+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : server: cloudflare
+2023-01-27T17:21:26.240+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : cf-ray: 79001325486204b9-HKG
+2023-01-27T17:21:26.240+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+2023-01-27T17:21:26.240+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : 
+2023-01-27T17:21:26.240+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : {
+  &quot;userId&quot;: 30,
+  &quot;title&quot;: &quot;Hello&quot;,
+  &quot;body&quot;: &quot;welcome&quot;,
+  &quot;id&quot;: 101
+}
+2023-01-27T17:21:26.240+09:00  INFO 2972 --- [    Test worker] okhttp3.OkHttpClient                     : &lt;-- END HTTP (72-byte body)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at 2023. 1. 27. 오후 5:21:26</p>
+</div>
+</div>
+</body>
+</html>
