@@ -17,6 +17,7 @@ import java.util.Optional;
 @Service
 public class UserSecurityService implements UserDetailsService {
     private final TeacherRepository teacherRepository;
+    //private final StudentRepository studentRepository; //아마 이게 여기서 쓰일 일은 없을 거 같다만...
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

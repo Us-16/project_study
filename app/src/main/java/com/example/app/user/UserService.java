@@ -2,6 +2,7 @@ package com.example.app.user;
 
 import com.example.app.DataNotFoundException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -10,9 +11,11 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 @RequiredArgsConstructor
+@Slf4j
 @Service
 public class UserService {
     private final TeacherRepository teacherRepository;
+    private final StudentRepository studentRepository;
     private final PasswordEncoder passwordEncoder;
 
     /**
@@ -44,5 +47,21 @@ public class UserService {
             return teacher.get();
         else
             throw new DataNotFoundException("Teacher not Found");
+    }
+
+    public Student create(String name, String username, String password, String P_id1, String P_id2, String email, String school, String grade){
+        Student student = new Student();
+        student.setName(name);
+        student.setUsername(username);
+        student.setPassword(password);
+        student.setP_id1(P_id1);
+        student.setP_id2(P_id2);
+        student.setEmail(email);
+        student.setSchool(school);
+        student.setGrade(Integer.parseInt(grade));
+        student.setCreateDate(LocalDateTime.now());
+        log.info("STUDENT : " + "signup success ");
+        this.studentRepository.save(student);
+        return student;
     }
 }
