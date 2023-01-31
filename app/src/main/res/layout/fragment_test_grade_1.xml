@@ -3,22 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment_test_grade_1">
+    tools:context=".fragment_test_grade_1"
+    android:orientation="vertical">
 
-    <LinearLayout
+
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/layout_background_round_gray"
-        android:layout_marginTop="70dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="고1화면 위에는 버튼때문에 비워둠"
-            android:textSize="30dp"/>
+        android:id="@+id/quiz2_list">
 
 
-    </LinearLayout>
+    </ListView>
 
 
 

@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="일반문제"
-                android:textSize="30dp"
+                android:textSize="25dp"
                 android:background="@drawable/layout_background_round_quizselect"
                 android:gravity="center"/>
         </LinearLayout>
@@ -57,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="모의고사"
-                android:textSize="30dp"
+                android:textSize="25dp"
                 android:gravity="center"
                 android:background="@drawable/layout_background_round_quizselect"/>
         </LinearLayout>

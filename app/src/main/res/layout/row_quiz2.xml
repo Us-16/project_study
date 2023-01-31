@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_test_grade_1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_2"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="22년"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:id="@+id/quiz2_yy"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_test_listview"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:text="모의고사 이름"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/quiz2_name"/>
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/chk_quiz2_favorite"/>
+
+            <android.widget.ImageButton
+                android:id="@+id/btn_wishstar_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_quiz2_wishstar"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+            <android.widget.Button
+                android:id="@+id/btn_quiz2_solve"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="풀기"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+
+
+</LinearLayout>
