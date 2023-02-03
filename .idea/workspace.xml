@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="add - AES256 Encoding&#10;- result would be successful to load by AES256&#10;- with GetMapping to watch the result">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="!!!GIT Test!!!&#10;- key.class ignore">
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +38,8 @@
         <option value="Enum" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -264,7 +261,7 @@
       <workItem from="1675406987132" duration="488000" />
       <workItem from="1675408663204" duration="1231000" />
       <workItem from="1675412550322" duration="1735000" />
-      <workItem from="1675419316811" duration="2479000" />
+      <workItem from="1675419316811" duration="2817000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -371,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675420074860</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="!!!GIT Test!!!&#10;- key.class ignore">
+      <created>1675421976103</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1675421976103</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,7 +407,8 @@
     <MESSAGE value="fix - signup logics&#10;- duplication check&#10;- with different result at different url to android&#10;- duplicate test was successful&#10;- (will be soon) GET -&gt; POST" />
     <MESSAGE value="error fixed&#10;- LoginSuccessHandler error fixed" />
     <MESSAGE value="add - AES256 Encoding&#10;- result would be successful to load by AES256&#10;- with GetMapping to watch the result" />
-    <option name="LAST_COMMIT_MESSAGE" value="add - AES256 Encoding&#10;- result would be successful to load by AES256&#10;- with GetMapping to watch the result" />
+    <MESSAGE value="!!!GIT Test!!!&#10;- key.class ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="!!!GIT Test!!!&#10;- key.class ignore" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
