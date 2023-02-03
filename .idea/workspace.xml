@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="!!!GIT Test8!!!&#10;- key.class ignore">
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="!!!GIT Test11!!!&#10;- key.class ignore">
       <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/aes/AES256SecretKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/aes/AES256SecretKey.java" afterDir="false" />
     </list>
@@ -263,7 +263,7 @@
       <workItem from="1675406987132" duration="488000" />
       <workItem from="1675408663204" duration="1231000" />
       <workItem from="1675412550322" duration="1735000" />
-      <workItem from="1675419316811" duration="3839000" />
+      <workItem from="1675419316811" duration="4302000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -426,7 +426,28 @@
       <option name="project" value="LOCAL" />
       <updated>1675423048724</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="!!!GIT Test9!!!&#10;- key.class ignore">
+      <created>1675423173173</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1675423173173</updated>
+    </task>
+    <task id="LOCAL-00025" summary="!!!GIT Test10!!!&#10;- key.class ignore">
+      <created>1675423316080</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1675423316080</updated>
+    </task>
+    <task id="LOCAL-00026" summary="!!!GIT Test11!!!&#10;- key.class ignore">
+      <created>1675423395525</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1675423395525</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +487,10 @@
     <MESSAGE value="!!!GIT Test6!!!&#10;- key.class ignore" />
     <MESSAGE value="!!!GIT Test7!!!&#10;- key.class ignore" />
     <MESSAGE value="!!!GIT Test8!!!&#10;- key.class ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="!!!GIT Test8!!!&#10;- key.class ignore" />
+    <MESSAGE value="!!!GIT Test9!!!&#10;- key.class ignore" />
+    <MESSAGE value="!!!GIT Test10!!!&#10;- key.class ignore" />
+    <MESSAGE value="!!!GIT Test11!!!&#10;- key.class ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="!!!GIT Test11!!!&#10;- key.class ignore" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
