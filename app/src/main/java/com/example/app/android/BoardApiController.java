@@ -1,20 +1,16 @@
 package com.example.app.android;
 
 import com.example.app.aes.AES256;
+import com.example.app.android.dto.*;
 import com.example.app.question.Question;
 import com.example.app.question.QuestionService;
 import com.example.app.user.UserService;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.*;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 @Slf4j
@@ -56,7 +52,7 @@ public class BoardApiController {
     }
 
     @PostMapping("/posts")
-    public void test(@RequestBody  Result result){
+    public void test(@RequestBody Result result){
         //해치웠다아아아아아아아!!!! 01.27 01:00경
         System.out.println(result);
         System.out.println(result.getUser_id());
@@ -82,6 +78,19 @@ public class BoardApiController {
         log.info(this.username);
         String isDup = userService.CheckDup(username);
         check_res(username);
+    }
+
+    @PostMapping("/login/test")
+    public void loginTest(@RequestBody LoginDTO loginDTO) throws Exception {
+        System.out.println("GET DATA: " + loginDTO.toString());
+        System.out.println("GET DATA: " + loginDTO.getUsername());
+
+        String username = aes256.decrypt(loginDTO.getUsername());
+        String password = aes256.decrypt(loginDTO.getPassword());
+
+        System.out.println(username);
+        System.out.println(password);
+
     }
 
     public void MemTest(){

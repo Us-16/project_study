@@ -1,4 +1,4 @@
-package com.example.app.android;
+package com.example.app.android.dto;
 
 import lombok.Data;
 import lombok.Getter;

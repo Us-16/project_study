@@ -1,4 +1,4 @@
-package com.example.app.android;
+package com.example.app.android.dto;
 
 import com.example.app.question.Question;
 import com.fasterxml.jackson.annotation.JsonProperty;
