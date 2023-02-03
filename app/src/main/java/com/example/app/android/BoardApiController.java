@@ -1,5 +1,6 @@
 package com.example.app.android;
 
+import com.example.app.aes.AES256;
 import com.example.app.question.Question;
 import com.example.app.question.QuestionService;
 import com.example.app.user.UserService;
@@ -23,6 +24,7 @@ import java.util.List;
 public class BoardApiController {
     private final QuestionService questionService;
     private final UserService userService;
+    private final AES256 aes256 = new AES256();
 
     private String username;
 
@@ -53,6 +55,22 @@ public class BoardApiController {
 
         MemTest();
         return rc;
+    }
+
+    @GetMapping("/test")
+    public CheckResponseDTO test(){
+        log.info("http://localhost:8080/api/test");
+        String sendText;
+        CheckResponseDTO test = new CheckResponseDTO();
+        String text = "hello world!";
+        try {
+            sendText = aes256.encrypt(text);
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
+        test.setMessage(sendText);
+        MemTest();
+        return test;
     }
 
     @PostMapping("/posts")
