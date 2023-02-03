@@ -6,8 +6,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="/">미정</a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <a class="navbar-brand" href="/">쎌</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav_list">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" th:href="@{/question/list}">문제 내러 가기</a>
                 </li>
@@ -16,7 +16,7 @@
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="nav_search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <a type="button" class="login_button btn btn-outline-secondary" sec:authorize="isAnonymous()" th:href="@{/user/login}">로그인</a>

@@ -4,17 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="fix - securityConfig&#10;- ignore /api/**  &#10;- Android could access&#10;- Android connect Success">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/SignupDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/StudentRepository.java" afterDir="false" />
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/CheckDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/CheckResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/SignupDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/SignupDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/LoginSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/LoginSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserSecurityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserSecurityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/fragment/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/fragment/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/BoardApiController.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/BoardApiController.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserSecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/SignupDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/SignupDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/LoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +64,8 @@
         <option value="Enum" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -269,7 +286,14 @@
       <workItem from="1674894144942" duration="186000" />
       <workItem from="1674894359321" duration="2004000" />
       <workItem from="1674917528318" duration="2612000" />
-      <workItem from="1674920439002" duration="2390000" />
+      <workItem from="1674920439002" duration="4646000" />
+      <workItem from="1674963388734" duration="6296000" />
+      <workItem from="1674976852664" duration="2821000" />
+      <workItem from="1675119685758" duration="1403000" />
+      <workItem from="1675246906218" duration="2222000" />
+      <workItem from="1675249977074" duration="14810000" />
+      <workItem from="1675325225553" duration="2772000" />
+      <workItem from="1675328079031" duration="7397000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -341,7 +365,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674830939552</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json">
+      <created>1674922958235</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674922958235</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json">
+      <created>1674922963458</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674922963458</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +407,8 @@
     <MESSAGE value="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)" />
     <MESSAGE value="fix&#10;- little" />
     <MESSAGE value="fix - securityConfig&#10;- ignore /api/**  &#10;- Android could access&#10;- Android connect Success" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix - securityConfig&#10;- ignore /api/**  &#10;- Android could access&#10;- Android connect Success" />
+    <MESSAGE value="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json" />
+    <option name="LAST_COMMIT_MESSAGE" value="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

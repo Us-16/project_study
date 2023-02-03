@@ -1,6 +1,7 @@
 package com.example.app.user;
 
 import com.example.app.DataNotFoundException;
+import com.example.app.android.BoardApiController;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -17,6 +18,7 @@ public class UserService {
     private final TeacherRepository teacherRepository;
     private final StudentRepository studentRepository;
     private final PasswordEncoder passwordEncoder;
+
 
     /**
      *
@@ -49,7 +51,7 @@ public class UserService {
             throw new DataNotFoundException("Teacher not Found");
     }
 
-    public Student create(String name, String username, String password, String P_id1, String P_id2, String email, String school, String grade){
+    public Student createStudent(String name, String username, String password, String P_id1, String P_id2, String email, String school, String grade){
         Student student = new Student();
         student.setName(name);
         student.setUsername(username);
@@ -63,5 +65,17 @@ public class UserService {
         log.info("STUDENT : " + "signup success ");
         this.studentRepository.save(student);
         return student;
+    }
+    public String CheckDup(String username){
+        log.info("UserService: " + username);
+        log.info("Duplicate Test" + this.studentRepository.findByUsername(username));
+        System.out.println("Duplicate Test" + this.studentRepository.findByUsername(username));
+
+        if(this.studentRepository.findByUsername(username).equals(Optional.empty())) {
+            System.out.println("없다는데?");
+            return "true";
+        }
+        System.out.println("있다는데?");
+        return "false";
     }
 }

@@ -30,6 +30,5 @@ public class LoginSuccessHandler extends SavedRequestAwareAuthenticationSuccessH
         }else{
             super.onAuthenticationSuccess(request, response, authentication);
         }
-
     }
 }

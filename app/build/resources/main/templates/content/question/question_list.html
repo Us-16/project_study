@@ -15,7 +15,7 @@
             <th style="width:10%">문제유형</th>
             <th style="width:30%">제목</th>
             <th style="width:10%">글쓴이</th>
-            <th style="width:12%">작성일시</th>
+            <th style="width:7%">작성일시</th>
         </tr>
         </thead>
         <tbody>
@@ -27,7 +27,16 @@
                 <a th:href="@{|/question/detail/${question.id}|}" th:text="${question.subject}" ></a>
             </td>
             <td style="text-align: center"><span th:if="${question.author != null}" th:text="${question.author.username}" ></span></td>
-            <td th:text="${#temporals.format(question.createDate, 'yyyy-MM-dd HH:mm:ss')}" style="text-align: center"></td>
+            <td style="text-align: center">
+                <span th:if="${current_year - question.createDate.getYear() == 0} and ${current_day - question.createDate.getDayOfYear() == 0}"
+                      th:text="${#temporals.format(question.createDate, 'HH:mm:ss')}"></span>
+
+                <span th:if="${(current_year - question.createDate.getYear() == 0)} and ${!(current_day - question.createDate.getDayOfYear() == 0)}"
+                      th:text="${#temporals.format(question.createDate, 'MM.dd')}"></span>
+
+                <span th:if="${!(current_year - question.createDate.getYear() == 0)} and ${!(current_day - question.createDate.getDayOfYear() == 0)}"
+                      th:text="${#temporals.format(question.createDate, 'yy/MM/dd')}"></span>
+            </td>
         </tr>
         </tbody>
     </table>
