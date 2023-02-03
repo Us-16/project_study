@@ -58,7 +58,7 @@ cmake-build-*/
 
 # IntelliJ
 out/
-src/main/java/com/example/app/aes/*.java
+src/**/*.java
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
