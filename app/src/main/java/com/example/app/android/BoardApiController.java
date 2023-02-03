@@ -43,34 +43,16 @@ public class BoardApiController {
     }
 
     @GetMapping("/check_response/{username}") //Post로 두니까 화면 안 띄워짐 받을때도 POST로 받으면 됨
-    public CheckResponseDTO check_res(@PathVariable("username") String username){
+    public CheckResponseDTO check_res(@PathVariable("username") String username) throws Exception{
         log.info("Duplicate Response Send");
         log.info("http://localhost:8080/api/check_response/"+username);
 
-        String isDup = userService.CheckDup(username);
-        System.out.println(isDup);
+        String isDup = aes256.encrypt(userService.CheckDup(username));
         CheckResponseDTO rc = new CheckResponseDTO();
         rc.setMessage(isDup);
-        System.out.println("Data: " + rc.getMessage() + "  " + rc.toString());
-
         MemTest();
+
         return rc;
-    }
-
-    @GetMapping("/test")
-    public CheckResponseDTO test(){
-        log.info("http://localhost:8080/api/test");
-        String sendText;
-        CheckResponseDTO test = new CheckResponseDTO();
-        String text = "hello world!";
-        try {
-            sendText = aes256.encrypt(text);
-        }catch (Exception e){
-            throw new RuntimeException(e);
-        }
-        test.setMessage(sendText);
-        MemTest();
-        return test;
     }
 
     @PostMapping("/posts")
@@ -92,12 +74,13 @@ public class BoardApiController {
      * @param checkDTO JSON 파일형식
      */
     @PostMapping("/check_name")
-    public void check_name(@RequestBody CheckDTO checkDTO){
+    public void check_name(@RequestBody CheckDTO checkDTO) throws Exception {
         System.out.println(checkDTO);
         log.info("GET DATA: " + checkDTO.getUsername());
         this.username = checkDTO.getUsername();
+        username = aes256.decrypt(username);
+        log.info(this.username);
         String isDup = userService.CheckDup(username);
-        System.out.println("isDup: " + isDup);
         check_res(username);
     }
 
