@@ -15,6 +15,8 @@
 # AWS User-specific
 .idea/**/aws.xml
 
+main/**/AES256SecretKey.java
+
 # Generated files
 .idea/**/contentModel.xml
 
@@ -118,9 +120,3 @@ fabric.properties
 
 application.properties
 *.properties
-*/aes/AES256SecretKey.java
-aes256/**
-aes256/*.java
-AES256SecretKey.java
-AES256SecretKey.interface
-AES256SecretKey.class
