@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/user")
 public class UserController {
     private final UserService userService;
-    private HttpServletRequest request;
+    //private HttpServletRequest request;
 
     private final String signup = "content/login/signup_form";
     private final String login = "content/login/login_form";
@@ -56,9 +56,10 @@ public class UserController {
     }
 
     @RequestMapping("/login")
-    public String login(Model model){
-        String referrer = request.getHeader("Referer");
-        request.getSession().setAttribute("prevPage", referrer);
+    public String login(HttpServletRequest request, Model model){
+        String uri = request.getHeader("Referer");
+        if(uri != null && !uri.contains("/login"))
+            request.getSession().setAttribute("prevPage", uri);
         return login;
     }
 }

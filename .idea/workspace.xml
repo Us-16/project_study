@@ -4,34 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/CheckDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/CheckResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="fix - signup logics&#10;- duplication check&#10;- with different result at different url to android&#10;- duplicate test was successful&#10;- (will be soon) GET -&gt; POST">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/aes/AESTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/aes/AESTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/SignupDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/SignupDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/LoginSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/LoginSuccessHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserSecurityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserSecurityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/fragment/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/fragment/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/BoardApiController.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/BoardApiController.class.uniqueId0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/SignupDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/SignupDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/AppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/AppApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/BoardApiController.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/LoginSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragment/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +53,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="spring_android" />
+        <entry key="$PROJECT_DIR$" value="springboot" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -136,6 +117,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.AppApplication">
+    <configuration name="AESTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.app.aes.AESTester" />
+      <module name="app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.app.aes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppApplicationTests (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -150,29 +144,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.example.app.AppApplicationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AppApplicationTests.callPostList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.app.AppApplicationTests.callPostList&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -244,10 +215,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AppApplication" />
+        <item itemvalue="애플리케이션.AESTester" />
         <item itemvalue="Gradle.AppApplicationTests (1)" />
         <item itemvalue="Gradle.AppApplicationTests.createPost2" />
         <item itemvalue="Gradle.AppApplicationTests.createPost" />
-        <item itemvalue="Gradle.AppApplicationTests.callPostList" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +264,9 @@
       <workItem from="1675246906218" duration="2222000" />
       <workItem from="1675249977074" duration="14810000" />
       <workItem from="1675325225553" duration="2772000" />
-      <workItem from="1675328079031" duration="7397000" />
+      <workItem from="1675328079031" duration="8095000" />
+      <workItem from="1675406987132" duration="488000" />
+      <workItem from="1675408663204" duration="1231000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -379,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674922963458</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix - signup logics&#10;- duplication check&#10;- with different result at different url to android&#10;- duplicate test was successful&#10;- (will be soon) GET -&gt; POST">
+      <created>1675404931515</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675404931515</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +388,8 @@
     <MESSAGE value="fix&#10;- little" />
     <MESSAGE value="fix - securityConfig&#10;- ignore /api/**  &#10;- Android could access&#10;- Android connect Success" />
     <MESSAGE value="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json" />
-    <option name="LAST_COMMIT_MESSAGE" value="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json" />
+    <MESSAGE value="fix - signup logics&#10;- duplication check&#10;- with different result at different url to android&#10;- duplicate test was successful&#10;- (will be soon) GET -&gt; POST" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix - signup logics&#10;- duplication check&#10;- with different result at different url to android&#10;- duplicate test was successful&#10;- (will be soon) GET -&gt; POST" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

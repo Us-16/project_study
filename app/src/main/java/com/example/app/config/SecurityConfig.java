@@ -1,5 +1,6 @@
 package com.example.app.config;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -19,8 +20,10 @@ import retrofit2.http.POST;
 
 @Configuration
 @EnableWebSecurity
+@RequiredArgsConstructor
 @EnableMethodSecurity(prePostEnabled = true)
 public class SecurityConfig {
+    private final LoginSuccessHandler loginSuccessHandler;
     @Bean
     PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
@@ -39,7 +42,7 @@ public class SecurityConfig {
                 .and()
                 .headers().addHeaderWriter(new XFrameOptionsHeaderWriter(XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN))
                 .and()
-                .formLogin().loginPage("/user/login").successHandler(new LoginSuccessHandler("/"))//.defaultSuccessUrl("/")
+                .formLogin().loginPage("/user/login").successHandler(loginSuccessHandler)
                 .and()
                 .logout().logoutRequestMatcher(new AntPathRequestMatcher("/user/logout")).logoutSuccessUrl("/").invalidateHttpSession(true);
         return http.build();
