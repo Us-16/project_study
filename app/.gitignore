@@ -118,4 +118,4 @@ fabric.properties
 
 application.properties
 *.properties
-AES256SecretKey.java
+**/AES256SecretKey.java
