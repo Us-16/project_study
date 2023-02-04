@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 
@@ -90,17 +91,25 @@ public class BoardApiController {
     }
 
     @GetMapping("/login/result/{password}/{username}")
-    public LoginTestDTO loginTestResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception{
+    public HashMap<String, String> loginTestResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception{
+
         System.out.println("http://localhost:8080/api/login/result/"+password+"/"+username);
-        System.out.println("why: " + username);
-        System.out.println("why: " + password);
+
         username = aes256.decrypt(username);
         password = aes256.decrypt(password);
-        System.out.println(username+" " +  password);
+
         ArrayList<String> testDTO = userService.LoginTest(username, password);
 
-        LoginTestDTO lt = new LoginTestDTO(testDTO.get(0), testDTO.get(1), testDTO.get(2), testDTO.get(3), testDTO.get(4));
-        return lt;
+        HashMap<String, String> message = new HashMap<String, String>();
+        final String[] sendTitle = {"id", "name", "username", "email", "check"};
+        for(int i=sendTitle.length-1; i>=0; i--)
+            message.put(aes256.encrypt(sendTitle[i]), testDTO.get(i));
+
+        message.forEach((key, value) -> {
+            System.out.println("Test: " + key + " : " + value);
+        });
+
+        return message;
     }
 
     public void MemTest(){

@@ -14,6 +14,7 @@ import javax.swing.text.html.Option;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Optional;
+import java.util.Random;
 
 @RequiredArgsConstructor
 @Slf4j
@@ -88,6 +89,7 @@ public class UserService {
         System.out.println("LoginTest: "+username+ " " + password);
         Optional<Student> result = studentRepository.findByUsername(username);
         ArrayList<String> resultList = new ArrayList<String>();
+        Random random = new Random();
 
 
         String check = this.aes256.encrypt("false");
@@ -95,16 +97,16 @@ public class UserService {
 
 
         if(result.equals(Optional.empty()) || (!result.get().getPassword().equals(password))){ //없는 아이디 쳤을 때
-            resultList.add(0, "0");
-            resultList.add(1, null);
-            resultList.add(2, null);
-            resultList.add(3, null);
-            resultList.add(4, check);
+            resultList.add(0, aes256.encrypt(""+ (random.nextInt(1000)+1) + "f"));
+            resultList.add(1, aes256.encrypt(""+(random.nextInt(1000)+1)));
+            resultList.add(2, aes256.encrypt(""+(random.nextInt(1000)+1)));
+            resultList.add(3, aes256.encrypt(""+(random.nextInt(1000)+1)));
+            resultList.add(4, aes256.encrypt("" + (random.nextInt(100) + 1)));
             return resultList;
         }
 
         // 제대로 적은 게 맞다!
-        check = aes256.encrypt("true");
+        check = aes256.encrypt(""+(random.nextInt(2000) +1) + "00");
         username = aes256.encrypt(username);
         String id = aes256.encrypt(result.get().getId().toString());
         String name = aes256.encrypt(result.get().getName());
@@ -115,6 +117,7 @@ public class UserService {
         resultList.add(2, username);
         resultList.add(3, email);
         resultList.add(4, check);
+
         return resultList;
 
     }
