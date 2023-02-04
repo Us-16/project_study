@@ -4,8 +4,7 @@ import com.example.app.aes.AES256;
 import com.example.app.android.dto.*;
 import com.example.app.question.Question;
 import com.example.app.question.QuestionService;
-import com.example.app.user.Student;
-import com.example.app.user.StudentRepository;
+
 import com.example.app.user.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +14,6 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Optional;
 
 @Slf4j
 @RestController
@@ -25,7 +23,6 @@ public class BoardApiController {
     private final QuestionService questionService;
     private final UserService userService;
     private final AES256 aes256 = new AES256();
-    private StudentRepository studentRepository;
 
 
     @GetMapping("/question")
@@ -80,34 +77,29 @@ public class BoardApiController {
         String username = checkDTO.getUsername();
         username = aes256.decrypt(username);
         log.info(username);
-        String isDup = userService.CheckDup(username);
         check_res(username);
     }
 
-    @PostMapping("/login/test")
-    public void loginTest(@RequestBody LoginDTO loginDTO) throws Exception {
-        System.out.println(loginDTO.getUsername());
-        loginTestResult(loginDTO.getUsername(), loginDTO.getPassword());
+    @PostMapping("/login/student")
+    public void loginStudent(@RequestBody LoginDTO loginDTO) throws Exception {
+        loginStudentResult(loginDTO.getUsername(), loginDTO.getPassword()); //이런식으로 호출하는 건 대단히 좋은 방식이 아닐터...
     }
 
     @GetMapping("/login/result/{password}/{username}")
-    public HashMap<String, String> loginTestResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception{
-
-        System.out.println("http://localhost:8080/api/login/result/"+password+"/"+username);
+    public HashMap<String, String> loginStudentResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception{
 
         username = aes256.decrypt(username);
         password = aes256.decrypt(password);
 
-        ArrayList<String> testDTO = userService.LoginTest(username, password);
+        ArrayList<String> testDTO = userService.LoginStudent(username, password);
 
-        HashMap<String, String> message = new HashMap<String, String>();
-        final String[] sendTitle = {"id", "name", "username", "email", "check"};
+        HashMap<String, String> message = new HashMap<>();
+        final String[] sendTitle = {"id", "name", "username", "email", "check", "time"};
         for(int i=sendTitle.length-1; i>=0; i--)
             message.put(aes256.encrypt(sendTitle[i]), testDTO.get(i));
 
-        message.forEach((key, value) -> {
-            System.out.println("Test: " + key + " : " + value);
-        });
+        log.info("Attempted SignIn : http://localhost:8080/api/login/result/"+aes256.encrypt(password)+"/"+aes256.encrypt(username));
+        log.info("Result SignIn : " + aes256.decrypt(testDTO.get(4)).charAt(0));
 
         return message;
     }

@@ -2,17 +2,14 @@ package com.example.app.user;
 
 import com.example.app.DataNotFoundException;
 import com.example.app.aes.AES256;
-import com.example.app.android.BoardApiController;
-import com.example.app.android.dto.LoginTestDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.Option;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.Random;
 
@@ -23,7 +20,7 @@ public class UserService {
     private final TeacherRepository teacherRepository;
     private final StudentRepository studentRepository;
     private final PasswordEncoder passwordEncoder;
-    private AES256 aes256 = new AES256();
+    private final AES256 aes256 = new AES256();
 
 
     /**
@@ -85,40 +82,32 @@ public class UserService {
         return "false";
     }
 
-    public ArrayList<String> LoginTest(String username, String password) throws Exception{
-        System.out.println("LoginTest: "+username+ " " + password);
+    /**
+     * 학생로그인
+     * @param username
+     * @param password
+     * @return ArrayList<String> (id(고유번호), name(성명), username, password, check(권한), time(접속시간))
+     * @throws Exception
+     */
+    public ArrayList<String> LoginStudent(String username, String password) throws Exception{
         Optional<Student> result = studentRepository.findByUsername(username);
         ArrayList<String> resultList = new ArrayList<String>();
         Random random = new Random();
 
-
-        String check = this.aes256.encrypt("false");
-        System.out.println("username: " + username);
-
-
-        if(result.equals(Optional.empty()) || (!result.get().getPassword().equals(password))){ //없는 아이디 쳤을 때
-            resultList.add(0, aes256.encrypt(""+ (random.nextInt(1000)+1) + "f"));
-            resultList.add(1, aes256.encrypt(""+(random.nextInt(1000)+1)));
-            resultList.add(2, aes256.encrypt(""+(random.nextInt(1000)+1)));
-            resultList.add(3, aes256.encrypt(""+(random.nextInt(1000)+1)));
-            resultList.add(4, aes256.encrypt("" + (random.nextInt(100) + 1)));
+        //아이디 조회 안되거나 비밀번호 틀렸을 때
+        if(result.equals(Optional.empty()) || (!result.get().getPassword().equals(password))){
+            String[] fail_input = {aes256.encrypt("id"+ (random.nextInt(1000)+1)), aes256.encrypt("name"+(random.nextInt(1000)+1)), aes256.encrypt("username"+(random.nextInt(1000)+1)),
+                    aes256.encrypt("email"+(random.nextInt(1000)+1)), aes256.encrypt("F-" + (random.nextInt(100) + 1)), aes256.encrypt(""+LocalDateTime.now())};
+            resultList.addAll(Arrays.asList(fail_input));
             return resultList;
         }
 
-        // 제대로 적은 게 맞다!
-        check = aes256.encrypt(""+(random.nextInt(2000) +1) + "00");
-        username = aes256.encrypt(username);
-        String id = aes256.encrypt(result.get().getId().toString());
-        String name = aes256.encrypt(result.get().getName());
-        String email = aes256.encrypt(result.get().getEmail());
+        // 제대로 적은 게 맞다면!
+        String[] input = {aes256.encrypt(result.get().getId().toString()), aes256.encrypt(result.get().getName()), aes256.encrypt(username),
+                aes256.encrypt(result.get().getEmail()), aes256.encrypt("S-"+(random.nextInt(2000) +1) + "00"), aes256.encrypt(""+LocalDateTime.now())};
 
-        resultList.add(0, id);
-        resultList.add(1, name);
-        resultList.add(2, username);
-        resultList.add(3, email);
-        resultList.add(4, check);
+        resultList.addAll(Arrays.asList(input));
 
         return resultList;
-
     }
 }
