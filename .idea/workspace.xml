@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="수정&#10;- 로그인 실패 로직 수정">
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/dto/LoginTestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +268,7 @@
       <workItem from="1675419316811" duration="4302000" />
       <workItem from="1675424603653" duration="1194000" />
       <workItem from="1675430801557" duration="21512000" />
-      <workItem from="1675529329443" duration="3696000" />
+      <workItem from="1675529329443" duration="4515000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -476,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675521510893</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제">
+      <created>1675533308611</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1675533308611</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="git ignore 재확인" />
     <MESSAGE value="Retrofit2 이용한 json 보내기 해결" />
     <MESSAGE value="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것" />
     <MESSAGE value="add(floatingButton) html&#10;- add floatingButton component&#10;- fixed main some Pages" />
@@ -519,7 +522,8 @@
     <MESSAGE value="BackUp - Receive userinfo for login" />
     <MESSAGE value="add - login result send success&#10;- message convert to aes256" />
     <MESSAGE value="수정&#10;- 로그인 실패 로직 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="수정&#10;- 로그인 실패 로직 수정" />
+    <MESSAGE value="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제" />
+    <option name="LAST_COMMIT_MESSAGE" value="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

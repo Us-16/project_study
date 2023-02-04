@@ -62,7 +62,7 @@ public class BoardApiController {
 
     @PostMapping("/signup")
     public void signup_android(@RequestBody SignupDTO signupDTO){
-        System.out.println(signupDTO);
+        log.info("SignUp : " + signupDTO.getStu_username());
         userService.createStudent(signupDTO.getStu_name(), signupDTO.getStu_username(), signupDTO.getStu_password(), signupDTO.getStu_pid1(), signupDTO.getStu_pid2(), signupDTO.getStu_email(), signupDTO.getStu_school(), signupDTO.getStu_grade());
     }
 
@@ -72,17 +72,9 @@ public class BoardApiController {
      */
     @PostMapping("/check_name")
     public void check_name(@RequestBody CheckDTO checkDTO) throws Exception {
-        System.out.println(checkDTO);
-        log.info("GET DATA: " + checkDTO.getUsername());
         String username = checkDTO.getUsername();
         username = aes256.decrypt(username);
-        log.info(username);
         check_res(username);
-    }
-
-    @PostMapping("/login/student")
-    public void loginStudent(@RequestBody LoginDTO loginDTO) throws Exception {
-        loginStudentResult(loginDTO.getUsername(), loginDTO.getPassword()); //이런식으로 호출하는 건 대단히 좋은 방식이 아닐터...
     }
 
     @GetMapping("/login/result/{password}/{username}")
