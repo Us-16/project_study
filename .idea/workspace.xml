@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="!!!GIT Test12!!!&#10;- key.class ignore">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/dto/LoginDTO.java" afterDir="false" />
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="BackUp - Receive userinfo for login">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/dto/LoginTestDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/QuestionDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/SignupDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/CheckDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/dto/CheckDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/CheckResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/dto/CheckResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/QuestionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/dto/QuestionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/dto/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/SignupDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/dto/SignupDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +273,7 @@
       <workItem from="1675412550322" duration="1735000" />
       <workItem from="1675419316811" duration="4302000" />
       <workItem from="1675424603653" duration="1194000" />
-      <workItem from="1675430801557" duration="1311000" />
+      <workItem from="1675430801557" duration="14432000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -455,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675423395525</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="BackUp - Receive userinfo for login">
+      <created>1675432151224</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1675432151224</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ㅇㅁㄴㅇㅁㄴㅇ" />
     <MESSAGE value="당부사항" />
     <MESSAGE value="create 해결 + gitignore 확인" />
     <MESSAGE value="git ignore 재확인" />
@@ -498,7 +506,8 @@
     <MESSAGE value="!!!GIT Test9!!!&#10;- key.class ignore" />
     <MESSAGE value="!!!GIT Test10!!!&#10;- key.class ignore" />
     <MESSAGE value="!!!GIT Test11!!!&#10;- key.class ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="!!!GIT Test11!!!&#10;- key.class ignore" />
+    <MESSAGE value="BackUp - Receive userinfo for login" />
+    <option name="LAST_COMMIT_MESSAGE" value="BackUp - Receive userinfo for login" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

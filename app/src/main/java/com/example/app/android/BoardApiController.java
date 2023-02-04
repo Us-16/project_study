@@ -4,6 +4,8 @@ import com.example.app.aes.AES256;
 import com.example.app.android.dto.*;
 import com.example.app.question.Question;
 import com.example.app.question.QuestionService;
+import com.example.app.user.Student;
+import com.example.app.user.StudentRepository;
 import com.example.app.user.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @RestController
@@ -21,8 +24,8 @@ public class BoardApiController {
     private final QuestionService questionService;
     private final UserService userService;
     private final AES256 aes256 = new AES256();
+    private StudentRepository studentRepository;
 
-    private String username;
 
     @GetMapping("/question")
     List<QuestionDTO> questionList() {
@@ -73,24 +76,31 @@ public class BoardApiController {
     public void check_name(@RequestBody CheckDTO checkDTO) throws Exception {
         System.out.println(checkDTO);
         log.info("GET DATA: " + checkDTO.getUsername());
-        this.username = checkDTO.getUsername();
+        String username = checkDTO.getUsername();
         username = aes256.decrypt(username);
-        log.info(this.username);
+        log.info(username);
         String isDup = userService.CheckDup(username);
         check_res(username);
     }
 
     @PostMapping("/login/test")
     public void loginTest(@RequestBody LoginDTO loginDTO) throws Exception {
-        System.out.println("GET DATA: " + loginDTO.toString());
-        System.out.println("GET DATA: " + loginDTO.getUsername());
+        System.out.println(loginDTO.getUsername());
+        loginTestResult(loginDTO.getUsername(), loginDTO.getPassword());
+    }
 
-        String username = aes256.decrypt(loginDTO.getUsername());
-        String password = aes256.decrypt(loginDTO.getPassword());
+    @GetMapping("/login/result/{password}/{username}")
+    public LoginTestDTO loginTestResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception{
+        System.out.println("http://localhost:8080/api/login/result/"+password+"/"+username);
+        System.out.println("why: " + username);
+        System.out.println("why: " + password);
+        username = aes256.decrypt(username);
+        password = aes256.decrypt(password);
+        System.out.println(username+" " +  password);
+        ArrayList<String> testDTO = userService.LoginTest(username, password);
 
-        System.out.println(username);
-        System.out.println(password);
-
+        LoginTestDTO lt = new LoginTestDTO(testDTO.get(0), testDTO.get(1), testDTO.get(2), testDTO.get(3), testDTO.get(4));
+        return lt;
     }
 
     public void MemTest(){

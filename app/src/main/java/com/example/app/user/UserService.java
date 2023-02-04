@@ -1,14 +1,18 @@
 package com.example.app.user;
 
 import com.example.app.DataNotFoundException;
+import com.example.app.aes.AES256;
 import com.example.app.android.BoardApiController;
+import com.example.app.android.dto.LoginTestDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.Option;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Optional;
 
 @RequiredArgsConstructor
@@ -18,6 +22,7 @@ public class UserService {
     private final TeacherRepository teacherRepository;
     private final StudentRepository studentRepository;
     private final PasswordEncoder passwordEncoder;
+    private AES256 aes256 = new AES256();
 
 
     /**
@@ -77,5 +82,40 @@ public class UserService {
         }
         System.out.println("있다는데?");
         return "false";
+    }
+
+    public ArrayList<String> LoginTest(String username, String password) throws Exception{
+        System.out.println("LoginTest: "+username+ " " + password);
+        Optional<Student> result = studentRepository.findByUsername(username);
+        ArrayList<String> resultList = new ArrayList<String>();
+
+
+        String check = this.aes256.encrypt("false");
+        System.out.println("username: " + username);
+
+
+        if(result.equals(Optional.empty()) || (!result.get().getPassword().equals(password))){ //없는 아이디 쳤을 때
+            resultList.add(0, "0");
+            resultList.add(1, null);
+            resultList.add(2, null);
+            resultList.add(3, null);
+            resultList.add(4, check);
+            return resultList;
+        }
+
+        // 제대로 적은 게 맞다!
+        check = aes256.encrypt("true");
+        username = aes256.encrypt(username);
+        String id = aes256.encrypt(result.get().getId().toString());
+        String name = aes256.encrypt(result.get().getName());
+        String email = aes256.encrypt(result.get().getEmail());
+
+        resultList.add(0, id);
+        resultList.add(1, name);
+        resultList.add(2, username);
+        resultList.add(3, email);
+        resultList.add(4, check);
+        return resultList;
+
     }
 }
