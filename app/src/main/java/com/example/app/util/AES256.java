@@ -1,4 +1,4 @@
-package com.example.app.aes;
+package com.example.app.util;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;

@@ -1,7 +1,7 @@
 package com.example.app.user;
 
 import com.example.app.DataNotFoundException;
-import com.example.app.aes.AES256;
+import com.example.app.util.AES256;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -24,7 +24,7 @@ public class UserService {
 
 
     /**
-     *
+     * 선생님 계정 생성
      * @param username 닉네임
      * @param password 비밀번호
      * @param name 성함
@@ -45,7 +45,6 @@ public class UserService {
         this.teacherRepository.save(teacher);
         return teacher;
     }
-
     public Teacher getTeacher(String username){
         Optional<Teacher> teacher = this.teacherRepository.findByUsername(username);
         if(teacher.isPresent())
@@ -53,7 +52,18 @@ public class UserService {
         else
             throw new DataNotFoundException("Teacher not Found");
     }
-
+    /**
+     * 학생 계정 생성
+     * @param name 성명
+     * @param username 아이디
+     * @param password 비번
+     * @param P_id1 주민등록번호 앞자리
+     * @param P_id2 주민등록번호 뒷자리
+     * @param email 이메일
+     * @param school 학원 및 학교
+     * @param grade 학년
+     * @return
+     */
     public Student createStudent(String name, String username, String password, String P_id1, String P_id2, String email, String school, String grade){
         Student student = new Student();
         student.setName(name);
@@ -69,6 +79,11 @@ public class UserService {
         this.studentRepository.save(student);
         return student;
     }
+    /**
+     * 아이디 중복 확인
+     * @param username
+     * @return
+     */
     public String CheckDup(String username){
         log.info("UserService: " + username);
         log.info("Duplicate Test" + this.studentRepository.findByUsername(username));
@@ -81,7 +96,6 @@ public class UserService {
         System.out.println("있다는데?");
         return "false";
     }
-
     /**
      * 학생로그인
      * @param username

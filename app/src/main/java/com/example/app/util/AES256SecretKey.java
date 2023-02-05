@@ -1,4 +1,4 @@
-package com.example.app.aes;
+package com.example.app.util;
 
 public interface AES256SecretKey {
     public final String key = "janghyorimjorimjoramBaseballSoli"; //32 letters

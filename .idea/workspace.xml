@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제">
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/util/Hex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/AppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/AppApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/aes/AES256.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/util/AES256.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/aes/AES256SecretKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/util/AES256SecretKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +136,7 @@
       <module name="app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.app.aes.*" />
+          <option name="PATTERN" value="com.example.app.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,7 +167,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppApplicationTests.createPost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppApplicationTests.LoginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
@@ -163,7 +180,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.app.AppApplicationTests.createPost&quot;" />
+            <option value="&quot;com.example.app.AppApplicationTests.LoginTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -212,10 +229,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AppApplication" />
-        <item itemvalue="애플리케이션.AESTester" />
+        <item itemvalue="Gradle.AppApplicationTests.LoginTest" />
+        <item itemvalue="애플리케이션.com.example.app.aes.AESTester" />
         <item itemvalue="Gradle.AppApplicationTests (1)" />
         <item itemvalue="Gradle.AppApplicationTests.createPost2" />
-        <item itemvalue="Gradle.AppApplicationTests.createPost" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +285,10 @@
       <workItem from="1675419316811" duration="4302000" />
       <workItem from="1675424603653" duration="1194000" />
       <workItem from="1675430801557" duration="21512000" />
-      <workItem from="1675529329443" duration="4515000" />
+      <workItem from="1675529329443" duration="6533000" />
+      <workItem from="1675568849316" duration="3676000" />
+      <workItem from="1675572702447" duration="3106000" />
+      <workItem from="1675582089221" duration="3438000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -480,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675533308611</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함">
+      <created>1675534075665</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1675534075665</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Retrofit2 이용한 json 보내기 해결" />
     <MESSAGE value="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것" />
     <MESSAGE value="add(floatingButton) html&#10;- add floatingButton component&#10;- fixed main some Pages" />
     <MESSAGE value="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)" />
@@ -523,7 +549,8 @@
     <MESSAGE value="add - login result send success&#10;- message convert to aes256" />
     <MESSAGE value="수정&#10;- 로그인 실패 로직 수정" />
     <MESSAGE value="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제" />
-    <option name="LAST_COMMIT_MESSAGE" value="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제" />
+    <MESSAGE value="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함" />
+    <option name="LAST_COMMIT_MESSAGE" value="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
