@@ -85,15 +85,9 @@ public class UserService {
      * @return
      */
     public String CheckDup(String username){
-        log.info("UserService: " + username);
-        log.info("Duplicate Test" + this.studentRepository.findByUsername(username));
-        System.out.println("Duplicate Test" + this.studentRepository.findByUsername(username));
-
         if(this.studentRepository.findByUsername(username).equals(Optional.empty())) {
-            System.out.println("없다는데?");
             return "true";
         }
-        System.out.println("있다는데?");
         return "false";
     }
     /**
