@@ -4,28 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/util/Hex.java" afterDir="false" />
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="상황 종료(진짜 종료)&#10;- AES256 암호화 과정에서 특수문자로 인한 접속 불량 문제 확인&#10;- AES256 암호화를 진행한 내용을 다시 아스키코드 16진수로 변환하여 전송&#10;- 결과 어떤 값에도 이상없이 접속 가능한 것으로 확인됨">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/upload/upload.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/AppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/AppApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/aes/AES256.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/util/AES256.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/aes/AES256SecretKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/util/AES256SecretKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +44,8 @@
       <list>
         <option value="Enum" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -287,7 +274,10 @@
       <workItem from="1675529329443" duration="6533000" />
       <workItem from="1675568849316" duration="3676000" />
       <workItem from="1675572702447" duration="3106000" />
-      <workItem from="1675582089221" duration="3438000" />
+      <workItem from="1675582089221" duration="3632000" />
+      <workItem from="1675630077641" duration="702000" />
+      <workItem from="1675673427082" duration="3362000" />
+      <workItem from="1675743294541" duration="872000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -506,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675534075665</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="상황 종료(진짜 종료)&#10;- AES256 암호화 과정에서 특수문자로 인한 접속 불량 문제 확인&#10;- AES256 암호화를 진행한 내용을 다시 아스키코드 16진수로 변환하여 전송&#10;- 결과 어떤 값에도 이상없이 접속 가능한 것으로 확인됨">
+      <created>1675588956580</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1675588956580</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것" />
     <MESSAGE value="add(floatingButton) html&#10;- add floatingButton component&#10;- fixed main some Pages" />
     <MESSAGE value="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)" />
     <MESSAGE value="fix&#10;- little" />
@@ -549,7 +545,8 @@
     <MESSAGE value="수정&#10;- 로그인 실패 로직 수정" />
     <MESSAGE value="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제" />
     <MESSAGE value="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함" />
-    <option name="LAST_COMMIT_MESSAGE" value="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함" />
+    <MESSAGE value="상황 종료(진짜 종료)&#10;- AES256 암호화 과정에서 특수문자로 인한 접속 불량 문제 확인&#10;- AES256 암호화를 진행한 내용을 다시 아스키코드 16진수로 변환하여 전송&#10;- 결과 어떤 값에도 이상없이 접속 가능한 것으로 확인됨" />
+    <option name="LAST_COMMIT_MESSAGE" value="상황 종료(진짜 종료)&#10;- AES256 암호화 과정에서 특수문자로 인한 접속 불량 문제 확인&#10;- AES256 암호화를 진행한 내용을 다시 아스키코드 16진수로 변환하여 전송&#10;- 결과 어떤 값에도 이상없이 접속 가능한 것으로 확인됨" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
