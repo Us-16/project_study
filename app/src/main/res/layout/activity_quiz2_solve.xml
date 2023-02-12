@@ -29,12 +29,13 @@
                     android:layout_gravity="center">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="모의고사이름글자수제한"
+                        android:text="11월모의고사"
                         android:textSize="20sp"
                         android:textColor="@color/black"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:id="@+id/id_quiz_name"/>
 
                 </LinearLayout>
 
@@ -87,9 +88,10 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/img_quiz_small"
                         android:background="@color/white"
-                        android:scaleType="fitXY"/>
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_quiz_small"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 </LinearLayout>
 

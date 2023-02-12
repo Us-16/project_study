@@ -27,7 +27,7 @@ public class Main_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragmentTransaction transaction = fragmentManager.beginTransaction(); //지워도 되는지 확인해보기
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
         //디폴트로 띄울 화면 fragment_home_1(fragment_home의 변수)
         transaction.replace(R.id.menu_frame_layout, fragment_home_1).commitAllowingStateLoss();
 

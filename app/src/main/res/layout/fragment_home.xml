@@ -28,9 +28,25 @@
                     android:layout_marginTop="10dp"
                     android:gravity="start"
                     android:padding="10dp"
-                    android:text="000님"
+                    android:text="닉네임"
                     android:textColor="@color/black"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:id="@+id/id_student_nickname"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="님"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -173,39 +189,132 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:padding="8dp">
-                            <TextView
+                            android:padding="8dp"
+                            android:orientation="horizontal">
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="과목 : 수학"
-                                android:textSize="18dp"
-                                android:textColor="@color/black"
-                                android:gravity="center"/>
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="과목 : "
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="수학"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"
+                                    android:id="@+id/id_quiz_subject"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="73"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"
+                                    android:id="@+id/id_quiz_correct_score"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="/"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="100"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"
+                                    android:id="@+id/id_quiz_total_score"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="점"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
 
                         </LinearLayout>
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="8dp">
-                            <TextView
-                                android:layout_width="match_parent"
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="맞은갯수 "
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="73점/100점"
-                                android:textSize="18dp"
-                                android:textColor="@color/black"
-                                android:gravity="center"/>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:padding="8dp">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="맞은갯수  14/20"
-                                android:textSize="18dp"
-                                android:textColor="@color/black"
-                                android:gravity="center"/>
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="14"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"
+                                    android:id="@+id/id_quiz_correct_num"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="/"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="20"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"
+                                    android:id="@+id/id_quiz_total_num"/>
+
+
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                     </LinearLayout>

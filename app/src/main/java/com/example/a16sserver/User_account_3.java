@@ -2,6 +2,7 @@ package com.example.a16sserver; //학년입력 화면
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,10 +12,12 @@ import android.widget.Toast;
 
 public class User_account_3 extends AppCompatActivity {
     private EditText text_grade;
+    private Context mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_account3);
+        mContext = this;
 
         text_grade = (EditText) findViewById(R.id.text_grade);
         Button btn_nextpage2 = (Button)findViewById(R.id.btn_nextpage2);
@@ -29,7 +32,9 @@ public class User_account_3 extends AppCompatActivity {
                     showToast("입력값이 비었습니다."); //토스트메세지 함수 부르기
                 }
                 else{
-                    System.out.println(tmp_grade);
+                    SharedPreferences_class.setString(mContext,"key_grade_s",tmp_grade);
+                    String text = SharedPreferences_class.getString(mContext,"key_grade_s");
+                    System.out.println("학년:"+text);
                     startActivity(intent); //다음액티비티로 넘어감.
                 }
 

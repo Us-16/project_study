@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class fragment_test_grade_1 extends Fragment {
-
+    private Context mContext;
     private ListView listview = null;
     private ListViewAdapter adapter = null;
     public boolean isCheck[] = new boolean[50]; //체크박스배열
@@ -37,22 +37,24 @@ public class fragment_test_grade_1 extends Fragment {
         //리스트뷰 객체 생성
         ListView listView = (ListView) rootView.findViewById(R.id.quiz2_list);
 
-        //String[] quiz2_list = new String[]{"11월모의고사", "10월모의고사", "9월모의고사", "6월모의고사", "3월모의고사"};
 
         adapter = new ListViewAdapter(); //리스트뷰 어댑터 생성
         listView.setAdapter(adapter); //리스트뷰에 어댑터를 붙여준다.
 
         String[] quiz2_yy_data = new String[]{"22년","21년","20년","19년"};
+        String[] quiz2_name_data = new String[]{"11월모의고사","10월모의고사","9월모의고사","6월모의고사","3월모의고사"};
 
         //Adapter 안에 넣을 리스트 데이터  정보 담기
         //반복문으로 돌린후에 밑에꺼 나오게 바꾸기
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2211,"11월모의고사",0));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2210,"10월모의고사",0));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2209,"9월모의고사",1));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[1],2106,"6월모의고사",1));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[1],2103,"3월모의고사",1));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[2],2003,"3월모의고사",0));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[3],1910,"10월모의고사",0));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2211,quiz2_name_data[0],0));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2210,quiz2_name_data[1],0));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2209,quiz2_name_data[2],1));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[1],2106,quiz2_name_data[3],1));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[1],2103,quiz2_name_data[3],1));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[2],2003,quiz2_name_data[4],0));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[3],1910,quiz2_name_data[1],0));
+
+
 
 
         return rootView;
@@ -61,8 +63,11 @@ public class fragment_test_grade_1 extends Fragment {
 //////----------리스트뷰 어댑터 구현 ----------------------------------------------------------
     public class ListViewAdapter extends BaseAdapter {
 
+
+
         // Adapter에 추가된 데이터를 저장하기 위한 ArrayList(리스트뷰에 문자열을 뿌려주는것)
         ArrayList<quiz2_list> items = new ArrayList<quiz2_list>();
+
 
         // Adapter에 사용되는 데이터의 개수를 리턴. : 필수 구현
         @Override
@@ -157,11 +162,20 @@ public class fragment_test_grade_1 extends Fragment {
                     //btn_wishstar_empty.setSelected(!btn_wishstar_empty.isSelected());
                // }
           //  });*/
-            //-------버튼 클릭 시 동작---------------------------------------------
+            //-------풀기 버튼 클릭 시 동작---------------------------------------------
             btn_quiz2_solve.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(getActivity(),quiz2_solve.class); // 다음화면으로 넘기기위한 intent 선언
+                    Toast.makeText(context, quiz2_list.getQuiz2_name()+"모의고사 id :" +quiz2_list.getQuiz2_id(), Toast.LENGTH_SHORT).show();
+
+                    // SharedPreferences_class에 모의고사 id 저장
+                    //SharedPreferences_class.setString(mContext,"key_nickname_s",tmp_nickname);
+                    //String text = SharedPreferences_class.getString(mContext,"key_nickname_s");
+                    //String text = SharedPreferences_class.getString(mContext,"key_nickname_s");
+                    //System.out.println("닉네임 받은것은 : "+text);
+
+
 
                     startActivity(intent); //intent 실행
 

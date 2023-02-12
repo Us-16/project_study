@@ -4,6 +4,7 @@ import static com.example.a16sserver.R.*;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,15 +14,19 @@ import android.widget.Toast;
 
 public class User_account_4 extends AppCompatActivity {
     private EditText text_school;
+    private Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_user_account4);
+        mContext = this;
 
         text_school = (EditText)findViewById(id.text_school);
         Button btn_nextpage3 = (Button) findViewById(id.btn_nextpage3); // 다음페이지 버튼
+
         btn_nextpage3.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 String tmp_school = text_school.getText().toString();//학교명을 tmp_school에 우선저장.(데베 저장안했으니까 아직!)
@@ -31,7 +36,9 @@ public class User_account_4 extends AppCompatActivity {
                     showToast("입력값이 비었습니다."); //토스트메세지 함수 부르기
                 }
                 else{
-                    System.out.println(text_school);
+                    SharedPreferences_class.setString(mContext,"key_school_s",tmp_school);
+                    String text = SharedPreferences_class.getString(mContext,"key_school_s");
+                    System.out.println("학교:"+text);
                     startActivity(intent); //다음액티비티로 넘어감.
                 }
 
