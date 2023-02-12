@@ -90,7 +90,7 @@ public class LoginTestActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<HashMap<String, String>> call, Throwable t) {
-                        Log.d("TEST", "Connection Fail"); //해결함ㅋㅋㅋㅋㅋ
+                        Log.d("TEST", "Connection Fail");
                     }
                 });
             }
