@@ -1,4 +1,4 @@
-package com.example.a16sserver; //학교입력화면
+package com.example.a16sserver.account; //학교입력화면
 
 import static com.example.a16sserver.R.*;
 
@@ -11,6 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.a16sserver.Main_activity;
+import com.example.a16sserver.SharedPreferences_class;
 
 public class User_account_4 extends AppCompatActivity {
     private EditText text_school;

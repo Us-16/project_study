@@ -1,8 +1,6 @@
-package com.example.a16sserver; // 닉네임 화면
+package com.example.a16sserver.account; // 닉네임 화면
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.a16sserver.R;
+import com.example.a16sserver.SharedPreferences_class;
 
 
 public class User_account_2 extends AppCompatActivity {

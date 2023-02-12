@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".User_account_2">
+    tools:context=".account.User_account_2">
 
 
     <TextView
