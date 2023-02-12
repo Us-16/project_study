@@ -105,7 +105,8 @@ public class LoginTestActivity extends AppCompatActivity {
             finish();
         }else{
             TextView fail = findViewById(R.id.Login_failMessage);
-            fail.setText("아이디와 비밀번호를 다시 확인해주세요");//
+            fail.setText("" +
+                    "이디와 비밀번호를 다시 확인해주세요");//??
         }
     }
 }
