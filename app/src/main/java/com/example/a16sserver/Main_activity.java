@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.a16sserver.retrofit.BackPressHandler;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -21,6 +22,7 @@ public class Main_activity extends AppCompatActivity {
     private fragment_home fragment_home_1 = new fragment_home();
     private fragment_addquiz fragment_addquiz_2 = new fragment_addquiz();
     private fragment_myquiz fragment_myquiz_3= new fragment_myquiz();
+    private BackPressHandler backPressHandler = new BackPressHandler(this);// BackPressHandler 객체 선언, 할당
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,5 +60,11 @@ public class Main_activity extends AppCompatActivity {
             //-----------------------------------
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        // Default
+        backPressHandler.onBackPressed();
     }
 }
