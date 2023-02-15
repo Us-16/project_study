@@ -55,7 +55,8 @@ public class fragment_test_grade_1 extends Fragment {
         adapter.addItem(new quiz2_list(quiz2_yy_data[3],1910,quiz2_name_data[1],0));
 
 
-
+        // SharedPreferences_class에  모의고사 id저장
+        //SharedPreferences_class.setString(mContext,"key_quiz2_name",quiz2_name_data[0]);
 
         return rootView;
     }
@@ -169,11 +170,8 @@ public class fragment_test_grade_1 extends Fragment {
                     Intent intent = new Intent(getActivity(),quiz2_solve.class); // 다음화면으로 넘기기위한 intent 선언
                     Toast.makeText(context, quiz2_list.getQuiz2_name()+"모의고사 id :" +quiz2_list.getQuiz2_id(), Toast.LENGTH_SHORT).show();
 
-                    // SharedPreferences_class에 모의고사 id 저장
-                    //SharedPreferences_class.setString(mContext,"key_nickname_s",tmp_nickname);
-                    //String text = SharedPreferences_class.getString(mContext,"key_nickname_s");
-                    //String text = SharedPreferences_class.getString(mContext,"key_nickname_s");
-                    //System.out.println("닉네임 받은것은 : "+text);
+                    // 모의고사 이름을 풀기 누르는 화면으로 전달하기
+                    intent.putExtra("quiz2_name",quiz2_list.getQuiz2_name());
 
 
 

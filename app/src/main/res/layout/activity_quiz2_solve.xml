@@ -57,7 +57,8 @@
                         android:text="몇분:몇초"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:id="@+id/id_quiz_timer"/>
 
                 </LinearLayout>
 
@@ -107,7 +108,8 @@
                         android:text="3점"
                         android:textColor="@color/gray"
                         android:textSize="20sp"
-                        android:gravity="right"/>
+                        android:gravity="right"
+                        android:id="@+id/id_quiz_score"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -156,7 +158,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="다음 그림과 같이 좌표평면에서 세 직선 으로 둘러싸인 도형이 이등변 삼각형일 때, 상수 m의 값은?"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_content"/>
 
                         </LinearLayout>
 
@@ -221,7 +224,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="1번답"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_ans_1"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -235,7 +239,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="2번답"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_ans_2"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -249,7 +254,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="3번답"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_ans_3"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -263,7 +269,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="4번답"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_ans_4"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -277,7 +284,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="5번답"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_ans_5"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
