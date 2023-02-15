@@ -32,7 +32,6 @@ public class fragment_home extends Fragment {
         mContext = rootView.getContext();
 
 
-
         ////////----닉네임불러와서 넣기------------------------------------------------------
         String text1 = SharedPreferences_class.getString(mContext,"key_nickname_s");
         System.out.println("닉네임 : "+text1);
@@ -88,8 +87,6 @@ public class fragment_home extends Fragment {
         ///////-----------------------------------------------------------
 
         txt_countdown = (TextView) rootView.findViewById(R.id.txt_countdown);
-        int date_minus_sysdate = 10;
-
 
         countDownTimer = new CountDownTimer(30000,1000) {
             @Override
@@ -99,7 +96,7 @@ public class fragment_home extends Fragment {
 
             @Override
             public void onFinish() {
-                countDownTimer.start(); //반복실행되게 끝나자마자 다시 시작하게했음.
+                countDownTimer.start(); //반복실행되게 끝나자마자 다시 시작하게
             }
         };
         countDownTimer.start();
@@ -112,28 +109,24 @@ public class fragment_home extends Fragment {
 
         }
 
+    ////////타이머 시간 얻는 함수 ------------------------------------------
     private String getTime(){
         Date date = new Date();
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(date);
 
-        int year = calendar.get(Calendar.YEAR);
+        int year = calendar.get(Calendar.YEAR); // 현재날짜 년도 등등 얻기위한 변수설정
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
         int c_hour = calendar.get(Calendar.HOUR_OF_DAY);
         int c_min = calendar.get(Calendar.MINUTE);
         int c_sec = calendar.get(Calendar.SECOND);
 
-        //현재시간 -------------------------------
-        long mNow = System.currentTimeMillis();
-        Date mReDate = new Date(mNow);
-        SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String formatDate = mFormat.format(mReDate);
-        System.out.println("현재시간 : "+formatDate);
-        //현재시간 -------------------------------
+
 
         Calendar baseCal = new GregorianCalendar(year,month,day,c_hour,c_min,c_sec); //기준날짜 00:00:00
-        Calendar targetCal = new GregorianCalendar(year,month,day,12,59,59);  //비교대상날짜
+        Calendar targetCal = new GregorianCalendar(year,month,day,24,00,00);
+        //비교대상날짜(현재날짜에 특정시간까지 타이머)
 
 
         long diffSec = (targetCal.getTimeInMillis() - baseCal.getTimeInMillis()) / 1000;
@@ -150,6 +143,8 @@ public class fragment_home extends Fragment {
         String sec = String.format("%02d", secTime);
 
         return  hour + ":" +min + ":"+ sec ;
+
+        ////////-----------------------------------------------------------
 
     }
 }
