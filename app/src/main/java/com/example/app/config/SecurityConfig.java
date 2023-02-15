@@ -40,6 +40,8 @@ public class SecurityConfig {
                 .and()
                 .csrf().ignoringRequestMatchers(new AntPathRequestMatcher("/api/**"))
                 .and()
+                .csrf().ignoringRequestMatchers(new AntPathRequestMatcher("/test/**"))
+                .and()
                 .headers().addHeaderWriter(new XFrameOptionsHeaderWriter(XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN))
                 .and()
                 .formLogin().loginPage("/user/login").successHandler(loginSuccessHandler)
