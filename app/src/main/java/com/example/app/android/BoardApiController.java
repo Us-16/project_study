@@ -1,5 +1,7 @@
 package com.example.app.android;
 
+import com.example.app.upload.Upload;
+import com.example.app.upload.UploadService;
 import com.example.app.util.AES256;
 import com.example.app.android.dto.*;
 import com.example.app.question.Question;
@@ -11,7 +13,10 @@ import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import retrofit2.http.Multipart;
 
+import java.io.File;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,6 +28,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class BoardApiController {
     private final QuestionService questionService;
+    private final UploadService uploadService;
     private final UserService userService;
     private final AES256 aes256 = new AES256();
     private final Hex hex = new Hex();
@@ -42,7 +48,6 @@ public class BoardApiController {
         log.info("QuestionList Send");
         return resultList;
     }
-
     @GetMapping("/check_response/{username}") //Post로 두니까 화면 안 띄워짐 받을때도 POST로 받으면 됨
     public CheckResponseDTO check_res(@PathVariable("username") String username) throws Exception{
         log.info("Duplicate Response Send");
@@ -96,6 +101,16 @@ public class BoardApiController {
 
         return message;
     }
+
+    @GetMapping("/image_test/{id}")
+    Upload image_test(@PathVariable("id") Long id) throws Exception{
+        Upload up = uploadService.getView(id);
+        String path = up.getFilepath();
+        String name = up.getFilename();
+
+        return up;
+    }
+
 
     public void MemTest(){
         Runtime runtime = Runtime.getRuntime();
