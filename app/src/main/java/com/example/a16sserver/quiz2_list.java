@@ -6,12 +6,16 @@ public class quiz2_list {
     int quiz2_id; //모의고사 문제id
     String quiz2_name; //모의고사 문제 제목
     int quiz2_star; //즐겨찾기 유무
+    int quiz2_score; //점수
+    String quiz2_timer; //시간
 
-    public quiz2_list(String quiz2_yy,int quiz2_id,String quiz2_name,int quiz2_star){
+    public quiz2_list(String quiz2_yy,int quiz2_id,String quiz2_name,int quiz2_star,int quiz2_score, String quiz2_timer){
         this.quiz2_yy = quiz2_yy;
         this.quiz2_id = quiz2_id;
         this.quiz2_name = quiz2_name;
         this.quiz2_star = quiz2_star;
+        this.quiz2_score = quiz2_score;
+        this.quiz2_timer = quiz2_timer;
 
     }
     //-------모의고사 년도yy-----------------------
@@ -49,4 +53,20 @@ public class quiz2_list {
         this.quiz2_star = quiz2_star;
     }
     //--------------------------------------------
+
+    //--------모의고사 점수------------------
+    public int getQuiz2_score(){return quiz2_score;}
+    public void setQuiz2_score(int quiz2_score){
+        this.quiz2_score = quiz2_score;
+    }
+    //--------------------------------------------
+
+    //--------모의고사 시간------------------
+    public String getQuiz2_timer(){return quiz2_timer;}
+    public void setQuiz2_timer(String quiz2_timer){
+        this.quiz2_timer = quiz2_timer;
+    }
+    //--------------------------------------------
+
+
 }

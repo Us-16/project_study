@@ -41,22 +41,28 @@ public class fragment_test_grade_1 extends Fragment {
         adapter = new ListViewAdapter(); //리스트뷰 어댑터 생성
         listView.setAdapter(adapter); //리스트뷰에 어댑터를 붙여준다.
 
+        // 모의고사 정보는 배열로 받게 되겠지만, sharedpreference에는 배열로 저장하지 않고
+        // 간단하게 저장했다. 연동할때는 배열로 가져오기만 하면 돼서 다른페이지에 sharedpreference로 가져온거 필요없는건 빼기
+        // 배열 시 사용 x 라고 표시해둠.
+
         String[] quiz2_yy_data = new String[]{"22년","21년","20년","19년"};
         String[] quiz2_name_data = new String[]{"11월모의고사","10월모의고사","9월모의고사","6월모의고사","3월모의고사"};
+        int[] quiz2_id_data = new int[]{2211,2210,2209,2106,2103,2003,1910};
+        int[] quiz2_score_data = new int[]{3,3,2,2,3,3,2};
+        String[] quiz2_timer_data = new String[]{"03:00","03:30","02:45","15:00","05:30","05:30","03:00"};
+
 
         //Adapter 안에 넣을 리스트 데이터  정보 담기
         //반복문으로 돌린후에 밑에꺼 나오게 바꾸기
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2211,quiz2_name_data[0],0));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2210,quiz2_name_data[1],0));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2209,quiz2_name_data[2],1));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[1],2106,quiz2_name_data[3],1));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[1],2103,quiz2_name_data[3],1));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[2],2003,quiz2_name_data[4],0));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[3],1910,quiz2_name_data[1],0));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[0],quiz2_id_data[0],quiz2_name_data[0],0,quiz2_score_data[0],quiz2_timer_data[0]));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[0],quiz2_id_data[1],quiz2_name_data[1],0,quiz2_score_data[1],quiz2_timer_data[1]));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[0],quiz2_id_data[2],quiz2_name_data[2],1,quiz2_score_data[2],quiz2_timer_data[2]));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[1],quiz2_id_data[3],quiz2_name_data[3],1,quiz2_score_data[3],quiz2_timer_data[3]));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[1],quiz2_id_data[4],quiz2_name_data[3],1,quiz2_score_data[4],quiz2_timer_data[4]));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[2],quiz2_id_data[5],quiz2_name_data[4],0,quiz2_score_data[5],quiz2_timer_data[5]));
+        adapter.addItem(new quiz2_list(quiz2_yy_data[3],quiz2_id_data[6],quiz2_name_data[1],0,quiz2_score_data[6],quiz2_timer_data[6]));
 
 
-        // SharedPreferences_class에  모의고사 id저장
-        //SharedPreferences_class.setString(mContext,"key_quiz2_name",quiz2_name_data[0]);
 
         return rootView;
     }
@@ -145,36 +151,44 @@ public class fragment_test_grade_1 extends Fragment {
             });
             ///------------------------------------------------------------------------------------------
 
-            /**버튼으로 구현하면 안 될것같음.
-            //btn_wishstar_empty.setOnClickListener(new View.OnClickListener() {
-             //   @Override
-              //  public void onClick(View view) {
-              //      //일단 즐겨찾기 하면 id랑 선택한 모의고사 이름 표시.
-              //      Toast.makeText(context, quiz2_list.getQuiz2_name()+" : 즐겨찾기함\n"+"모의고사 id :" +quiz2_list.getQuiz2_id(), Toast.LENGTH_SHORT).show();
-              //
-               //     int count;
 
-                //    count = adapter.getCount(); // 클릭된 문제 위치 받아오기
-
-                 //   if (count>0){
-
-               //     }
-                    //
-                    //btn_wishstar_empty.setSelected(!btn_wishstar_empty.isSelected());
-               // }
-          //  });*/
             //-------풀기 버튼 클릭 시 동작---------------------------------------------
             btn_quiz2_solve.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(getActivity(),quiz2_solve.class); // 다음화면으로 넘기기위한 intent 선언
-                    Toast.makeText(context, quiz2_list.getQuiz2_name()+"모의고사 id :" +quiz2_list.getQuiz2_id(), Toast.LENGTH_SHORT).show();
 
+                    ArrayList<String> quiz2_content = new ArrayList<>(); //누른 모의고사 내용을 배열로 전달
+
+                    quiz2_content.add(quiz2_list.getQuiz2_name());// 모의고사 이름
+                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_score()));// 모의고사 점수
+                    quiz2_content.add(quiz2_list.getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":"))); //모의고사 분
+                    quiz2_content.add(quiz2_list.getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));//모의고사 초
+
+                    intent.putExtra("quiz2_content",quiz2_content);
+
+/*
                     // 모의고사 이름을 풀기 누르는 화면으로 전달하기
                     intent.putExtra("quiz2_name",quiz2_list.getQuiz2_name());
+                    // 모의고사 점수를 풀기 누르는 화면으로 전달하기
+                    System.out.println("모의고사 점수 들어가는지 체크 : "+quiz2_list.getQuiz2_score());//잘들어옴
+                    intent.putExtra("quiz2_score",quiz2_list.getQuiz2_score());
 
+                    ////////////-----03:30 시간일 때 03과 30 따로 잘라서 전달하기 ------------------------------------
+                    int timer1 ;
+                    int timer2 ;
 
+                    timer1 = Integer.parseInt(quiz2_list.getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":")));
+                    timer2 = Integer.parseInt(quiz2_list.getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));
 
+                    // 모의고사 분단위 시간을 풀기 누르는 화면으로 전달하기
+                    intent.putExtra("quiz2_timer1",timer1);
+                    // 모의고사 초단위 시간을 풀기 누르는 화면으로 전달하기
+                    intent.putExtra("quiz2_timer2",timer2);
+                    //////////------------------------------------------------------------------------------------
+
+*/
+                    Toast.makeText(context, quiz2_list.getQuiz2_name()+"모의고사 id :" +quiz2_list.getQuiz2_id() +"모의고사 점수 : "+quiz2_list.getQuiz2_score(),Toast.LENGTH_SHORT).show();
                     startActivity(intent); //intent 실행
 
 
