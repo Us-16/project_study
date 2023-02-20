@@ -1,5 +1,6 @@
 package com.example.app.upload;
 
+import com.example.app.AppApplication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -36,7 +37,7 @@ public class UploadController {
 
         model.addAttribute("message", "글작성 완료");
         model.addAttribute("searchUrl", "/question/list");
-
+        AppApplication.Test();
         return "redirect:/";
     }
 
@@ -44,6 +45,8 @@ public class UploadController {
     public String uploadView(Model model, @PathVariable("id") Long id){
 
         model.addAttribute("testboard", uploadService.getView(id));
+
+        AppApplication.Test();
         return "content/upload/uploadView";
     }
 }
