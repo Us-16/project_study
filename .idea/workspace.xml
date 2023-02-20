@@ -4,39 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="commit test&#10;- 이미지 업로드 진행 예정&#10;- 예제 참고하면서 진행 바람">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/Upload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/files/12a304db-95e4-4e16-b985-bdba90d2d3fb_장효림.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/files/45265318-454a-4623-9e64-acb9d787e4f2_IMG_A8E324E62F0C-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/files/57d5ee91-83e8-40d4-b982-fc8c263a8393_IMG_B193522952C5-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/files/9f9b40bb-5448-4427-98c1-8c8cb0ccf205_IMG_0491.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/files/a02d68e1-b394-4158-86f9-ad09524e0723_IMG_A8E324E62F0C-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/files/d10bc1b1-52e2-4947-8e34-415969205fe5_IMG_B193522952C5-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/files/db844ac1-7070-45d6-8269-d603b5e56804_IMG_B193522952C5-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/files/e8e39dbc-73f6-4c36-b7ea-a33b5d8c8d10_IMG_0491.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/upload/uploadTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/upload/uploadView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/AppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/AppApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/upload/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/12a304db-95e4-4e16-b985-bdba90d2d3fb_장효림.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/45265318-454a-4623-9e64-acb9d787e4f2_IMG_A8E324E62F0C-1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/57d5ee91-83e8-40d4-b982-fc8c263a8393_IMG_B193522952C5-1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/9f9b40bb-5448-4427-98c1-8c8cb0ccf205_IMG_0491.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/a02d68e1-b394-4158-86f9-ad09524e0723_IMG_A8E324E62F0C-1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/d10bc1b1-52e2-4947-8e34-415969205fe5_IMG_B193522952C5-1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/db844ac1-7070-45d6-8269-d603b5e56804_IMG_B193522952C5-1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/e8e39dbc-73f6-4c36-b7ea-a33b5d8c8d10_IMG_0491.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/upload/uploadView.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/upload/uploadView.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,25 +101,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "spring.configuration.checksum": "6fd232251ba9e66f5bc7137b177b960b"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6fd232251ba9e66f5bc7137b177b960b&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.app.user" />
@@ -309,7 +299,12 @@
       <workItem from="1676290440114" duration="6213000" />
       <workItem from="1676348559705" duration="6524000" />
       <workItem from="1676373314782" duration="4059000" />
-      <workItem from="1676381801967" duration="14952000" />
+      <workItem from="1676381801967" duration="16032000" />
+      <workItem from="1676511048608" duration="40000" />
+      <workItem from="1676543190286" duration="4133000" />
+      <workItem from="1676622134937" duration="7000" />
+      <workItem from="1676688486968" duration="15898000" />
+      <workItem from="1676878180538" duration="5447000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -542,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675744200390</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음">
+      <created>1676478406170</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1676478406170</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +562,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)" />
     <MESSAGE value="fix&#10;- little" />
     <MESSAGE value="fix - securityConfig&#10;- ignore /api/**  &#10;- Android could access&#10;- Android connect Success" />
     <MESSAGE value="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json" />
@@ -585,7 +586,8 @@
     <MESSAGE value="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함" />
     <MESSAGE value="상황 종료(진짜 종료)&#10;- AES256 암호화 과정에서 특수문자로 인한 접속 불량 문제 확인&#10;- AES256 암호화를 진행한 내용을 다시 아스키코드 16진수로 변환하여 전송&#10;- 결과 어떤 값에도 이상없이 접속 가능한 것으로 확인됨" />
     <MESSAGE value="commit test&#10;- 이미지 업로드 진행 예정&#10;- 예제 참고하면서 진행 바람" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit test&#10;- 이미지 업로드 진행 예정&#10;- 예제 참고하면서 진행 바람" />
+    <MESSAGE value="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음" />
+    <option name="LAST_COMMIT_MESSAGE" value="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
