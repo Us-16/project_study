@@ -54,28 +54,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="몇분"
+                        android:text="몇분:몇초"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:layout_gravity="center"
                         android:id="@+id/id_quiz_timer1"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text=":"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:layout_gravity="center"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="몇초"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:layout_gravity="center"
-                        android:id="@+id/id_quiz_timer2"/>
 
                 </LinearLayout>
 
@@ -177,12 +162,21 @@
 
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="1."
+                                android:text="1"
+                                android:textSize="25dp"
+                                android:textColor="@color/black"
+                                android:id="@+id/txt_quiz2_num"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="."
                                 android:textSize="25dp"
                                 android:textColor="@color/black"/>
 
@@ -349,7 +343,8 @@
                     android:text="다음문제"
                     android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:background="@drawable/layout_background_round_quizselect"/>
+                    android:id="@+id/btn_quiz_next"
+                    android:background="@drawable/btn_quiz2_mark"/>
 
             </LinearLayout>
 

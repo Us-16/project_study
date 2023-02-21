@@ -2,7 +2,14 @@ package com.example.a16sserver;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import android.widget.ArrayAdapter;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class SharedPreferences_class {
@@ -12,6 +19,11 @@ public class SharedPreferences_class {
     private static final int DEFAULT_VALUE_INT = -1;
     private static final long DEFAULT_VALUE_LONG = -1L;
     private static final float DEFAULT_VALUE_FLOAT = -1F;
+
+    private static final String SETTINGS_PLAYER_JSON = "settings_item_json";
+
+    ArrayAdapter<String> adapter;
+    ArrayList<String> array = new ArrayList<>();
 
     private static SharedPreferences getPreferences(Context context) {
         return context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
@@ -188,5 +200,8 @@ public class SharedPreferences_class {
         edit.apply();
 
     }
+
+
+
 
 }

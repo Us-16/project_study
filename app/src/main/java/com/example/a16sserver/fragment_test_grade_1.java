@@ -2,10 +2,12 @@ package com.example.a16sserver;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +20,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import org.json.JSONArray;
+
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +35,15 @@ public class fragment_test_grade_1 extends Fragment {
     private ListViewAdapter adapter = null;
     public boolean isCheck[] = new boolean[50]; //체크박스배열
     public int chk_favorite = 0;
+
+    //////----arraylist sharedpreference에 저장
+    ArrayList<List> lists;
+    Gson gson = new GsonBuilder().create();
+    SharedPreferences preferences;
+    SharedPreferences.Editor editor;
+    final String PREF = "list";
+    final String LIST = "arrayList";
+    //////--------------------------------------
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -45,24 +61,33 @@ public class fragment_test_grade_1 extends Fragment {
         // 간단하게 저장했다. 연동할때는 배열로 가져오기만 하면 돼서 다른페이지에 sharedpreference로 가져온거 필요없는건 빼기
         // 배열 시 사용 x 라고 표시해둠.
 
-        String[] quiz2_yy_data = new String[]{"22년","21년","20년","19년"};
-        String[] quiz2_name_data = new String[]{"11월모의고사","10월모의고사","9월모의고사","6월모의고사","3월모의고사"};
-        int[] quiz2_id_data = new int[]{2211,2210,2209,2106,2103,2003,1910};
-        int[] quiz2_score_data = new int[]{3,3,2,2,3,3,2};
-        String[] quiz2_timer_data = new String[]{"03:00","03:30","02:45","15:00","05:30","05:30","03:00"};
-
+        String[] quiz2_2211 = {"22년","2211","11월 모의고사","0","3","03:30","5","3"}; //22년 11월 모의고사 데이터
+        String[] quiz2_2209 = {"22년","2209","09월 모의고사","0","3","02:30","5","3"}; //22년 09월 모의고사 데이터
+        String[] quiz2_2110 = {"21년","2110","10월 모의고사","0","2","04:30","5","3"}; //22년 10월 모의고사 데이터
+        String[] quiz2_2103 = {"21년","2103","03월 모의고사","0","2","05:30","4","3"}; //22년 03월 모의고사 데이터
+        String[] quiz2_1906 = {"19년","1906","06월 모의고사","0","2","03:30","4","3"}; //22년 06월 모의고사 데이터
+        String[] quiz2_1809 = {"18년","1809","09월 모의고사","0","5","02:30","5","3"}; //22년 09월 모의고사 데이터
 
         //Adapter 안에 넣을 리스트 데이터  정보 담기
         //반복문으로 돌린후에 밑에꺼 나오게 바꾸기
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],quiz2_id_data[0],quiz2_name_data[0],0,quiz2_score_data[0],quiz2_timer_data[0]));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],quiz2_id_data[1],quiz2_name_data[1],0,quiz2_score_data[1],quiz2_timer_data[1]));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],quiz2_id_data[2],quiz2_name_data[2],1,quiz2_score_data[2],quiz2_timer_data[2]));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[1],quiz2_id_data[3],quiz2_name_data[3],1,quiz2_score_data[3],quiz2_timer_data[3]));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[1],quiz2_id_data[4],quiz2_name_data[3],1,quiz2_score_data[4],quiz2_timer_data[4]));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[2],quiz2_id_data[5],quiz2_name_data[4],0,quiz2_score_data[5],quiz2_timer_data[5]));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[3],quiz2_id_data[6],quiz2_name_data[1],0,quiz2_score_data[6],quiz2_timer_data[6]));
-
-
+        adapter.addItem(new quiz2_list(quiz2_2211[0],Integer.parseInt(quiz2_2211[1]),
+                quiz2_2211[2],Integer.parseInt(quiz2_2211[3]),Integer.parseInt(quiz2_2211[4]),
+                quiz2_2211[5],Integer.parseInt(quiz2_2211[6]),Integer.parseInt(quiz2_2211[7])));
+        adapter.addItem(new quiz2_list(quiz2_2209[0],Integer.parseInt(quiz2_2209[1]),
+                quiz2_2209[2],Integer.parseInt(quiz2_2209[3]),Integer.parseInt(quiz2_2209[4]),
+                quiz2_2209[5],Integer.parseInt(quiz2_2209[6]),Integer.parseInt(quiz2_2211[7])));
+        adapter.addItem(new quiz2_list(quiz2_2110[0],Integer.parseInt(quiz2_2110[1]),
+                quiz2_2110[2],Integer.parseInt(quiz2_2110[3]),Integer.parseInt(quiz2_2110[4]),
+                quiz2_2110[5],Integer.parseInt(quiz2_2110[6]),Integer.parseInt(quiz2_2211[7])));
+        adapter.addItem(new quiz2_list(quiz2_2103[0],Integer.parseInt(quiz2_2103[1]),
+                quiz2_2103[2],Integer.parseInt(quiz2_2103[3]),Integer.parseInt(quiz2_2103[4]),
+                quiz2_2103[5],Integer.parseInt(quiz2_2103[6]),Integer.parseInt(quiz2_2211[7])));
+        adapter.addItem(new quiz2_list(quiz2_1906[0],Integer.parseInt(quiz2_1906[1]),
+                quiz2_1906[2],Integer.parseInt(quiz2_1906[3]),Integer.parseInt(quiz2_1906[4]),
+                quiz2_1906[5],Integer.parseInt(quiz2_1906[6]),Integer.parseInt(quiz2_2211[7])));
+        adapter.addItem(new quiz2_list(quiz2_1809[0],Integer.parseInt(quiz2_1809[1]),
+                quiz2_1809[2],Integer.parseInt(quiz2_1809[3]),Integer.parseInt(quiz2_1809[4]),
+                quiz2_1809[5],Integer.parseInt(quiz2_1809[6]),Integer.parseInt(quiz2_2211[7])));
 
         return rootView;
     }
@@ -162,45 +187,34 @@ public class fragment_test_grade_1 extends Fragment {
 
                     quiz2_content.add(quiz2_list.getQuiz2_name());// 모의고사 이름
                     quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_score()));// 모의고사 점수
-                    quiz2_content.add(quiz2_list.getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":"))); //모의고사 분
-                    quiz2_content.add(quiz2_list.getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));//모의고사 초
+                    quiz2_content.add(quiz2_list.
+                            getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":"))); //모의고사 분
+                    quiz2_content.add(quiz2_list.
+                            getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));//모의고사 초
+                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_que())); //모의고사 문제갯수
+                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_id()));// 모의고사 id
+
+
 
                     intent.putExtra("quiz2_content",quiz2_content);
 
-/*
-                    // 모의고사 이름을 풀기 누르는 화면으로 전달하기
-                    intent.putExtra("quiz2_name",quiz2_list.getQuiz2_name());
-                    // 모의고사 점수를 풀기 누르는 화면으로 전달하기
-                    System.out.println("모의고사 점수 들어가는지 체크 : "+quiz2_list.getQuiz2_score());//잘들어옴
-                    intent.putExtra("quiz2_score",quiz2_list.getQuiz2_score());
 
-                    ////////////-----03:30 시간일 때 03과 30 따로 잘라서 전달하기 ------------------------------------
-                    int timer1 ;
-                    int timer2 ;
 
-                    timer1 = Integer.parseInt(quiz2_list.getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":")));
-                    timer2 = Integer.parseInt(quiz2_list.getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));
 
-                    // 모의고사 분단위 시간을 풀기 누르는 화면으로 전달하기
-                    intent.putExtra("quiz2_timer1",timer1);
-                    // 모의고사 초단위 시간을 풀기 누르는 화면으로 전달하기
-                    intent.putExtra("quiz2_timer2",timer2);
-                    //////////------------------------------------------------------------------------------------
 
-*/
-                    Toast.makeText(context, quiz2_list.getQuiz2_name()+"모의고사 id :" +quiz2_list.getQuiz2_id() +"모의고사 점수 : "+quiz2_list.getQuiz2_score(),Toast.LENGTH_SHORT).show();
                     startActivity(intent); //intent 실행
 
 
                 }
             });
-            //-----------------------------------------------------------------------
+
+
+
 
             return convertView;
         }
         ///////////////---------------------------------------------------------------------------------
     }
-
 //////--------------------------------------------------------------------------------------
 }
 

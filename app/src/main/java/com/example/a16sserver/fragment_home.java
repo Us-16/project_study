@@ -124,7 +124,7 @@ public class fragment_home extends Fragment {
 
 
 
-        Calendar baseCal = new GregorianCalendar(year,month,day,c_hour,c_min,c_sec); //기준날짜 00:00:00
+        Calendar baseCal = new GregorianCalendar(year,month,day,c_hour,c_min,c_sec); //기준날짜
         Calendar targetCal = new GregorianCalendar(year,month,day,24,00,00);
         //비교대상날짜(현재날짜에 특정시간까지 타이머)
 
