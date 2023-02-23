@@ -66,7 +66,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="springboot" />
+        <entry key="$PROJECT_DIR$" value="springboot_image" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -230,7 +230,6 @@
       <list>
         <item itemvalue="Spring Boot.AppApplication" />
         <item itemvalue="Gradle.AppApplicationTests.LoginTest" />
-        <item itemvalue="애플리케이션.com.example.app.aes.AESTester" />
         <item itemvalue="Gradle.AppApplicationTests (1)" />
         <item itemvalue="Gradle.AppApplicationTests.createPost2" />
       </list>
