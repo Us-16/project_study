@@ -37,7 +37,6 @@ public class UploadController {
 
         model.addAttribute("message", "글작성 완료");
         model.addAttribute("searchUrl", "/question/list");
-        AppApplication.Test();
         return "redirect:/";
     }
 
@@ -46,7 +45,6 @@ public class UploadController {
 
         model.addAttribute("testboard", uploadService.getView(id));
 
-        AppApplication.Test();
         return "content/upload/uploadView";
     }
 }
