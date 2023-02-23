@@ -24,6 +24,14 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/login_btn_imageTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이미지 테스트">
+
+        </Button>
+
+        <Button
             android:id="@+id/btn_loginTest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

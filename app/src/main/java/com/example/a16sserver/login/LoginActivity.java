@@ -1,15 +1,16 @@
 package com.example.a16sserver.login;//로그인화면
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import com.example.a16sserver.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.a16sserver.account.User_account;
+import com.example.a16sserver.R;
+import com.example.a16sserver.image.ImageTestActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -29,6 +30,18 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
         btn(btnTest);
+        imageBtn();
+    }
+
+    private void imageBtn() {
+        Button testImageBtn = findViewById(R.id.login_btn_imageTest);
+        testImageBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ImageTestActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void btn(Button btn) {
@@ -37,6 +50,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), LoginTestActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

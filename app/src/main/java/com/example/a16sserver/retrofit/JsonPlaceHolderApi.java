@@ -6,6 +6,7 @@ import com.example.a16sserver.retrofit.dto.Question;
 import com.example.a16sserver.retrofit.dto.Response_check;
 import com.example.a16sserver.retrofit.dto.StudentAccount;
 import com.example.a16sserver.retrofit.dto.Test;
+import com.example.a16sserver.retrofit.dto.Upload;
 
 import java.util.HashMap;
 import java.util.List;
@@ -33,4 +34,6 @@ public interface JsonPlaceHolderApi {
     @GET("api/check_response/{username}")
     Call<Response_check> getCheck(@Path("username") String username);
 
+    @GET("api/image_test/{id}")
+    Call<Upload> getFiles(@Path("id") Long id);
 }

@@ -1,6 +1,6 @@
 package com.example.a16sserver.retrofit;
 
-import com.example.a16sserver.R;
+
 import com.example.a16sserver.retrofit.dto.Question;
 import com.example.a16sserver.retrofit.dto.Response_check;
 
