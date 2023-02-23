@@ -1,7 +1,7 @@
 package com.example.app.question;
 
 import com.example.app.answer.Answer;
-import com.example.app.user.Teacher;
+import com.example.app.user.teacher.Teacher;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

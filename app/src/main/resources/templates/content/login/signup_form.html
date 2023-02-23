@@ -19,8 +19,11 @@
                 <input type="text" th:field="*{name}" class="form-control">
             </div>
             <div class="mb-3">
-                <label for="birthday">생년월일</label>
-                <input type="text" th:field="*{birthday}" class="form-control" placeholder="예)970330">
+                <label for="birthday">주민등록번호</label>
+                <input type="number" th:field="*{personalId1}" class="form-control">
+                <input type="text" th:field="*{personalId2}" class="form-control"
+                       onkeyup="function onlyNumber(obj) {
+                            obj.value = obj.value.replace(/[^0-9]/, "");}">
             </div>
             <div class="mb-3">
                 <label for="email">이메일</label>

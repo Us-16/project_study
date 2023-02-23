@@ -1,4 +1,4 @@
-package com.example.app.user;
+package com.example.app.user.teacher;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -7,6 +7,10 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+/**
+ * Teacher Table 관리
+ * username, password, name, personalId(주민등록번호), email, school, createDate, modifiedDate
+ */
 @Getter
 @Setter
 @Entity
@@ -17,16 +21,17 @@ public class Teacher {
 
     @NotNull
     @Column(unique = true)
-    private String username;
+    private String username; //대소문자 구분해야함
 
     @NotNull
-    private String password;
+    private String password; //대소문자 구분해야함 -> 얜 암호화 걸 때 대소문자 자체가 차이가 나는걸로 알고 있음
 
     @NotNull
     private String name;
 
     @NotNull
-    private String birthday;
+    @Column(unique = true)
+    private String personalId;
 
     @NotNull
     private String email;
@@ -34,5 +39,8 @@ public class Teacher {
     @NotNull
     private String school;
 
+    @NotNull
     private LocalDateTime createDate;
+
+    private LocalDateTime modifiedDate;
 }

@@ -23,8 +23,11 @@ public class UserCreateForm {
     @NotEmpty(message = "성함을 입력해주세요")
     private String name;
 
-    @NotEmpty(message = "생년월일을 입력해주세요")
-    private String birthday;
+    @NotEmpty(message = "주민등록번호를 입력해주세요")
+    private String personalId1;
+
+    @NotEmpty(message = "주민등록번호를 입력해주세요")
+    private String personalId2;
 
     @NotEmpty(message="이메일은 필수항목입니다.")
     @Email

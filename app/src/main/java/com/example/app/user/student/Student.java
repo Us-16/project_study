@@ -1,4 +1,4 @@
-package com.example.app.user;
+package com.example.app.user.student;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -17,8 +17,7 @@ public class Student {
     @Column
     private String name;
 
-    private String P_id1; //주민등록번호
-    private String P_id2;
+    private String personalId;
 
     @Column(unique = true)
     private String username;

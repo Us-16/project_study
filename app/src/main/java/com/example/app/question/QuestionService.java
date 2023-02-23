@@ -1,7 +1,7 @@
 package com.example.app.question;
 
 import com.example.app.DataNotFoundException;
-import com.example.app.user.Teacher;
+import com.example.app.user.teacher.Teacher;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

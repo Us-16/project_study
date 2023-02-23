@@ -24,6 +24,12 @@ import retrofit2.http.POST;
 @EnableMethodSecurity(prePostEnabled = true)
 public class SecurityConfig {
     private final LoginSuccessHandler loginSuccessHandler;
+
+    /**
+     * BCrypy -> SHA-2 이상의 알고리즘, 8bit로 결합된 Hash
+     * 랜덤하게 생성된 솔트 지원
+     * @return Bcrypt로 변환한 값
+     */
     @Bean
     PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();

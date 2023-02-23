@@ -1,7 +1,7 @@
 package com.example.app.question;
 
 import com.example.app.answer.AnswerForm;
-import com.example.app.user.Teacher;
+import com.example.app.user.teacher.Teacher;
 import com.example.app.user.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

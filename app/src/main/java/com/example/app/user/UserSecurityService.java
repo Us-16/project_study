@@ -1,5 +1,7 @@
 package com.example.app.user;
 
+import com.example.app.user.teacher.Teacher;
+import com.example.app.user.teacher.TeacherRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

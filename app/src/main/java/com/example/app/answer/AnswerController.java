@@ -2,7 +2,7 @@ package com.example.app.answer;
 
 import com.example.app.question.Question;
 import com.example.app.question.QuestionService;
-import com.example.app.user.Teacher;
+import com.example.app.user.teacher.Teacher;
 import com.example.app.user.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

@@ -1,6 +1,10 @@
 package com.example.app.user;
 
 import com.example.app.DataNotFoundException;
+import com.example.app.user.student.Student;
+import com.example.app.user.student.StudentRepository;
+import com.example.app.user.teacher.Teacher;
+import com.example.app.user.teacher.TeacherRepository;
 import com.example.app.util.AES256;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -28,17 +32,17 @@ public class UserService {
      * @param username 닉네임
      * @param password 비밀번호
      * @param name 성함
-     * @param birthday 생년월일
+     * @param personalId 주민등록번호
      * @param email 이메일
      * @param school 소속
      * @return teacher
      */
-    public Teacher create(String username, String password, String name, String birthday, String email, String school){
+    public Teacher createTeacher(String username, String password, String name, String personalId, String email, String school){
         Teacher teacher = new Teacher();
         teacher.setUsername(username);
         teacher.setPassword(passwordEncoder.encode(password));
         teacher.setName(name);
-        teacher.setBirthday(birthday);
+        teacher.setPersonalId(personalId);
         teacher.setEmail(email);
         teacher.setSchool(school);
         teacher.setCreateDate(LocalDateTime.now());
@@ -65,12 +69,13 @@ public class UserService {
      * @return
      */
     public Student createStudent(String name, String username, String password, String P_id1, String P_id2, String email, String school, String grade){
+        String personalId = P_id1 + P_id2;
         Student student = new Student();
+
         student.setName(name);
         student.setUsername(username);
         student.setPassword(password);
-        student.setP_id1(P_id1);
-        student.setP_id2(P_id2);
+        student.setPersonalId(personalId);
         student.setEmail(email);
         student.setSchool(school);
         student.setGrade(Integer.parseInt(grade));
