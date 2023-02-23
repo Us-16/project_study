@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음">
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="진짜 된거다?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/AppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/AppApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/12a304db-95e4-4e16-b985-bdba90d2d3fb_장효림.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/45265318-454a-4623-9e64-acb9d787e4f2_IMG_A8E324E62F0C-1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/57d5ee91-83e8-40d4-b982-fc8c263a8393_IMG_B193522952C5-1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/9f9b40bb-5448-4427-98c1-8c8cb0ccf205_IMG_0491.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/a02d68e1-b394-4158-86f9-ad09524e0723_IMG_A8E324E62F0C-1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/d10bc1b1-52e2-4947-8e34-415969205fe5_IMG_B193522952C5-1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/db844ac1-7070-45d6-8269-d603b5e56804_IMG_B193522952C5-1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/e8e39dbc-73f6-4c36-b7ea-a33b5d8c8d10_IMG_0491.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/upload/uploadView.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/upload/uploadView.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,7 +285,9 @@
       <workItem from="1676543190286" duration="4133000" />
       <workItem from="1676622134937" duration="7000" />
       <workItem from="1676688486968" duration="15898000" />
-      <workItem from="1676878180538" duration="5447000" />
+      <workItem from="1676878180538" duration="5647000" />
+      <workItem from="1676896045911" duration="1231000" />
+      <workItem from="1676939068133" duration="8967000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -544,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676478406170</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="진짜 된거다?">
+      <created>1676895874469</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1676895874469</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +552,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix&#10;- little" />
     <MESSAGE value="fix - securityConfig&#10;- ignore /api/**  &#10;- Android could access&#10;- Android connect Success" />
     <MESSAGE value="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json" />
     <MESSAGE value="fix - signup logics&#10;- duplication check&#10;- with different result at different url to android&#10;- duplicate test was successful&#10;- (will be soon) GET -&gt; POST" />
@@ -587,7 +576,8 @@
     <MESSAGE value="상황 종료(진짜 종료)&#10;- AES256 암호화 과정에서 특수문자로 인한 접속 불량 문제 확인&#10;- AES256 암호화를 진행한 내용을 다시 아스키코드 16진수로 변환하여 전송&#10;- 결과 어떤 값에도 이상없이 접속 가능한 것으로 확인됨" />
     <MESSAGE value="commit test&#10;- 이미지 업로드 진행 예정&#10;- 예제 참고하면서 진행 바람" />
     <MESSAGE value="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음" />
-    <option name="LAST_COMMIT_MESSAGE" value="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음" />
+    <MESSAGE value="진짜 된거다?" />
+    <option name="LAST_COMMIT_MESSAGE" value="진짜 된거다?" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
