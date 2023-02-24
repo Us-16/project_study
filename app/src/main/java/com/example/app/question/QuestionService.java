@@ -57,14 +57,14 @@ public class QuestionService {
      *
      * @param subject 제목
      * @param content 글내용
-     * @param author  작성자
+     * @param teacher 출제한 강사
      */
-    public void create(String subject, String content, Teacher author){
+    public void create(String subject, String content, Teacher teacher){
         Question q = new Question();
         q.setSubject(subject);
         q.setContent(content);
         q.setCreateDate(LocalDateTime.now());
-        q.setAuthor(author);
+        q.setTeacher(teacher);
         this.questionRepository.save(q);
     }
 

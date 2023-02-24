@@ -26,7 +26,7 @@
             <td>
                 <a th:href="@{|/question/detail/${question.id}|}" th:text="${question.subject}" ></a>
             </td>
-            <td style="text-align: center"><span th:if="${question.author != null}" th:text="${question.author.username}" ></span></td>
+            <td style="text-align: center"><span th:if="${question.teacher != null}" th:text="${question.teacher.username}" ></span></td>
             <td style="text-align: center">
                 <span th:if="${current_year - question.createDate.getYear() == 0} and ${current_day - question.createDate.getDayOfYear() == 0}"
                       th:text="${#temporals.format(question.createDate, 'HH:mm:ss')}"></span>

@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.sql.Time;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -15,7 +16,10 @@ import java.util.List;
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id; //PK
+
+    @ManyToOne
+    private Teacher teacher; //FK
 
     @Column
     private String subject;
@@ -23,13 +27,23 @@ public class Question {
     @Column(columnDefinition = "TEXT")
     private String content;
 
+    private String filepath; //image
+    private String answer;   //정답
+    //1~5번
+    private String choice1;
+    private String choice2;
+    private String choice3;
+    private String choice4;
+    private String choice5;
+
+    private Time time;
+
+    private long view;
+    private long correct;
+    private double score;
+
     private LocalDateTime createDate;
-
-    @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE)
-    private List<Answer> answerList;
-
     private LocalDateTime modifyDate;
 
-    @ManyToOne
-    private Teacher author;
+
 }

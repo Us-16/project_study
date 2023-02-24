@@ -1,11 +1,13 @@
 package com.example.app.user.teacher;
 
+import com.example.app.question.Question;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * Teacher Table 관리
@@ -43,4 +45,7 @@ public class Teacher {
     private LocalDateTime createDate;
 
     private LocalDateTime modifiedDate;
+
+    @OneToMany(mappedBy = "teacher", cascade = CascadeType.REMOVE)
+    private List<Question> questionList;
 }
