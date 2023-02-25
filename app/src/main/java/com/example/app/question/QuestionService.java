@@ -44,12 +44,13 @@ public class QuestionService {
         }
     }
 
-    public void create(String subject, String  content){
+    public void create(String subject, String  content, String filePath){
         //Tester
         Question q = new Question();
         q.setSubject(subject);
         q.setContent(content);
         q.setCreateDate(LocalDateTime.now());
+        q.setFilepath(filePath);
         this.questionRepository.save(q);
     }
 

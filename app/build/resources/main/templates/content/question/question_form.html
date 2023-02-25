@@ -1,20 +1,68 @@
+<!--<html layout:decorate="~{layout/base}" xmlns:layout="http://www.w3.org/1999/xhtml">-->
+<!--  <div layout:fragment="content">-->
+<!--    <h5 class="my-3 border-bottom pb-2">질문등록</h5>-->
+<!--    <form th:object="${questionForm}" method="post">-->
+<!--      <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>-->
+<!--      <div class="alert alert-danger" role="alert" th:if="${#fields.hasAnyErrors()}">-->
+<!--        <div th:replace="~{error/form_errors::formErrorsFragment}"></div>-->
+<!--      </div>-->
+<!--      <div class="mb-3">-->
+<!--        <label for="subject" class="form-label">제목</label>-->
+<!--        <input type="text" class="form-control" th:field="*{subject}">-->
+<!--      </div>-->
+<!--      <div class="mb-3">-->
+<!--        <label for="content" class="form-control">내용</label>-->
+<!--        <textarea th:field="*{content}" class="form-control" rows="10"></textarea>-->
+<!--      </div>-->
+<!--      <input type="submit" value="저장하기" class="btn btn-primary my-2">-->
+<!--    </form>-->
+<!--  </div>-->
+<!--</html>-->
 <html layout:decorate="~{layout/base}" xmlns:layout="http://www.w3.org/1999/xhtml">
   <div layout:fragment="content">
-    <h5 class="my-3 border-bottom pb-2">질문등록</h5>
-    <form th:object="${questionForm}" method="post">
-      <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+    <h3 class="my-3 border-bottom pb-2">문제등록</h3>
+    <form th:object="${questionForm}" method="POST">
       <div class="alert alert-danger" role="alert" th:if="${#fields.hasAnyErrors()}">
-        <div th:replace="~{error/form_errors::formErrorsFragment}"></div>
+        <div th:replace="~{error/form_errors :: formErrorsFragment}"></div>
       </div>
+
       <div class="mb-3">
-        <label for="subject" class="form-label">제목</label>
-        <input type="text" class="form-control" th:field="*{subject}">
+        <label for="subject">과목</label>
+        <select name="subject">
+          <option>국어</option>
+          <option selected>수학</option>
+          <option>영어</option>
+          <option>한국사</option>
+          <option>사회탐구</option>
+          <option>과학탐구</option>
+          <option>제2외국어</option>
+        </select>
+        <input type="time" id="questionTime" name="time" value="22:30"/>
       </div>
+
       <div class="mb-3">
-        <label for="content" class="form-control">내용</label>
-        <textarea th:field="*{content}" class="form-control" rows="10"></textarea>
+        <label for="title" class="form-control">제목</label>
+        <input type="text" class="form-control" th:field="*{title}">
       </div>
-      <input type="submit" value="저장하기" class="btn btn-primary my-2">
+
+      <div class="mb-3">
+        <label for="content" class="form-control">본문</label>
+        <textarea th:field="*{content}" class="form-control" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <div style="border: 1px solid gray; display: inline;">
+          <label for="subjective">주관식</label>
+          <input type="radio" name="type" value="subjective">
+          <label for="choice">객관식</label>
+          <input type="radio" name="type" value="choice">
+        </div>
+        <label for="answer">답안</label>
+        <input type="text" name="answer"/>
+      </div>
+      <!-- 여기서부터 비동기처리가 필요해보임;; -->
+
+      <input type="submit" value="등록하기" class="btn btn-primary my-2">
     </form>
   </div>
 </html>

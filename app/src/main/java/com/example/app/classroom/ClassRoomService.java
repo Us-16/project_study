@@ -2,14 +2,13 @@ package com.example.app.classroom;
 
 import com.example.app.user.student.Student;
 import com.example.app.user.teacher.Teacher;
-import com.example.app.user.teacher.TeacherRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 @RequiredArgsConstructor
 @Service
-public class ClassRomService {
+public class ClassRoomService {
     private final ClassRoomRepository classRoomRepository;
 
     public ClassRoom createClass(Teacher teacher, Student student, String name){

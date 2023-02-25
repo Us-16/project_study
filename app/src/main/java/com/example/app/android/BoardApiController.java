@@ -12,6 +12,7 @@ import com.example.app.util.Hex;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import retrofit2.http.Multipart;
@@ -109,6 +110,22 @@ public class BoardApiController {
         String name = up.getFilename();
 
         return up;
+    }
+
+    @GetMapping("/page/{page}")
+    ArrayList<Question> questionResponse(@PathVariable("page") int page){
+        Page<Question> pageItem = this.questionService.getList(page);
+        ArrayList<Question> pageToList = new ArrayList<Question>();
+
+        for(Question item : pageItem){
+            pageToList.add(item);
+        }
+
+        for(Question q : pageToList){
+            System.out.println(q.getId());
+        }
+
+        return pageToList;
     }
 
 

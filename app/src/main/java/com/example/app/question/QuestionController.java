@@ -30,15 +30,7 @@ public class QuestionController {
     @GetMapping("/list")
     public String list(Model model, @RequestParam(value="page", defaultValue = "0") int page){
         Page<Question> paging = this.questionService.getList(page);
-        //paging.getContent()-> List
-        //paging.getContent().get(index) -> 개별 요소
-        
-        // 날짜만 따로 넘기면 될 거 같은디?
 
-        //thymeleaf 안에서는 연산을 거의 할 수 없음 ?? -> 해봤어? -> 이게 되네? -> 거봐 해보고 이야기하라니까 아 ㅋ
-
-        //getDayOfYear() -> 1년 중 며칠째인지 반환
-        //getYear() -> 현재 몇 년인지 파악
         model.addAttribute("current_year", LocalDateTime.now().getYear());
         model.addAttribute("current_day", LocalDateTime.now().getDayOfYear());
         model.addAttribute("paging", paging);
@@ -67,7 +59,7 @@ public class QuestionController {
         }
         //SiteUser siteUser = this.userService.getUser(principal.getName());
         Teacher teacher = this.userService.getTeacher(principal.getName());
-        this.questionService.create(questionForm.getSubject(), questionForm.getContent(), teacher);
+        this.questionService.create(questionForm.getTitle(), questionForm.getContent(), teacher);
         return "redirect:/question/list";
     }
 
@@ -78,7 +70,7 @@ public class QuestionController {
         if(!question.getTeacher().getUsername().equals(principal.getName())){
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "수정권한이 없습니다.");
         }
-        questionForm.setSubject(question.getSubject());
+        questionForm.setTitle(question.getSubject());
         questionForm.setContent(question.getContent());
         return "content/question/question_form";
     }
@@ -93,7 +85,7 @@ public class QuestionController {
         if(!question.getTeacher().getUsername().equals(principal.getName())){
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "수정권한이 없습니다.");
         }
-        this.questionService.modify(question, questionForm.getSubject(), questionForm.getContent());
+        this.questionService.modify(question, questionForm.getTitle(), questionForm.getContent());
         return String.format("redirect:/question/detail/%s", id);
     }
 
