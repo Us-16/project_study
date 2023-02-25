@@ -1,10 +1,7 @@
 package com.example.a16sserver.retrofit;
 
 
-import com.example.a16sserver.retrofit.dto.Question;
 import com.example.a16sserver.retrofit.dto.Response_check;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;
@@ -18,12 +15,12 @@ public class ResponseQuestion {
     /**
      * 모든 문제를 다 불러옴
      */
-    public Call<List<Question>> getCallQuestions(){
-        Retrofit retrofit = RetrofitUtil.Init();
-        JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
-        Call<List<Question>> call = jsonPlaceHolderApi.getQuestions(); //이거때문에라도 모든 문제 불러오게 될것
-        return call;
-    }
+//    public Call<List<Question>> getCallQuestions(){
+//        Retrofit retrofit = RetrofitUtil.Init();
+//        JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
+//        Call<List<Question>> call = jsonPlaceHolderApi.getQuestions(); //이거때문에라도 모든 문제 불러오게 될것
+//        return call;
+//    }
     public Call<Response_check> getCallCheck(String username){
         Retrofit retrofit = RetrofitUtil.Init();
         JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);

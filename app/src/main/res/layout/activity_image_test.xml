@@ -7,21 +7,6 @@
     android:orientation="vertical"
     tools:context=".image.ImageTestActivity">
 
-    <TextView
-        android:id="@+id/image_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></TextView>
-
-    <TextView
-        android:id="@+id/image_content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></TextView>
-
-    <TextView
-        android:id="@+id/image_filepath"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></TextView>
-
     <EditText
         android:id="@+id/image_page"
         android:layout_width="match_parent"
@@ -33,10 +18,17 @@
         android:layout_height="wrap_content">
 
     </Button>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/iamge_testImage"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"></ImageView>
+    <LinearLayout
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
