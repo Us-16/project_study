@@ -87,7 +87,7 @@ public class ImageTestActivity extends AppCompatActivity {
                     }
                 }else{
                     Log.d(TAG, "Status code : " + response.code() );
-                }
+                }//tester
             }
 
             @Override
