@@ -46,10 +46,6 @@ public class ImageTestActivity extends AppCompatActivity {
         EditText editText = findViewById(R.id.image_page);
         LinearLayout ly = findViewById(R.id.image_container);
 
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT
-        );
-
         String page = editText.getText().toString();
 
         Retrofit retrofit = RetrofitUtil.Init();
@@ -77,20 +73,18 @@ public class ImageTestActivity extends AppCompatActivity {
                         tmp += item.getCreateDate() + "\n";
 
                         TextView tx = new TextView(getApplicationContext());
-                        ImageView iv = new ImageView(getApplicationContext());
-                        iv.setAdjustViewBounds(true);
                         tx.setText(tmp);
                         ly.addView(tx);
-                        ly.addView(iv);
 
+                        if(url.equals("http://10.0.2.2:8080null"))
+                            continue;
+
+                        ImageView iv = new ImageView(getApplicationContext());
+                        iv.setAdjustViewBounds(true);
                         Glide.with(getApplicationContext()).load(url)
                                 .into(iv);
-
+                        ly.addView(iv);
                     }
-//                    Glide.with(getApplicationContext())
-//                            .load("http://10.0.2.2:8080" + "/files/7a96f3ec-926c-4964-8fa3-9352bfcd6a1a_image0.jpg")
-//                            .into(imageView);
-
                 }else{
                     Log.d(TAG, "Status code : " + response.code() );
                 }
