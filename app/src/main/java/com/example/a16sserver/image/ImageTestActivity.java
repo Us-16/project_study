@@ -77,7 +77,7 @@ public class ImageTestActivity extends AppCompatActivity {
                         ly.addView(tx);
 
                         if(url.equals("http://10.0.2.2:8080null"))
-                            continue;
+                            continue;//test
 
                         ImageView iv = new ImageView(getApplicationContext());
                         iv.setAdjustViewBounds(true);
