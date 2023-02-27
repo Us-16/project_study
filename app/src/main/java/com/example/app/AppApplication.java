@@ -10,6 +10,6 @@ public class AppApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AppApplication.class, args);
 		//의외로 잘 불러와지네?
-		//pullrequest Test
+		//pull request Test
 	}
 }
