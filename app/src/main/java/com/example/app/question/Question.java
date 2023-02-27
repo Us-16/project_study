@@ -2,6 +2,7 @@ package com.example.app.question;
 
 import com.example.app.answer.Answer;
 import com.example.app.user.teacher.Teacher;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,6 +19,7 @@ public class Question {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; //PK
 
+    @JsonIgnore
     @ManyToOne
     private Teacher teacher; //FK
 

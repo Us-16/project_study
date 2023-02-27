@@ -40,7 +40,7 @@ public class QuestionService {
         if(question.isPresent()){
             return question.get();
         }else{
-            throw new DataNotFoundException("qeustion not found");
+            throw new DataNotFoundException("question not found");
         }
     }
 
@@ -49,7 +49,7 @@ public class QuestionService {
         Question q = new Question();
         q.setSubject(subject);
         q.setContent(content);
-        q.setCreateDate(LocalDateTime.now());
+        q.setCreateDate(LocalDateTime.now()); //test
         q.setFilepath(filePath);
         this.questionRepository.save(q);
     }

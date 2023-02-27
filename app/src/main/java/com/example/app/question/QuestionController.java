@@ -57,9 +57,9 @@ public class QuestionController {
         if(bindingResult.hasErrors()){
             return "content/question/question_form";
         }
-        //SiteUser siteUser = this.userService.getUser(principal.getName());
         Teacher teacher = this.userService.getTeacher(principal.getName());
         this.questionService.create(questionForm.getTitle(), questionForm.getContent(), teacher);
+
         return "redirect:/question/list";
     }
 

@@ -4,32 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="entity modify&#10;- 설계 방향대로 엔티티 수정 중&#10;- 내일부터 View 관련 설계도 다시 진행해야할 것">
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/files/tester.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/questionForm.html" afterDir="false" />
+    <list default="true" id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="success&#10;- page send to andorid&#10;- To send android, page -&gt; arraylist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/link.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/link.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserSecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/questionForm.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,28 +92,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelOrder2": "2",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RequestMappingsPanelWidth2": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/janghyolim/Code/project_study/app/src/main/resources/static/files",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "spring.configuration.checksum": "6fd232251ba9e66f5bc7137b177b960b"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/janghyolim/Code/project_study/app/src/main/resources/static/files&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6fd232251ba9e66f5bc7137b177b960b&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.app.user" />
@@ -327,6 +313,8 @@
       <workItem from="1676878180538" duration="5647000" />
       <workItem from="1676896045911" duration="1231000" />
       <workItem from="1676939068133" duration="8967000" />
+      <workItem from="1677377098084" duration="5957000" />
+      <workItem from="1677480575971" duration="634000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -594,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677246784820</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="success&#10;- page send to andorid&#10;- To send android, page -&gt; arraylist">
+      <created>1677335710870</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1677335710870</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="error fixed&#10;- LoginSuccessHandler error fixed" />
     <MESSAGE value="add - AES256 Encoding&#10;- result would be successful to load by AES256&#10;- with GetMapping to watch the result" />
     <MESSAGE value="!!!GIT Test!!!&#10;- key.class ignore" />
     <MESSAGE value="!!!GIT Test2!!!&#10;- key.class ignore" />
@@ -637,7 +631,8 @@
     <MESSAGE value="after merge&#10;- 별도의 패키지라 그런지 문제 없이 병합되었음" />
     <MESSAGE value="왜 이거 날아감?" />
     <MESSAGE value="entity modify&#10;- 설계 방향대로 엔티티 수정 중&#10;- 내일부터 View 관련 설계도 다시 진행해야할 것" />
-    <option name="LAST_COMMIT_MESSAGE" value="entity modify&#10;- 설계 방향대로 엔티티 수정 중&#10;- 내일부터 View 관련 설계도 다시 진행해야할 것" />
+    <MESSAGE value="success&#10;- page send to andorid&#10;- To send android, page -&gt; arraylist" />
+    <option name="LAST_COMMIT_MESSAGE" value="success&#10;- page send to andorid&#10;- To send android, page -&gt; arraylist" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

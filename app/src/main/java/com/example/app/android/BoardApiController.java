@@ -121,10 +121,6 @@ public class BoardApiController {
             pageToList.add(item);
         }
 
-        for(Question q : pageToList){
-            System.out.println(q.getId());
-        }
-
         return pageToList;
     }
 
