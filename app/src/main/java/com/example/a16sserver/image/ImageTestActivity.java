@@ -112,7 +112,7 @@ public class ImageTestActivity extends AppCompatActivity {
             public void onResponse(Call<Integer> call, Response<Integer> response) {
                 if(response.isSuccessful()) {
                     int totalPages = response.body();
-                    totalPageView.setText(Integer.toString(totalPages));
+                    totalPageView.setText("totalPage : " + Integer.toString(totalPages));
                 }else{
                     Log.e(TAG, "Status code : " + response.code() );
                 }
