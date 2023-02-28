@@ -112,16 +112,20 @@ public class BoardApiController {
         return up;
     }
 
-    @GetMapping("/page/{page}")
+    @PostMapping("/page/{page}")
     ArrayList<Question> questionResponse(@PathVariable("page") int page){
-        Page<Question> pageItem = this.questionService.getList(page);
+        Page<Question> pageItem = this.questionService.getList(page-1);
         ArrayList<Question> pageToList = new ArrayList<Question>();
 
-        for(Question item : pageItem){
+        for(Question item : pageItem) {
             pageToList.add(item);
         }
-
         return pageToList;
+    }
+
+    @GetMapping("/page/info")
+    int getPageInfo(){
+        return this.questionService.getList(0).getTotalPages();
     }
 
 

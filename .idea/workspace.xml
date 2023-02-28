@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="" />
+    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="git test3">
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,7 +255,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="d3daa535-ba05-4c8a-98a1-3c29a461ea4a" name="변경" comment="" />
+      <changelist id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="git test3" />
       <created>1673265043760</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -308,6 +322,12 @@
       <workItem from="1676939068133" duration="8967000" />
       <workItem from="1677377098084" duration="5957000" />
       <workItem from="1677480575971" duration="634000" />
+      <workItem from="1677543666616" duration="813000" />
+      <workItem from="1677544519669" duration="754000" />
+      <workItem from="1677551479996" duration="606000" />
+      <workItem from="1677553306760" duration="2830000" />
+      <workItem from="1677574399336" duration="508000" />
+      <workItem from="1677598199159" duration="3663000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -582,7 +602,28 @@
       <option name="project" value="LOCAL" />
       <updated>1677335710870</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="git test">
+      <created>1677502419888</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1677502419888</updated>
+    </task>
+    <task id="LOCAL-00041" summary="git test2">
+      <created>1677504980293</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1677504980293</updated>
+    </task>
+    <task id="LOCAL-00042" summary="git test3">
+      <created>1677505269840</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1677505269840</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,9 +641,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add - AES256 Encoding&#10;- result would be successful to load by AES256&#10;- with GetMapping to watch the result" />
-    <MESSAGE value="!!!GIT Test!!!&#10;- key.class ignore" />
-    <MESSAGE value="!!!GIT Test2!!!&#10;- key.class ignore" />
     <MESSAGE value="!!!GIT Test3!!!&#10;- key.class ignore" />
     <MESSAGE value="!!!GIT Test4!!!&#10;- key.class ignore" />
     <MESSAGE value="!!!GIT Test5!!!&#10;- key.class ignore" />
@@ -625,7 +663,10 @@
     <MESSAGE value="왜 이거 날아감?" />
     <MESSAGE value="entity modify&#10;- 설계 방향대로 엔티티 수정 중&#10;- 내일부터 View 관련 설계도 다시 진행해야할 것" />
     <MESSAGE value="success&#10;- page send to andorid&#10;- To send android, page -&gt; arraylist" />
-    <option name="LAST_COMMIT_MESSAGE" value="success&#10;- page send to andorid&#10;- To send android, page -&gt; arraylist" />
+    <MESSAGE value="git test" />
+    <MESSAGE value="git test2" />
+    <MESSAGE value="git test3" />
+    <option name="LAST_COMMIT_MESSAGE" value="git test3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
