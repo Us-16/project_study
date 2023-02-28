@@ -18,6 +18,8 @@ import com.example.a16sserver.SharedPreferences_class;
 public class User_account_4 extends AppCompatActivity {
     private EditText text_school;
     private Context mContext;
+    //private long backKeyPressedTime = 0; //뒤로가기 2번 == 종료
+    //private Toast toast;//뒤로가기 2번 == 종료알림
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,8 @@ public class User_account_4 extends AppCompatActivity {
                     SharedPreferences_class.setString(mContext,"key_school_s",tmp_school);
                     String text = SharedPreferences_class.getString(mContext,"key_school_s");
                     System.out.println("학교:"+text);
+
+
                     startActivity(intent); //다음액티비티로 넘어감.
                 }
 

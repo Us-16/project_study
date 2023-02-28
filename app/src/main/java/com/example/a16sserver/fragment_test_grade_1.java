@@ -2,10 +2,12 @@ package com.example.a16sserver;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +20,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import org.json.JSONArray;
+
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +35,15 @@ public class fragment_test_grade_1 extends Fragment {
     private ListViewAdapter adapter = null;
     public boolean isCheck[] = new boolean[50]; //체크박스배열
     public int chk_favorite = 0;
+
+    //////----arraylist sharedpreference에 저장
+    ArrayList<List> lists;
+    Gson gson = new GsonBuilder().create();
+    SharedPreferences preferences;
+    SharedPreferences.Editor editor;
+    final String PREF = "list";
+    final String LIST = "arrayList";
+    //////--------------------------------------
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -41,21 +57,37 @@ public class fragment_test_grade_1 extends Fragment {
         adapter = new ListViewAdapter(); //리스트뷰 어댑터 생성
         listView.setAdapter(adapter); //리스트뷰에 어댑터를 붙여준다.
 
-        String[] quiz2_yy_data = new String[]{"22년","21년","20년","19년"};
-        String[] quiz2_name_data = new String[]{"11월모의고사","10월모의고사","9월모의고사","6월모의고사","3월모의고사"};
+        // 모의고사 정보는 배열로 받게 되겠지만, sharedpreference에는 배열로 저장하지 않고
+        // 간단하게 저장했다. 연동할때는 배열로 가져오기만 하면 돼서 다른페이지에 sharedpreference로 가져온거 필요없는건 빼기
+        // 배열 시 사용 x 라고 표시해둠.
+
+        String[] quiz2_2211 = {"22년","2211","11월 모의고사","0","3","03:30","5","3"}; //22년 11월 모의고사 데이터
+        String[] quiz2_2209 = {"22년","2209","09월 모의고사","0","3","02:30","5","3"}; //22년 09월 모의고사 데이터
+        String[] quiz2_2110 = {"21년","2110","10월 모의고사","0","2","04:30","5","3"}; //22년 10월 모의고사 데이터
+        String[] quiz2_2103 = {"21년","2103","03월 모의고사","0","2","05:30","4","3"}; //22년 03월 모의고사 데이터
+        String[] quiz2_1906 = {"19년","1906","06월 모의고사","0","2","03:30","4","3"}; //22년 06월 모의고사 데이터
+        String[] quiz2_1809 = {"18년","1809","09월 모의고사","0","5","02:30","5","3"}; //22년 09월 모의고사 데이터
 
         //Adapter 안에 넣을 리스트 데이터  정보 담기
         //반복문으로 돌린후에 밑에꺼 나오게 바꾸기
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2211,quiz2_name_data[0],0));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2210,quiz2_name_data[1],0));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[0],2209,quiz2_name_data[2],1));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[1],2106,quiz2_name_data[3],1));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[1],2103,quiz2_name_data[3],1));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[2],2003,quiz2_name_data[4],0));
-        adapter.addItem(new quiz2_list(quiz2_yy_data[3],1910,quiz2_name_data[1],0));
-
-
-
+        adapter.addItem(new quiz2_list(quiz2_2211[0],Integer.parseInt(quiz2_2211[1]),
+                quiz2_2211[2],Integer.parseInt(quiz2_2211[3]),Integer.parseInt(quiz2_2211[4]),
+                quiz2_2211[5],Integer.parseInt(quiz2_2211[6]),Integer.parseInt(quiz2_2211[7])));
+        adapter.addItem(new quiz2_list(quiz2_2209[0],Integer.parseInt(quiz2_2209[1]),
+                quiz2_2209[2],Integer.parseInt(quiz2_2209[3]),Integer.parseInt(quiz2_2209[4]),
+                quiz2_2209[5],Integer.parseInt(quiz2_2209[6]),Integer.parseInt(quiz2_2211[7])));
+        adapter.addItem(new quiz2_list(quiz2_2110[0],Integer.parseInt(quiz2_2110[1]),
+                quiz2_2110[2],Integer.parseInt(quiz2_2110[3]),Integer.parseInt(quiz2_2110[4]),
+                quiz2_2110[5],Integer.parseInt(quiz2_2110[6]),Integer.parseInt(quiz2_2211[7])));
+        adapter.addItem(new quiz2_list(quiz2_2103[0],Integer.parseInt(quiz2_2103[1]),
+                quiz2_2103[2],Integer.parseInt(quiz2_2103[3]),Integer.parseInt(quiz2_2103[4]),
+                quiz2_2103[5],Integer.parseInt(quiz2_2103[6]),Integer.parseInt(quiz2_2211[7])));
+        adapter.addItem(new quiz2_list(quiz2_1906[0],Integer.parseInt(quiz2_1906[1]),
+                quiz2_1906[2],Integer.parseInt(quiz2_1906[3]),Integer.parseInt(quiz2_1906[4]),
+                quiz2_1906[5],Integer.parseInt(quiz2_1906[6]),Integer.parseInt(quiz2_2211[7])));
+        adapter.addItem(new quiz2_list(quiz2_1809[0],Integer.parseInt(quiz2_1809[1]),
+                quiz2_1809[2],Integer.parseInt(quiz2_1809[3]),Integer.parseInt(quiz2_1809[4]),
+                quiz2_1809[5],Integer.parseInt(quiz2_1809[6]),Integer.parseInt(quiz2_2211[7])));
 
         return rootView;
     }
@@ -144,36 +176,29 @@ public class fragment_test_grade_1 extends Fragment {
             });
             ///------------------------------------------------------------------------------------------
 
-            /**버튼으로 구현하면 안 될것같음.
-            //btn_wishstar_empty.setOnClickListener(new View.OnClickListener() {
-             //   @Override
-              //  public void onClick(View view) {
-              //      //일단 즐겨찾기 하면 id랑 선택한 모의고사 이름 표시.
-              //      Toast.makeText(context, quiz2_list.getQuiz2_name()+" : 즐겨찾기함\n"+"모의고사 id :" +quiz2_list.getQuiz2_id(), Toast.LENGTH_SHORT).show();
-              //
-               //     int count;
 
-                //    count = adapter.getCount(); // 클릭된 문제 위치 받아오기
-
-                 //   if (count>0){
-
-               //     }
-                    //
-                    //btn_wishstar_empty.setSelected(!btn_wishstar_empty.isSelected());
-               // }
-          //  });*/
             //-------풀기 버튼 클릭 시 동작---------------------------------------------
             btn_quiz2_solve.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(getActivity(),quiz2_solve.class); // 다음화면으로 넘기기위한 intent 선언
-                    Toast.makeText(context, quiz2_list.getQuiz2_name()+"모의고사 id :" +quiz2_list.getQuiz2_id(), Toast.LENGTH_SHORT).show();
 
-                    // SharedPreferences_class에 모의고사 id 저장
-                    //SharedPreferences_class.setString(mContext,"key_nickname_s",tmp_nickname);
-                    //String text = SharedPreferences_class.getString(mContext,"key_nickname_s");
-                    //String text = SharedPreferences_class.getString(mContext,"key_nickname_s");
-                    //System.out.println("닉네임 받은것은 : "+text);
+                    ArrayList<String> quiz2_content = new ArrayList<>(); //누른 모의고사 내용을 배열로 전달
+
+                    quiz2_content.add(quiz2_list.getQuiz2_name());// 모의고사 이름
+                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_score()));// 모의고사 점수
+                    quiz2_content.add(quiz2_list.
+                            getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":"))); //모의고사 분
+                    quiz2_content.add(quiz2_list.
+                            getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));//모의고사 초
+                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_que())); //모의고사 문제갯수 4
+                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_id()));// 모의고사 id
+
+
+
+                    intent.putExtra("quiz2_content",quiz2_content);
+
+
 
 
 
@@ -182,13 +207,14 @@ public class fragment_test_grade_1 extends Fragment {
 
                 }
             });
-            //-----------------------------------------------------------------------
+
+
+
 
             return convertView;
         }
         ///////////////---------------------------------------------------------------------------------
     }
-
 //////--------------------------------------------------------------------------------------
 }
 

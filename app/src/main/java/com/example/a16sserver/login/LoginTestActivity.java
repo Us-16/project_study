@@ -90,7 +90,7 @@ public class LoginTestActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<HashMap<String, String>> call, Throwable t) {
-                        Log.d("TEST", "Connection Fail"); //해결함ㅋㅋㅋㅋㅋ
+                        Log.d("TEST", "Connection Fail");
                     }
                 });
             }
@@ -105,7 +105,8 @@ public class LoginTestActivity extends AppCompatActivity {
             finish();
         }else{
             TextView fail = findViewById(R.id.Login_failMessage);
-            fail.setText("아이디와 비밀번호를 다시 확인해주세요");
+            fail.setText("" +
+                    "이디와 비밀번호를 다시 확인해주세요");//??
         }
     }
 }

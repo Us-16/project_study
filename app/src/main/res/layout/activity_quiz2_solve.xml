@@ -57,7 +57,10 @@
                         android:text="몇분:몇초"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:id="@+id/id_quiz_timer1"/>
+
+
 
                 </LinearLayout>
 
@@ -99,15 +102,40 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_marginRight="5dp">
+                    android:layout_marginRight="5dp"
+                    android:gravity="right">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="3점"
-                        android:textColor="@color/gray"
-                        android:textSize="20sp"
-                        android:gravity="right"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:textColor="@color/gray"
+                            android:textSize="20sp"
+                            android:id="@+id/id_quiz_score"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="점"
+                            android:textColor="@color/gray"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -134,12 +162,21 @@
 
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="1."
+                                android:text="1"
+                                android:textSize="25dp"
+                                android:textColor="@color/black"
+                                android:id="@+id/txt_quiz2_num"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="."
                                 android:textSize="25dp"
                                 android:textColor="@color/black"/>
 
@@ -156,7 +193,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="다음 그림과 같이 좌표평면에서 세 직선 으로 둘러싸인 도형이 이등변 삼각형일 때, 상수 m의 값은?"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_content"/>
 
                         </LinearLayout>
 
@@ -178,6 +216,7 @@
 
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -187,7 +226,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:src="@drawable/img_quiz2_solve"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:id="@+id/img_quiz_content"
+                    android:requestLegacyExternalStorage="true"
+                    />
+
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -221,7 +266,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="1번답"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_ans_1"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -235,7 +281,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="2번답"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_ans_2"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -249,7 +296,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="3번답"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_ans_3"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -263,7 +311,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="4번답"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_ans_4"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -277,20 +326,40 @@
                                 android:layout_height="wrap_content"
                                 android:text="5번답"
                                 android:textSize="20dp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:id="@+id/id_quiz_ans_5"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right">
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <android.widget.Button
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이전문제"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:id="@+id/btn_quiz_back"
+                    android:clickable="false"
+                    android:background="@drawable/btn_enable_disable"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
 
                 <android.widget.Button
                     android:padding="5dp"
@@ -300,7 +369,8 @@
                     android:text="다음문제"
                     android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:background="@drawable/layout_background_round_quizselect"/>
+                    android:id="@+id/btn_quiz_next"
+                    android:background="@drawable/btn_quiz2_mark"/>
 
             </LinearLayout>
 

@@ -40,8 +40,6 @@ public class User_account_2 extends AppCompatActivity {
                 else{
                     // SharedPreferences_class에  닉네임 저장
                     SharedPreferences_class.setString(mContext,"key_nickname_s",tmp_nickname);
-                    String text = SharedPreferences_class.getString(mContext,"key_nickname_s");
-                    //System.out.println("닉네임 받은것은 : "+text);
                     startActivity(intent); //다음액티비티로 넘어감.
                 }
             }

@@ -6,21 +6,31 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.os.CountDownTimer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Locale;
+
 
 public class fragment_home extends Fragment {
     private Context mContext;
+    CountDownTimer countDownTimer;//카운트다운 변수
+    TextView txt_countdown;//홈화면 내 카운트다운 텍스트 변수
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup)inflater.inflate(R.layout.fragment_home,container,false);
         mContext = rootView.getContext();
+
 
         ////////----닉네임불러와서 넣기------------------------------------------------------
         String text1 = SharedPreferences_class.getString(mContext,"key_nickname_s");
@@ -74,7 +84,67 @@ public class fragment_home extends Fragment {
 
         ///////----------------------------------------------------------------------------------
 
+        ///////-----------------------------------------------------------
+
+        txt_countdown = (TextView) rootView.findViewById(R.id.txt_countdown);
+
+        countDownTimer = new CountDownTimer(30000,1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                txt_countdown.setText(getTime());
+            }
+
+            @Override
+            public void onFinish() {
+                countDownTimer.start(); //반복실행되게 끝나자마자 다시 시작하게
+            }
+        };
+        countDownTimer.start();
+
+
+
+        ///////-----------------------------------------------------------
+
         return rootView;
 
         }
+
+    ////////타이머 시간 얻는 함수 ------------------------------------------
+    private String getTime(){
+        Date date = new Date();
+        Calendar calendar = new GregorianCalendar();
+        calendar.setTime(date);
+
+        int year = calendar.get(Calendar.YEAR); // 현재날짜 년도 등등 얻기위한 변수설정
+        int month = calendar.get(Calendar.MONTH);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+        int c_hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int c_min = calendar.get(Calendar.MINUTE);
+        int c_sec = calendar.get(Calendar.SECOND);
+
+
+
+        Calendar baseCal = new GregorianCalendar(year,month,day,c_hour,c_min,c_sec); //기준날짜
+        Calendar targetCal = new GregorianCalendar(year,month,day,24,00,00);
+        //비교대상날짜(현재날짜에 특정시간까지 타이머)
+
+
+        long diffSec = (targetCal.getTimeInMillis() - baseCal.getTimeInMillis()) / 1000;
+        long diffDays = diffSec / (24*60*60); // 초단위를 일단위로 변환
+
+        targetCal.add(Calendar.DAY_OF_MONTH, (int)(-diffDays));
+
+        int hourTime = (int)Math.floor((double)(diffSec/3600));
+        int minTime = (int)Math.floor((double)(((diffSec - (3600 * hourTime)) / 60)));
+        int secTime = (int)Math.floor((double)(((diffSec - (3600 * hourTime)) - (60 * minTime))));
+
+        String hour = String.format("%02d", hourTime);
+        String min = String.format("%02d", minTime);
+        String sec = String.format("%02d", secTime);
+
+        return  hour + ":" +min + ":"+ sec ;
+
+        ////////-----------------------------------------------------------
+
+    }
 }
