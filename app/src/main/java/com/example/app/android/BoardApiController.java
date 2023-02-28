@@ -128,7 +128,6 @@ public class BoardApiController {
         return this.questionService.getList(0).getTotalPages();
     }
 
-
     public void MemTest(){
         Runtime runtime = Runtime.getRuntime();
 
