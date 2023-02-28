@@ -13,4 +13,5 @@
     <color name="gray_2">#B5B5B5</color>
     <color name="gray_3">#E0E0E0</color>
     <color name="color_mark">#F29450</color>
+    <color name="color_unenabled">#CEF2DE</color>
 </resources>

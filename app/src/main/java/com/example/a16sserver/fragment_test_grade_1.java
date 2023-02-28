@@ -191,7 +191,7 @@ public class fragment_test_grade_1 extends Fragment {
                             getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":"))); //모의고사 분
                     quiz2_content.add(quiz2_list.
                             getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));//모의고사 초
-                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_que())); //모의고사 문제갯수
+                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_que())); //모의고사 문제갯수 4
                     quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_id()));// 모의고사 id
 
 
