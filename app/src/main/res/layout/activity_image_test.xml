@@ -11,6 +11,11 @@
         android:id="@+id/image_page"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:id="@+id/image_totalPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#026502"></TextView>
 
     <Button
         android:id="@+id/image_loadButton"
