@@ -85,6 +85,7 @@ public class ImageTestActivity extends AppCompatActivity {
                                 .into(iv);
                         ly.addView(iv);
                     }
+                    System.out.println(questionList.size());
                 }else{
                     Log.d(TAG, "Status code : " + response.code() );
                 }//tester
