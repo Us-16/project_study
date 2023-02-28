@@ -51,7 +51,7 @@ public class LoginTestActivity extends AppCompatActivity {
                 EditText Text_pw = findViewById(R.id.Login_pw);
                 String test_id;
                 String test_pw;
-
+                //tester
                 //암호화
                 try {
                     test_id = aes256.encrypt(Text_id.getText().toString());
