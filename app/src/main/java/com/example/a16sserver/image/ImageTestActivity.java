@@ -32,6 +32,8 @@ public class ImageTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_test);
 
+        opener();
+
         Button loadButton = findViewById(R.id.image_loadButton);
         loadButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,6 +97,30 @@ public class ImageTestActivity extends AppCompatActivity {
             public void onFailure(Call<ArrayList<Question>> call, Throwable t) {
                 Log.d("TEST", "Connection Fail");
                 t.printStackTrace(); //서비스할 쯤 되면 이거 t.getMessage()로 변경 부탁여
+            }
+        });
+    }
+
+    private void opener(){
+        TextView totalPageView = (TextView)findViewById(R.id.image_totalPage);
+
+        Retrofit retrofit = RetrofitUtil.Init();
+        JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
+        Call<Integer> call = jsonPlaceHolderApi.getQuestionPageInfo();
+        call.enqueue(new Callback<Integer>() {
+            @Override
+            public void onResponse(Call<Integer> call, Response<Integer> response) {
+                if(response.isSuccessful()) {
+                    int totalPages = response.body();
+                    totalPageView.setText(Integer.toString(totalPages));
+                }else{
+                    Log.e(TAG, "Status code : " + response.code() );
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Integer> call, Throwable t) {
+                t.printStackTrace();
             }
         });
     }
