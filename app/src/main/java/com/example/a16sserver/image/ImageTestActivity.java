@@ -38,7 +38,7 @@ public class ImageTestActivity extends AppCompatActivity {
             public void onClick(View view) {
                 putter();
             }
-        });
+        });//commit tester
 
     }
 
