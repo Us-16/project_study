@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -17,6 +18,8 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.a16sserver.account.User_account_3;
+import com.example.a16sserver.dtos.Question;
+import com.example.a16sserver.dtos.QuizContent;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -42,18 +45,21 @@ public class quiz2_solve extends AppCompatActivity {
 
         Intent intent = getIntent(); // 모의고사 quiz2_list 가져오기 위한 intent 선언
 
-        ArrayList<String> data = (ArrayList<String>) intent.getSerializableExtra("quiz2_content");
-
+        ArrayList<QuizContent> data = (ArrayList<QuizContent>) intent.getSerializableExtra("quiz2_content");
+        QuizContent quizContent = data.get(0);
         ///////--------모의고사 이름----------------------------------------------------------------
 
-        String quiz2_name = data.get(0);//모의고사 이름 가져옴
-        System.out.println("풀기버튼 눌렀을 때 모의고사 이름" + quiz2_name);
+        String quiz2_name = quizContent.getName();//모의고사 이름 가져옴
+        System.out.println("풀기버튼 눌렀을 때 모의고사 이름" + quiz2_name + " " + quizContent.getQuestions());
+//        for(Question item : quizContent.getQuestions()){
+//            System.out.println("for문: " + item.getId());
+//        }
 
         TextView id_quiz_name = (TextView) findViewById(R.id.id_quiz_name);
         id_quiz_name.setText(quiz2_name);
 
         ///////----------모의고사 점수---------------------------------------------------------------
-        String quiz2_score = data.get(1);//모의고사 점수 가져옴
+        String quiz2_score = quizContent.getScore();//모의고사 점수 가져옴
         System.out.println("풀기버튼 눌렀을 때 모의고사 점수" + quiz2_score);
 
         TextView id_quiz_score = (TextView) findViewById(R.id.id_quiz_score); //모의고사 점수부분
@@ -65,13 +71,17 @@ public class quiz2_solve extends AppCompatActivity {
         //임시 문제 데이터 저장해두기 (간이 서버데이터역할(을 하려했는데 못함 ㅋ))
         ArrayList<String> quiz_content_saveList = new ArrayList<>();
 
-        for(int i=0;i<Integer.parseInt(data.get(4));i++){
-            System.out.println("문제 수 만큼 돌린다 : "+i+1+"번째");
-            quiz_content_saveList.add(data.get(5));
-            quiz_content_saveList.add(data.get(5));
-            quiz_content_saveList.add(data.get(5));
-            quiz_content_saveList.add(data.get(5));
-        } //이거 아직 완료안했음. 딴거 해놓고 하기
+//        for(int i=0;i<Integer.parseInt((String)data.get(4));i++){
+//            System.out.println("문제 수 만큼 돌린다 : "+i+1+"번째");
+//            quiz_content_saveList.add(data.get(5));
+//            quiz_content_saveList.add(data.get(5));
+//            quiz_content_saveList.add(data.get(5));
+//            quiz_content_saveList.add(data.get(5));
+//        } //이거 아직 완료안했음. 딴거 해놓고 하기
+
+        //불러온 id로 문제 내용 테이블 활용하기
+
+
 
 
         String[][] quiz2_que = {{"2211", "2", "문제1번~~한값은2211?", "문제2번~~한값은?"}, {"2209", "2", "문제1번~~한값은?2209", "문제2번~~한값은?"}
@@ -103,7 +113,7 @@ public class quiz2_solve extends AppCompatActivity {
 
 
         ///////----------모의고사 가져온 id 를 토대로, 문제내용 뽑아오기---------------------------------------------------------------
-        String quiz2_id = data.get(5);//모의고사 id 가져옴
+        String quiz2_id = quizContent.getId();//모의고사 id 가져옴
         System.out.println("풀기버튼 눌렀을 때 모의고사 id : " + quiz2_id);
 
         TextView id_quiz_content = (TextView) findViewById(R.id.id_quiz_content); //모의고사 문제 1번부터 쭉 적히는 곳.
@@ -263,8 +273,8 @@ public class quiz2_solve extends AppCompatActivity {
         TextView id_quiz_timer1 = (TextView) findViewById(R.id.id_quiz_timer1); //카운트다운 할 곳.
 
         ///////-------------------------------------------------------------------------------------------------
-        String min = String.format("%02d", Integer.parseInt(data.get(2)));//모의고사 시간(분(04이렇게)) 가져옴
-        String sec = String.format("%02d", Integer.parseInt(data.get(3)));//모의고사 시간(초) 가져옴 30
+        String min = String.format("%02d", Integer.parseInt(quizContent.getTimerMin()));//모의고사 시간(분(04이렇게)) 가져옴
+        String sec = String.format("%02d", Integer.parseInt(quizContent.getTimerSec()));//모의고사 시간(초) 가져옴 30
         System.out.println("풀기 눌렀을 때 모의고사 분 : " + min);
         System.out.println("풀기 눌렀을 때 모의고사 초 : " + sec);
 
@@ -274,7 +284,7 @@ public class quiz2_solve extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
 
 
-                id_quiz_timer1.setText(getTime());
+               // id_quiz_timer1.setText(getTime());
 
             }
 
@@ -299,8 +309,8 @@ public class quiz2_solve extends AppCompatActivity {
 
         ///////--------모의고사 이름----------------------------------------------------------------
 
-        String count_min = String.format("%02d", Integer.parseInt(data.get(2)));//모의고사 시간(분(04이렇게)) 가져옴
-        String count_sec = String.format("%02d", Integer.parseInt(data.get(3)));//모의고사 시간(초) 가져옴 30
+        //String count_min = String.format("%02d", Integer.parseInt(data.get(2)));//모의고사 시간(분(04이렇게)) 가져옴
+        //String count_sec = String.format("%02d", Integer.parseInt(data.get(3)));//모의고사 시간(초) 가져옴 30
 
         int year = calendar.get(Calendar.YEAR); // 현재날짜 년도 등등 얻기위한 변수설정
         int month = calendar.get(Calendar.MONTH);
