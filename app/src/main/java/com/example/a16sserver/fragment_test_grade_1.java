@@ -27,7 +27,9 @@ import android.widget.Toast;
 import com.example.a16sserver.retrofit.JsonPlaceHolderApi;
 import com.example.a16sserver.retrofit.RetrofitUtil;
 import com.example.a16sserver.springdo.ParcelableTest;
+import com.example.a16sserver.springdo.ParcelableTest2;
 import com.example.a16sserver.springdo.Question;
+import com.example.a16sserver.springdo.QuestionListTest;
 import com.example.a16sserver.springdo.QuizContent;
 import com.example.a16sserver.test.TestActivity;
 
@@ -197,6 +199,8 @@ public class fragment_test_grade_1 extends Fragment {
             btn_quiz2_solve.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    //소스코드 일부 수정 허가받음
+                    //허가 없는 수정은 대단히 무례한 행위임 -> 당해봐서 잘 알고 있음
                     RetrofitOn();
 //                    Intent intent = new Intent(getActivity(),quiz2_solve.class); // 다음화면으로 넘기기위한 intent 선언
 //                    ArrayList<String> quiz2_content = new ArrayList<>(); //누른 모의고사 내용을 배열로 전달
@@ -239,10 +243,16 @@ public class fragment_test_grade_1 extends Fragment {
                     Intent intent = new Intent(getActivity(), TestActivity.class);// 다음화면으로 넘기기위한 intent 선언
 
                     ArrayList<Question> questions = response.body();
-                    Question question = questions.get(0);
-                    ParcelableTest test = new ParcelableTest(question.getId(), question.getSubject(),
-                            question.getChoice1(), question.getChoice2(), question.getChoice3(), question.getChoice4(), question.getChoice5());
-                    intent.putExtra("testContent", test);
+                    ArrayList<ParcelableTest2> tests = new ArrayList<>();
+
+                    for(Question question : questions) {
+                        tests.add(new ParcelableTest2(question.getId(), question.getSubject(),
+                                question.getChoice1(), question.getChoice2(), question.getChoice3()
+                                , question.getChoice4(), question.getChoice5())
+                        );
+                    }
+
+                    intent.putExtra("testContent", tests);
                     startActivity(intent);
                 }
             }
