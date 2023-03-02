@@ -1,5 +1,7 @@
 package com.example.a16sserver.image;
 
+import com.example.a16sserver.springdo.Question;
+
 import java.time.LocalDateTime;
 import java.util.List;
 

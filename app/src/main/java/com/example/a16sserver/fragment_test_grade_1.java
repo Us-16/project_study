@@ -23,10 +23,13 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.a16sserver.dtos.Question;
-import com.example.a16sserver.dtos.QuizContent;
+
 import com.example.a16sserver.retrofit.JsonPlaceHolderApi;
 import com.example.a16sserver.retrofit.RetrofitUtil;
+import com.example.a16sserver.springdo.Question;
+import com.example.a16sserver.springdo.QuizContent;
+import com.example.a16sserver.test.TestActivity;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -193,61 +196,61 @@ public class fragment_test_grade_1 extends Fragment {
             btn_quiz2_solve.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(getActivity(), quiz2_solve.class); // 다음화면으로 넘기기위한 intent 선언
-                    ArrayList<Question> questions = getQuestions();
-                    QuizContent quizContent = new QuizContent(
-                            quiz2_list.getQuiz2_name(),
-                            String.valueOf(quiz2_list.getQuiz2_score()),
-                            quiz2_list.getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":")),
-                            quiz2_list.getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1),
-                            String.valueOf(quiz2_list.getQuiz2_ans_num()),
-                            String.valueOf(quiz2_list.getQuiz2_id()),
-                            questions
-                    );
-                    System.out.println(quizContent.toString());
-                    ArrayList<QuizContent> container = new ArrayList<>();
-                    container.add(quizContent);
-                    intent.putExtra("quiz2_content",container);//리스트 값 넘기기
-                    startActivity(intent);
+                    RetrofitOn();
+//                    Intent intent = new Intent(getActivity(),quiz2_solve.class); // 다음화면으로 넘기기위한 intent 선언
+//                    ArrayList<String> quiz2_content = new ArrayList<>(); //누른 모의고사 내용을 배열로 전달
+//                    quiz2_content.add(quiz2_list.getQuiz2_name());// 모의고사 이름
+//                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_score()));// 모의고사 점수
+//                    quiz2_content.add(quiz2_list.
+//                            getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":"))); //모의고사 분
+//                    quiz2_content.add(quiz2_list.
+//                            getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));//모의고사 초
+//                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_que())); //모의고사 문제갯수 4
+//                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_id()));// 모의고사 id
+
+//                    QuizContent qz = new QuizContent();
+//                    qz.setName(quiz2_list.getQuiz2_name());
+//                    qz.setScore(quiz2_list.getQuiz2_score());
+//                    qz.setTimerMin(quiz2_list.getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":")));
+//                    qz.setTimerSec(quiz2_list.getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));
+//                    qz.setAmount(quiz2_list.getQuiz2_que());
+//                    qz.setId(quiz2_list.getQuiz2_id());
+
+//                    System.out.println(qz.toString());
+//                    intent.putExtra("quiz2_content", qz);
+//                    startActivity(intent); //intent 실행
+
                 }
             });
 
-
-
-
             return convertView;
         }
-        ///////////////---------------------------------------------------------------------------------
     }
-    public ArrayList<Question> getQuestions(){
-        Question q = new Question();
-        ArrayList<Question> questions = new ArrayList<>();
+
+    public void RetrofitOn(){
         Retrofit retrofit = RetrofitUtil.Init();
         JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
-        Call<ArrayList<Question>> call = jsonPlaceHolderApi.getMo(0);
-
+        Call<ArrayList<Question>> call  = jsonPlaceHolderApi.getQuestionPage(1);
         call.enqueue(new Callback<ArrayList<Question>>() {
             @Override
             public void onResponse(Call<ArrayList<Question>> call, Response<ArrayList<Question>> response) {
                 if(response.isSuccessful()){
-                    ArrayList<Question> items = response.body();
-                    questions.addAll(items);
+                    Intent intent = new Intent(getActivity(), TestActivity.class);// 다음화면으로 넘기기위한 intent 선언
 
+                    ArrayList<Question> questions = response.body();
 
-                }else{
-                    Log.e(TAG, ""+response.code());
+                    intent.putExtra("quiz2_content", questions);
+                    startActivity(intent);
                 }
             }
 
             @Override
             public void onFailure(Call<ArrayList<Question>> call, Throwable t) {
-                t.printStackTrace();
+
+                Log.e(TAG, t.getMessage());
             }
         });
-        System.out.println("IS null? " + questions);
-        return questions;
     }
-//////--------------------------------------------------------------------------------------
 }
 
 

@@ -1,4 +1,6 @@
-package com.example.a16sserver.image;
+package com.example.a16sserver.springdo;
+
+import com.example.a16sserver.image.Teacher;
 
 import java.sql.Time;
 import java.time.LocalDateTime;
@@ -9,6 +11,20 @@ public class Question {
     private Teacher teacher; //FK
 
     private String subject;
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "content='" + content + '\'' +
+                ", filepath='" + filepath + '\'' +
+                ", choice1='" + choice1 + '\'' +
+                ", choice2='" + choice2 + '\'' +
+                ", choice3='" + choice3 + '\'' +
+                ", choice4='" + choice4 + '\'' +
+                ", choice5='" + choice5 + '\'' +
+                ", createDate='" + createDate + '\'' +
+                '}';
+    }
 
     private String content;
 
