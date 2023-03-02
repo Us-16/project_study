@@ -1,16 +1,12 @@
 package com.example.a16sserver.retrofit;
 
-import com.example.a16sserver.image.Question;
-import com.example.a16sserver.retrofit.dto.CheckUsername;
-import com.example.a16sserver.retrofit.dto.LoginTestDTO;
+import com.example.a16sserver.springdo.Question;
 import com.example.a16sserver.retrofit.dto.Response_check;
 import com.example.a16sserver.retrofit.dto.StudentAccount;
-import com.example.a16sserver.retrofit.dto.Test;
 import com.example.a16sserver.retrofit.dto.Upload;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

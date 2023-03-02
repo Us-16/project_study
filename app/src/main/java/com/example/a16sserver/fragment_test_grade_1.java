@@ -1,5 +1,7 @@
 package com.example.a16sserver;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,6 +10,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +23,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.a16sserver.retrofit.JsonPlaceHolderApi;
+import com.example.a16sserver.retrofit.RetrofitUtil;
+import com.example.a16sserver.springdo.Question;
+import com.example.a16sserver.springdo.QuizContent;
+import com.example.a16sserver.test.TestActivity;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -28,6 +36,11 @@ import org.json.JSONArray;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
 
 public class fragment_test_grade_1 extends Fragment {
     private Context mContext;
@@ -181,41 +194,58 @@ public class fragment_test_grade_1 extends Fragment {
             btn_quiz2_solve.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(getActivity(),quiz2_solve.class); // 다음화면으로 넘기기위한 intent 선언
+                    RetrofitOn();
+//                    Intent intent = new Intent(getActivity(),quiz2_solve.class); // 다음화면으로 넘기기위한 intent 선언
+//                    ArrayList<String> quiz2_content = new ArrayList<>(); //누른 모의고사 내용을 배열로 전달
+//                    quiz2_content.add(quiz2_list.getQuiz2_name());// 모의고사 이름
+//                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_score()));// 모의고사 점수
+//                    quiz2_content.add(quiz2_list.
+//                            getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":"))); //모의고사 분
+//                    quiz2_content.add(quiz2_list.
+//                            getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));//모의고사 초
+//                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_que())); //모의고사 문제갯수 4
+//                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_id()));// 모의고사 id
 
-                    ArrayList<String> quiz2_content = new ArrayList<>(); //누른 모의고사 내용을 배열로 전달
+//                    QuizContent qz = new QuizContent();
+//                    qz.setName(quiz2_list.getQuiz2_name());
+//                    qz.setScore(quiz2_list.getQuiz2_score());
+//                    qz.setTimerMin(quiz2_list.getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":")));
+//                    qz.setTimerSec(quiz2_list.getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));
+//                    qz.setAmount(quiz2_list.getQuiz2_que());
+//                    qz.setId(quiz2_list.getQuiz2_id());
 
-                    quiz2_content.add(quiz2_list.getQuiz2_name());// 모의고사 이름
-                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_score()));// 모의고사 점수
-                    quiz2_content.add(quiz2_list.
-                            getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":"))); //모의고사 분
-                    quiz2_content.add(quiz2_list.
-                            getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));//모의고사 초
-                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_que())); //모의고사 문제갯수 4
-                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_id()));// 모의고사 id
-
-
-
-                    intent.putExtra("quiz2_content",quiz2_content);
-
-
-
-
-
-                    startActivity(intent); //intent 실행
-
-
+//                    System.out.println(qz.toString());
+//                    intent.putExtra("quiz2_content", qz);
+//                    startActivity(intent); //intent 실행
                 }
             });
 
-
-
-
             return convertView;
         }
-        ///////////////---------------------------------------------------------------------------------
     }
-//////--------------------------------------------------------------------------------------
+    public void RetrofitOn(){
+        Retrofit retrofit = RetrofitUtil.Init();
+        JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
+        Call<ArrayList<Question>> call  = jsonPlaceHolderApi.getQuestionPage(1);
+        call.enqueue(new Callback<ArrayList<Question>>() {
+            @Override
+            public void onResponse(Call<ArrayList<Question>> call, Response<ArrayList<Question>> response) {
+                if(response.isSuccessful()){
+                    Intent intent = new Intent(getActivity(), TestActivity.class);// 다음화면으로 넘기기위한 intent 선언
+
+                    ArrayList<Question> questions = response.body();
+
+                    intent.putExtra("quiz2_content", questions);
+                    startActivity(intent);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<Question>> call, Throwable t) {
+                Log.e(TAG, t.getMessage());
+            }
+        });
+    }
 }
 
 
