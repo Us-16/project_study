@@ -22,7 +22,7 @@ public class quiz2_img_activity extends AppCompatActivity {
 
         System.out.println("받아온 값 : "+test_img);
 
-        Glide.with(this).load("http://goo.gl/gEgYUd").override(300,200).into(img_quiz2_fullscreen);
+        Glide.with(this).load(test_img).override(300,200).into(img_quiz2_fullscreen);
 
         //ArrayList<String> data= (ArrayList<String>) intent.getSerializableExtra("quiz2_content");
     }

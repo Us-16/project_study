@@ -23,11 +23,13 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.example.a16sserver.retrofit.JsonPlaceHolderApi;
 import com.example.a16sserver.retrofit.RetrofitUtil;
 import com.example.a16sserver.springdo.Question;
 import com.example.a16sserver.springdo.QuizContent;
 import com.example.a16sserver.test.TestActivity;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -141,7 +143,7 @@ public class fragment_test_grade_1 extends Fragment {
         @Override
         public View getView(int position, View convertView, ViewGroup viewGroup) {
             final Context context = viewGroup.getContext();
-            final quiz2_list quiz2_list = items.get(position);
+            final quiz2_list quiz2_list = items.get(position); //앞으로는 형님이라고 부르도록
             //CheckBox favoriteBtn = (CheckBox) viewGroup.findViewById(R.id.chk_quiz2_favorite);
 
             //------------ "row_quiz2" Layout을 inflate하여 convertView 참조 획득.--------------
@@ -217,12 +219,14 @@ public class fragment_test_grade_1 extends Fragment {
 //                    System.out.println(qz.toString());
 //                    intent.putExtra("quiz2_content", qz);
 //                    startActivity(intent); //intent 실행
+
                 }
             });
 
             return convertView;
         }
     }
+
     public void RetrofitOn(){
         Retrofit retrofit = RetrofitUtil.Init();
         JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
@@ -242,6 +246,7 @@ public class fragment_test_grade_1 extends Fragment {
 
             @Override
             public void onFailure(Call<ArrayList<Question>> call, Throwable t) {
+
                 Log.e(TAG, t.getMessage());
             }
         });

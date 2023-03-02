@@ -34,8 +34,11 @@ public interface JsonPlaceHolderApi {
     @GET("api/image_test/{id}")
     Call<Upload> getFiles(@Path("id") Long id);
 
-    @POST("api/page/{page}")
+    @GET("api/page/{page}")
     Call<ArrayList<Question>> getQuestionPage(@Path("page") int page);
+
+    @GET("api/page/{page}")
+    Call<ArrayList<com.example.a16sserver.dtos.Question>> getMo(@Path("page") int page);
     @GET("api/page/info")
     Call<Integer> getQuestionPageInfo();
 }

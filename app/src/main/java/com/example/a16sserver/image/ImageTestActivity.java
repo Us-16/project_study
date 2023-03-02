@@ -64,7 +64,7 @@ public class ImageTestActivity extends AppCompatActivity {
 
                     for(Question item : questionList) {
                         tmp = "";
-                        url = "http://10.0.2.2:8080";
+                        url = "http://10.0.2.2:8085";
                         url += item.getFilepath();
 
                         tmp += item.getId() + "\n";
@@ -72,6 +72,11 @@ public class ImageTestActivity extends AppCompatActivity {
                         tmp += item.getContent() + "\n";
                         tmp += item.getFilepath() + "\n";
                         tmp += url + "\n";
+                        tmp += item.getChoice1()+"\n";
+                        tmp += item.getChoice2()+"\n";
+                        tmp += item.getChoice3()+"\n";
+                        tmp += item.getChoice4()+"\n";
+                        tmp += item.getChoice5()+"\n";
                         tmp += item.getCreateDate() + "\n";
 
                         TextView tx = new TextView(getApplicationContext());
@@ -87,7 +92,6 @@ public class ImageTestActivity extends AppCompatActivity {
                                 .into(iv);
                         ly.addView(iv);
                     }
-                    System.out.println(questionList.size());
                 }else{
                     Log.d(TAG, "Status code : " + response.code() );
                 }//tester
