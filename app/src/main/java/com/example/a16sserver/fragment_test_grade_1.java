@@ -26,7 +26,6 @@ import android.widget.Toast;
 
 import com.example.a16sserver.retrofit.JsonPlaceHolderApi;
 import com.example.a16sserver.retrofit.RetrofitUtil;
-import com.example.a16sserver.springdo.ParcelableTest;
 import com.example.a16sserver.springdo.Question;
 import com.example.a16sserver.springdo.QuizContent;
 import com.example.a16sserver.test.TestActivity;
@@ -239,10 +238,8 @@ public class fragment_test_grade_1 extends Fragment {
                     Intent intent = new Intent(getActivity(), TestActivity.class);// 다음화면으로 넘기기위한 intent 선언
 
                     ArrayList<Question> questions = response.body();
-                    Question question = questions.get(0);
-                    ParcelableTest test = new ParcelableTest(question.getId(), question.getSubject(),
-                            question.getChoice1(), question.getChoice2(), question.getChoice3(), question.getChoice4(), question.getChoice5());
-                    intent.putExtra("testContent", test);
+
+                    intent.putExtra("quiz2_content", questions);
                     startActivity(intent);
                 }
             }

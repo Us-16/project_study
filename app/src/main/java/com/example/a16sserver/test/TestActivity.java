@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.example.a16sserver.R;
-import com.example.a16sserver.springdo.ParcelableTest;
 import com.example.a16sserver.springdo.Question;
 
 import java.io.Serializable;
@@ -22,9 +21,8 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        Bundle bundle = getIntent().getExtras();
-        ParcelableTest test = bundle.getParcelable("testContent");
-        Log.d(TAG, "Im TestAct");
-        Log.d(TAG, test.getId() + " : " + test.getTitle()+ " " + test.getChoice1() +  " " + test.getChoice2() + " " + test.getChoice3() + " " + test.getChoice4() + " " + test.getChoice5());
+        Intent intent = getIntent();
+        ArrayList<Question> data = (ArrayList<Question>) intent.getSerializableExtra("quiz2_content");
+        Log.d(TAG, data.toString());
     }
 }
