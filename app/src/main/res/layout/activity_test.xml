@@ -7,8 +7,9 @@
     tools:context=".test.TestActivity">
 
     <TextView
+        android:id="@+id/test_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="어질어질하다?!"/>
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
