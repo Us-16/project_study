@@ -11,6 +11,7 @@ import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,6 +21,7 @@ import com.example.a16sserver.springdo.Question;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -31,6 +33,7 @@ public class quiz2_solve extends AppCompatActivity {
     CountDownTimer countDownTimer;//카운트다운 변수
     private final String URL = "http://10.0.2.2:8080";
     private int page;
+    private int QuestionAmount;
     private ArrayList<Question> questionArrayList;
     private boolean isNext;
     private boolean isBack;
@@ -42,10 +45,8 @@ public class quiz2_solve extends AppCompatActivity {
         setContentView(R.layout.activity_quiz2_solve);
 
         Context mContext = this;
-
         ContainerDO data = (ContainerDO) getIntent().getSerializableExtra("dataContent");
-        this.page = 0;
-        this.isNext = true;
+
 
         System.out.println("data: " + data.toString());
         Button btn_quiz_next = findViewById(R.id.btn_quiz_next); //다음문제 클릭부분
@@ -57,19 +58,16 @@ public class quiz2_solve extends AppCompatActivity {
         TextView id_quiz_score = findViewById(R.id.id_quiz_score); //모의고사 점수부분
         id_quiz_score.setText(String.valueOf(data.getScore()));
 
-
-        ImageView img_quiz_content = (ImageView) findViewById(R.id.img_quiz_content); //image
-
-        TextView id_quiz_content = (TextView) findViewById(R.id.id_quiz_content); //Content
-        TextView txt_quiz2_num = (TextView) findViewById(R.id.txt_quiz2_num); // Exam Number
-
-
         questionArrayList = data.getQuestions();
 
-        final int questionsAmount = questionArrayList.size(); //문제 수
-        Log.d(TAG, "Total Amount of Questions: " + questionsAmount);
+        this.QuestionAmount = questionArrayList.size(); //문제 수
 
-        showQuestions(this.questionArrayList.get(this.page));
+        this.page = 0;
+        this.isNext = true;
+        this.isBack = false; //어차피 인스턴스 변수로 두면 자동으로 false로 선언되는거 알고 계시나요>? -> 응, 명시적으로 알려줌으로써 혼동 방지하는거야~ 이게 다아 의도된거다 이 말이야
+
+        statusCheck();
+        showQuestions(this.questionArrayList.get(this.page)); //최초에는 0으로 들어가짐
 
         btn_quiz_next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,23 +81,7 @@ public class quiz2_solve extends AppCompatActivity {
                 subtractor();
             }
         });
-//        System.out.println(questionsAmount);
-//        for(Question question : questions){
-//            System.out.println("ID: " + question.getId() + " ::: " + question.getSubject() + " ::: " + question.getFilepath());
-//            System.out.println("Choices: " + question.getChoice1() + ":::"+ question.getChoice2() + ":::"+ question.getChoice3() + ":::"+ question.getChoice4() + ":::"+ question.getChoice5());
-//
-//            txt_quiz2_num.setText("1");
-//            Glide.with(this).load(this.URL + question.getFilepath()).override(300, 200).into(img_quiz_content);
-//
-//            question_num = txt_quiz2_num.getText().toString();
-//            if(question_num.equals("1")){
-//                btn_quiz_back.setEnabled(false);
-//            }else if(question_num.equals(String.valueOf(questionsAmount))){
-//                btn_quiz_next.setEnabled(false);
-//            } //이전문제 or 다음문제 버튼 비활성화 관련
-//        }
 
-//
         TextView id_quiz_timer1 = (TextView) findViewById(R.id.id_quiz_timer1); //카운트다운 할 곳.
 
         String min = String.format("%02d", Integer.parseInt(data.getTimerMin()));//모의고사 시간(분(04이렇게)) 가져옴
@@ -118,9 +100,13 @@ public class quiz2_solve extends AppCompatActivity {
         countDownTimer.start();
     }
 
+    /**
+     * 주의! adder, subtractor 두 메서드는 버튼이 눌러져야만 수행되기 때문에 그 전에는 this.page의 값이 얼마인지 파악해주지 않음
+     * 현재까지는 두 메서드의 동작 중 예상치 않은 오류를 발생시키지는 않았습니다!
+     * @return -1이 나오는 순간 범위 벗어났다는 뜻입니다
+     */
     public int adder(){
-
-        if(this.page >= 5){
+        if(this.page >= QuestionAmount-1){
             return -1;
         }
         this.page += 1;
@@ -128,10 +114,14 @@ public class quiz2_solve extends AppCompatActivity {
         showQuestions(this.questionArrayList.get(this.page));
         return this.page;
     }
-
+    /**
+     * 주의! adder, subtractor 두 메서드는 버튼이 눌러져야만 수행되기 때문에 그 전에는 this.page의 값이 얼마인지 파악해주지 않음
+     * 현재까지는 두 메서드의 동작 중 예상치 않은 오류를 발생시키지는 않았습니다!
+     * @return -1이 나오는 순간 범위 벗어났다는 뜻입니다
+     */
     public int subtractor(){ //adder 가산기 -> subtractor 감산기
-
         if(this.page <= 0){
+            this.page=0;
             return -1;
         }
         this.page -= 1;
@@ -144,8 +134,9 @@ public class quiz2_solve extends AppCompatActivity {
         Button btn_next = findViewById(R.id.btn_quiz_next);
         if(this.page <= 0){
             isBack = false;
-        }else if(this.page >= 5){
-            isNext = false;
+        }else if(this.page >= QuestionAmount-1){
+            isNext = false; //나중에 필요하면 빼셈
+            btn_next.setText("채점하기");
         }else{
             isBack = true;
             isNext = true;
@@ -154,9 +145,37 @@ public class quiz2_solve extends AppCompatActivity {
         btn_next.setEnabled(isNext);
     }
 
+    /**
+     * 버튼 누를 때마다 문제 내용이 바뀌는 것을 보여주는 메서드입니다.
+     * @param question 해당 페이지의 문제를 담은 DO
+     */
     private void showQuestions(Question question) {
+        TextView question_num = findViewById(R.id.txt_quiz2_num);
+        TextView question_content = findViewById(R.id.id_quiz_content);
+        ImageView question_image = findViewById(R.id.img_quiz_content);
+        TextView[] choicesView = {findViewById(R.id.id_quiz_ans_1),findViewById(R.id.id_quiz_ans_2),findViewById(R.id.id_quiz_ans_3),findViewById(R.id.id_quiz_ans_4),findViewById(R.id.id_quiz_ans_5)};
+        String[] choices = {question.getChoice1(), question.getChoice2(), question.getChoice3(), question.getChoice4(), question.getChoice5()};
+        allCheckBoxInit();
         System.out.println("PAGE: " + this.page);
-        System.out.println("ADDER TEST: " + this.questionArrayList.get(this.page).getId() + " ::: " + this.questionArrayList.get(this.page).getFilepath());
+        System.out.println("ADDER TEST: " + question.getId() + " ::: " + question.getFilepath());
+
+        question_num.setText(String.valueOf(this.page + 1));
+        question_content.setText(question.getContent());
+        Glide.with(this).load(this.URL + question.getFilepath()).into(question_image);
+        for(int i=0; i<5; i++){
+            choicesView[i].setText(choices[i]);
+        }
+    }
+
+    /**
+     * 문제를 넘길때마다 체크버튼들이 눌러져 있는 것을 방지하기 위해 모두 다 제거해주는 메서드입니다.
+     * 문제는 정답을 골랐더라도 그대로 남기 때문에 정답을 선택하고 다시 되돌아가도 남도록 만드는 로직은 추후에 만들어주시면 감사하겠습니다
+     */
+    private void allCheckBoxInit() {
+        CheckBox[] checkBoxViews = {findViewById(R.id.quiz_check1), findViewById(R.id.quiz_check2), findViewById(R.id.quiz_check3), findViewById(R.id.quiz_check4), findViewById(R.id.quiz_check5)};
+        for(CheckBox checkBox : checkBoxViews){
+            checkBox.setChecked(false);
+        }
     }
 
     private String getTime(){
