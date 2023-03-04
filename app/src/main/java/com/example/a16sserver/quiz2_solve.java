@@ -23,12 +23,17 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Iterator;
 
 public class quiz2_solve extends AppCompatActivity {
 
     private ImageView imageView1; //문제 이미지뷰 변수
     CountDownTimer countDownTimer;//카운트다운 변수
     private final String URL = "http://10.0.2.2:8080";
+    private int page;
+    private ArrayList<Question> questionArrayList;
+    private boolean isNext;
+    private boolean isBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,12 +44,13 @@ public class quiz2_solve extends AppCompatActivity {
         Context mContext = this;
 
         ContainerDO data = (ContainerDO) getIntent().getSerializableExtra("dataContent");
+        this.page = 0;
+        this.isNext = true;
 
         System.out.println("data: " + data.toString());
         Button btn_quiz_next = findViewById(R.id.btn_quiz_next); //다음문제 클릭부분
         Button btn_quiz_back = findViewById(R.id.btn_quiz_back); //이전문제 클릭부분
 
-        HeaderComponents();
 
         TextView id_quiz_name = findViewById(R.id.id_quiz_name); //exam title
         id_quiz_name.setText(data.getName());
@@ -57,39 +63,41 @@ public class quiz2_solve extends AppCompatActivity {
         TextView id_quiz_content = (TextView) findViewById(R.id.id_quiz_content); //Content
         TextView txt_quiz2_num = (TextView) findViewById(R.id.txt_quiz2_num); // Exam Number
 
-        String question_num = "0";
 
-        ArrayList<Question> questions = data.getQuestions();
+        questionArrayList = data.getQuestions();
 
-        final int questionsAmount = questions.size(); //문제 수
+        final int questionsAmount = questionArrayList.size(); //문제 수
         Log.d(TAG, "Total Amount of Questions: " + questionsAmount);
 
-        System.out.println(questionsAmount);
-        for(Question question : questions){
-            System.out.println("ID: " + question.getId() + " ::: " + question.getSubject() + " ::: " + question.getFilepath());
-            System.out.println("Choices: " + question.getChoice1() + ":::"+ question.getChoice2() + ":::"+ question.getChoice3() + ":::"+ question.getChoice4() + ":::"+ question.getChoice5());
+        showQuestions(this.questionArrayList.get(this.page));
 
-            txt_quiz2_num.setText("1");
-            Glide.with(this).load(this.URL + question.getFilepath()).override(300, 200).into(img_quiz_content);
-
-            question_num = txt_quiz2_num.getText().toString();
-            if(question_num.equals("1")){
-                btn_quiz_back.setEnabled(false);
-            }else if(question_num.equals(String.valueOf(questionsAmount))){
-                btn_quiz_next.setEnabled(false);
-            } //이전문제 or 다음문제 버튼 비활성화 관련
-
-            btn_quiz_next.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    // 버튼을 누르면 화면이 바뀌는 게 아니라 내용만 바뀌는 거다
-                    // 즉, content, 보기, 숫자, 그림만 변하면 됨
-                    // 시작인지, 끝인지를 구분하고 그에 맞게 버튼의 동작도 변경하면 될 거 같음
-                    // btn_quiz_next -> 다음 문제로 이동 / btn_quiz_back -> 이전 문제로 이동
-                    // 아마 이를 해결하기 위한 좋은 모던하면서도 있어보이는 방법으로는 Iterator를 최대한 활용해볼 것을 권장힘 -> 무엇보다 있어보인다는 것이 크다
-                }
-            });
-        }
+        btn_quiz_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                adder();
+            }
+        });
+        btn_quiz_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                subtractor();
+            }
+        });
+//        System.out.println(questionsAmount);
+//        for(Question question : questions){
+//            System.out.println("ID: " + question.getId() + " ::: " + question.getSubject() + " ::: " + question.getFilepath());
+//            System.out.println("Choices: " + question.getChoice1() + ":::"+ question.getChoice2() + ":::"+ question.getChoice3() + ":::"+ question.getChoice4() + ":::"+ question.getChoice5());
+//
+//            txt_quiz2_num.setText("1");
+//            Glide.with(this).load(this.URL + question.getFilepath()).override(300, 200).into(img_quiz_content);
+//
+//            question_num = txt_quiz2_num.getText().toString();
+//            if(question_num.equals("1")){
+//                btn_quiz_back.setEnabled(false);
+//            }else if(question_num.equals(String.valueOf(questionsAmount))){
+//                btn_quiz_next.setEnabled(false);
+//            } //이전문제 or 다음문제 버튼 비활성화 관련
+//        }
 
 //
         TextView id_quiz_timer1 = (TextView) findViewById(R.id.id_quiz_timer1); //카운트다운 할 곳.
@@ -110,11 +118,47 @@ public class quiz2_solve extends AppCompatActivity {
         countDownTimer.start();
     }
 
+    public int adder(){
 
-
-    private void HeaderComponents(){
-
+        if(this.page >= 5){
+            return -1;
+        }
+        this.page += 1;
+        statusCheck();
+        showQuestions(this.questionArrayList.get(this.page));
+        return this.page;
     }
+
+    public int subtractor(){ //adder 가산기 -> subtractor 감산기
+
+        if(this.page <= 0){
+            return -1;
+        }
+        this.page -= 1;
+        statusCheck();
+        showQuestions(this.questionArrayList.get(this.page));
+        return this.page;
+    }
+    private void statusCheck(){
+        Button btn_back = findViewById(R.id.btn_quiz_back);
+        Button btn_next = findViewById(R.id.btn_quiz_next);
+        if(this.page <= 0){
+            isBack = false;
+        }else if(this.page >= 5){
+            isNext = false;
+        }else{
+            isBack = true;
+            isNext = true;
+        }
+        btn_back.setEnabled(isBack);
+        btn_next.setEnabled(isNext);
+    }
+
+    private void showQuestions(Question question) {
+        System.out.println("PAGE: " + this.page);
+        System.out.println("ADDER TEST: " + this.questionArrayList.get(this.page).getId() + " ::: " + this.questionArrayList.get(this.page).getFilepath());
+    }
+
     private String getTime(){
         Date date = new Date();
         Calendar calendar = new GregorianCalendar();
