@@ -9,36 +9,27 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.BaseAdapter;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
 import com.example.a16sserver.retrofit.JsonPlaceHolderApi;
 import com.example.a16sserver.retrofit.RetrofitUtil;
-import com.example.a16sserver.springdo.ParcelableTest;
-import com.example.a16sserver.springdo.ParcelableTest2;
+import com.example.a16sserver.springdo.ContainerDO;
 import com.example.a16sserver.springdo.Question;
-import com.example.a16sserver.springdo.QuestionListTest;
-import com.example.a16sserver.springdo.QuizContent;
-import com.example.a16sserver.test.TestActivity;
 
+import com.example.a16sserver.test.TestActivity;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import org.json.JSONArray;
-
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -200,39 +191,14 @@ public class fragment_test_grade_1 extends Fragment {
                 @Override
                 public void onClick(View view) {
                     //소스코드 일부 수정 허가받음
-                    //허가 없는 수정은 대단히 무례한 행위임 -> 당해봐서 잘 알고 있음
-                    RetrofitOn();
-//                    Intent intent = new Intent(getActivity(),quiz2_solve.class); // 다음화면으로 넘기기위한 intent 선언
-//                    ArrayList<String> quiz2_content = new ArrayList<>(); //누른 모의고사 내용을 배열로 전달
-//                    quiz2_content.add(quiz2_list.getQuiz2_name());// 모의고사 이름
-//                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_score()));// 모의고사 점수
-//                    quiz2_content.add(quiz2_list.
-//                            getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":"))); //모의고사 분
-//                    quiz2_content.add(quiz2_list.
-//                            getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));//모의고사 초
-//                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_que())); //모의고사 문제갯수 4
-//                    quiz2_content.add(String.valueOf(quiz2_list.getQuiz2_id()));// 모의고사 id
-
-//                    QuizContent qz = new QuizContent();
-//                    qz.setName(quiz2_list.getQuiz2_name());
-//                    qz.setScore(quiz2_list.getQuiz2_score());
-//                    qz.setTimerMin(quiz2_list.getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":")));
-//                    qz.setTimerSec(quiz2_list.getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1));
-//                    qz.setAmount(quiz2_list.getQuiz2_que());
-//                    qz.setId(quiz2_list.getQuiz2_id());
-
-//                    System.out.println(qz.toString());
-//                    intent.putExtra("quiz2_content", qz);
-//                    startActivity(intent); //intent 실행
-
+                    RetrofitOn(quiz2_list);
                 }
             });
-
             return convertView;
         }
     }
 
-    public void RetrofitOn(){
+    public void RetrofitOn(quiz2_list quiz2_list){
         Retrofit retrofit = RetrofitUtil.Init();
         JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
         Call<ArrayList<Question>> call  = jsonPlaceHolderApi.getQuestionPage(1);
@@ -240,19 +206,22 @@ public class fragment_test_grade_1 extends Fragment {
             @Override
             public void onResponse(Call<ArrayList<Question>> call, Response<ArrayList<Question>> response) {
                 if(response.isSuccessful()){
-                    Intent intent = new Intent(getActivity(), TestActivity.class);// 다음화면으로 넘기기위한 intent 선언
-
+                    Intent intent = new Intent(getActivity(), quiz2_solve.class);// 다음화면으로 넘기기위한 intent 선언
+                    //Intent intent = new Intent(getActivity(), TestActivity.class);
                     ArrayList<Question> questions = response.body();
-                    ArrayList<ParcelableTest2> tests = new ArrayList<>();
+                    ArrayList<Question> questionArrayList = new ArrayList<>();
 
-                    for(Question question : questions) {
-                        tests.add(new ParcelableTest2(question.getId(), question.getSubject(),
+                    for(Question question : questions) { //가져온 데이터는 여기다가
+                        questionArrayList.add(new Question(question.getId(), question.getSubject(), question.getContent(),
                                 question.getChoice1(), question.getChoice2(), question.getChoice3()
-                                , question.getChoice4(), question.getChoice5())
+                                , question.getChoice4(), question.getChoice5(), question.getFilepath())
                         );
                     }
-
-                    intent.putExtra("testContent", tests);
+                    ContainerDO containerDO = new ContainerDO(quiz2_list.getQuiz2_name(), quiz2_list.getQuiz2_score(),
+                            quiz2_list.getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":")), quiz2_list.getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1),
+                            quiz2_list.getQuiz2_que(), quiz2_list.getQuiz2_id(), questionArrayList);
+                    System.out.println("ContainerDO " + containerDO.toString());
+                    intent.putExtra("dataContent", containerDO);
                     startActivity(intent);
                 }
             }
