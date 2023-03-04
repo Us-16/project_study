@@ -259,6 +259,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <CheckBox
+                                android:id="@+id/quiz_check1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
                             <TextView
@@ -274,6 +275,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <CheckBox
+                                android:id="@+id/quiz_check2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
                             <TextView
@@ -289,6 +291,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <CheckBox
+                                android:id="@+id/quiz_check3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
                             <TextView
@@ -304,6 +307,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <CheckBox
+                                android:id="@+id/quiz_check4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
                             <TextView
@@ -319,6 +323,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <CheckBox
+                                android:id="@+id/quiz_check5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
                             <TextView
