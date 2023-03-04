@@ -1,9 +1,9 @@
 package com.example.a16sserver.retrofit;
 
-import com.example.a16sserver.springdo.Question;
 import com.example.a16sserver.retrofit.dto.Response_check;
 import com.example.a16sserver.retrofit.dto.StudentAccount;
 import com.example.a16sserver.retrofit.dto.Upload;
+import com.example.a16sserver.springdo.Question;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,7 +34,7 @@ public interface JsonPlaceHolderApi {
     @GET("api/image_test/{id}")
     Call<Upload> getFiles(@Path("id") Long id);
 
-    @POST("api/page/{page}")
+    @GET("api/page/{page}")
     Call<ArrayList<Question>> getQuestionPage(@Path("page") int page);
 
     @GET("api/page/info")
