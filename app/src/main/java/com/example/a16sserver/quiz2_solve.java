@@ -28,10 +28,7 @@ import java.util.GregorianCalendar;
 import java.util.Iterator;
 
 public class quiz2_solve extends AppCompatActivity {
-
-    private ImageView imageView1; //문제 이미지뷰 변수
     CountDownTimer countDownTimer;//카운트다운 변수
-    private final String URL = "http://10.0.2.2:8080";
     private int page;
     private int QuestionAmount;
     private ArrayList<Question> questionArrayList;
@@ -44,24 +41,19 @@ public class quiz2_solve extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz2_solve);
 
-        Context mContext = this;
         ContainerDO data = (ContainerDO) getIntent().getSerializableExtra("dataContent");
 
-
-        System.out.println("data: " + data.toString());
         Button btn_quiz_next = findViewById(R.id.btn_quiz_next); //다음문제 클릭부분
         Button btn_quiz_back = findViewById(R.id.btn_quiz_back); //이전문제 클릭부분
-
-
         TextView id_quiz_name = findViewById(R.id.id_quiz_name); //exam title
-        id_quiz_name.setText(data.getName());
         TextView id_quiz_score = findViewById(R.id.id_quiz_score); //모의고사 점수부분
+
+        id_quiz_name.setText(data.getName());
         id_quiz_score.setText(String.valueOf(data.getScore()));
 
         questionArrayList = data.getQuestions();
 
         this.QuestionAmount = questionArrayList.size(); //문제 수
-
         this.page = 0;
         this.isNext = true;
         this.isBack = false; //어차피 인스턴스 변수로 두면 자동으로 false로 선언되는거 알고 계시나요>? -> 응, 명시적으로 알려줌으로써 혼동 방지하는거야~ 이게 다아 의도된거다 이 말이야
@@ -105,7 +97,7 @@ public class quiz2_solve extends AppCompatActivity {
      * 현재까지는 두 메서드의 동작 중 예상치 않은 오류를 발생시키지는 않았습니다!
      * @return -1이 나오는 순간 범위 벗어났다는 뜻입니다
      */
-    public int adder(){
+    private int adder(){
         if(this.page >= QuestionAmount-1){
             return -1;
         }
@@ -119,7 +111,7 @@ public class quiz2_solve extends AppCompatActivity {
      * 현재까지는 두 메서드의 동작 중 예상치 않은 오류를 발생시키지는 않았습니다!
      * @return -1이 나오는 순간 범위 벗어났다는 뜻입니다
      */
-    public int subtractor(){ //adder 가산기 -> subtractor 감산기
+    private int subtractor(){ //adder 가산기 -> subtractor 감산기
         if(this.page <= 0){
             this.page=0;
             return -1;
@@ -138,6 +130,7 @@ public class quiz2_solve extends AppCompatActivity {
             isNext = false; //나중에 필요하면 빼셈
             btn_next.setText("채점하기");
         }else{
+            btn_next.setText("다음문제");
             isBack = true;
             isNext = true;
         }
@@ -156,12 +149,11 @@ public class quiz2_solve extends AppCompatActivity {
         TextView[] choicesView = {findViewById(R.id.id_quiz_ans_1),findViewById(R.id.id_quiz_ans_2),findViewById(R.id.id_quiz_ans_3),findViewById(R.id.id_quiz_ans_4),findViewById(R.id.id_quiz_ans_5)};
         String[] choices = {question.getChoice1(), question.getChoice2(), question.getChoice3(), question.getChoice4(), question.getChoice5()};
         allCheckBoxInit();
-        System.out.println("PAGE: " + this.page);
-        System.out.println("ADDER TEST: " + question.getId() + " ::: " + question.getFilepath());
 
         question_num.setText(String.valueOf(this.page + 1));
         question_content.setText(question.getContent());
-        Glide.with(this).load(this.URL + question.getFilepath()).into(question_image);
+        String URL = "http://10.0.2.2:8080";
+        Glide.with(this).load(URL + question.getFilepath()).into(question_image);
         for(int i=0; i<5; i++){
             choicesView[i].setText(choices[i]);
         }

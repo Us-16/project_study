@@ -183,9 +183,6 @@ public class fragment_test_grade_1 extends Fragment {
                     }
                 }
             });
-            ///------------------------------------------------------------------------------------------
-
-
             //-------풀기 버튼 클릭 시 동작---------------------------------------------
             btn_quiz2_solve.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -218,9 +215,9 @@ public class fragment_test_grade_1 extends Fragment {
                         );
                     }
                     ContainerDO containerDO = new ContainerDO(quiz2_list.getQuiz2_name(), quiz2_list.getQuiz2_score(),
-                            quiz2_list.getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":")), quiz2_list.getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1),
-                            quiz2_list.getQuiz2_que(), quiz2_list.getQuiz2_id(), questionArrayList);
-                    System.out.println("ContainerDO " + containerDO.toString());
+                                                                quiz2_list.getQuiz2_timer().substring(0,quiz2_list.getQuiz2_timer().indexOf(":")),
+                                                                quiz2_list.getQuiz2_timer().substring(quiz2_list.getQuiz2_timer().indexOf(":")+1),
+                                                                quiz2_list.getQuiz2_que(), quiz2_list.getQuiz2_id(), questionArrayList);
                     intent.putExtra("dataContent", containerDO);
                     startActivity(intent);
                 }
