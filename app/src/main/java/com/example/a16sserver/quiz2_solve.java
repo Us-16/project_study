@@ -130,6 +130,7 @@ public class quiz2_solve extends AppCompatActivity {
             isNext = false; //나중에 필요하면 빼셈
             btn_next.setText("채점하기");
         }else{
+            btn_next.setText("다음문제");
             isBack = true;
             isNext = true;
         }
@@ -148,8 +149,6 @@ public class quiz2_solve extends AppCompatActivity {
         TextView[] choicesView = {findViewById(R.id.id_quiz_ans_1),findViewById(R.id.id_quiz_ans_2),findViewById(R.id.id_quiz_ans_3),findViewById(R.id.id_quiz_ans_4),findViewById(R.id.id_quiz_ans_5)};
         String[] choices = {question.getChoice1(), question.getChoice2(), question.getChoice3(), question.getChoice4(), question.getChoice5()};
         allCheckBoxInit();
-        System.out.println("PAGE: " + this.page);
-        System.out.println("ADDER TEST: " + question.getId() + " ::: " + question.getFilepath());
 
         question_num.setText(String.valueOf(this.page + 1));
         question_content.setText(question.getContent());

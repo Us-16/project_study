@@ -83,8 +83,8 @@ public class LoginTestActivity extends AppCompatActivity {
                         }else{
                             Log.d(TAG, "Check downs");
                             Log.d(TAG, "Status code : " + response.code() );
-//                            Log.d(TAG, response.errorBody().toString());
-//                            Log.d(TAG, call.request().body().toString());
+                            Log.d(TAG, response.errorBody().toString());
+                            Log.d(TAG, call.request().body().toString());
                         }
                     }
 
@@ -105,8 +105,7 @@ public class LoginTestActivity extends AppCompatActivity {
             finish();
         }else{
             TextView fail = findViewById(R.id.Login_failMessage);
-            fail.setText("" +
-                    "이디와 비밀번호를 다시 확인해주세요");//??
+            fail.setText("아이디와 비밀번호를 다시 확인해주세요");//??????
         }
     }
 }
