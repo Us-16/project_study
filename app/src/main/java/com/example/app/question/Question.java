@@ -1,5 +1,6 @@
 package com.example.app.question;
 
+import com.example.app.QuestionImage;
 import com.example.app.answer.Answer;
 import com.example.app.user.teacher.Teacher;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -22,6 +23,9 @@ public class Question {
     @JsonIgnore
     @ManyToOne
     private Teacher teacher; //FK
+
+    @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE)
+    private List<QuestionImage> imageList;
 
     @Column
     private String subject;

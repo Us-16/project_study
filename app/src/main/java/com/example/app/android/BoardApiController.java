@@ -112,7 +112,7 @@ public class BoardApiController {
         return up;
     }
 
-    @PostMapping("/page/{page}")
+    @GetMapping("/page/{page}")
     ArrayList<Question> questionResponse(@PathVariable("page") int page){
         Page<Question> pageItem = this.questionService.getList(page-1);
         ArrayList<Question> pageToList = new ArrayList<Question>();
