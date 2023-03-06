@@ -44,14 +44,14 @@ public class QuestionService {
         }
     }
 
-    public void create(String subject, String  content, String filePath){
+    public Question create(String subject, String  content, String filePath){
         //Tester
         Question q = new Question();
         q.setSubject(subject);
         q.setContent(content);
         q.setCreateDate(LocalDateTime.now()); //test
-        q.setFilepath(filePath);
         this.questionRepository.save(q);
+        return q;
     }
 
     /**
@@ -60,13 +60,14 @@ public class QuestionService {
      * @param content 글내용
      * @param teacher 출제한 강사
      */
-    public void create(String subject, String content, Teacher teacher){
+    public Question create(String subject, String content, Teacher teacher){
         Question q = new Question();
         q.setSubject(subject);
         q.setContent(content);
         q.setCreateDate(LocalDateTime.now());
         q.setTeacher(teacher);
         this.questionRepository.save(q);
+        return q;
     }
 
     public void modify(Question question, String subject, String content){

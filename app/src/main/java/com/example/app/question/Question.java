@@ -1,7 +1,6 @@
 package com.example.app.question;
 
-import com.example.app.QuestionImage;
-import com.example.app.answer.Answer;
+import com.example.app.question.question_image.QuestionImage;
 import com.example.app.user.teacher.Teacher;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -33,7 +32,6 @@ public class Question {
     @Column(columnDefinition = "TEXT")
     private String content;
 
-    private String filepath; //image
     private String answer;   //정답
     //1~5번
     private String choice1;
