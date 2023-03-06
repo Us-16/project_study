@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="backup&#10;- 혹시 모르니까 ㅇㅇ">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/QuestionImage.java" afterDir="false" />
+    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="다중 이미지 처리 테이블 생성">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/question_image/QuestionImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/question_image/QuestionImageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
@@ -14,10 +15,13 @@
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/QuestionImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/upload/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/upload/UploadController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/upload/UploadService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/upload/UploadService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/teacher/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/teacher/Teacher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
@@ -26,16 +30,18 @@
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/BoardApiController.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/BoardApiController.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/BoardApiController.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/compileTransaction/stash-dir/AppApplicationTests.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/compileTransaction/stash-dir/AppApplicationTests.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/QuestionImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/question_image/QuestionImage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/upload/UploadController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/teacher/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/teacher/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/upload/uploadTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/upload/uploadTest.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +81,8 @@
       <list>
         <option value="Enum" />
         <option value="JavaScript File" />
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -161,7 +167,7 @@
       <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/login" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AppApplicationTests.createStudent">
+  <component name="RunManager" selected="Spring Boot.AppApplication">
     <configuration name="AppApplicationTests.LoginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -269,8 +275,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppApplicationTests.createStudent" />
         <item itemvalue="Spring Boot.AppApplication" />
+        <item itemvalue="Gradle.AppApplicationTests.createStudent" />
         <item itemvalue="Gradle.AppApplicationTests.makeQuestions" />
         <item itemvalue="Gradle.AppApplicationTests.createPost2 (1)" />
         <item itemvalue="Gradle.AppApplicationTests.LoginTest" />
@@ -355,7 +361,7 @@
       <workItem from="1677598199159" duration="10334000" />
       <workItem from="1677716058031" duration="11495000" />
       <workItem from="1677901106658" duration="4028000" />
-      <workItem from="1678065213840" duration="5383000" />
+      <workItem from="1678065213840" duration="11593000" />
     </task>
     <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
       <created>1673265067801</created>
@@ -665,7 +671,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677606655805</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="다중 이미지 처리 테이블 생성">
+      <created>1678088787893</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1678088787893</updated>
+    </task>
+    <task id="LOCAL-00046" summary="다중 이미지 처리 테이블 생성">
+      <created>1678088891337</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1678088891337</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -695,7 +715,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="!!!GIT Test5!!!&#10;- key.class ignore" />
     <MESSAGE value="!!!GIT Test6!!!&#10;- key.class ignore" />
     <MESSAGE value="!!!GIT Test7!!!&#10;- key.class ignore" />
     <MESSAGE value="!!!GIT Test8!!!&#10;- key.class ignore" />
@@ -720,7 +739,8 @@
     <MESSAGE value="git test3" />
     <MESSAGE value="add&#10;- 전체페이지 안드로이드로 전송" />
     <MESSAGE value="backup&#10;- 혹시 모르니까 ㅇㅇ" />
-    <option name="LAST_COMMIT_MESSAGE" value="backup&#10;- 혹시 모르니까 ㅇㅇ" />
+    <MESSAGE value="다중 이미지 처리 테이블 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="다중 이미지 처리 테이블 생성" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

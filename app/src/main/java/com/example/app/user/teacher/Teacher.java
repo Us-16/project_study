@@ -1,6 +1,5 @@
 package com.example.app.user.teacher;
 
-import com.example.app.QuestionImage;
 import com.example.app.question.Question;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

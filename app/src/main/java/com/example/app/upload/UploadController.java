@@ -8,7 +8,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 import retrofit2.http.Path;
+
+import java.util.Arrays;
+import java.util.List;
 
 @Controller
 public class UploadController {
@@ -21,19 +25,32 @@ public class UploadController {
     }
 
     /**
-     * 파일을 받는 곳. 정리 잘 해놓을 것
-     * @param upload DTO일 뿐임. 사실상 포장지랑 같은 거
-     * @param model HTML에 올려놓기 위해서 설정한 거
-     * @param file 얘가 진짜 파일임
+     * 파일 받는 곳
+     * @param upload
+     * @param model
+     * @param mtfRequest
      * @return
      * @throws Exception
      */
     @PostMapping("/test/upload")
-    public String uploadWritePro(Upload upload, Model model, MultipartFile file) throws Exception{
-        System.out.println("File: " + file);
-        System.out.println("Upload: " + upload);
+    public String uploadWritePro(Upload upload, Model model, MultipartHttpServletRequest mtfRequest) throws Exception{
+        List<MultipartFile> files = mtfRequest.getFiles("file");
+        //System.out.println("File: " + file);
+        //System.out.println("Upload: " + upload);
+        String result = "";
+        for(MultipartFile file : files){
+            result += file.getName() + " ::: ";
+            result += file.getOriginalFilename() + " ::: ";
+            result += file.getContentType() + " ::: ";
+            //result += Arrays.toString(file.getBytes()) + " ::: ";
+            result += file.getInputStream() + " ::: ";
+            result += file.getResource() + " ::: ";
+            result += file.getSize() + " ::: ";
+            result += "\n\n";
+        }
+        System.out.println("result is \n" + result);
 
-        uploadService.write(upload, file);
+        //uploadService.write(upload, file);
 
         model.addAttribute("message", "글작성 완료");
         model.addAttribute("searchUrl", "/question/list");

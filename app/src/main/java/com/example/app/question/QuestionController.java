@@ -1,6 +1,8 @@
 package com.example.app.question;
 
 import com.example.app.answer.AnswerForm;
+import com.example.app.question.question_image.QuestionImage;
+import com.example.app.question.question_image.QuestionImageService;
 import com.example.app.user.teacher.Teacher;
 import com.example.app.user.UserService;
 import jakarta.validation.Valid;
@@ -13,10 +15,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.security.Principal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 
 @Slf4j
@@ -26,6 +31,7 @@ import java.time.LocalDateTime;
 public class QuestionController {
     private final QuestionService questionService;
     private final UserService userService;
+    private final QuestionImageService questionImageService;
 
     @GetMapping("/list")
     public String list(Model model, @RequestParam(value="page", defaultValue = "0") int page){
@@ -53,12 +59,18 @@ public class QuestionController {
 
     @PreAuthorize("isAuthenticated()")
     @PostMapping("/create")
-    public String questionCreate(@Valid QuestionForm questionForm, BindingResult bindingResult, Principal principal){
+    public String questionCreate(@Valid QuestionForm questionForm, BindingResult bindingResult, Principal principal, MultipartHttpServletRequest mtfRequest)throws Exception{
         if(bindingResult.hasErrors()){
             return "content/question/question_form";
         }
+        List<MultipartFile> files = mtfRequest.getFiles("files");
         Teacher teacher = this.userService.getTeacher(principal.getName());
-        this.questionService.create(questionForm.getTitle(), questionForm.getContent(), teacher);
+        Question question = this.questionService.create(questionForm.getTitle(), questionForm.getContent(), teacher);
+        questionImageService.write(question, files);
+        //questionImageService.create(question, "test", "test", 22222L);
+        // Question 객체 만들어지면서 동시에 저장할 거고
+        // 그 객체를 image에 쓰면 되는거 아님?
+        // 되네 ㅇㅇ
 
         return "redirect:/question/list";
     }
