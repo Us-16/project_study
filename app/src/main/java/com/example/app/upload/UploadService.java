@@ -15,18 +15,15 @@ public class UploadService {
     public void write(Upload upload, MultipartFile file) throws Exception{
 
         String projectPath = System.getProperty("user.dir") + "/app/src/main/resources/static/files";
-        //String projectPath = "/Users/janghyolim/ImageTest/";
 
         UUID uuid = UUID.randomUUID(); // 랜덤으로 이름을 만들어줌
         String fileName = uuid+"_"+file.getOriginalFilename();
-        //String fileName = file.getOriginalFilename();
 
         File saveFile = new File(projectPath, fileName);
         file.transferTo(saveFile);
 
         upload.setFilename(fileName);
         upload.setFilepath("/files/" + fileName);
-        //upload.setFilepath(projectPath + fileName);
 
         System.out.println("Service Upload: " + upload);
 

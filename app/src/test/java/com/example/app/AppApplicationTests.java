@@ -41,6 +41,11 @@ class AppApplicationTests {
 	}
 
 	@Test
+	@DisplayName("CreateAccount")
+	public void createStudent(){
+		userService.createStudent("장효림", "jorim", "1234", "970330", "1234567", "wkdgyfla97@naver.com", "KangBuk", "1");
+	}
+	@Test
 	@DisplayName("단일 포스트 조회")
 	public void CallSinglePost(){
 		PostsResponseDto.Posts posts = postsCaller.getPosts(30L);

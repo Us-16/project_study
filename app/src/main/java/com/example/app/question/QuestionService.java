@@ -31,7 +31,7 @@ public class QuestionService {
     public Page<Question> getList(int page){
         List<Sort.Order> sorts = new ArrayList<>();
         sorts.add(Sort.Order.desc("createDate"));
-        Pageable pageable = PageRequest.of(page, 40, Sort.by(sorts)); //나중에 여기 건드려서 몇 개씩 볼지 선택하도록 만들어보세요
+        Pageable pageable = PageRequest.of(page, 5, Sort.by(sorts)); //나중에 여기 건드려서 몇 개씩 볼지 선택하도록 만들어보세요
         return this.questionRepository.findAll(pageable);
     }
 
