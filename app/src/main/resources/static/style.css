@@ -1,0 +1,100 @@
+footer {
+    display: block;
+    width:85%;
+    margin: auto;
+    height: 100px;
+}
+section{
+    display: block;
+    margin: auto;
+    width:85%;
+    min-height: 80vh;
+}
+#index_container{
+    margin-top: 3vh;
+}
+.login_button{
+    margin: auto 10px;
+}
+#login_container{
+    padding-top: 15vh;
+    margin: auto;
+    width: 20em;
+}
+#login_container > #find_id{
+    text-decoration: none;
+    color: #424242;
+    float: bottom;
+}
+
+#signup_container{
+    padding-top: 3vh;
+    margin: auto;
+    width: 30em;
+    font-size: 1.1em;
+}
+#question_list_header{
+    margin-top: 1vh;
+    width: 100%;
+}
+#question_list_header > h1{
+    float:left;
+    width: 90%;
+}
+
+#question_table{
+    margin: 10px auto;
+    width:100%;
+}
+#question_table > thead{
+    background-color: #1f004b;
+    color: #fff;
+    text-align: center;
+}
+#question_table > tbody > tr > td > a{
+    text-decoration: none;
+    color:#000;
+}
+
+#floatingButton{
+    position: fixed;
+
+    background-color: #6b00ff;
+    width:100px;
+    height:40px;
+    border-radius: 5%;
+
+    right: 100px;
+    bottom: 110px;
+
+    box-shadow: 3px 3px 5px 1px grey;
+
+    transition: right 0.2s ease-in-out;
+}
+
+#floatingButton > span{
+    width:75px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 1em;
+}
+#floatingButton:hover{
+    background-color: #300073;
+}
+
+.navbar{
+    background: linear-gradient(45deg, #3e0694,#6667AB);
+}
+#nav_list > li > a{
+    color:white;
+}
+img{
+    width: 500px;
+}
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}

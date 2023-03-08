@@ -1,0 +1,39 @@
+<html layout:decorate="~{layout/base}" xmlns:layout="http://www.w3.org/1999/xhtml">
+    <div layout:fragment="content" id="signup_container">
+        <form th:action="@{/user/signup}" th:object="${userCreateForm}" method="post">
+            <div th:replace="~{error/form_errors :: formErrorsFragment}"></div>
+            <div class="mb-3">
+                <label for="username" >사용자ID</label>
+                <input type="text" th:field="*{username}" class="form-control"/>
+            </div>
+            <div class="mb-3">
+                <label for="password1">비밀번호</label>
+                <input type="password" th:field="*{password1}" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="password2">비밀번호 확인</label>
+                <input type="password" th:field="*{password2}" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="name">성명</label>
+                <input type="text" th:field="*{name}" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="birthday">주민등록번호</label>
+                <input type="number" th:field="*{personalId1}" class="form-control">
+                <input type="text" th:field="*{personalId2}" class="form-control"
+                       onkeyup="function onlyNumber(obj) {
+                            obj.value = obj.value.replace(/[^0-9]/, "");}">
+            </div>
+            <div class="mb-3">
+                <label for="email">이메일</label>
+                <input type="email" th:field="*{email}" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="school">학교 및 학원</label>
+                <input type="text" th:field="*{school}" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">계정생성</button>
+        </form>
+    </div>
+</html>

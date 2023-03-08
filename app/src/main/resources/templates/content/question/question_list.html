@@ -1,0 +1,71 @@
+<html layout:decorate="~{layout/base}" xmlns:layout="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content" id="question_list_container">
+    <th:block th:replace="~{fragment/floatingButton :: floatingButton}"></th:block>
+
+    <!--    QuestionList Header-->
+    <div id="question_list_header">
+        <h1>문제 리스트</h1>
+    </div>
+
+    <!--    QuestionList-->
+    <table id="question_table">
+        <thead>
+        <tr>
+            <th style="width:5%">번호</th>
+            <th style="width:10%">문제유형</th>
+            <th style="width:30%">제목</th>
+            <th style="width:10%">글쓴이</th>
+            <th style="width:7%">작성일시</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="question, loop : ${paging}">
+            <td th:text="${question.id}" style="text-align: center; font-size: 0.7em"></td>
+            <!--문제유형-->
+            <td></td>
+            <td>
+                <a th:href="@{|/question/detail/${question.id}|}" th:text="${question.subject}" ></a>
+            </td>
+            <td style="text-align: center"><span th:if="${question.teacher != null}" th:text="${question.teacher.username}" ></span></td>
+            <td style="text-align: center">
+                <span th:if="${current_year - question.createDate.getYear() == 0} and ${current_day - question.createDate.getDayOfYear() == 0}"
+                      th:text="${#temporals.format(question.createDate, 'HH:mm:ss')}"></span>
+
+                <span th:if="${(current_year - question.createDate.getYear() == 0)} and ${!(current_day - question.createDate.getDayOfYear() == 0)}"
+                      th:text="${#temporals.format(question.createDate, 'MM.dd')}"></span>
+
+                <span th:if="${!(current_year - question.createDate.getYear() == 0)} and ${!(current_day - question.createDate.getDayOfYear() == 0)}"
+                      th:text="${#temporals.format(question.createDate, 'yy/MM/dd')}"></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!--페이징 관리-->
+    <div th:if="${!paging.isEmpty()}">
+        <ul class="pagination justify-content-center">
+            <li class="page-item" th:classappend="${!paging.hasPrevious} ? 'disabled'">
+                <a class="page-link" th:href="@{|?page=0|}"><span> << </span></a>
+            </li>
+            <li class="page-item" th:classappend="${!paging.hasPrevious} ? 'disabled'">
+                <a class="page-link" th:href="@{|?page=${paging.number - 1}|}"><span> < </span></a>
+            </li>
+
+            <li th:each="page: ${#numbers.sequence(0, paging.totalPages - 1)}"
+                th:if="${page >= paging.number - 3 and page <= paging.number + 3}"
+                th:classappend="${page==paging.number} ? 'active'"
+                class="page-item">
+                <a th:text="${page}+1" class="page-link" th:href="@{|?page=${page}|}"></a>
+            </li>
+
+            <li class="page-item" th:classappend="${!paging.hasNext} ? 'disabled'">
+                <a class="page-link" th:href="@{|?page=${paging.number + 1}|}"><span> > </span></a>
+            </li>
+            <li class="page-item" th:classappend="${!paging.hasNext} ? 'disabled'">
+                <a class="page-link" th:href="@{|?page=${paging.totalPages - 1}|}"> >> </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+</html>

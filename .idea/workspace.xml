@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="다중 파일 업로드 성공&#10;- 5개 이상의 이미지 전송 및 저장 확인&#10;- 단, 파일 형식 제한을 하지 않은 상태임">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/upload/uploadTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/upload/uploadTest.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/app">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="app" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="springboot_image" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2K5WhPbulYgsLIDEtezz0NfmvRs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/janghyolim/Code/project_study/app/src/main/resources/static/files&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6fd232251ba9e66f5bc7137b177b960b&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.app.user" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/resources/static/files" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/question" />
+      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/upload" />
+      <recent name="$PROJECT_DIR$/app/src/main/resources" />
+      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/error" />
+      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/login" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AppApplication">
+    <configuration name="AppApplicationTests.LoginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.app.AppApplicationTests.LoginTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppApplicationTests.createPost2 (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.app.AppApplicationTests.createPost2&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppApplicationTests.createStudent" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.app.AppApplicationTests.createStudent&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppApplicationTests.makeQuestions" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.app.AppApplicationTests.makeQuestions&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="app.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.app.AppApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AppApplication" />
+        <item itemvalue="Gradle.AppApplicationTests.createStudent" />
+        <item itemvalue="Gradle.AppApplicationTests.makeQuestions" />
+        <item itemvalue="Gradle.AppApplicationTests.createPost2 (1)" />
+        <item itemvalue="Gradle.AppApplicationTests.LoginTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="git test3" />
+      <created>1673265043760</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673265043760</updated>
+      <workItem from="1673265046619" duration="95000" />
+      <workItem from="1673267741524" duration="4538000" />
+      <workItem from="1673324115989" duration="10920000" />
+      <workItem from="1673575876164" duration="5274000" />
+      <workItem from="1673681730697" duration="8164000" />
+      <workItem from="1673708906407" duration="3972000" />
+      <workItem from="1674038367088" duration="4554000" />
+      <workItem from="1674126588067" duration="6094000" />
+      <workItem from="1674181117451" duration="10074000" />
+      <workItem from="1674209719744" duration="12663000" />
+      <workItem from="1674308402752" duration="5589000" />
+      <workItem from="1674394718135" duration="14475000" />
+      <workItem from="1674460661672" duration="2099000" />
+      <workItem from="1674470881628" duration="430000" />
+      <workItem from="1674476372059" duration="6016000" />
+      <workItem from="1674532289561" duration="4928000" />
+      <workItem from="1674643743431" duration="2441000" />
+      <workItem from="1674650290744" duration="170000" />
+      <workItem from="1674696627819" duration="8812000" />
+      <workItem from="1674740993812" duration="5305000" />
+      <workItem from="1674747314221" duration="64000" />
+      <workItem from="1674749297728" duration="1243000" />
+      <workItem from="1674785867951" duration="475000" />
+      <workItem from="1674807540645" duration="5377000" />
+      <workItem from="1674894144942" duration="186000" />
+      <workItem from="1674894359321" duration="2004000" />
+      <workItem from="1674917528318" duration="2612000" />
+      <workItem from="1674920439002" duration="4646000" />
+      <workItem from="1674963388734" duration="6296000" />
+      <workItem from="1674976852664" duration="2821000" />
+      <workItem from="1675119685758" duration="1403000" />
+      <workItem from="1675246906218" duration="2222000" />
+      <workItem from="1675249977074" duration="14810000" />
+      <workItem from="1675325225553" duration="2772000" />
+      <workItem from="1675328079031" duration="8095000" />
+      <workItem from="1675406987132" duration="488000" />
+      <workItem from="1675408663204" duration="1231000" />
+      <workItem from="1675412550322" duration="1735000" />
+      <workItem from="1675419316811" duration="4302000" />
+      <workItem from="1675424603653" duration="1194000" />
+      <workItem from="1675430801557" duration="21512000" />
+      <workItem from="1675529329443" duration="6533000" />
+      <workItem from="1675568849316" duration="3676000" />
+      <workItem from="1675572702447" duration="3106000" />
+      <workItem from="1675582089221" duration="3632000" />
+      <workItem from="1675630077641" duration="702000" />
+      <workItem from="1675673427082" duration="3362000" />
+      <workItem from="1675743294541" duration="9450000" />
+      <workItem from="1676028444025" duration="7391000" />
+      <workItem from="1676290440114" duration="6213000" />
+      <workItem from="1676348559705" duration="6524000" />
+      <workItem from="1676373314782" duration="4059000" />
+      <workItem from="1676381801967" duration="16032000" />
+      <workItem from="1676511048608" duration="40000" />
+      <workItem from="1676543190286" duration="4133000" />
+      <workItem from="1676622134937" duration="7000" />
+      <workItem from="1676688486968" duration="15898000" />
+      <workItem from="1676878180538" duration="5647000" />
+      <workItem from="1676896045911" duration="1231000" />
+      <workItem from="1676939068133" duration="8967000" />
+      <workItem from="1677377098084" duration="5957000" />
+      <workItem from="1677480575971" duration="634000" />
+      <workItem from="1677543666616" duration="813000" />
+      <workItem from="1677544519669" duration="754000" />
+      <workItem from="1677551479996" duration="606000" />
+      <workItem from="1677553306760" duration="2830000" />
+      <workItem from="1677574399336" duration="508000" />
+      <workItem from="1677598199159" duration="10334000" />
+      <workItem from="1677716058031" duration="11495000" />
+      <workItem from="1677901106658" duration="4028000" />
+      <workItem from="1678065213840" duration="14502000" />
+    </task>
+    <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
+      <created>1673265067801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673265067801</updated>
+    </task>
+    <task id="LOCAL-00002" summary="당부사항">
+      <created>1673267812508</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673267812508</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create 해결 + gitignore 확인">
+      <created>1673328645538</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673328645538</updated>
+    </task>
+    <task id="LOCAL-00004" summary="git ignore 재확인">
+      <created>1673328770659</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673328770659</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Retrofit2 이용한 json 보내기 해결">
+      <created>1674132224142</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674132224142</updated>
+    </task>
+    <task id="LOCAL-00006" summary="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것">
+      <created>1674132842555</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674132842555</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add(floatingButton) html&#10;- add floatingButton component&#10;- fixed main some Pages">
+      <created>1674399621142</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674399621143</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)">
+      <created>1674460069481</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674460069481</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix&#10;- little">
+      <created>1674747362135</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674747362135</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix - securityConfig&#10;- ignore /api/**  &#10;- Android could access&#10;- Android connect Success">
+      <created>1674830939552</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674830939552</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json">
+      <created>1674922958235</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674922958235</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json">
+      <created>1674922963458</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674922963458</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix - signup logics&#10;- duplication check&#10;- with different result at different url to android&#10;- duplicate test was successful&#10;- (will be soon) GET -&gt; POST">
+      <created>1675404931515</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675404931515</updated>
+    </task>
+    <task id="LOCAL-00014" summary="error fixed&#10;- LoginSuccessHandler error fixed">
+      <created>1675412622524</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1675412622524</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add - AES256 Encoding&#10;- result would be successful to load by AES256&#10;- with GetMapping to watch the result">
+      <created>1675420074860</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1675420074860</updated>
+    </task>
+    <task id="LOCAL-00016" summary="!!!GIT Test!!!&#10;- key.class ignore">
+      <created>1675421976103</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1675421976103</updated>
+    </task>
+    <task id="LOCAL-00017" summary="!!!GIT Test2!!!&#10;- key.class ignore">
+      <created>1675422326513</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675422326513</updated>
+    </task>
+    <task id="LOCAL-00018" summary="!!!GIT Test3!!!&#10;- key.class ignore">
+      <created>1675422416318</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675422416318</updated>
+    </task>
+    <task id="LOCAL-00019" summary="!!!GIT Test4!!!&#10;- key.class ignore">
+      <created>1675422578486</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675422578486</updated>
+    </task>
+    <task id="LOCAL-00020" summary="!!!GIT Test5!!!&#10;- key.class ignore">
+      <created>1675422641487</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1675422641487</updated>
+    </task>
+    <task id="LOCAL-00021" summary="!!!GIT Test6!!!&#10;- key.class ignore">
+      <created>1675422723943</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1675422723943</updated>
+    </task>
+    <task id="LOCAL-00022" summary="!!!GIT Test7!!!&#10;- key.class ignore">
+      <created>1675422913810</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1675422913810</updated>
+    </task>
+    <task id="LOCAL-00023" summary="!!!GIT Test8!!!&#10;- key.class ignore">
+      <created>1675423048724</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1675423048724</updated>
+    </task>
+    <task id="LOCAL-00024" summary="!!!GIT Test9!!!&#10;- key.class ignore">
+      <created>1675423173173</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1675423173173</updated>
+    </task>
+    <task id="LOCAL-00025" summary="!!!GIT Test10!!!&#10;- key.class ignore">
+      <created>1675423316080</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1675423316080</updated>
+    </task>
+    <task id="LOCAL-00026" summary="!!!GIT Test11!!!&#10;- key.class ignore">
+      <created>1675423395525</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1675423395525</updated>
+    </task>
+    <task id="LOCAL-00027" summary="BackUp - Receive userinfo for login">
+      <created>1675432151224</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1675432151224</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add - login result send success&#10;- message convert to aes256">
+      <created>1675476065311</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1675476065311</updated>
+    </task>
+    <task id="LOCAL-00029" summary="수정&#10;- 로그인 실패 로직 수정">
+      <created>1675521510893</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1675521510893</updated>
+    </task>
+    <task id="LOCAL-00030" summary="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제">
+      <created>1675533308611</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1675533308611</updated>
+    </task>
+    <task id="LOCAL-00031" summary="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함">
+      <created>1675534075665</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1675534075665</updated>
+    </task>
+    <task id="LOCAL-00032" summary="상황 종료(진짜 종료)&#10;- AES256 암호화 과정에서 특수문자로 인한 접속 불량 문제 확인&#10;- AES256 암호화를 진행한 내용을 다시 아스키코드 16진수로 변환하여 전송&#10;- 결과 어떤 값에도 이상없이 접속 가능한 것으로 확인됨">
+      <created>1675588956580</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1675588956580</updated>
+    </task>
+    <task id="LOCAL-00033" summary="commit test&#10;- 이미지 업로드 진행 예정&#10;- 예제 참고하면서 진행 바람">
+      <created>1675744200390</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1675744200390</updated>
+    </task>
+    <task id="LOCAL-00034" summary="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음">
+      <created>1676478406170</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1676478406170</updated>
+    </task>
+    <task id="LOCAL-00035" summary="진짜 된거다?">
+      <created>1676895874469</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1676895874469</updated>
+    </task>
+    <task id="LOCAL-00036" summary="after merge&#10;- 별도의 패키지라 그런지 문제 없이 병합되었음">
+      <created>1677144322468</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1677144322468</updated>
+    </task>
+    <task id="LOCAL-00037" summary="왜 이거 날아감?">
+      <created>1677156782675</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1677156782675</updated>
+    </task>
+    <task id="LOCAL-00038" summary="entity modify&#10;- 설계 방향대로 엔티티 수정 중&#10;- 내일부터 View 관련 설계도 다시 진행해야할 것">
+      <created>1677246784820</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1677246784820</updated>
+    </task>
+    <task id="LOCAL-00039" summary="success&#10;- page send to andorid&#10;- To send android, page -&gt; arraylist">
+      <created>1677335710870</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1677335710870</updated>
+    </task>
+    <task id="LOCAL-00040" summary="git test">
+      <created>1677502419888</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1677502419888</updated>
+    </task>
+    <task id="LOCAL-00041" summary="git test2">
+      <created>1677504980293</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1677504980293</updated>
+    </task>
+    <task id="LOCAL-00042" summary="git test3">
+      <created>1677505269840</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1677505269840</updated>
+    </task>
+    <task id="LOCAL-00043" summary="add&#10;- 전체페이지 안드로이드로 전송">
+      <created>1677605271710</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1677605271711</updated>
+    </task>
+    <task id="LOCAL-00044" summary="backup&#10;- 혹시 모르니까 ㅇㅇ">
+      <created>1677606655805</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1677606655805</updated>
+    </task>
+    <task id="LOCAL-00045" summary="다중 이미지 처리 테이블 생성">
+      <created>1678088787893</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1678088787893</updated>
+    </task>
+    <task id="LOCAL-00046" summary="다중 이미지 처리 테이블 생성">
+      <created>1678088891337</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1678088891337</updated>
+    </task>
+    <task id="LOCAL-00047" summary="다중 파일 업로드 성공&#10;- 5개 이상의 이미지 전송 및 저장 확인&#10;- 단, 파일 형식 제한을 하지 않은 상태임">
+      <created>1678100337981</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1678100337981</updated>
+    </task>
+    <task id="LOCAL-00048" summary="다중 파일 업로드 성공&#10;- 5개 이상의 이미지 전송 및 저장 확인&#10;- 단, 파일 형식 제한을 하지 않은 상태임">
+      <created>1678100349978</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1678100349978</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/springboot" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="!!!GIT Test7!!!&#10;- key.class ignore" />
+    <MESSAGE value="!!!GIT Test8!!!&#10;- key.class ignore" />
+    <MESSAGE value="!!!GIT Test9!!!&#10;- key.class ignore" />
+    <MESSAGE value="!!!GIT Test10!!!&#10;- key.class ignore" />
+    <MESSAGE value="!!!GIT Test11!!!&#10;- key.class ignore" />
+    <MESSAGE value="BackUp - Receive userinfo for login" />
+    <MESSAGE value="add - login result send success&#10;- message convert to aes256" />
+    <MESSAGE value="수정&#10;- 로그인 실패 로직 수정" />
+    <MESSAGE value="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제" />
+    <MESSAGE value="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함" />
+    <MESSAGE value="상황 종료(진짜 종료)&#10;- AES256 암호화 과정에서 특수문자로 인한 접속 불량 문제 확인&#10;- AES256 암호화를 진행한 내용을 다시 아스키코드 16진수로 변환하여 전송&#10;- 결과 어떤 값에도 이상없이 접속 가능한 것으로 확인됨" />
+    <MESSAGE value="commit test&#10;- 이미지 업로드 진행 예정&#10;- 예제 참고하면서 진행 바람" />
+    <MESSAGE value="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음" />
+    <MESSAGE value="진짜 된거다?" />
+    <MESSAGE value="after merge&#10;- 별도의 패키지라 그런지 문제 없이 병합되었음" />
+    <MESSAGE value="왜 이거 날아감?" />
+    <MESSAGE value="entity modify&#10;- 설계 방향대로 엔티티 수정 중&#10;- 내일부터 View 관련 설계도 다시 진행해야할 것" />
+    <MESSAGE value="success&#10;- page send to andorid&#10;- To send android, page -&gt; arraylist" />
+    <MESSAGE value="git test" />
+    <MESSAGE value="git test2" />
+    <MESSAGE value="git test3" />
+    <MESSAGE value="add&#10;- 전체페이지 안드로이드로 전송" />
+    <MESSAGE value="backup&#10;- 혹시 모르니까 ㅇㅇ" />
+    <MESSAGE value="다중 이미지 처리 테이블 생성" />
+    <MESSAGE value="다중 파일 업로드 성공&#10;- 5개 이상의 이미지 전송 및 저장 확인&#10;- 단, 파일 형식 제한을 하지 않은 상태임" />
+    <option name="LAST_COMMIT_MESSAGE" value="다중 파일 업로드 성공&#10;- 5개 이상의 이미지 전송 및 저장 확인&#10;- 단, 파일 형식 제한을 하지 않은 상태임" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

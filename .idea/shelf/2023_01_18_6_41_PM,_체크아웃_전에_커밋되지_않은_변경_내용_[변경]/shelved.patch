@@ -1,0 +1,347 @@
+Index: app/src/main/resources/templates/fragment/header.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><html xmlns:sec=\"http://www.w3.org/1999/xhtml\">\n\n<nav class=\"navbar navbar-expand-lg navbar-light bg-light border-bottom\" th:fragment=\"headerFragment\" >\n    <div class=\"container-fluid\">\n        <a class=\"navbar-brand\" href=\"/\">제목이 뭐야</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\"\n                aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" sec:authorize=\"isAnonymous()\" th:href=\"@{/user/login}\">로그인</a>\n                    <a class=\"nav-link\" sec:authorize=\"isAuthenticated()\" th:href=\"@{/user/logout}\">로그아웃</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" th:href=\"@{/question/list}\">게시판</a>\n                </li>\n            </ul>\n        </div>\n    </div>\n</nav>\n</html>
+===================================================================
+diff --git a/app/src/main/resources/templates/fragment/header.html b/app/src/main/resources/templates/fragment/header.html
+--- a/app/src/main/resources/templates/fragment/header.html	
++++ b/app/src/main/resources/templates/fragment/header.html	
+@@ -1,23 +1,23 @@
+ <html xmlns:sec="http://www.w3.org/1999/xhtml">
+-
+-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" th:fragment="headerFragment" >
++  <nav class="navbar navbar-expand-lg bg-body-tertiary" th:fragment="headerFragment">
+     <div class="container-fluid">
+-        <a class="navbar-brand" href="/">제목이 뭐야</a>
+-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+-            <span class="navbar-toggler-icon"></span>
+-        </button>
+-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+-                <li class="nav-item">
+-                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/user/login}">로그인</a>
+-                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/user/logout}">로그아웃</a>
+-                </li>
+-                <li class="nav-item">
+-                    <a class="nav-link" th:href="@{/question/list}">게시판</a>
+-                </li>
+-            </ul>
+-        </div>
++      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
++        <span class="navbar-toggler-icon"></span>
++      </button>
++      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
++        <a class="navbar-brand" href="/">제목이 뭐야</a>
++        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
++          <li class="nav-item">
++            <a class="nav-link" th:href="@{/question/list}">문제모음집</a>
++          </li>
++        </ul>
++        <form class="d-flex" role="search" style="margin-right:1em;">
++          <input class="form-control me-2" type="search" placeholder="검색" aria-label="Search">
++          <button class="btn btn-outline-success" type="submit"><span class="material-symbols-outlined">search</span></button>
++        </form>
++        <a type="button" sec:authorize="isAnonymous()" class="btn btn-outline-secondary" th:href="@{/user/login}">로그인</a>
++        <a type="button" sec:authorize="isAuthenticated()" class="btn btn-secondary" th:href="@{/user/logout}">로그아웃</a>
++      </div>
+     </div>
+-</nav>
++  </nav>
+ </html>
+\ No newline at end of file
+Index: app/src/main/resources/templates/layout/base.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"ko\"\n      xmlns:layout=\"http://www.w3.org/1999/xhtml\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Title</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css\" rel=\"stylesheet\"\n          integrity=\"sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD\" crossorigin=\"anonymous\">\n    <link rel=\"stylesheet\" type=\"text/css\" th:href=\"@{/style.css}\">\n</head>\n<body>\n<!--navi-->\n<th:block th:replace=\"~{fragment/header :: headerFragment}\"></th:block>\n\n<!--content-->\n<section>\n    <th:block layout:fragment=\"content\"></th:block>\n</section>\n\n<!--footer-->\n<th:block th:replace=\"~{fragment/footer :: footerFragment}\"></th:block>\n</body>\n<script type=\"text/javascript\" th:src=\"@{/link.js}\"></script>\n</html>
+===================================================================
+diff --git a/app/src/main/resources/templates/layout/base.html b/app/src/main/resources/templates/layout/base.html
+--- a/app/src/main/resources/templates/layout/base.html	
++++ b/app/src/main/resources/templates/layout/base.html	
+@@ -7,6 +7,7 @@
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
++    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ </head>
+ <body>
+ <!--navi-->
+@@ -17,6 +18,8 @@
+     <th:block layout:fragment="content"></th:block>
+ </section>
+ 
++
++<hr>
+ <!--footer-->
+ <th:block th:replace="~{fragment/footer :: footerFragment}"></th:block>
+ </body>
+Index: app/src/main/resources/templates/content/login/login_form.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><form th:action=\"@{/user/login}\" method=\"post\" layout:fragment=\"content\" xmlns:layout=\"http://www.w3.org/1999/xhtml\">\n    <div th:if=\"@{param.error}\">\n      <div class=\"alert alert-danger\">\n        사용자 ID 또는 비밀번호를 확인해주세요.\n      </div>\n    </div>\n    <div class=\"mb-3\">\n      <span class=\"input-group-text\" id=\"inputGroup-sizing-default\">ID</span>\n      <input type=\"text\" name=\"username\" id=\"username\" class=\"form-control\" aria-label=\"Sizing example input\" aria-describedby=\"inputGroup-sizing-default\">\n    </div>\n    <div class=\"mb-3\">\n      <label for=\"password\" class=\"form-label\">비밀번호</label>\n      <input type=\"password\" name=\"password\" id=\"password\" class=\"form-control\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-primary\">로그인</button>\n </form>\n
+===================================================================
+diff --git a/app/src/main/resources/templates/content/login/login_form.html b/app/src/main/resources/templates/content/login/login_form.html
+--- a/app/src/main/resources/templates/content/login/login_form.html	
++++ b/app/src/main/resources/templates/content/login/login_form.html	
+@@ -1,16 +1,26 @@
+-<form th:action="@{/user/login}" method="post" layout:fragment="content" xmlns:layout="http://www.w3.org/1999/xhtml">
+-    <div th:if="@{param.error}">
+-      <div class="alert alert-danger">
+-        사용자 ID 또는 비밀번호를 확인해주세요.
+-      </div>
+-    </div>
+-    <div class="mb-3">
+-      <span class="input-group-text" id="inputGroup-sizing-default">ID</span>
+-      <input type="text" name="username" id="username" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+-    </div>
+-    <div class="mb-3">
+-      <label for="password" class="form-label">비밀번호</label>
+-      <input type="password" name="password" id="password" class="form-control">
+-    </div>
+-    <button type="submit" class="btn btn-primary">로그인</button>
+- </form>
++<html layout:decorate="~{layout/base}" xmlns:layout="http://www.w3.org/1999/xhtml">
++<div id="login_container" layout:fragment="content">
++    <form th:action="@{/user/login}" method="post">
++
++        <div th:if="${param.error}">
++          <div class="alert alert-danger">
++            사용자 ID 또는 비밀번호를 확인해주세요.
++          </div>
++        </div>
++
++        <div class="mb-3">
++          <label for="username" class="form-label" id="login_id_label">ID</label>
++          <input type="text" name="username" id="username" class="form-control">
++        </div>
++        <div class="mb-3">
++          <label for="password" class="form-label" id="login_pw_label">비밀번호</label>
++          <input type="password" name="password" id="password" class="form-control">
++        </div>
++
++        <div>
++            <button type="submit" class="btn btn-primary">로그인</button>
++            <a th:href="@{/user/signup}" class="btn btn-secondary">회원가입</a>
++        </div>
++     </form>
++</div>
++</html>
+\ No newline at end of file
+Index: app/src/main/resources/templates/content/question/question_list.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><html layout:decorate=\"~{layout/base}\" xmlns:layout=\"http://www.w3.org/1999/xhtml\">\n<div layout:fragment=\"content\">\n    <table>\n        <thead>\n        <tr>\n            <th>제목</th>\n            <th>작성일시</th>\n        </tr>\n        </thead>\n        <tbody>\n        <tr th:each=\"question : ${questionList}\">\n            <td>\n                <a th:href=\"@{|/question/detail/${question.id}|}\" th:text=\"${question.subject}\"></a>\n            </td>\n            <td th:text=\"${question.createDate}\"></td>\n        </tr>\n        </tbody>\n    </table>\n    <a th:href=\"@{/question/create}\" class=\"btn btn-primary\">문제 등록</a>\n</div>\n</html>
+===================================================================
+diff --git a/app/src/main/resources/templates/content/question/question_list.html b/app/src/main/resources/templates/content/question/question_list.html
+--- a/app/src/main/resources/templates/content/question/question_list.html	
++++ b/app/src/main/resources/templates/content/question/question_list.html	
+@@ -1,21 +1,31 @@
+ <html layout:decorate="~{layout/base}" xmlns:layout="http://www.w3.org/1999/xhtml">
+-<div layout:fragment="content">
+-    <table>
+-        <thead>
+-        <tr>
+-            <th>제목</th>
+-            <th>작성일시</th>
++<div layout:fragment="content" id="question_container">
++    <div>
++        <a th:href="@{/question/create}" class="btn btn-success">문제 등록</a>
++    </div>
++
++    <table class="question">
++        <thead id="question_head">
++        <tr class="text-center">
++            <th style="width:10%;">글 번호</th>
++            <th style="width:60%;">제목</th>
++            <th style="width:10%;">작성자</th>
++            <th style="width:20%;">작성일시</th>
+         </tr>
+         </thead>
+-        <tbody>
+-        <tr th:each="question : ${questionList}">
+-            <td>
+-                <a th:href="@{|/question/detail/${question.id}|}" th:text="${question.subject}"></a>
+-            </td>
+-            <td th:text="${question.createDate}"></td>
+-        </tr>
++
++        <tbody class="text-center">
++            <tr th:each="question, loop : ${questionList}" >
++                <td th:text="${loop.count}" class="text-center"></td>
++                <td class="text-start">
++                    <a th:href="@{|/question/detail/${question.id}|}" th:text="${question.subject}"></a>
++                </td>
++                <td><span th:if="${question.author != null}" th:text="${question.author.username}"></span></td>
++                <td th:text="${#temporals.format(question.createDate, 'yyyy-MM-dd HH:mm')}"></td>
++            </tr>
+         </tbody>
++
+     </table>
+-    <a th:href="@{/question/create}" class="btn btn-primary">문제 등록</a>
++
+ </div>
+ </html>
+\ No newline at end of file
+Index: app/src/main/resources/templates/content/login/signup_form.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Title</title>\n</head>\n<body>\n  <form th:action=\"@{/user/signup}\" th:object=\"${userCreateForm}\" method=\"post\">\n<!--    <div th:replace=\"~{form_errors :: formErrorsFragment}\"></div>-->\n    <div class=\"mb-3\">\n      <label for=\"username\" class=\"form-label\">사용자ID</label>\n      <input type=\"text\" th:field=\"*{username}\" class=\"form-control\">\n    </div>\n    <div class=\"mb-3\">\n      <label for=\"password1\" class=\"form-label\">비밀번호</label>\n      <input type=\"password\" th:field=\"*{password1}\" class=\"form-control\">\n    </div>\n    <div class=\"mb-3\">\n      <label for=\"password2\" class=\"form-label\">비밀번호확인</label>\n      <input type=\"password\" th:field=\"*{password2}\" class=\"form-control\">\n    </div>\n    <div class=\"mb-3\">\n      <label for=\"email\" class=\"form-label\">이메일</label>\n      <input type=\"email\" th:field=\"*{email}\" class=\"form-control\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-primary\">아이디 생성</button>\n  </form>\n</body>\n</html>
+===================================================================
+diff --git a/app/src/main/resources/templates/content/login/signup_form.html b/app/src/main/resources/templates/content/login/signup_form.html
+--- a/app/src/main/resources/templates/content/login/signup_form.html	
++++ b/app/src/main/resources/templates/content/login/signup_form.html	
+@@ -1,29 +1,24 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Title</title>
+-</head>
+-<body>
+-  <form th:action="@{/user/signup}" th:object="${userCreateForm}" method="post">
+-<!--    <div th:replace="~{form_errors :: formErrorsFragment}"></div>-->
+-    <div class="mb-3">
+-      <label for="username" class="form-label">사용자ID</label>
+-      <input type="text" th:field="*{username}" class="form-control">
+-    </div>
+-    <div class="mb-3">
+-      <label for="password1" class="form-label">비밀번호</label>
+-      <input type="password" th:field="*{password1}" class="form-control">
+-    </div>
+-    <div class="mb-3">
+-      <label for="password2" class="form-label">비밀번호확인</label>
+-      <input type="password" th:field="*{password2}" class="form-control">
+-    </div>
+-    <div class="mb-3">
+-      <label for="email" class="form-label">이메일</label>
+-      <input type="email" th:field="*{email}" class="form-control">
+-    </div>
+-    <button type="submit" class="btn btn-primary">아이디 생성</button>
+-  </form>
+-</body>
++<html layout:decorate="~{layout/base}" xmlns:layout="http://www.w3.org/1999/xhtml">
++    <div layout:fragment="content" id="signup_container">
++      <form th:action="@{/user/signup}" th:object="${userCreateForm}" method="post">
++    <!--    <div th:replace="~{form_errors :: formErrorsFragment}"></div>-->
++        <div class="mb-3">
++          <label for="username" class="form-label">사용자ID</label>
++          <input type="text" th:field="*{username}" class="form-control">
++        </div>
++        <div class="mb-3">
++          <label for="password1" class="form-label">비밀번호</label>
++          <input type="password" th:field="*{password1}" class="form-control">
++        </div>
++        <div class="mb-3">
++          <label for="password2" class="form-label">비밀번호확인</label>
++          <input type="password" th:field="*{password2}" class="form-control">
++        </div>
++        <div class="mb-3">
++          <label for="email" class="form-label">이메일</label>
++          <input type="email" th:field="*{email}" class="form-control">
++        </div>
++        <button type="submit" class="btn btn-primary">아이디 생성</button>
++      </form>
++    </div>
+ </html>
+\ No newline at end of file
+Index: app/src/main/resources/templates/fragment/footer.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><html>\n<footer th:fragment=\"footerFragment\">\n    copyright\n</footer>\n</html>
+===================================================================
+diff --git a/app/src/main/resources/templates/fragment/footer.html b/app/src/main/resources/templates/fragment/footer.html
+--- a/app/src/main/resources/templates/fragment/footer.html	
++++ b/app/src/main/resources/templates/fragment/footer.html	
+@@ -1,5 +1,5 @@
+ <html>
+ <footer th:fragment="footerFragment">
+-    copyright
++    source code by Jump to Springboot
+ </footer>
+ </html>
+\ No newline at end of file
+Index: app/src/main/resources/templates/content/question/question_form.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><html layout:decorate=\"~{layout/base}\" xmlns:layout=\"http://www.w3.org/1999/xhtml\">\n  <div layout:fragment=\"content\">\n    <h5 class=\"my-3 border-bottom pb-2\">질문등록</h5>\n    <form th:object=\"${questionForm}\" method=\"post\">\n      <input type=\"hidden\" th:name=\"${_csrf.parameterName}\" th:value=\"${_csrf.token}\"/>\n      <div class=\"alert alert-danger\" role=\"alert\" th:if=\"${#fields.hasAnyErrors()}\">\n        <div th:replace=\"~{error/form_errors::formErrorsFragment}\"></div>\n      </div>\n      <div class=\"mb-3\">\n        <label for=\"subject\" class=\"form-label\">제목</label>\n        <input type=\"text\" class=\"form-control\" th:field=\"*{subject}\">\n      </div>\n      <div class=\"mb-3\">\n        <label for=\"content\" class=\"form-control\">내용</label>\n        <textarea th:field=\"*{content}\" class=\"form-control\" rows=\"10\"></textarea>\n      </div>\n      <input type=\"submit\" value=\"저장하기\" class=\"btn btn-primary my-2\">\n    </form>\n  </div>\n</html>
+===================================================================
+diff --git a/app/src/main/resources/templates/content/question/question_form.html b/app/src/main/resources/templates/content/question/question_form.html
+--- a/app/src/main/resources/templates/content/question/question_form.html	
++++ b/app/src/main/resources/templates/content/question/question_form.html	
+@@ -1,5 +1,5 @@
+ <html layout:decorate="~{layout/base}" xmlns:layout="http://www.w3.org/1999/xhtml">
+-  <div layout:fragment="content">
++  <div layout:fragment="content" id="question_write_container">
+     <h5 class="my-3 border-bottom pb-2">질문등록</h5>
+     <form th:object="${questionForm}" method="post">
+       <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+@@ -11,7 +11,7 @@
+         <input type="text" class="form-control" th:field="*{subject}">
+       </div>
+       <div class="mb-3">
+-        <label for="content" class="form-control">내용</label>
++        <label for="content" class="form-label">내용</label>
+         <textarea th:field="*{content}" class="form-control" rows="10"></textarea>
+       </div>
+       <input type="submit" value="저장하기" class="btn btn-primary my-2">
+Index: app/src/main/resources/static/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#container{\n    margin: auto 20px;\n}
+===================================================================
+diff --git a/app/src/main/resources/static/style.css b/app/src/main/resources/static/style.css
+--- a/app/src/main/resources/static/style.css	
++++ b/app/src/main/resources/static/style.css	
+@@ -1,3 +1,48 @@
+-#container{
+-    margin: auto 20px;
+-}
+\ No newline at end of file
++#login_container, #signup_container{
++    margin:auto;
++    width:30em;
++    padding-top: 20vh;
++}
++
++#login_id_label, #login_pw_label{
++    font-size:1.3em;
++}
++
++#question_container, #question_write_container{
++    margin:3vh auto;
++    width:80%;
++}
++
++.question{
++    margin-top:1vh;
++    width:1100px;
++}
++
++#question_head{
++    background-color: #5f3e6e;
++    border:#5f3e6e;
++    color: #fff;
++}
++a{
++    text-decoration: none;
++    color:#000;
++}
++
++section {
++    height:85vh;
++}
++
++footer{
++    margin: auto 2em;
++    width:100%;
++}
++
++.material-symbols-outlined {
++     font-variation-settings:
++             'FILL' 0,
++             'wght' 500,
++             'GRAD' 0,
++             'opsz' 48
++ }
++
++
