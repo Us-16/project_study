@@ -39,4 +39,7 @@ public interface JsonPlaceHolderApi {
 
     @GET("api/page/info")
     Call<Integer> getQuestionPageInfo();
+
+    @GET("api/teacher/{username}/{password}")
+    Call<HashMap<String, String>> TeacherLogin(@Path("username")String test_id, @Path("password") String test_pw);
 }

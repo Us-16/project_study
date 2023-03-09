@@ -15,29 +15,30 @@
         android:padding="10dp">
 
         <RadioGroup
+            android:id="@+id/login_radio_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:checkedButton="@id/login_radio_student">
 
             <RadioButton
                 android:id="@+id/login_radio_student"
-                android:checked="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/selector_radio_button"
-                android:textColor="@drawable/selector_radio_text"
-                android:button="@null"
-                android:textAlignment="center"/>
-            <RadioButton
-                android:id="@+id/login_radio_teacher"
-                android:checked="false"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
                 android:background="@drawable/selector_radio_button"
                 android:textColor="@drawable/selector_radio_text"
                 android:button="@null"
                 android:textAlignment="center"
-                android:text="Test2"/>
+                android:text="학생"/>
+            <RadioButton
+                android:id="@+id/login_radio_teacher"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:textAlignment="center"
+                android:text="강사"/>
         </RadioGroup>
         <EditText
             android:id="@+id/Login_id"
