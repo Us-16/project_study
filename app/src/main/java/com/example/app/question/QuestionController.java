@@ -1,7 +1,5 @@
 package com.example.app.question;
 
-import com.example.app.answer.AnswerForm;
-import com.example.app.question.question_image.QuestionImage;
 import com.example.app.question.question_image.QuestionImageService;
 import com.example.app.user.teacher.Teacher;
 import com.example.app.user.UserService;
@@ -42,13 +40,6 @@ public class QuestionController {
         model.addAttribute("paging", paging);
 
         return "content/question/question_list";
-    }
-
-    @GetMapping(value="/detail/{id}")
-    public String detail(Model model, @PathVariable("id") Long id, AnswerForm answerForm){
-        Question question = this.questionService.getQuestion(id);
-        model.addAttribute("question", question);
-        return "content/question/question_detail";
     }
 
     @PreAuthorize("isAuthenticated()")
