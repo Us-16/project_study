@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 @RestController
@@ -20,14 +21,21 @@ public class AccessApiController {
     private final MobileService mobileService;
 
     @GetMapping("/teacher/{username}/{password}")
-    public void loginTeacherResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception {
+    public HashMap<String, String> loginTeacherResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception {
         username = hex.hexToString(username);
         password = hex.hexToString(password);
         username = aes256.decrypt(username);
         password = aes256.decrypt(password);
 
-        System.out.println("Username: " + username + " ||| Password: " + password);
+        ArrayList<String> result = mobileService.LoginTeacher(username, password);
 
-        mobileService.LoginTeacher(username, password);
+        HashMap<String, String> message;
+        message = new HashMap<>();
+
+        final String[] sendTitle = {"id", "name", "username", "email", "check", "time"};
+        for(int i=sendTitle.length-1; i>=0; i--)
+            message.put(aes256.encrypt(sendTitle[i]), result.get(i));
+
+        return message;
     }
 }
