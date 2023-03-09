@@ -11,7 +11,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.example.a16sserver.Main_activity;
@@ -33,26 +36,53 @@ public class LoginTestActivity extends AppCompatActivity {
 
     private final AES256 aes256 = new AES256();
     private final Hex hex = new Hex();
+    private Button login_button;
+    private RadioGroup radioGroup;
+    private RadioButton r_student;
+    private RadioButton r_teacher;
+    private boolean isStudent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_test2);
 
-        loginBtn();
+        radioGroup = findViewById(R.id.login_radio_group);
+        radioGroup.setOnCheckedChangeListener(radioGroupListener);
+
+        r_student = findViewById(R.id.login_radio_student);
+        r_teacher = findViewById(R.id.login_radio_teacher);
+
+        login_button = findViewById(R.id.Login_signIn);
+
+        isStudent=true;
+
+        Login();
     }
 
-    private void loginBtn(){
-        final Button signin_button = findViewById(R.id.Login_signIn);
-        signin_button.setOnClickListener(new View.OnClickListener() {
+
+
+    RadioGroup.OnCheckedChangeListener radioGroupListener = new RadioGroup.OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(RadioGroup radioGroup, int i) {
+            if(i == R.id.login_radio_student){
+                isStudent = true;
+            }else{
+                isStudent = false;
+            }
+        }
+    };
+
+    private void Login() {
+        this.login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EditText Text_id = findViewById(R.id.Login_id);
                 EditText Text_pw = findViewById(R.id.Login_pw);
                 String test_id;
                 String test_pw;
-                //tester
-                //암호화
+
                 try {
                     test_id = aes256.encrypt(Text_id.getText().toString());
                     test_id = hex.stringToHex(test_id);
@@ -63,36 +93,67 @@ public class LoginTestActivity extends AppCompatActivity {
                 }
 
                 Log.d("Emergency", test_id + " : " + test_pw);
-
-                //집어놓고
-                Retrofit retrofit = RetrofitUtil.Init();
-                JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
-                Call<HashMap<String, String>> call = jsonPlaceHolderApi.Login(test_id, test_pw);
-                //수신
-                call.enqueue(new Callback<HashMap<String, String>>() {
-                    @Override
-                    public void onResponse(Call<HashMap<String, String>> call, Response<HashMap<String, String>> response) {
-                        if(response.isSuccessful()){
-                            HashMap<String, String> lt = response.body();
-                            assert lt != null;
-                            try{
-                                ReceiveSuccess(lt);
-                            }catch (Exception e){
-                                Log.e("Receive Error" , e.getMessage());
+                if(isStudent) {
+                    //집어놓고
+                    Retrofit retrofit = RetrofitUtil.Init();
+                    JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
+                    Call<HashMap<String, String>> call = jsonPlaceHolderApi.Login(test_id, test_pw);
+                    //수신
+                    call.enqueue(new Callback<HashMap<String, String>>() {
+                        @Override
+                        public void onResponse(Call<HashMap<String, String>> call, Response<HashMap<String, String>> response) {
+                            if (response.isSuccessful()) {
+                                HashMap<String, String> lt = response.body();
+                                assert lt != null;
+                                try {
+                                    ReceiveSuccess(lt);
+                                } catch (Exception e) {
+                                    Log.e("Receive Error", e.getMessage());
+                                }
+                            } else {
+                                Log.d(TAG, "Check downs");
+                                Log.d(TAG, "Status code : " + response.code());
+                                Log.d(TAG, response.errorBody().toString());
+                                Log.d(TAG, call.request().body().toString());
                             }
-                        }else{
-                            Log.d(TAG, "Check downs");
-                            Log.d(TAG, "Status code : " + response.code() );
-                            Log.d(TAG, response.errorBody().toString());
-                            Log.d(TAG, call.request().body().toString());
                         }
-                    }
 
-                    @Override
-                    public void onFailure(Call<HashMap<String, String>> call, Throwable t) {
-                        Log.d("TEST", "Connection Fail");
-                    }
-                });
+                        @Override
+                        public void onFailure(Call<HashMap<String, String>> call, Throwable t) {
+                            Log.d("TEST", "Connection Fail");
+                        }
+                    });
+                }
+                else{
+                    Retrofit retrofit = RetrofitUtil.Init();
+                    JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
+                    Call<HashMap<String, String>> call = jsonPlaceHolderApi.TeacherLogin(test_id, test_pw);
+                    call.enqueue(new Callback<HashMap<String, String>>() {
+                        @Override
+                        public void onResponse(Call<HashMap<String, String>> call, Response<HashMap<String, String>> response) {
+                            if (response.isSuccessful()) {
+                                HashMap<String, String> lt = response.body();
+                                assert lt != null;
+                                try {
+                                    ReceiveSuccess(lt);
+                                } catch (Exception e) {
+                                    Log.e("Receive Error", e.getMessage());
+                                }
+                            } else {
+                                Log.d(TAG, "Check downs");
+                                Log.d(TAG, "Status code : " + response.code());
+                                Log.d(TAG, response.errorBody().toString());
+                                Log.d(TAG, call.request().body().toString());
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<HashMap<String, String>> call, Throwable t) {
+                            Log.d("TEST", "Connection Fail");
+                            Log.d("TEST", t.getMessage());
+                        }
+                    });
+                }
             }
         });
     }
