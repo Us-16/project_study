@@ -78,11 +78,5 @@ class AppApplicationTests {
 				.build();
 		PostsResponseDto.Create createResponse = postsCaller.createPostsByForm(request);
 	}
-	@Test
-	@DisplayName("로그인 테스트")
-	public void LoginTest() throws Exception {
-		System.out.println(aes256.encrypt("lsd4026") + " : " + aes256.encrypt("1234"));
-		ArrayList<String> test  = userService.LoginStudent(aes256.encrypt("lsd4026"), aes256.encrypt("1234"));
-		test.forEach(System.out::println);
-	}
+
 }

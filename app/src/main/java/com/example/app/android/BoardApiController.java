@@ -72,34 +72,6 @@ public class BoardApiController {
         userService.createStudent(signupDTO.getStu_name(), signupDTO.getStu_username(), signupDTO.getStu_password(), signupDTO.getStu_pid1(), signupDTO.getStu_pid2(), signupDTO.getStu_email(), signupDTO.getStu_school(), signupDTO.getStu_grade());
     }
 
-    //외부에서 설정한 url로 접속하는 순간, 이 함수가 호출된다고 생각하면 됨. 그래서 특별히 값을 받는 기능의 URL은 굳이 필요하지 않음.
-    @GetMapping("/login/result/{username}/{password}") //로그인
-    public HashMap<String, String> loginStudentResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception{
-        log.info("Attempted SignIn : http://localhost:8080/api/login/result/"+(password)+"/"+(username));
-
-        //16진수 복호화
-        username = hex.hexToString(username);
-        password = hex.hexToString(password);
-
-        //AES256 복호화
-        username = aes256.decrypt(username);
-        password = aes256.decrypt(password);
-
-
-        ArrayList<String> testDTO = userService.LoginStudent(username, password);
-
-        HashMap<String, String> message = new HashMap<>();
-        final String[] sendTitle = {"id", "name", "username", "email", "check", "time"};
-        for(int i=sendTitle.length-1; i>=0; i--)
-            message.put(aes256.encrypt(sendTitle[i]), testDTO.get(i));
-
-
-        log.info("Result SignIn : " + aes256.decrypt(testDTO.get(4)).charAt(0));
-
-        return message;
-    }
-
-
     @GetMapping("/page/{page}") //페이지 내용
     ArrayList<Question> questionResponse(@PathVariable("page") int page){
         Page<Question> pageItem = this.questionService.getList(page-1);

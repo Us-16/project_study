@@ -1,6 +1,7 @@
 package com.example.app.android.access;
 
 
+import com.example.app.android.dto.LoginResultDO;
 import com.example.app.util.AES256;
 import com.example.app.util.Hex;
 import lombok.RequiredArgsConstructor;
@@ -11,31 +12,37 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
 public class AccessApiController {
-    private final AES256 aes256 = new AES256();
-    private final Hex hex = new Hex();
+
     private final MobileService mobileService;
+    private Hex hex = new Hex();
+    private AES256 aes256 = new AES256();
 
     @GetMapping("/teacher/{username}/{password}")
-    public HashMap<String, String> loginTeacherResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception {
+    public LoginResultDO loginTeacherResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception {
+        System.out.println("http://localhost:8080/api/teacher/"+username + "/" + password);
+
+        return mobileService.LoginTeacher(setDecode(username, password).get(0),setDecode(username, password).get(1));
+    }
+    @GetMapping("/student/{username}/{password}")
+    public LoginResultDO loginStudentResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception {
+        System.out.println("http://localhost:8080/api/student/"+username + "/" + password);
+
+        return mobileService.LoginStudent(setDecode(username, password).get(0),setDecode(username, password).get(1));
+    }
+    private ArrayList<String> setDecode(String username, String password) throws Exception{
+        ArrayList<String> result = new ArrayList<>();
         username = hex.hexToString(username);
         password = hex.hexToString(password);
         username = aes256.decrypt(username);
         password = aes256.decrypt(password);
-
-        ArrayList<String> result = mobileService.LoginTeacher(username, password);
-
-        HashMap<String, String> message;
-        message = new HashMap<>();
-
-        final String[] sendTitle = {"id", "name", "username", "email", "check", "time"};
-        for(int i=sendTitle.length-1; i>=0; i--)
-            message.put(aes256.encrypt(sendTitle[i]), result.get(i));
-
-        return message;
+        result.add(username);
+        result.add(password);
+        return result;
     }
 }
