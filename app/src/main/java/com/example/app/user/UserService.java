@@ -93,7 +93,7 @@ public class UserService {
         if(this.studentRepository.findByUsername(username).equals(Optional.empty())) {
             return "true";
         }
-        return "false";
+        return "false"; //check
     }
 
 }
