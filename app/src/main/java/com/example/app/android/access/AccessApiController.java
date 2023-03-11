@@ -43,6 +43,6 @@ public class AccessApiController {
         password = aes256.decrypt(password);
         result.add(username);
         result.add(password);
-        return result;
+        return result; //is it okay?
     }
 }
