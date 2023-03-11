@@ -23,6 +23,7 @@ import com.example.a16sserver.retrofit.JsonPlaceHolderApi;
 import com.example.a16sserver.retrofit.RetrofitUtil;
 import com.example.a16sserver.retrofit.util.AES256;
 import com.example.a16sserver.retrofit.util.Hex;
+import com.example.a16sserver.springdo.LoginResultDO;
 
 import java.util.HashMap;
 
@@ -97,13 +98,13 @@ public class LoginTestActivity extends AppCompatActivity {
                     //집어놓고
                     Retrofit retrofit = RetrofitUtil.Init();
                     JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
-                    Call<HashMap<String, String>> call = jsonPlaceHolderApi.Login(test_id, test_pw);
+                    Call<LoginResultDO> call = jsonPlaceHolderApi.StudentLogin(test_id, test_pw);
                     //수신
-                    call.enqueue(new Callback<HashMap<String, String>>() {
+                    call.enqueue(new Callback<LoginResultDO>() {
                         @Override
-                        public void onResponse(Call<HashMap<String, String>> call, Response<HashMap<String, String>> response) {
+                        public void onResponse(Call<LoginResultDO> call, Response<LoginResultDO> response) {
                             if (response.isSuccessful()) {
-                                HashMap<String, String> lt = response.body();
+                                LoginResultDO lt = response.body();
                                 assert lt != null;
                                 try {
                                     ReceiveSuccess(lt);
@@ -119,7 +120,7 @@ public class LoginTestActivity extends AppCompatActivity {
                         }
 
                         @Override
-                        public void onFailure(Call<HashMap<String, String>> call, Throwable t) {
+                        public void onFailure(Call<LoginResultDO> call, Throwable t) {
                             Log.d("TEST", "Connection Fail");
                         }
                     });
@@ -127,17 +128,16 @@ public class LoginTestActivity extends AppCompatActivity {
                 else{
                     Retrofit retrofit = RetrofitUtil.Init();
                     JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
-                    Call<HashMap<String, String>> call = jsonPlaceHolderApi.TeacherLogin(test_id, test_pw);
-                    call.enqueue(new Callback<HashMap<String, String>>() {
+                    Call<LoginResultDO> call = jsonPlaceHolderApi.TeacherLogin(test_id, test_pw);
+                    call.enqueue(new Callback<LoginResultDO>() {
                         @Override
-                        public void onResponse(Call<HashMap<String, String>> call, Response<HashMap<String, String>> response) {
+                        public void onResponse(Call<LoginResultDO> call, Response<LoginResultDO> response) {
                             if (response.isSuccessful()) {
-                                HashMap<String, String> lt = response.body();
-                                assert lt != null;
+                                LoginResultDO lt = response.body();
                                 try {
                                     ReceiveSuccess(lt);
                                 } catch (Exception e) {
-                                    Log.e("Receive Error", e.getMessage());
+                                    throw new RuntimeException(e);
                                 }
                             } else {
                                 Log.d(TAG, "Check downs");
@@ -148,7 +148,7 @@ public class LoginTestActivity extends AppCompatActivity {
                         }
 
                         @Override
-                        public void onFailure(Call<HashMap<String, String>> call, Throwable t) {
+                        public void onFailure(Call<LoginResultDO> call, Throwable t) {
                             Log.d("TEST", "Connection Fail");
                             Log.d("TEST", t.getMessage());
                         }
@@ -158,9 +158,9 @@ public class LoginTestActivity extends AppCompatActivity {
         });
     }
 
-    private void ReceiveSuccess(@NonNull HashMap<String, String> lt) throws Exception {
-        Log.d("LOGIN", ""+aes256.decrypt(lt.get(aes256.encrypt("check"))).charAt(0));
-        if(aes256.decrypt(lt.get(aes256.encrypt("check"))).charAt(0) == 'S'){
+    private void ReceiveSuccess(@NonNull LoginResultDO lt) throws Exception {
+        Log.d(TAG,  ""+aes256.decrypt(lt.getCheck()).charAt(0));
+        if(aes256.decrypt(lt.getCheck()).charAt(0) == 'S'){
             Intent intent = new Intent(LoginTestActivity.this, Main_activity.class);
             startActivity(intent);
             finish();

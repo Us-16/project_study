@@ -3,6 +3,7 @@ package com.example.a16sserver.retrofit;
 import com.example.a16sserver.retrofit.dto.Response_check;
 import com.example.a16sserver.retrofit.dto.StudentAccount;
 import com.example.a16sserver.retrofit.dto.Upload;
+import com.example.a16sserver.springdo.LoginResultDO;
 import com.example.a16sserver.springdo.Question;
 
 import java.util.ArrayList;
@@ -21,8 +22,8 @@ public interface JsonPlaceHolderApi {
 //    Call<List<Question>> getQuestions();
 
 
-    @GET("api/login/result/{username}/{password}")
-    Call<HashMap<String, String>> Login(@Path("username") String username, @Path("password") String password);
+    @GET("api/student/{username}/{password}")
+    Call<LoginResultDO> StudentLogin(@Path("username") String username, @Path("password") String password);
 
     @Headers("Content-Type: application/json")
     @POST("/api/signup")
@@ -41,5 +42,5 @@ public interface JsonPlaceHolderApi {
     Call<Integer> getQuestionPageInfo();
 
     @GET("api/teacher/{username}/{password}")
-    Call<HashMap<String, String>> TeacherLogin(@Path("username")String test_id, @Path("password") String test_pw);
+    Call<LoginResultDO> TeacherLogin(@Path("username")String test_id, @Path("password") String test_pw);
 }
