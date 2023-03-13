@@ -9,10 +9,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/classroom")
 public class ClassRoomController {
-    private final String classroomMain = "classroom/class_base.html";
+    private final String classroomMain = "classroom/layout/mainPage";
+    private final String classroomCreate = "classroom/layout/createPage";
 
-    @GetMapping("/")
+    @GetMapping("/main")
     public String mainPage(){
         return classroomMain;
+    }
+
+    @GetMapping("/create")
+    public String createPage(){
+        return classroomCreate;
     }
 }

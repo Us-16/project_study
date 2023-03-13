@@ -6,9 +6,9 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="/" style="color: white">쎌_클래스룸</a>
-            <ul th:if="@{|/classroom/|}" class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <ul th:unless="@{|/classroom/|}" class="navbar-nav me-auto mb-2 mb-lg-0" id="nav_list">
+            <a class="navbar-brand" href="/" style="color: white">쎌: 클래스룸</a>
+            <ul th:if="@{|/classroom/main|}" class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <ul th:unless="@{|/classroom/main|}" class="navbar-nav me-auto mb-2 mb-lg-0" id="nav_list">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" th:href="@{/question/list}">클래스룸</a>
                 </li>
