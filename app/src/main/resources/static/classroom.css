@@ -1,0 +1,83 @@
+.navbar{
+    background: linear-gradient(45deg, #3e0694,#6667AB);
+}
+#nav_list > li > a{
+    color:white;
+}
+#content_container{
+    display:block;
+    margin: auto;
+    width:90%;
+    min-height: 80vh;
+    overflow: hidden;
+}
+footer{
+    display: block;
+    width:90%;
+    margin: auto;
+    height:100px;
+    clear: left;
+}
+#c_floatButton{
+    position: fixed;
+    background-color: #6b00ff;
+    width:10%;
+    height:40px;
+    border-radius: 5%;
+    right: 5%;
+    bottom: 110px;
+    box-shadow: 3px 3px 5px 1px grey;
+    transition: right 0.2s ease-in-out;
+}
+
+#c_floatButton > span{
+    width:100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1em;
+}
+#c_floatButton:hover{
+    background-color: #300073;
+}
+
+#classroom_container{
+    display: block;
+    width: 90%;
+    min-height: 100vh;
+    margin: 20px auto;
+}
+section{
+    position: relative;
+    display: block;
+    width: 80%;
+    float:right;
+}
+aside{
+    width: 19%;
+    float:left;
+}
+aside > #c_aside_code, #c_aside_check{
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-height: 30vh;
+}
+section > #c_section_notice{
+    height: 15vh;
+}
+section > #c_section_list{
+    width: 50vh;
+    height: 10vh;
+}
+section > #c_section_list, #c_section_notice{
+    margin: 10px auto;
+    border: thin solid gray;
+    width: 99%;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 3px 3px 5px gray;
+    padding: 10px
+}
