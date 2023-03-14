@@ -15,7 +15,9 @@
         </div>
         <div id="c_section_list">
             <a href="#">Test</a>
+            <a href="#" th:each="classroom, loop : ${paging}" th:text="${classroom.title}"></a>
         </div>
+
     </section>
 </div>
 </html>
