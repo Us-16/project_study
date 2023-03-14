@@ -19,11 +19,11 @@ public class ClassRoom {
     @ManyToOne
     private Teacher teacher;
 
-    @ManyToOne
-    private Student student;
-
     @Column
-    private String name;
+    private String title;
+
+    @Column(unique = true)
+    private String code;
 
     @Column
     private LocalDateTime createDate;
