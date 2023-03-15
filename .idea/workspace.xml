@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="add html">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassroomForm.java" afterDir="false" />
+    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="add classroom">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/student/ClassRoomStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/student/ClassRoomStudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
@@ -14,15 +15,14 @@
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/classroom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/classroom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/createPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/createPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/class_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/class_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/mainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +61,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JavaScript File" />
-        <option value="Interface" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -348,14 +348,8 @@
       <workItem from="1678320831397" duration="16341000" />
       <workItem from="1678525232230" duration="2622000" />
       <workItem from="1678598739278" duration="24427000" />
-      <workItem from="1678794800145" duration="8261000" />
-    </task>
-    <task id="LOCAL-00006" summary="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것">
-      <created>1674132842555</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1674132842555</updated>
+      <workItem from="1678794800145" duration="8919000" />
+      <workItem from="1678871688294" duration="1992000" />
     </task>
     <task id="LOCAL-00007" summary="add(floatingButton) html&#10;- add floatingButton component&#10;- fixed main some Pages">
       <created>1674399621142</created>
@@ -693,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678717787310</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="add classroom">
+      <created>1678805107716</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1678805107716</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -723,7 +724,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="BackUp - Receive userinfo for login" />
     <MESSAGE value="add - login result send success&#10;- message convert to aes256" />
     <MESSAGE value="수정&#10;- 로그인 실패 로직 수정" />
     <MESSAGE value="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제" />
@@ -748,7 +748,8 @@
     <MESSAGE value="Teacher Login api" />
     <MESSAGE value="similarly login success" />
     <MESSAGE value="add html" />
-    <option name="LAST_COMMIT_MESSAGE" value="add html" />
+    <MESSAGE value="add classroom" />
+    <option name="LAST_COMMIT_MESSAGE" value="add classroom" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -24,10 +24,11 @@ footer{
     width:130px;
     height:40px;
     border-radius: 5%;
-    right: 5%;
-    bottom: 20%;
+    right: 7vh;
+    bottom: 10vh;
     box-shadow: 3px 3px 5px 1px grey;
     transition: right 0.2s ease-in-out;
+    opacity: 100;
 }
 
 #c_floatButton > span{
@@ -68,11 +69,11 @@ aside > #c_aside_code, #c_aside_check{
 section > #c_section_notice{
     height: 15vh;
 }
-section > #c_section_list{
+section > .c_section_list{
     width: 50vh;
     height: 10vh;
 }
-section > #c_section_list, #c_section_notice{
+section > .c_section_list, #c_section_notice{
     margin: 10px auto;
     border: thin solid gray;
     width: 99%;
