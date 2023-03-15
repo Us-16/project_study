@@ -1,6 +1,9 @@
 package com.example.app.classroom;
 
+import com.example.app.classroom.student.ClassRoomStudent;
+import com.example.app.classroom.student.ClassRoomStudentRepository;
 import com.example.app.user.student.Student;
+import com.example.app.user.student.StudentRepository;
 import com.example.app.user.teacher.Teacher;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -12,11 +15,14 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RequiredArgsConstructor
 @Service
 public class ClassRoomService {
     private final ClassRoomRepository classRoomRepository;
+    private final ClassRoomStudentRepository classRoomStudentRepository;
+    private final StudentRepository studentRepository;
 
     public ClassRoom createClass(Teacher teacher, String title, String code){
         ClassRoom classroom = new ClassRoom();
@@ -37,4 +43,23 @@ public class ClassRoomService {
         return this.classRoomRepository.findAll(pageable);
     }
 
+    public void registStudents(ClassRoom classRoom, String students) {
+        //System.out.println(classRoom.getId());
+        //ArrayList<Student> regStudents = new ArrayList<>();
+        ClassRoomStudent crs;
+        String[] studentList = students.split(" ");
+        for(String student : studentList){
+            System.out.println(student); //이거 생각해보니 이메일로 그 계정의 아이디값을 얻어와야하네?!
+            Optional<Student> stu = studentRepository.findByEmail(student);
+            if(stu.isPresent()) {
+                crs = new ClassRoomStudent();
+                crs.setClassRoom(classRoom);
+                crs.setStudent(stu.get());
+                crs.setCreateDate(LocalDateTime.now());
+                this.classRoomStudentRepository.save(crs);
+                System.out.println(stu.get().getUsername() + "학생이 정상 등록되었습니다.");
+            }
+        }
+        //System.out.println(regStudents.get(0).getUsername());
+    }
 }
