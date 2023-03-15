@@ -1,23 +1,26 @@
 <html xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{classroom/class_base}">
 <div layout:fragment="classroom_content">
-    <th:block th:replace="~{classroom/layout/floatButton :: c_floatButton}"></th:block>
+
     <aside>
         <div id="c_aside_code">
-            <h4>XADA-DASDA1dqe12</h4>
+            <h4>가장 시끄러운 반</h4>
         </div>
         <div id="c_aside_check">
-
+            <h4>가장 활발한 반</h4>
         </div>
     </aside>
     <section>
         <div id="c_section_notice">
             <h4>공지사항</h4>
         </div>
-        <div id="c_section_list">
-            <a href="#">Test</a>
-            <a href="#" th:each="classroom, loop : ${paging}" th:text="${classroom.title}"></a>
+        <div>
+            <h3 style="margin: 10px">클래스룸</h3>
+        </div>
+        <div class="c_section_list" th:each="classroom, loop : ${paging}">
+            <a href="#"  th:text="${classroom.title}"></a>
         </div>
 
     </section>
+    <th:block th:replace="~{classroom/layout/floatButton :: c_floatButton}"></th:block>
 </div>
 </html>
