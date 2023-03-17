@@ -1,5 +1,6 @@
 package com.example.app.classroom;
 
+import com.example.app.classroom.student.ClassRoomStudent;
 import com.example.app.user.UserService;
 import com.example.app.user.teacher.Teacher;
 import jakarta.validation.Valid;
@@ -9,12 +10,10 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
+import java.util.List;
 import java.util.UUID;
 
 @RequiredArgsConstructor
@@ -23,6 +22,7 @@ import java.util.UUID;
 public class ClassRoomController {
     private final String classroomMain = "classroom/layout/mainPage";
     private final String classroomCreate = "classroom/layout/createPage";
+    private final String classroomDetail = "classroom/layout/detail";
     private final UserService userService;
     private final ClassRoomService classRoomService;
 
@@ -49,6 +49,13 @@ public class ClassRoomController {
         Teacher teacher = this.userService.getTeacher(principal.getName());
         ClassRoom classRoom = classRoomService.createClass(teacher, classroomForm.getTitle(), classroomForm.getCode());
         classRoomService.registStudents(classRoom, classroomForm.getStudents());
-        return "redirect:/classroom/main";
+        return String.format("redirect:/classroom/detail/" + classRoom.getId());
+    }
+
+    @GetMapping("/detail/{id}")
+    public String detail(@PathVariable("id") Long id, Model model){
+        List<ClassRoomStudent> students = classRoomService.getClassroomStudent(id);
+        model.addAttribute("students", students);
+        return classroomDetail;
     }
 }
