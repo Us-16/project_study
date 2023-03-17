@@ -10,6 +10,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -44,8 +45,6 @@ public class ClassRoomService {
     }
 
     public void registStudents(ClassRoom classRoom, String students) {
-        //System.out.println(classRoom.getId());
-        //ArrayList<Student> regStudents = new ArrayList<>();
         ClassRoomStudent crs;
         String[] studentList = students.split(" ");
         for(String student : studentList){
@@ -58,8 +57,19 @@ public class ClassRoomService {
                 crs.setCreateDate(LocalDateTime.now());
                 this.classRoomStudentRepository.save(crs);
                 System.out.println(stu.get().getUsername() + "학생이 정상 등록되었습니다.");
-            }
+            } //try catch 사용해야할 것으로 보임 -> 이번예제 참고하면 좋을 듯
         }
-        //System.out.println(regStudents.get(0).getUsername());
+    }
+
+    public ClassRoom getClassroom(Long id){
+        Optional<ClassRoom> classroom = classRoomRepository.findById(id);
+        return classroom.orElse(null);
+    }
+    public List<ClassRoomStudent> getClassroomStudent(Long classId){
+        System.out.println(classId);
+        List<ClassRoomStudent> students = classRoomStudentRepository.findByClassRoom_Id(classId);
+        System.out.println(students.size());
+
+        return students.size() == 0 ? null : students;
     }
 }

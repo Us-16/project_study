@@ -43,7 +43,13 @@ class AppApplicationTests {
 	@Test
 	@DisplayName("CreateAccount")
 	public void createStudent(){
-		userService.createStudent("장효림", "jorim", "1234", "970330", "1234567", "wkdgyfla97@naver.com", "KangBuk", "1");
+		String email_name = "wkdgyfla";
+		String email_last = "@naver.com";
+		String name = "jorim";
+		for(int i=20; i<40; i++){
+			userService.createStudent("장효림", name + i, "1234", "970330", "1234567", email_name+i+email_last, "KangBuk", "1");
+		}
+
 	}
 	@Test
 	@DisplayName("단일 포스트 조회")

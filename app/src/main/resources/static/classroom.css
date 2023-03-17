@@ -101,3 +101,18 @@ section > .c_section_list, #c_section_notice{
     width: 700px;
     margin: 20px auto;
 }
+#c_detail_mainTable {
+    border: thin solid gray;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    height: 30vh;
+    overflow: scroll;
+}
+#c_detail_mainList{
+    width: 50%;
+    height: 30vh;
+    border: 2px solid green;
+    float: right;
+    overflow: scroll;
+}
