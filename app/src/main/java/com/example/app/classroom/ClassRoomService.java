@@ -45,6 +45,9 @@ public class ClassRoomService {
     }
 
     public void registStudents(ClassRoom classRoom, String students) {
+        if (students == null){
+            return ;
+        }
         ClassRoomStudent crs;
         String[] studentList = students.split(" ");
         for(String student : studentList){
