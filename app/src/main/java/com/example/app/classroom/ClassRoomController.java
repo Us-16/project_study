@@ -48,6 +48,7 @@ public class ClassRoomController {
             return classroomCreate;
         Teacher teacher = this.userService.getTeacher(principal.getName());
         ClassRoom classRoom = classRoomService.createClass(teacher, classroomForm.getTitle(), classroomForm.getCode());
+
         classRoomService.registStudents(classRoom, classroomForm.getStudents());
         return String.format("redirect:/classroom/detail/" + classRoom.getId());
     }
