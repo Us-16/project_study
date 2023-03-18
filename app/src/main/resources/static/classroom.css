@@ -90,9 +90,10 @@ section > .c_section_list, #c_section_notice{
 }
 #create_container > form > textarea{
     width: 100%;
-    height: 30ch;
+    height: 5vh;
     border: thin solid #a4a4a4;
     resize: none;
+    overflow: hidden;
 }
 #create_container > form > textarea:focus{
     outline: 2px solid #ffcc00;
@@ -117,23 +118,19 @@ section > .c_section_list, #c_section_notice{
     overflow: scroll;
 }
 
-
-ul {
+#tag-list {
     padding: 16px 0;
 }
 
-ul li {
+#tag-list li {
     display: inline-block;
     margin: 0 5px;
     font-size: 14px;
     letter-spacing: -.5px;
 }
 
-form {
-    padding-top: 16px;
-}
 
-ul li.tag-item {
+#tag-list li.tag-item {
     padding: 4px 8px;
     background-color: #777;
     color: #000;

@@ -33,6 +33,7 @@ $(document).ready(function(){
                 if(result.length === 0){
                     $('#tag-list').append('<li class="tag-item">' + tagValue + '<span class="del-btn" idx="' + counter + '">x</span></li>');
                     $('#tag').val('');
+                    //$('#tag').val('\b');
                     addTag(tagValue);
                     self.value("");
                 }else{
@@ -47,5 +48,12 @@ $(document).ready(function(){
         var index = $(this).attr('idx');
         tag[index] = '';
         $(this).parent().remove();
-    })
+    });
+});
+$('#c_create_title').on('keyup', function (){
+    var content = $(this).val().length;
+
+    if(content < 3){
+        alert('제목은 최소 3자 이상임');
+    }
 });
