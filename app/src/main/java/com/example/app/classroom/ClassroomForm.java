@@ -9,6 +9,7 @@ import lombok.Setter;
 @Setter
 public class ClassroomForm {
     private String code;
+
     @NotEmpty(message = "제목을 입력해주세요")
     @Size(max=30)
     private String title;

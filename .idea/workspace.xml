@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="repairing detail">
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/javascript/classroom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/test.scss" afterDir="false" />
+    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="add tags">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
@@ -14,17 +12,12 @@
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/link.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/questionList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassroomForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassroomForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/classroom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/classroom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/javascript/link.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/questionList.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/javascript/questionList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/class_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/class_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/javascript/classroom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/javascript/classroom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/createPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/createPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -354,14 +347,7 @@
       <workItem from="1678598739278" duration="24427000" />
       <workItem from="1678794800145" duration="8919000" />
       <workItem from="1678871688294" duration="2258000" />
-      <workItem from="1678874051781" duration="20332000" />
-    </task>
-    <task id="LOCAL-00010" summary="fix - securityConfig&#10;- ignore /api/**  &#10;- Android could access&#10;- Android connect Success">
-      <created>1674830939552</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1674830939552</updated>
+      <workItem from="1678874051781" duration="24716000" />
     </task>
     <task id="LOCAL-00011" summary="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json">
       <created>1674922958235</created>
@@ -699,7 +685,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679051363772</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="add tags">
+      <created>1679139544155</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1679139544155</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,7 +722,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함" />
     <MESSAGE value="상황 종료(진짜 종료)&#10;- AES256 암호화 과정에서 특수문자로 인한 접속 불량 문제 확인&#10;- AES256 암호화를 진행한 내용을 다시 아스키코드 16진수로 변환하여 전송&#10;- 결과 어떤 값에도 이상없이 접속 가능한 것으로 확인됨" />
     <MESSAGE value="commit test&#10;- 이미지 업로드 진행 예정&#10;- 예제 참고하면서 진행 바람" />
     <MESSAGE value="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음" />
@@ -754,7 +746,8 @@
     <MESSAGE value="add classroom for students" />
     <MESSAGE value="students commit" />
     <MESSAGE value="repairing detail" />
-    <option name="LAST_COMMIT_MESSAGE" value="repairing detail" />
+    <MESSAGE value="add tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tags" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

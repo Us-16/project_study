@@ -58,10 +58,6 @@ public class QuestionController {
         Teacher teacher = this.userService.getTeacher(principal.getName());
         Question question = this.questionService.create(questionForm.getTitle(), questionForm.getContent(), teacher);
         questionImageService.write(question, files);
-        //questionImageService.create(question, "test", "test", 22222L);
-        // Question 객체 만들어지면서 동시에 저장할 거고
-        // 그 객체를 image에 쓰면 되는거 아님?
-        // 되네 ㅇㅇ
 
         return "redirect:/question/list";
     }
