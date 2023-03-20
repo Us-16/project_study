@@ -4,9 +4,7 @@
     <div id="create_container">
         <form th:object="${classroomForm}" method="post" >
             <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
-            <div class="alert alert-danger" role="alert" th:if="${#fields.hasAnyErrors()}">
-                <div th:replace="~{error/form_errors :: formErrorsFragment}"></div>
-            </div>
+
 
             <input type="text" th:value="${code}" id="create_code" name="code" readonly/>
             <h5>클래스 이름</h5>

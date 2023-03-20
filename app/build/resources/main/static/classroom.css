@@ -1,0 +1,149 @@
+.navbar{
+    background: linear-gradient(45deg, #3e0694,#6667AB);
+}
+#nav_list > li > a{
+    color:white;
+}
+#content_container{
+    display:block;
+    margin: auto;
+    width:90%;
+    min-height: 80vh;
+    overflow: hidden;
+}
+footer{
+    display: block;
+    width:90%;
+    margin: auto;
+    height:100px;
+    clear: left;
+}
+#c_floatButton{
+    position: fixed;
+    background-color: #6b00ff;
+    width:130px;
+    height:40px;
+    border-radius: 5%;
+    right: 7vh;
+    bottom: 10vh;
+    box-shadow: 3px 3px 5px 1px grey;
+    transition: right 0.2s ease-in-out;
+    opacity: 100;
+}
+
+#c_floatButton > span{
+    width:100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1em;
+}
+#c_floatButton:hover{
+    background-color: #300073;
+}
+
+#classroom_container{
+    display: block;
+    width: 90%;
+    min-height: 100vh;
+    margin: 20px auto;
+}
+section{
+    position: relative;
+    display: block;
+    width: 80%;
+    float:right;
+}
+aside{
+    width: 19%;
+    float:left;
+}
+aside > #c_aside_code, #c_aside_check{
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-height: 30vh;
+}
+section > #c_section_notice{
+    height: 15vh;
+}
+section > .c_section_list{
+    width: 50vh;
+    height: 10vh;
+}
+section > .c_section_list, #c_section_notice{
+    margin: 10px auto;
+    border: thin solid gray;
+    width: 99%;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 3px 3px 5px gray;
+    padding: 10px
+}
+
+#create_container > form > input{
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+#create_container > form > textarea{
+    width: 100%;
+    height: 5vh;
+    border: thin solid #a4a4a4;
+    resize: none;
+    overflow: hidden;
+}
+#create_container > form > textarea:focus{
+    outline: 2px solid #ffcc00;
+}
+#create_container{
+    width: 700px;
+    margin: 20px auto;
+}
+#c_detail_mainTable {
+    border: thin solid gray;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    height: 30vh;
+    overflow: scroll;
+}
+#c_detail_mainList{
+    width: 50%;
+    height: 30vh;
+    border: 2px solid green;
+    float: right;
+    overflow: scroll;
+}
+
+#tag-list {
+    padding: 16px 0;
+}
+
+#tag-list li {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 14px;
+    letter-spacing: -.5px;
+}
+
+
+#tag-list li.tag-item {
+    padding: 4px 8px;
+    background-color: #777;
+    color: #000;
+}
+
+.tag-item:hover {
+    background-color: #262626;
+    color: #fff;
+}
+
+.del-btn {
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 8px;
+}
