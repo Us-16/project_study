@@ -1,0 +1,23 @@
+<html xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{classroom/class_base}">
+<div layout:fragment="classroom_content">
+    <h1>Create</h1>
+    <div id="create_container">
+        <form th:object="${classroomForm}" method="post" >
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+           
+
+            <input type="text" th:value="${code}" id="create_code" name="code" readonly/>
+            <h5>클래스 이름</h5>
+            <input type="text" name="title" id="c_create_title"/>
+            <h5>학생 이메일 등록</h5>
+            <input type="hidden" value="" name="tag" id="rdTag"/>
+            <textarea type="text" id="tag" placeholder="이메일 입력 후 스페이스를 눌러보세요"></textarea>
+            <ul id="tag-list">
+
+            </ul>
+           <!-- <textarea name="students" placeholder="띄어쓰기로 구분해주세요"></textarea>-->
+            <input type="submit" class="btn btn-primary" value="클래스룸 생성"/>
+        </form>
+    </div>
+</div>
+</html>
