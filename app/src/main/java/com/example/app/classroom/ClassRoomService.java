@@ -48,6 +48,7 @@ public class ClassRoomService {
         if (students == null){
             return ;
         }
+        System.out.println(students);
         ClassRoomStudent crs;
         String[] studentList = students.split(" ");
         for(String student : studentList){

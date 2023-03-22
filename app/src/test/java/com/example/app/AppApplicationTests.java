@@ -1,11 +1,13 @@
 package com.example.app;
 
 import com.example.app.question.QuestionService;
+import com.example.app.user.student.StudentService;
 import com.example.app.util.AES256;
 import com.example.app.jsonplaceholderexample.PostsCallerImpl;
 import com.example.app.jsonplaceholderexample.PostsRequestDto;
 import com.example.app.jsonplaceholderexample.PostsResponseDto;
 import com.example.app.user.UserService;
+import groovy.util.logging.Slf4j;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +26,9 @@ class AppApplicationTests {
 
 	@Autowired
 	private QuestionService questionService;
+
+	@Autowired
+	private StudentService studentService;
 
 	AES256 aes256 = new AES256();
 
@@ -85,4 +90,18 @@ class AppApplicationTests {
 		PostsResponseDto.Create createResponse = postsCaller.createPostsByForm(request);
 	}
 
+	@Test
+	@DisplayName("성적 잘 들어감?")
+	public void createScore(){
+		for(Long i=1L; i<20L; i++) {
+			studentService.createScore(i, "Korean", (int)(i+30));
+		}
+	}
+	@Test
+	@DisplayName("성적 확인")
+	public void showScore(){
+		for(Long id = 1L; id<20L; id++){
+			System.out.println(studentService.getScore(id).toString());
+		}
+	}
 }

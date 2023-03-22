@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.app.AppApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-17T10:59:26" hostname="janghyolim-ui-MacBookAir.local" time="0.32">
+<testsuite name="com.example.app.AppApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-22T10:50:59" hostname="janghyolim-ui-MacBookAir.local" time="0.312">
   <properties/>
-  <testcase name="CreateAccount" classname="com.example.app.AppApplicationTests" time="0.32"/>
-  <system-out><![CDATA[19:59:22.602 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [AppApplicationTests]: using SpringBootContextLoader
-19:59:22.606 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.app.AppApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-19:59:22.606 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.app.AppApplicationTests]: AppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-19:59:22.627 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [AppApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-19:59:22.681 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/janghyolim/Code/project_study/app/build/classes/java/main/com/example/app/AppApplication.class]
-19:59:22.692 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.app.AppApplication for test class com.example.app.AppApplicationTests
-19:59:22.754 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [AppApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-19:59:22.755 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [AppApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+  <testcase name="성적 확인" classname="com.example.app.AppApplicationTests" time="0.312"/>
+  <system-out><![CDATA[19:50:56.311 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [AppApplicationTests]: using SpringBootContextLoader
+19:50:56.316 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.app.AppApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:50:56.317 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.app.AppApplicationTests]: AppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:50:56.335 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [AppApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+19:50:56.397 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/janghyolim/IdeaProjects/project_study/app/build/classes/java/main/com/example/app/AppApplication.class]
+19:50:56.408 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.app.AppApplication for test class com.example.app.AppApplicationTests
+19:50:56.480 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [AppApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:50:56.481 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [AppApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -19,63 +19,99 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.1)
 
-2023-03-17T19:59:22.936+09:00  INFO 15617 --- [    Test worker] com.example.app.AppApplicationTests      : Starting AppApplicationTests using Java 17.0.5 with PID 15617 (started by janghyolim in /Users/janghyolim/Code/project_study/app)
-2023-03-17T19:59:22.937+09:00  INFO 15617 --- [    Test worker] com.example.app.AppApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2023-03-17T19:59:23.623+09:00  INFO 15617 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-17T19:59:23.669+09:00  INFO 15617 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
-2023-03-17T19:59:24.039+09:00  INFO 15617 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-17T19:59:24.070+09:00  INFO 15617 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-03-17T19:59:24.184+09:00  WARN 15617 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-03-17T19:59:24.253+09:00  INFO 15617 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-17T19:59:24.503+09:00  INFO 15617 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de45b6c
-2023-03-17T19:59:24.504+09:00  INFO 15617 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-17T19:59:24.518+09:00  INFO 15617 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-03-17T19:59:24.518+09:00  WARN 15617 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2023-03-17T19:59:25.321+09:00  INFO 15617 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-17T19:59:25.327+09:00  INFO 15617 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-17T19:59:25.834+09:00  WARN 15617 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-17T19:59:25.955+09:00  INFO 15617 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31ecb361, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d84f113, org.springframework.security.web.context.SecurityContextHolderFilter@2e1003d9, org.springframework.security.web.header.HeaderWriterFilter@313a3af8, org.springframework.security.web.csrf.CsrfFilter@4f2a0909, org.springframework.security.web.authentication.logout.LogoutFilter@650997b0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22ea09b7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d1907fb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6079d219, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51d26fed, org.springframework.security.web.access.ExceptionTranslationFilter@1e834a5b, org.springframework.security.web.access.intercept.AuthorizationFilter@18ed8b75]
-2023-03-17T19:59:26.590+09:00  INFO 15617 --- [    Test worker] com.example.app.AppApplicationTests      : Started AppApplicationTests in 3.799 seconds (process running for 4.55)
-2023-03-17T19:59:26.745+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.809+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.816+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.822+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.828+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.835+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.839+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.845+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.850+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.856+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.861+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.867+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.872+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.878+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.884+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.889+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.894+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.900+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.905+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-17T19:59:26.910+09:00  INFO 15617 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
+2023-03-22T19:50:56.678+09:00  INFO 11160 --- [    Test worker] com.example.app.AppApplicationTests      : Starting AppApplicationTests using Java 17.0.6 with PID 11160 (started by janghyolim in /Users/janghyolim/IdeaProjects/project_study/app)
+2023-03-22T19:50:56.679+09:00  INFO 11160 --- [    Test worker] com.example.app.AppApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2023-03-22T19:50:57.237+09:00  INFO 11160 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-22T19:50:57.279+09:00  INFO 11160 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 7 JPA repository interfaces.
+2023-03-22T19:50:57.604+09:00  INFO 11160 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-22T19:50:57.630+09:00  INFO 11160 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-22T19:50:57.729+09:00  WARN 11160 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-22T19:50:57.788+09:00  INFO 11160 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-22T19:50:58.016+09:00  INFO 11160 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2db461b5
+2023-03-22T19:50:58.018+09:00  INFO 11160 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-22T19:50:58.031+09:00  INFO 11160 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-22T19:50:58.031+09:00  WARN 11160 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-03-22T19:50:58.723+09:00  INFO 11160 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-22T19:50:58.729+09:00  INFO 11160 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-22T19:50:59.227+09:00  WARN 11160 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-22T19:50:59.321+09:00  INFO 11160 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@375682a5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79827e71, org.springframework.security.web.context.SecurityContextHolderFilter@5bd191c2, org.springframework.security.web.header.HeaderWriterFilter@21d561c9, org.springframework.security.web.csrf.CsrfFilter@614d01b, org.springframework.security.web.authentication.logout.LogoutFilter@671561b9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3956e933, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56afbace, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40dcbf7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c20abd6, org.springframework.security.web.access.ExceptionTranslationFilter@380cd266, org.springframework.security.web.access.intercept.AuthorizationFilter@73796ae5]
+2023-03-22T19:50:59.736+09:00  INFO 11160 --- [    Test worker] com.example.app.AppApplicationTests      : Started AppApplicationTests in 3.219 seconds (process running for 4.048)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=1, student=jorim20, subject='Korean', score=31, createDate=2023-03-22T19:37:20.679650]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=2, student=jorim21, subject='Korean', score=32, createDate=2023-03-22T19:37:20.705520]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=3, student=jorim22, subject='Korean', score=33, createDate=2023-03-22T19:37:20.711055]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=4, student=jorim23, subject='Korean', score=34, createDate=2023-03-22T19:37:20.717598]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=5, student=jorim24, subject='Korean', score=35, createDate=2023-03-22T19:37:20.724365]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=6, student=jorim25, subject='Korean', score=36, createDate=2023-03-22T19:37:20.730629]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=7, student=jorim26, subject='Korean', score=37, createDate=2023-03-22T19:37:20.737070]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=8, student=jorim27, subject='Korean', score=38, createDate=2023-03-22T19:37:20.742285]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=9, student=jorim28, subject='Korean', score=39, createDate=2023-03-22T19:37:20.746651]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=10, student=jorim29, subject='Korean', score=40, createDate=2023-03-22T19:37:20.750817]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=11, student=jorim30, subject='Korean', score=41, createDate=2023-03-22T19:37:20.755060]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=12, student=jorim31, subject='Korean', score=42, createDate=2023-03-22T19:37:20.758940]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=13, student=jorim32, subject='Korean', score=43, createDate=2023-03-22T19:37:20.762834]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=14, student=jorim33, subject='Korean', score=44, createDate=2023-03-22T19:37:20.766644]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=15, student=jorim34, subject='Korean', score=45, createDate=2023-03-22T19:37:20.770931]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=16, student=jorim35, subject='Korean', score=46, createDate=2023-03-22T19:37:20.775531]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=17, student=jorim36, subject='Korean', score=47, createDate=2023-03-22T19:37:20.779621]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=18, student=jorim37, subject='Korean', score=48, createDate=2023-03-22T19:37:20.783941]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=19, student=jorim38, subject='Korean', score=49, createDate=2023-03-22T19:37:20.787699]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

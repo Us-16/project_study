@@ -90,7 +90,7 @@ section > .c_section_list, #c_section_notice{
 }
 #create_container > form > textarea{
     width: 100%;
-    height: 5vh;
+    height: 30vh;
     border: thin solid #a4a4a4;
     resize: none;
     overflow: hidden;
