@@ -2,6 +2,9 @@ package com.example.app.classroom;
 
 import com.example.app.classroom.student.ClassRoomStudent;
 import com.example.app.user.UserService;
+import com.example.app.user.student.StudentRepository;
+import com.example.app.user.student.StudentScoreRepository;
+import com.example.app.user.student.StudentService;
 import com.example.app.user.teacher.Teacher;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -11,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.security.Principal;
 import java.util.List;
@@ -25,6 +29,7 @@ public class ClassRoomController {
     private final String classroomDetail = "classroom/layout/detail";
     private final UserService userService;
     private final ClassRoomService classRoomService;
+    private final StudentService studentService;
 
     @GetMapping("/main")
     public String mainPage(Model model, @RequestParam(value="page", defaultValue = "0")int page){
@@ -54,9 +59,19 @@ public class ClassRoomController {
     }
 
     @GetMapping("/detail/{id}")
-    public String detail(@PathVariable("id") Long id, Model model){
+    public String detail(@PathVariable("id") Long id, Model model){ //클래스룸 들어갔을 때
         List<ClassRoomStudent> students = classRoomService.getClassroomStudent(id);
         model.addAttribute("students", students);
         return classroomDetail;
     }
+
+    @GetMapping("/student/{id}")
+    public ModelAndView studentDetail(@PathVariable("id")Long id){
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("studentInfo", userService.getStudent(id));
+        mav.addObject("studentScore", studentService.getScore(id));
+        mav.setViewName("classroom/student/studentDetail");
+        return mav;
+    }
+
 }

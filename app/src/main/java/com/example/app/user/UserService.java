@@ -84,6 +84,11 @@ public class UserService {
         this.studentRepository.save(student);
         return student;
     }
+
+    public Student getStudent(Long id){
+        return studentRepository.findById(id).orElseThrow(()->new DataNotFoundException("학생이 존재하지 않습니다."));
+    }
+
     /**
      * 아이디 중복 확인
      * @param username

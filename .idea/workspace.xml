@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="how can i check letters within 3 letters">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentScoreRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="database 이상 무">
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/student/studentDetail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
@@ -18,30 +14,22 @@
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/user/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/classroom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/classroom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/javascript/classroom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/javascript/classroom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/createPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/createPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/ClassRoomController.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/ClassRoomService.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/classroom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/classroom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/javascript/classroom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/javascript/classroom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/createPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/createPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/class_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/class_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +69,11 @@
       <list>
         <option value="Enum" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="SCSS File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -132,29 +120,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/janghyolim/Code/project_study/app/src/main/resources/static/files&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6fd232251ba9e66f5bc7137b177b960b&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelOrder2": "2",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth2": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/janghyolim/Code/project_study/app/src/main/resources/static/files",
+    "list.type.of.created.stylesheet": "SCSS",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "spring.configuration.checksum": "6fd232251ba9e66f5bc7137b177b960b"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.app.user" />
@@ -170,7 +158,7 @@
       <recent name="$PROJECT_DIR$/app/src/main/resources/templates/error" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AppApplicationTests.showScore">
+  <component name="RunManager" selected="Application.AppApplication">
     <configuration name="AppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.app.AppApplication" />
       <module name="app.main" />
@@ -372,13 +360,6 @@
       <workItem from="1678871688294" duration="2258000" />
       <workItem from="1678874051781" duration="25048000" />
       <workItem from="1679228111054" duration="1141000" />
-    </task>
-    <task id="LOCAL-00012" summary="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json">
-      <created>1674922963458</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1674922963458</updated>
     </task>
     <task id="LOCAL-00013" summary="fix - signup logics&#10;- duplication check&#10;- with different result at different url to android&#10;- duplicate test was successful&#10;- (will be soon) GET -&gt; POST">
       <created>1675404931515</created>
@@ -716,7 +697,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679168780194</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="database 이상 무">
+      <created>1679482572890</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1679482572891</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -746,7 +734,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit test&#10;- 이미지 업로드 진행 예정&#10;- 예제 참고하면서 진행 바람" />
     <MESSAGE value="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음" />
     <MESSAGE value="진짜 된거다?" />
     <MESSAGE value="after merge&#10;- 별도의 패키지라 그런지 문제 없이 병합되었음" />
@@ -771,7 +758,8 @@
     <MESSAGE value="repairing detail" />
     <MESSAGE value="add tags" />
     <MESSAGE value="how can i check letters within 3 letters" />
-    <option name="LAST_COMMIT_MESSAGE" value="how can i check letters within 3 letters" />
+    <MESSAGE value="database 이상 무" />
+    <option name="LAST_COMMIT_MESSAGE" value="database 이상 무" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
