@@ -4,10 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="다중 파일 업로드 성공&#10;- 5개 이상의 이미지 전송 및 저장 확인&#10;- 단, 파일 형식 제한을 하지 않은 상태임">
+    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="how can i check letters within 3 letters">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentScoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/upload/uploadTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/upload/uploadTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/classroom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/classroom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/javascript/classroom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/javascript/classroom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/createPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/createPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/ClassRoomController.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/ClassRoomService.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/classroom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/classroom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/javascript/classroom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/javascript/classroom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/createPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/createPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +80,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -56,7 +92,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="springboot_image" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -110,6 +146,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/janghyolim/Code/project_study/app/src/main/resources/static/files&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -126,36 +163,26 @@
       <recent name="$PROJECT_DIR$/app/src/main/resources/static/files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/resources/static/javascript" />
       <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/question" />
       <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/upload" />
       <recent name="$PROJECT_DIR$/app/src/main/resources" />
       <recent name="$PROJECT_DIR$/app/src/main/resources/templates/error" />
-      <recent name="$PROJECT_DIR$/app/src/main/resources/templates/content/login" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AppApplication">
-    <configuration name="AppApplicationTests.LoginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.app.AppApplicationTests.LoginTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Gradle.AppApplicationTests.showScore">
+    <configuration name="AppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.app.AppApplication" />
+      <module name="app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="AppApplicationTests.createPost2 (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -180,7 +207,30 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppApplicationTests.createStudent" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppApplicationTests.createScore" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.app.AppApplicationTests.createScore&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppApplicationTests.createStudent (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
@@ -203,7 +253,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppApplicationTests.makeQuestions" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppApplicationTests.showScore" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
@@ -216,7 +266,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.app.AppApplicationTests.makeQuestions&quot;" />
+            <option value="&quot;com.example.app.AppApplicationTests.showScore&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -226,26 +276,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="app.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.app.AppApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AppApplication" />
-        <item itemvalue="Gradle.AppApplicationTests.createStudent" />
-        <item itemvalue="Gradle.AppApplicationTests.makeQuestions" />
+        <item itemvalue="Gradle.AppApplicationTests.showScore" />
+        <item itemvalue="Gradle.AppApplicationTests.createScore" />
+        <item itemvalue="Gradle.AppApplicationTests.createStudent (1)" />
+        <item itemvalue="Application.AppApplication" />
         <item itemvalue="Gradle.AppApplicationTests.createPost2 (1)" />
-        <item itemvalue="Gradle.AppApplicationTests.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -327,84 +364,14 @@
       <workItem from="1677598199159" duration="10334000" />
       <workItem from="1677716058031" duration="11495000" />
       <workItem from="1677901106658" duration="4028000" />
-      <workItem from="1678065213840" duration="14502000" />
-    </task>
-    <task id="LOCAL-00001" summary="ㅇㅁㄴㅇㅁㄴㅇ">
-      <created>1673265067801</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1673265067801</updated>
-    </task>
-    <task id="LOCAL-00002" summary="당부사항">
-      <created>1673267812508</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1673267812508</updated>
-    </task>
-    <task id="LOCAL-00003" summary="create 해결 + gitignore 확인">
-      <created>1673328645538</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1673328645538</updated>
-    </task>
-    <task id="LOCAL-00004" summary="git ignore 재확인">
-      <created>1673328770659</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1673328770659</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Retrofit2 이용한 json 보내기 해결">
-      <created>1674132224142</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1674132224142</updated>
-    </task>
-    <task id="LOCAL-00006" summary="중요!! html 파일 모두 날아갔음;; commit 안해서 다시 할 것">
-      <created>1674132842555</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1674132842555</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add(floatingButton) html&#10;- add floatingButton component&#10;- fixed main some Pages">
-      <created>1674399621142</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1674399621143</updated>
-    </task>
-    <task id="LOCAL-00008" summary="fix html&#10;- floatingButton div -&gt; a&#10;- floatingButton only view in question_list&#10;- trying to table date fix(not yet)">
-      <created>1674460069481</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1674460069481</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fix&#10;- little">
-      <created>1674747362135</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1674747362135</updated>
-    </task>
-    <task id="LOCAL-00010" summary="fix - securityConfig&#10;- ignore /api/**  &#10;- Android could access&#10;- Android connect Success">
-      <created>1674830939552</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1674830939552</updated>
-    </task>
-    <task id="LOCAL-00011" summary="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json">
-      <created>1674922958235</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1674922958235</updated>
+      <workItem from="1678065213840" duration="17545000" />
+      <workItem from="1678320831397" duration="16341000" />
+      <workItem from="1678525232230" duration="2622000" />
+      <workItem from="1678598739278" duration="24427000" />
+      <workItem from="1678794800145" duration="8919000" />
+      <workItem from="1678871688294" duration="2258000" />
+      <workItem from="1678874051781" duration="25048000" />
+      <workItem from="1679228111054" duration="1141000" />
     </task>
     <task id="LOCAL-00012" summary="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json">
       <created>1674922963458</created>
@@ -665,7 +632,91 @@
       <option name="project" value="LOCAL" />
       <updated>1678100349978</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="작업 전 백업">
+      <created>1678284479811</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1678284479811</updated>
+    </task>
+    <task id="LOCAL-00050" summary="작업 전 백업&#10;Due up&#10;- 학생/강사 로그인 구분">
+      <created>1678284522477</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1678284522478</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Teacher Login api">
+      <created>1678366554518</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1678366554519</updated>
+    </task>
+    <task id="LOCAL-00052" summary="similarly login success">
+      <created>1678371914761</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1678371914761</updated>
+    </task>
+    <task id="LOCAL-00053" summary="add html">
+      <created>1678548563979</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1678548563980</updated>
+    </task>
+    <task id="LOCAL-00054" summary="add html">
+      <created>1678717787309</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1678717787310</updated>
+    </task>
+    <task id="LOCAL-00055" summary="add classroom">
+      <created>1678805107716</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1678805107716</updated>
+    </task>
+    <task id="LOCAL-00056" summary="add classroom for students">
+      <created>1678873901275</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1678873901276</updated>
+    </task>
+    <task id="LOCAL-00057" summary="students commit">
+      <created>1678875389913</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1678875389913</updated>
+    </task>
+    <task id="LOCAL-00058" summary="repairing detail">
+      <created>1679051363772</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1679051363772</updated>
+    </task>
+    <task id="LOCAL-00059" summary="add tags">
+      <created>1679139544155</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1679139544155</updated>
+    </task>
+    <task id="LOCAL-00060" summary="how can i check letters within 3 letters">
+      <created>1679168780194</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1679168780194</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -695,17 +746,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="!!!GIT Test7!!!&#10;- key.class ignore" />
-    <MESSAGE value="!!!GIT Test8!!!&#10;- key.class ignore" />
-    <MESSAGE value="!!!GIT Test9!!!&#10;- key.class ignore" />
-    <MESSAGE value="!!!GIT Test10!!!&#10;- key.class ignore" />
-    <MESSAGE value="!!!GIT Test11!!!&#10;- key.class ignore" />
-    <MESSAGE value="BackUp - Receive userinfo for login" />
-    <MESSAGE value="add - login result send success&#10;- message convert to aes256" />
-    <MESSAGE value="수정&#10;- 로그인 실패 로직 수정" />
-    <MESSAGE value="코드 수정 전 백업&#10;- controller 내부에서 매개변수 이동 수정 예정&#10;- 불필요한 호출 1차례 발생하는 문제" />
-    <MESSAGE value="상황 종료(수정 성공)&#10;- 외부에서 호출을 하면서 파라미터를 던지고 있는데, 그걸 인지하지 못했음&#10;- 호출 한 차례만 나오는 등 정상 동작함" />
-    <MESSAGE value="상황 종료(진짜 종료)&#10;- AES256 암호화 과정에서 특수문자로 인한 접속 불량 문제 확인&#10;- AES256 암호화를 진행한 내용을 다시 아스키코드 16진수로 변환하여 전송&#10;- 결과 어떤 값에도 이상없이 접속 가능한 것으로 확인됨" />
     <MESSAGE value="commit test&#10;- 이미지 업로드 진행 예정&#10;- 예제 참고하면서 진행 바람" />
     <MESSAGE value="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음" />
     <MESSAGE value="진짜 된거다?" />
@@ -720,7 +760,18 @@
     <MESSAGE value="backup&#10;- 혹시 모르니까 ㅇㅇ" />
     <MESSAGE value="다중 이미지 처리 테이블 생성" />
     <MESSAGE value="다중 파일 업로드 성공&#10;- 5개 이상의 이미지 전송 및 저장 확인&#10;- 단, 파일 형식 제한을 하지 않은 상태임" />
-    <option name="LAST_COMMIT_MESSAGE" value="다중 파일 업로드 성공&#10;- 5개 이상의 이미지 전송 및 저장 확인&#10;- 단, 파일 형식 제한을 하지 않은 상태임" />
+    <MESSAGE value="작업 전 백업" />
+    <MESSAGE value="작업 전 백업&#10;Due up&#10;- 학생/강사 로그인 구분" />
+    <MESSAGE value="Teacher Login api" />
+    <MESSAGE value="similarly login success" />
+    <MESSAGE value="add html" />
+    <MESSAGE value="add classroom" />
+    <MESSAGE value="add classroom for students" />
+    <MESSAGE value="students commit" />
+    <MESSAGE value="repairing detail" />
+    <MESSAGE value="add tags" />
+    <MESSAGE value="how can i check letters within 3 letters" />
+    <option name="LAST_COMMIT_MESSAGE" value="how can i check letters within 3 letters" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

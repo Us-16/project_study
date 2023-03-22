@@ -93,34 +93,7 @@ public class UserService {
         if(this.studentRepository.findByUsername(username).equals(Optional.empty())) {
             return "true";
         }
-        return "false";
+        return "false"; //check
     }
-    /**
-     * 학생로그인
-     * @param username
-     * @param password
-     * @return ArrayList<String> (id(고유번호), name(성명), username, password, check(권한), time(접속시간))
-     * @throws Exception
-     */
-    public ArrayList<String> LoginStudent(String username, String password) throws Exception{
-        Optional<Student> result = studentRepository.findByUsername(username);
-        ArrayList<String> resultList = new ArrayList<String>();
-        Random random = new Random();
 
-        //아이디 조회 안되거나 비밀번호 틀렸을 때
-        if(result.equals(Optional.empty()) || (!result.get().getPassword().equals(password))){
-            String[] fail_input = {aes256.encrypt("id"+ (random.nextInt(1000)+1)), aes256.encrypt("name"+(random.nextInt(1000)+1)), aes256.encrypt("username"+(random.nextInt(1000)+1)),
-                    aes256.encrypt("email"+(random.nextInt(1000)+1)), aes256.encrypt("F-" + (random.nextInt(100) + 1)), aes256.encrypt(""+LocalDateTime.now())};
-            resultList.addAll(Arrays.asList(fail_input));
-            return resultList;
-        }
-
-        // 제대로 적은 게 맞다면!
-        String[] input = {aes256.encrypt(result.get().getId().toString()), aes256.encrypt(result.get().getName()), aes256.encrypt(username),
-                aes256.encrypt(result.get().getEmail()), aes256.encrypt("S-"+(random.nextInt(2000) +1) + "00"), aes256.encrypt(""+LocalDateTime.now())};
-
-        resultList.addAll(Arrays.asList(input));
-
-        return resultList;
-    }
 }

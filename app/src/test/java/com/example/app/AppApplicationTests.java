@@ -1,11 +1,13 @@
 package com.example.app;
 
 import com.example.app.question.QuestionService;
+import com.example.app.user.student.StudentService;
 import com.example.app.util.AES256;
 import com.example.app.jsonplaceholderexample.PostsCallerImpl;
 import com.example.app.jsonplaceholderexample.PostsRequestDto;
 import com.example.app.jsonplaceholderexample.PostsResponseDto;
 import com.example.app.user.UserService;
+import groovy.util.logging.Slf4j;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +27,9 @@ class AppApplicationTests {
 	@Autowired
 	private QuestionService questionService;
 
+	@Autowired
+	private StudentService studentService;
+
 	AES256 aes256 = new AES256();
 
 	@Test
@@ -43,7 +48,13 @@ class AppApplicationTests {
 	@Test
 	@DisplayName("CreateAccount")
 	public void createStudent(){
-		userService.createStudent("장효림", "jorim", "1234", "970330", "1234567", "wkdgyfla97@naver.com", "KangBuk", "1");
+		String email_name = "wkdgyfla";
+		String email_last = "@naver.com";
+		String name = "jorim";
+		for(int i=20; i<40; i++){
+			userService.createStudent("장효림", name + i, "1234", "970330", "1234567", email_name+i+email_last, "KangBuk", "1");
+		}
+
 	}
 	@Test
 	@DisplayName("단일 포스트 조회")
@@ -78,11 +89,19 @@ class AppApplicationTests {
 				.build();
 		PostsResponseDto.Create createResponse = postsCaller.createPostsByForm(request);
 	}
+
 	@Test
-	@DisplayName("로그인 테스트")
-	public void LoginTest() throws Exception {
-		System.out.println(aes256.encrypt("lsd4026") + " : " + aes256.encrypt("1234"));
-		ArrayList<String> test  = userService.LoginStudent(aes256.encrypt("lsd4026"), aes256.encrypt("1234"));
-		test.forEach(System.out::println);
+	@DisplayName("성적 잘 들어감?")
+	public void createScore(){
+		for(Long i=1L; i<20L; i++) {
+			studentService.createScore(i, "Korean", (int)(i+30));
+		}
+	}
+	@Test
+	@DisplayName("성적 확인")
+	public void showScore(){
+		for(Long id = 1L; id<20L; id++){
+			System.out.println(studentService.getScore(id).toString());
+		}
 	}
 }

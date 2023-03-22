@@ -1,184 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.app.AppApplicationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-06T09:34:52" hostname="janghyolim-ui-MacBookAir.local" time="0.138">
+<testsuite name="com.example.app.AppApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-22T10:50:59" hostname="janghyolim-ui-MacBookAir.local" time="0.312">
   <properties/>
-  <testcase name="CreateAccount" classname="com.example.app.AppApplicationTests" time="0.138">
-    <failure message="org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [student.UK_jyet50p17q01ks2bv4sn8i5r7]" type="org.springframework.dao.DataIntegrityViolationException">org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [student.UK_jyet50p17q01ks2bv4sn8i5r7]
-	at app//org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:270)
-	at app//org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
-	at app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
-	at app//org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
-	at app//org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
-	at app//org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:163)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218)
-	at app/jdk.proxy3/jdk.proxy3.$Proxy129.save(Unknown Source)
-	at app//com.example.app.user.UserService.createStudent(UserService.java:84)
-	at app//com.example.app.AppApplicationTests.createStudent(AppApplicationTests.java:46)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@17.0.5/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@17.0.5/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
-	at app//org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:60)
-	at app//org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:56)
-	at app//org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
-	at app//org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
-	at app//org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
-	at app//org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
-	at app//org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:42)
-	at app//org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3327)
-	at app//org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3965)
-	at app//org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:80)
-	at app//org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:653)
-	at app//org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:283)
-	at app//org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:264)
-	at app//org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
-	at app//org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:340)
-	at app//org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286)
-	at app//org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192)
-	at app//org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:122)
-	at app//org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:184)
-	at app//org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:129)
-	at app//org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:53)
-	at app//org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
-	at app//org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:737)
-	at app//org.hibernate.internal.SessionImpl.persist(SessionImpl.java:721)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:307)
-	at app/jdk.proxy3/jdk.proxy3.$Proxy118.persist(Unknown Source)
-	at app//org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:610)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:288)
-	at app//org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136)
-	at app//org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120)
-	at app//org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
-	at app//org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
-	at app//org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
-	at app//org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:77)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at app//org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at app//org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	... 94 more
-Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'jorim' for key 'student.UK_jyet50p17q01ks2bv4sn8i5r7'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
-	... 141 more
-</failure>
-  </testcase>
-  <system-out><![CDATA[18:34:49.349 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [AppApplicationTests]: using SpringBootContextLoader
-18:34:49.353 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.app.AppApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-18:34:49.354 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.app.AppApplicationTests]: AppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-18:34:49.374 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [AppApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-18:34:49.432 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/janghyolim/Code/testProjectStudy/app/build/classes/java/main/com/example/app/AppApplication.class]
-18:34:49.440 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.app.AppApplication for test class com.example.app.AppApplicationTests
-18:34:49.507 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [AppApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-18:34:49.508 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [AppApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+  <testcase name="성적 확인" classname="com.example.app.AppApplicationTests" time="0.312"/>
+  <system-out><![CDATA[19:50:56.311 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [AppApplicationTests]: using SpringBootContextLoader
+19:50:56.316 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.app.AppApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:50:56.317 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.app.AppApplicationTests]: AppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:50:56.335 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [AppApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+19:50:56.397 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/janghyolim/IdeaProjects/project_study/app/build/classes/java/main/com/example/app/AppApplication.class]
+19:50:56.408 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.app.AppApplication for test class com.example.app.AppApplicationTests
+19:50:56.480 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [AppApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:50:56.481 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [AppApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -188,29 +19,99 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'j
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.1)
 
-2023-03-06T18:34:49.691+09:00  INFO 43283 --- [    Test worker] com.example.app.AppApplicationTests      : Starting AppApplicationTests using Java 17.0.5 with PID 43283 (started by janghyolim in /Users/janghyolim/Code/testProjectStudy/app)
-2023-03-06T18:34:49.692+09:00  INFO 43283 --- [    Test worker] com.example.app.AppApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2023-03-06T18:34:50.245+09:00  INFO 43283 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-06T18:34:50.289+09:00  INFO 43283 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 7 JPA repository interfaces.
-2023-03-06T18:34:50.614+09:00  INFO 43283 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-06T18:34:50.648+09:00  INFO 43283 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-03-06T18:34:50.755+09:00  WARN 43283 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-03-06T18:34:50.823+09:00  INFO 43283 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-06T18:34:51.088+09:00  INFO 43283 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5599dc60
-2023-03-06T18:34:51.089+09:00  INFO 43283 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-06T18:34:51.103+09:00  INFO 43283 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-03-06T18:34:51.103+09:00  WARN 43283 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-Hibernate: create table question_image (id bigint not null auto_increment, filename varchar(255) not null, filepath varchar(255) not null, question_id bigint, primary key (id)) engine=InnoDB
-Hibernate: alter table question_image add constraint FKmc75m8q0sft04wkwei9ijxsav foreign key (question_id) references question (id)
-2023-03-06T18:34:51.952+09:00  INFO 43283 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-06T18:34:51.958+09:00  INFO 43283 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-06T18:34:52.460+09:00  WARN 43283 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-06T18:34:52.549+09:00  INFO 43283 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e2a2b07, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52dc71b2, org.springframework.security.web.context.SecurityContextHolderFilter@760ac834, org.springframework.security.web.header.HeaderWriterFilter@5799b8a2, org.springframework.security.web.csrf.CsrfFilter@22ea09b7, org.springframework.security.web.authentication.logout.LogoutFilter@709c6768, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6b3284, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a1a5521, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5603632c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e1d2781, org.springframework.security.web.access.ExceptionTranslationFilter@2a22e7e2, org.springframework.security.web.access.intercept.AuthorizationFilter@712dd0b0]
-2023-03-06T18:34:52.975+09:00  INFO 43283 --- [    Test worker] com.example.app.AppApplicationTests      : Started AppApplicationTests in 3.432 seconds (process running for 4.176)
-2023-03-06T18:34:53.074+09:00  INFO 43283 --- [    Test worker] com.example.app.user.UserService         : STUDENT : signup success 
-Hibernate: insert into student (create_date, email, grade, name, password, personal_id, school, username) values (?, ?, ?, ?, ?, ?, ?, ?)
-2023-03-06T18:34:53.108+09:00  WARN 43283 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
-2023-03-06T18:34:53.109+09:00 ERROR 43283 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'jorim' for key 'student.UK_jyet50p17q01ks2bv4sn8i5r7'
+2023-03-22T19:50:56.678+09:00  INFO 11160 --- [    Test worker] com.example.app.AppApplicationTests      : Starting AppApplicationTests using Java 17.0.6 with PID 11160 (started by janghyolim in /Users/janghyolim/IdeaProjects/project_study/app)
+2023-03-22T19:50:56.679+09:00  INFO 11160 --- [    Test worker] com.example.app.AppApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2023-03-22T19:50:57.237+09:00  INFO 11160 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-22T19:50:57.279+09:00  INFO 11160 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 7 JPA repository interfaces.
+2023-03-22T19:50:57.604+09:00  INFO 11160 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-22T19:50:57.630+09:00  INFO 11160 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-22T19:50:57.729+09:00  WARN 11160 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-22T19:50:57.788+09:00  INFO 11160 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-22T19:50:58.016+09:00  INFO 11160 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2db461b5
+2023-03-22T19:50:58.018+09:00  INFO 11160 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-22T19:50:58.031+09:00  INFO 11160 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-22T19:50:58.031+09:00  WARN 11160 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-03-22T19:50:58.723+09:00  INFO 11160 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-22T19:50:58.729+09:00  INFO 11160 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-22T19:50:59.227+09:00  WARN 11160 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-22T19:50:59.321+09:00  INFO 11160 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@375682a5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79827e71, org.springframework.security.web.context.SecurityContextHolderFilter@5bd191c2, org.springframework.security.web.header.HeaderWriterFilter@21d561c9, org.springframework.security.web.csrf.CsrfFilter@614d01b, org.springframework.security.web.authentication.logout.LogoutFilter@671561b9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3956e933, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56afbace, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40dcbf7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c20abd6, org.springframework.security.web.access.ExceptionTranslationFilter@380cd266, org.springframework.security.web.access.intercept.AuthorizationFilter@73796ae5]
+2023-03-22T19:50:59.736+09:00  INFO 11160 --- [    Test worker] com.example.app.AppApplicationTests      : Started AppApplicationTests in 3.219 seconds (process running for 4.048)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=1, student=jorim20, subject='Korean', score=31, createDate=2023-03-22T19:37:20.679650]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=2, student=jorim21, subject='Korean', score=32, createDate=2023-03-22T19:37:20.705520]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=3, student=jorim22, subject='Korean', score=33, createDate=2023-03-22T19:37:20.711055]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=4, student=jorim23, subject='Korean', score=34, createDate=2023-03-22T19:37:20.717598]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=5, student=jorim24, subject='Korean', score=35, createDate=2023-03-22T19:37:20.724365]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=6, student=jorim25, subject='Korean', score=36, createDate=2023-03-22T19:37:20.730629]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=7, student=jorim26, subject='Korean', score=37, createDate=2023-03-22T19:37:20.737070]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=8, student=jorim27, subject='Korean', score=38, createDate=2023-03-22T19:37:20.742285]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=9, student=jorim28, subject='Korean', score=39, createDate=2023-03-22T19:37:20.746651]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=10, student=jorim29, subject='Korean', score=40, createDate=2023-03-22T19:37:20.750817]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=11, student=jorim30, subject='Korean', score=41, createDate=2023-03-22T19:37:20.755060]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=12, student=jorim31, subject='Korean', score=42, createDate=2023-03-22T19:37:20.758940]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=13, student=jorim32, subject='Korean', score=43, createDate=2023-03-22T19:37:20.762834]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=14, student=jorim33, subject='Korean', score=44, createDate=2023-03-22T19:37:20.766644]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=15, student=jorim34, subject='Korean', score=45, createDate=2023-03-22T19:37:20.770931]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=16, student=jorim35, subject='Korean', score=46, createDate=2023-03-22T19:37:20.775531]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=17, student=jorim36, subject='Korean', score=47, createDate=2023-03-22T19:37:20.779621]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=18, student=jorim37, subject='Korean', score=48, createDate=2023-03-22T19:37:20.783941]
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.score,s1_0.student_id,s1_0.subject from student_score s1_0 where s1_0.student_id=?
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+StudentScore[id=19, student=jorim38, subject='Korean', score=49, createDate=2023-03-22T19:37:20.787699]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
