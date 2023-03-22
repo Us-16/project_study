@@ -2,10 +2,13 @@ $(document).ready(function(){
 
     var tag = {};
     var counter = 0;
+    var item = "";
+
 
     function addTag(value){
         tag[counter] = value;
         counter ++;
+        $('#test2').val(value);
     }
 
     function marginTag(){
@@ -33,9 +36,8 @@ $(document).ready(function(){
                 if(result.length === 0){
                     $('#tag-list').append('<li class="tag-item">' + tagValue + '<span class="del-btn" idx="' + counter + '">x</span></li>');
                     $('#tag').val('');
-                    //$('#tag').val('\b');
+                    console.log(tagValue);
                     addTag(tagValue);
-                    self.value("");
                 }else{
                     alert("Duplicate Tag values");
                 }
