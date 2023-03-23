@@ -1,0 +1,23 @@
+<!-- 선생님 페이지임. 학생 전용 페이지가 아님 -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{classroom/class_base}">
+<div layout:fragment="classroom_content">
+    <h1>학생 추가 등록</h1>
+    <hr>
+
+    <p>
+        <span th:text="${classInfo.id}"></span><br>
+        <span th:text="${classInfo.code}"></span><br>
+        <span th:text="${classInfo.title}"></span><br>
+    </p>
+
+    <form th:action="@{|/classroom/update/${id}|}" method="post">
+        <textarea name="students" placeholder="띄어쓰기로 구분해주세요"></textarea>
+        <input type="submit" value="Add">
+    </form>
+</div>
+</html>
+
+
+
+

@@ -58,13 +58,16 @@ public class ClassRoomController {
         return String.format("redirect:/classroom/detail/" + classRoom.getId());
     }
 
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/detail/{id}")
     public String detail(@PathVariable("id") Long id, Model model){ //클래스룸 들어갔을 때
         List<ClassRoomStudent> students = classRoomService.getClassroomStudent(id);
+        model.addAttribute("classInfo", classRoomService.getClassroom(id));
         model.addAttribute("students", students);
         return classroomDetail;
     }
 
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/student/{id}")
     public ModelAndView studentDetail(@PathVariable("id")Long id){
         ModelAndView mav = new ModelAndView();
@@ -72,6 +75,22 @@ public class ClassRoomController {
         mav.addObject("studentScore", studentService.getScore(id));
         mav.setViewName("classroom/student/studentDetail");
         return mav;
+    }
+
+    @PreAuthorize("isAuthenticated()")
+    @GetMapping("/update/{id}")
+    public ModelAndView studentUpdate(@PathVariable("id") Long id){
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("classInfo", classRoomService.getClassroom(id));
+        mav.setViewName("classroom/layout/updatePage");
+        return mav;
+    }
+
+    @PostMapping("/update/{id}")
+    public String test(@PathVariable("id") Long id, String students){
+        classRoomService.registStudents(classRoomService.getClassroom(id), students);
+
+        return String.format("redirect:/classroom/detail/" + id);
     }
 
 }
