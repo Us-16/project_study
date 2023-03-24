@@ -1,5 +1,6 @@
 package com.example.app.classroom;
 
+import com.example.app.classroom.qna.QnAService;
 import com.example.app.classroom.student.ClassRoomStudent;
 import com.example.app.user.UserService;
 import com.example.app.user.student.StudentRepository;
@@ -30,6 +31,7 @@ public class ClassRoomController {
     private final UserService userService;
     private final ClassRoomService classRoomService;
     private final StudentService studentService;
+    private final QnAService qnAService;
 
     @GetMapping("/main")
     public String mainPage(Model model, @RequestParam(value="page", defaultValue = "0")int page){
@@ -62,6 +64,7 @@ public class ClassRoomController {
     @GetMapping("/detail/{id}")
     public String detail(@PathVariable("id") Long id, Model model){ //클래스룸 들어갔을 때
         List<ClassRoomStudent> students = classRoomService.getClassroomStudent(id);
+        model.addAttribute("QnA", qnAService.getPageQna(0, id, 7)); //가장 최근 질문들만 받아내도록
         model.addAttribute("classInfo", classRoomService.getClassroom(id));
         model.addAttribute("students", students);
         return classroomDetail;
@@ -69,10 +72,11 @@ public class ClassRoomController {
 
     @PreAuthorize("isAuthenticated()")
     @GetMapping("/student/{id}")
-    public ModelAndView studentDetail(@PathVariable("id")Long id){
+    public ModelAndView studentDetail(@RequestParam(name="class") Long c_id, @PathVariable("id")Long id){
         ModelAndView mav = new ModelAndView();
         mav.addObject("studentInfo", userService.getStudent(id));
         mav.addObject("studentScore", studentService.getScore(id));
+        mav.addObject("class", c_id);
         mav.setViewName("classroom/student/studentDetail");
         return mav;
     }

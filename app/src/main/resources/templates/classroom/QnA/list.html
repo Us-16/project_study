@@ -24,7 +24,7 @@
             <td th:text="${#temporals.format(qna.createDate, 'yy/MM/dd HH:mm:ss')}"></td>
         </tr>
     </table>
-
+    <a class="btn btn-secondary" th:href="@{|/classroom/qna/create?class=${classInfo.id}|}">글 작성</a>
     <a class="btn btn-primary" th:href="@{|/classroom/detail/${classInfo.id}|}">돌아가기</a>
 </div>
 </html>
