@@ -1,6 +1,12 @@
 package com.example.app;
 
+import com.example.app.classroom.ClassRoom;
+import com.example.app.classroom.ClassRoomRepository;
+import com.example.app.classroom.qna.QnAForm;
+import com.example.app.classroom.qna.QnAService;
 import com.example.app.question.QuestionService;
+import com.example.app.user.student.Student;
+import com.example.app.user.student.StudentRepository;
 import com.example.app.user.student.StudentService;
 import com.example.app.util.AES256;
 import com.example.app.jsonplaceholderexample.PostsCallerImpl;
@@ -13,8 +19,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import javax.swing.text.html.Option;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @SpringBootTest
 class AppApplicationTests {
@@ -29,6 +37,14 @@ class AppApplicationTests {
 
 	@Autowired
 	private StudentService studentService;
+
+	@Autowired
+	private StudentRepository studentRepository;
+	@Autowired
+	private ClassRoomRepository classRoomRepository;
+	@Autowired
+	private QnAService qnAService;
+
 
 	AES256 aes256 = new AES256();
 
@@ -102,6 +118,19 @@ class AppApplicationTests {
 	public void showScore(){
 		for(Long id = 1L; id<20L; id++){
 			System.out.println(studentService.getScore(id).toString());
+		}
+	}
+
+	@Test
+	@DisplayName("QnA Test")
+	public void createQnA(){
+		QnAForm qnAForm = new QnAForm();
+		Optional<Student> student = studentRepository.findById(1L);
+		Optional<ClassRoom> classRoom = classRoomRepository.findById(4L);
+		for(int i=0 ;i<10; i++){
+			qnAForm.setTitle("Title" + i);
+			qnAForm.setContent("content " + i);
+			qnAService.create(qnAForm, student.orElseThrow(), classRoom.orElseThrow());
 		}
 	}
 }
