@@ -1,0 +1,11 @@
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{classroom/class_base}">
+<div layout:fragment="classroom_content">
+  <h1 th:text="${QnA.title}"></h1>
+  <p th:text="${QnA.student.username}"></p>
+  <hr>
+  <span th:text="${QnA.content}"></span>
+
+  <a class="btn btn-primary" th:href="@{|/classroom/qna?class=${QnA.classRoom.id}&page=0|}">돌아가기</a>
+</div>
+</html>
