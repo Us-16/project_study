@@ -7,6 +7,7 @@ import com.example.app.classroom.qna.QnAService;
 import com.example.app.question.QuestionService;
 import com.example.app.user.student.Student;
 import com.example.app.user.student.StudentRepository;
+import com.example.app.user.student.StudentScore;
 import com.example.app.user.student.StudentService;
 import com.example.app.util.AES256;
 import com.example.app.jsonplaceholderexample.PostsCallerImpl;
@@ -64,11 +65,15 @@ class AppApplicationTests {
 	@Test
 	@DisplayName("CreateAccount")
 	public void createStudent(){
+		String[] twins = {"이천웅", "김현수", "함덕주", "박동원", "이재원",
+							"박해민", "문성주", "문보경", "김기연", "손호영",
+							"이정용", "고우석", "정우영", "강효종", "조원태",
+							"홍창기", "진해수", "성영재", "최성훈", "송은범"};
 		String email_name = "wkdgyfla";
 		String email_last = "@naver.com";
-		String name = "jorim";
-		for(int i=20; i<40; i++){
-			userService.createStudent("장효림", name + i, "1234", "970330", "1234567", email_name+i+email_last, "KangBuk", "1");
+		//String name = "jorim";
+		for(int i=0; i<20; i++){
+			userService.createStudent(twins[i], twins[i] + i, "1234", "970330", "1234567", email_name+i+email_last, "KangBuk", String.valueOf((i%3) + 1));
 		}
 
 	}
@@ -109,15 +114,15 @@ class AppApplicationTests {
 	@Test
 	@DisplayName("성적 잘 들어감?")
 	public void createScore(){
-		for(Long i=1L; i<20L; i++) {
-			studentService.createScore(i, "Korean", (int)(i+30));
+		for(Long i=1L; i<21L; i++) {
+			studentService.createScore(i, "한국사", (int)(50-i));
 		}
 	}
 	@Test
 	@DisplayName("성적 확인")
 	public void showScore(){
-		for(Long id = 1L; id<20L; id++){
-			System.out.println(studentService.getScore(id).toString());
+		for(StudentScore score : studentService.getScore(1L)){
+			System.out.println(score.getStudent().getName() + " ::: " + score.getSubject() + " ::: " + score.getScore() + " ::: " + score.getCreateDate());
 		}
 	}
 

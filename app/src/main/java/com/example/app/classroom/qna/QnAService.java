@@ -42,10 +42,10 @@ public class QnAService {
         return qnA;
     }
 
-    public Page<QnA> getPageQna(int page, Long c_id) {
+    public Page<QnA> getPageQna(int page, Long c_id, int amount) {
         List<Sort.Order> sorts = new ArrayList<>();
         sorts.add(Sort.Order.desc("createDate"));
-        Pageable pageable = PageRequest.of(page, 20, Sort.by(sorts));
+        Pageable pageable = PageRequest.of(page, amount, Sort.by(sorts));
         return this.qnARepository.findByClassRoom_Id(c_id, pageable);
     }
 

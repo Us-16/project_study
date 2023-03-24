@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="check dup &amp;&amp; add register">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/qna/QnA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/qna/QnAController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/qna/QnAForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/qna/QnARepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/qna/QnAService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/QnA/QnADetail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/QnA/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="make QnA">
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/QnA/QnACreate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
@@ -22,22 +15,28 @@
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/student/ClassRoomStudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/student/ClassRoomStudentRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/createPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/createPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/qna/QnAController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/qna/QnAController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/qna/QnAService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/qna/QnAService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentScoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentScoreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/QnA/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/QnA/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/student/studentDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/student/studentDetail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -275,10 +274,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppApplicationTests.createQnA" />
-        <item itemvalue="Gradle.AppApplicationTests.showScore" />
         <item itemvalue="Gradle.AppApplicationTests.createScore" />
+        <item itemvalue="Gradle.AppApplicationTests.showScore" />
         <item itemvalue="Gradle.AppApplicationTests.createStudent (1)" />
+        <item itemvalue="Gradle.AppApplicationTests.createQnA" />
         <item itemvalue="Application.AppApplication" />
       </list>
     </recent_temporary>
@@ -369,13 +368,6 @@
       <workItem from="1678871688294" duration="2258000" />
       <workItem from="1678874051781" duration="25048000" />
       <workItem from="1679228111054" duration="1141000" />
-    </task>
-    <task id="LOCAL-00015" summary="add - AES256 Encoding&#10;- result would be successful to load by AES256&#10;- with GetMapping to watch the result">
-      <created>1675420074860</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1675420074860</updated>
     </task>
     <task id="LOCAL-00016" summary="!!!GIT Test!!!&#10;- key.class ignore">
       <created>1675421976103</created>
@@ -713,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679586167583</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="make QnA">
+      <created>1679646217160</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1679646217160</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -743,7 +742,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="after merge&#10;- 별도의 패키지라 그런지 문제 없이 병합되었음" />
     <MESSAGE value="왜 이거 날아감?" />
     <MESSAGE value="entity modify&#10;- 설계 방향대로 엔티티 수정 중&#10;- 내일부터 View 관련 설계도 다시 진행해야할 것" />
     <MESSAGE value="success&#10;- page send to andorid&#10;- To send android, page -&gt; arraylist" />
@@ -768,7 +766,8 @@
     <MESSAGE value="database 이상 무" />
     <MESSAGE value="화면 배치" />
     <MESSAGE value="check dup &amp;&amp; add register" />
-    <option name="LAST_COMMIT_MESSAGE" value="check dup &amp;&amp; add register" />
+    <MESSAGE value="make QnA" />
+    <option name="LAST_COMMIT_MESSAGE" value="make QnA" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

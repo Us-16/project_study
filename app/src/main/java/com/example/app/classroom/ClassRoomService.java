@@ -60,7 +60,7 @@ public class ClassRoomService {
                 crs.setClassRoom(classRoom);
                 System.out.println("3. " + stu.get().getId() + " ::: " + stu.get().getUsername());
                 System.out.println("4. " + classRoomStudentRepository.findByStudent_Id(stu.get().getId()));
-                System.out.println("5. " + classRoomStudentRepository.findByParams(classRoom.getId(), stu.get().getId()).getStudent().getUsername());
+                //System.out.println("5. " + classRoomStudentRepository.findByParams(classRoom.getId(), stu.get().getId()).getStudent().getUsername());
 
                     if (classRoomStudentRepository.findByParams(classRoom.getId(), stu.get().getId()) != null) {
                         System.out.println("중복 ㅅㄱ " + classRoomStudentRepository.findByParams(classRoom.getId(), stu.get().getId()).getStudent().getUsername());

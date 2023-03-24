@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.353s</div>
+<div class="counter">0.298s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,9 +79,9 @@
 </tr>
 </thead>
 <tr>
-<td class="success">QnA Test</td>
-<td class="success">createQnA()</td>
-<td class="success">0.353s</td>
+<td class="success">성적 잘 들어감?</td>
+<td class="success">createScore()</td>
+<td class="success">0.298s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -89,14 +89,14 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>15:33:06.880 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [AppApplicationTests]: using SpringBootContextLoader
-15:33:06.887 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.app.AppApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-15:33:06.888 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.app.AppApplicationTests]: AppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-15:33:06.932 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [AppApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-15:33:07.073 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/janghyolim/IdeaProjects/project_study/app/build/classes/java/main/com/example/app/AppApplication.class]
-15:33:07.101 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.app.AppApplication for test class com.example.app.AppApplicationTests
-15:33:07.268 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [AppApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-15:33:07.270 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [AppApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+<pre>20:09:04.101 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [AppApplicationTests]: using SpringBootContextLoader
+20:09:04.106 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.app.AppApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:09:04.106 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.app.AppApplicationTests]: AppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:09:04.123 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [AppApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+20:09:04.178 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/janghyolim/IdeaProjects/project_study/app/build/classes/java/main/com/example/app/AppApplication.class]
+20:09:04.188 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.app.AppApplication for test class com.example.app.AppApplicationTests
+20:09:04.250 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [AppApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+20:09:04.250 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [AppApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -106,35 +106,83 @@
  =========|_|==============|___/=/_/_/_/
 ?[32m :: Spring Boot :: ?[39m              ?[2m (v3.0.1)?[0;39m
 
-?[2m2023-03-24T15:33:07.713+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.example.app.AppApplicationTests     ?[0;39m ?[2m:?[0;39m Starting AppApplicationTests using Java 17.0.6 with PID 6998 (started by janghyolim in /Users/janghyolim/IdeaProjects/project_study/app)
-?[2m2023-03-24T15:33:07.716+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.example.app.AppApplicationTests     ?[0;39m ?[2m:?[0;39m No active profile set, falling back to 1 default profile: &quot;default&quot;
-?[2m2023-03-24T15:33:09.225+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-?[2m2023-03-24T15:33:09.344+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Finished Spring Data repository scanning in 105 ms. Found 8 JPA repository interfaces.
-?[2m2023-03-24T15:33:10.209+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.hibernate.jpa.internal.util.LogHelper ?[0;39m ?[2m:?[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
-?[2m2023-03-24T15:33:10.271+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.Version                   ?[0;39m ?[2m:?[0;39m HHH000412: Hibernate ORM core version 6.1.6.Final
-?[2m2023-03-24T15:33:10.525+09:00?[0;39m ?[33m WARN?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.orm.deprecation           ?[0;39m ?[2m:?[0;39m HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-?[2m2023-03-24T15:33:10.661+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Starting...
-?[2m2023-03-24T15:33:11.153+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.zaxxer.hikari.pool.HikariPool       ?[0;39m ?[2m:?[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fe98084
-?[2m2023-03-24T15:33:11.156+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Start completed.
-?[2m2023-03-24T15:33:11.188+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mSQL dialect                             ?[0;39m ?[2m:?[0;39m HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-?[2m2023-03-24T15:33:11.189+09:00?[0;39m ?[33m WARN?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.orm.deprecation           ?[0;39m ?[2m:?[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-?[2m2023-03-24T15:33:12.878+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.h.e.t.j.p.i.JtaPlatformInitiator      ?[0;39m ?[2m:?[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-?[2m2023-03-24T15:33:12.891+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mj.LocalContainerEntityManagerFactoryBean?[0;39m ?[2m:?[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
-?[2m2023-03-24T15:33:14.408+09:00?[0;39m ?[33m WARN?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mJpaBaseConfiguration$JpaWebConfiguration?[0;39m ?[2m:?[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-?[2m2023-03-24T15:33:14.614+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.s.web.DefaultSecurityFilterChain    ?[0;39m ?[2m:?[0;39m Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46c92d27, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2bc52b08, org.springframework.security.web.context.SecurityContextHolderFilter@7f72855d, org.springframework.security.web.header.HeaderWriterFilter@5c960f64, org.springframework.security.web.csrf.CsrfFilter@25bd68ea, org.springframework.security.web.authentication.logout.LogoutFilter@1a507ea0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@519e14f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f119b55, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64dcfd09, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b578779, org.springframework.security.web.access.ExceptionTranslationFilter@42eaf47f, org.springframework.security.web.access.intercept.AuthorizationFilter@7859fc7]
-?[2m2023-03-24T15:33:15.541+09:00?[0;39m ?[32m INFO?[0;39m ?[35m6998?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.example.app.AppApplicationTests     ?[0;39m ?[2m:?[0;39m Started AppApplicationTests in 8.201 seconds (process running for 10.367)
+?[2m2023-03-24T20:09:04.457+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.example.app.AppApplicationTests     ?[0;39m ?[2m:?[0;39m Starting AppApplicationTests using Java 17.0.6 with PID 8952 (started by janghyolim in /Users/janghyolim/IdeaProjects/project_study/app)
+?[2m2023-03-24T20:09:04.458+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.example.app.AppApplicationTests     ?[0;39m ?[2m:?[0;39m No active profile set, falling back to 1 default profile: &quot;default&quot;
+?[2m2023-03-24T20:09:05.167+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+?[2m2023-03-24T20:09:05.227+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Finished Spring Data repository scanning in 54 ms. Found 8 JPA repository interfaces.
+?[2m2023-03-24T20:09:05.663+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.hibernate.jpa.internal.util.LogHelper ?[0;39m ?[2m:?[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+?[2m2023-03-24T20:09:05.698+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.Version                   ?[0;39m ?[2m:?[0;39m HHH000412: Hibernate ORM core version 6.1.6.Final
+?[2m2023-03-24T20:09:05.838+09:00?[0;39m ?[33m WARN?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.orm.deprecation           ?[0;39m ?[2m:?[0;39m HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+?[2m2023-03-24T20:09:05.921+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Starting...
+?[2m2023-03-24T20:09:06.198+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.zaxxer.hikari.pool.HikariPool       ?[0;39m ?[2m:?[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fe98084
+?[2m2023-03-24T20:09:06.200+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Start completed.
+?[2m2023-03-24T20:09:06.213+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mSQL dialect                             ?[0;39m ?[2m:?[0;39m HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+?[2m2023-03-24T20:09:06.213+09:00?[0;39m ?[33m WARN?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.orm.deprecation           ?[0;39m ?[2m:?[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+?[2m2023-03-24T20:09:07.060+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.h.e.t.j.p.i.JtaPlatformInitiator      ?[0;39m ?[2m:?[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+?[2m2023-03-24T20:09:07.066+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mj.LocalContainerEntityManagerFactoryBean?[0;39m ?[2m:?[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+?[2m2023-03-24T20:09:07.664+09:00?[0;39m ?[33m WARN?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mJpaBaseConfiguration$JpaWebConfiguration?[0;39m ?[2m:?[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+?[2m2023-03-24T20:09:07.772+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.s.web.DefaultSecurityFilterChain    ?[0;39m ?[2m:?[0;39m Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46c92d27, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2bc52b08, org.springframework.security.web.context.SecurityContextHolderFilter@7f72855d, org.springframework.security.web.header.HeaderWriterFilter@5c960f64, org.springframework.security.web.csrf.CsrfFilter@25bd68ea, org.springframework.security.web.authentication.logout.LogoutFilter@1a507ea0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@519e14f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f119b55, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64dcfd09, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b578779, org.springframework.security.web.access.ExceptionTranslationFilter@42eaf47f, org.springframework.security.web.access.intercept.AuthorizationFilter@7859fc7]
+?[2m2023-03-24T20:09:08.252+09:00?[0;39m ?[32m INFO?[0;39m ?[35m8952?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.example.app.AppApplicationTests     ?[0;39m ?[2m:?[0;39m Started AppApplicationTests in 3.967 seconds (process running for 4.973)
 Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
-Hibernate: select c1_0.id,c1_0.code,c1_0.create_date,t1_0.id,t1_0.create_date,t1_0.email,t1_0.modified_date,t1_0.name,t1_0.password,t1_0.personal_id,t1_0.school,t1_0.username,c1_0.title from class_room c1_0 left join teacher t1_0 on t1_0.id=c1_0.teacher_id where c1_0.id=?
-Hibernate: insert into qna (class_room_id, content, create_date, modify_date, student_id, title) values (?, ?, ?, ?, ?, ?)
-Hibernate: insert into qna (class_room_id, content, create_date, modify_date, student_id, title) values (?, ?, ?, ?, ?, ?)
-Hibernate: insert into qna (class_room_id, content, create_date, modify_date, student_id, title) values (?, ?, ?, ?, ?, ?)
-Hibernate: insert into qna (class_room_id, content, create_date, modify_date, student_id, title) values (?, ?, ?, ?, ?, ?)
-Hibernate: insert into qna (class_room_id, content, create_date, modify_date, student_id, title) values (?, ?, ?, ?, ?, ?)
-Hibernate: insert into qna (class_room_id, content, create_date, modify_date, student_id, title) values (?, ?, ?, ?, ?, ?)
-Hibernate: insert into qna (class_room_id, content, create_date, modify_date, student_id, title) values (?, ?, ?, ?, ?, ?)
-Hibernate: insert into qna (class_room_id, content, create_date, modify_date, student_id, title) values (?, ?, ?, ?, ?, ?)
-Hibernate: insert into qna (class_room_id, content, create_date, modify_date, student_id, title) values (?, ?, ?, ?, ?, ?)
-Hibernate: insert into qna (class_room_id, content, create_date, modify_date, student_id, title) values (?, ?, ?, ?, ?, ?)
+이천웅0
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+김현수1
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+함덕주2
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+박동원3
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+이재원4
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+박해민5
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+문성주6
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+문보경7
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+김기연8
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+손호영9
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+이정용10
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+고우석11
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+정우영12
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+강효종13
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+조원태14
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+홍창기15
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+진해수16
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+성영재17
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+최성훈18
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
+Hibernate: select s1_0.id,s1_0.create_date,s1_0.email,s1_0.grade,s1_0.name,s1_0.password,s1_0.personal_id,s1_0.school,s1_0.username from student s1_0 where s1_0.id=?
+송은범19
+Hibernate: insert into student_score (create_date, score, student_id, subject) values (?, ?, ?, ?)
 </pre>
 </span>
 </div>
@@ -146,7 +194,7 @@ Hibernate: insert into qna (class_room_id, content, create_date, modify_date, st
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at 2023. 3. 24. 오후 3:33:16</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at 2023. 3. 24. 오후 8:09:08</p>
 </div>
 </div>
 </body>

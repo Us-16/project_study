@@ -23,10 +23,10 @@
             <th>점수</th>
             <th>시험일자</th>
         </tr>
-        <tr>
-            <td th:text="${studentScore.subject}"></td>
-            <td th:text="${studentScore.score}"></td>
-            <td th:text="${#temporals.format(studentScore.createDate, 'yyyy/MM/dd HH:mm:ss')}"></td>
+        <tr th:each="score, loop : ${studentScore}">
+            <td th:text="${score.subject}"></td>
+            <td th:text="${score.score}"></td>
+            <td th:text="${#temporals.format(score.createDate, 'yyyy/MM/dd HH:mm:ss')}"></td>
         </tr>
     </table>
     <p>
@@ -34,7 +34,6 @@
         <span ></span><br>
         <span ></span>
     </p>
-
-
+    <a class="btn btn-primary" th:href="@{|/classroom/detail/${class}|}">돌아가기</a>
 </div>
 </html>
