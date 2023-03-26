@@ -13,10 +13,9 @@ public interface ClassRoomStudentRepository extends JpaRepository<ClassRoomStude
 
     List<ClassRoomStudent> findByStudent_Id(Long id);
 
-
     @Query(value = "select * " +
             "from class_room_student " +
             "where class_room_id = :class_id " +
-            "and student_id = :student_id", nativeQuery = true)
+            "and student_id = :student_id ", nativeQuery = true)
     ClassRoomStudent findByParams(@Param("class_id") Long c_id, @Param("student_id") Long s_id);//test
 }

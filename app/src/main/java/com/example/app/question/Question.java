@@ -24,6 +24,7 @@ public class Question {
     private Teacher teacher; //FK
 
     @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE)
+    @JsonIgnore
     private List<QuestionImage> imageList;
 
     @Column
@@ -48,4 +49,5 @@ public class Question {
 
     private LocalDateTime createDate;
     private LocalDateTime modifyDate;
+    private String filepath;
 }

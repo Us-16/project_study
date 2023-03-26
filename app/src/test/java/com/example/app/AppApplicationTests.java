@@ -131,9 +131,9 @@ class AppApplicationTests {
 	public void createQnA(){
 		QnAForm qnAForm = new QnAForm();
 		Optional<Student> student = studentRepository.findById(1L);
-		Optional<ClassRoom> classRoom = classRoomRepository.findById(4L);
+		Optional<ClassRoom> classRoom = classRoomRepository.findById(1L);
 		for(int i=0 ;i<10; i++){
-			qnAForm.setTitle("Title" + i);
+			qnAForm.setTitle("질문 있습니다!" + i);
 			qnAForm.setContent("content " + i);
 			qnAService.create(qnAForm, student.orElseThrow(), classRoom.orElseThrow());
 		}
