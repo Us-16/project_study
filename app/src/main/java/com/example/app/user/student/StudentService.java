@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -28,14 +29,12 @@ public class StudentService {
     }
 
     /**
-     * 지금은 테스트 차원에서 id 값을 직접 넣은 것이고, 나중에는 student 객체가 들어올 수 있으니 그런 부분만 준비해주세요
-     * @param id
+     * List 반환됨
+     * @param s_id
      * @return
      */
-    public StudentScore getScore(Long id){
-        Optional<Student> student = studentRepository.findById(id);
-        Student studentObject = student.orElseThrow(() -> new DataNotFoundException("그거 없던데?"));
-        Optional<StudentScore> test =  studentScoreRepository.findByStudent(studentObject);
-        return test.orElseThrow(() -> new DataNotFoundException("데이터가 없더라"));
+    public List<StudentScore> getScore(Long s_id){
+        Optional<Student> student = studentRepository.findById(s_id);
+        return studentScoreRepository.findByStudent(student.orElseThrow(() -> new DataNotFoundException("학생 조회되지 않음")));
     }
 }

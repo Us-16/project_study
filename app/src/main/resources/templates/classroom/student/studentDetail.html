@@ -1,0 +1,39 @@
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{classroom/class_base}">
+<div layout:fragment="classroom_content">
+    <h1 th:text="${studentInfo.name}"></h1>
+    <hr>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>학교</th>
+            <th>이메일</th>
+            <th>생성일자</th>
+        </tr>
+        <tr>
+            <td th:text="${studentInfo.name}"></td>
+            <td th:text="${studentInfo.username}"></td>
+            <td th:text="${studentInfo.email}"></td>
+            <td th:text="${#temporals.format(studentInfo.createDate, 'yyyy/MM/dd HH:mm:ss')}"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>과목</th>
+            <th>점수</th>
+            <th>시험일자</th>
+        </tr>
+        <tr th:each="score, loop : ${studentScore}">
+            <td th:text="${score.subject}"></td>
+            <td class="test" th:text="${score.score}"></td>
+            <td th:text="${#temporals.format(score.createDate, 'yyyy/MM/dd HH:mm:ss')}"></td>
+        </tr>
+    </table>
+
+
+    <canvas id="myChart"></canvas>
+    <script src="/chart/testChart.js"></script>
+
+    <a class="btn btn-primary" th:href="@{|/classroom/detail/${class}|}">돌아가기</a>
+</div>
+</html>

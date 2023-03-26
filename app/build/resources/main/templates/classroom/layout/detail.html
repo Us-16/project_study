@@ -1,8 +1,10 @@
 <!-- 선생님 페이지임. 학생 전용 페이지가 아님 -->
-<html xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{classroom/class_base}">
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{classroom/class_base}">
 <div layout:fragment="classroom_content">
     <h1>Detail</h1>
     <hr>
+
     <table id="c_detail_mainTable">
         <tr>
             <th>번호</th>
@@ -13,14 +15,36 @@
         </tr>
         <tr th:each="student, loop : ${students}">
             <td style="width: 40px; font-size: 0.7em;"><span th:text="${loop.count}"></span></td>
-            <td style="width:80px; font-size: 1em;"><span th:text="${student.student.name}"></span></td>
+            <td style="width:80px; font-size: 1em;"><a th:href="@{|/classroom/student/${student.student.id}?class=${classInfo.id}|}" th:text="${student.student.name}"></a></td>
             <td style="width:80px; font-size: 1em;"><span th:text="${student.student.school}"></span></td>
             <td style="width:40px; font-size: 1em;"><span th:text="${student.student.grade}"></span></td>
             <td style="width:150px; font-size: 0.8em;"><span th:text="${#temporals.format(student.createDate, 'yyyy/MM/dd HH:mm:ss')}"></span></td>
         </tr>
     </table>
     <div id="c_detail_mainList">
-
+        <table>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일자</th>
+            </tr>
+                <tr th:each="qna, loop : ${QnA}">
+                    <td><span th:text="${qna.id}"></span></td>
+                    <td>
+                        <a th:href="@{|/classroom/qna/detail?class=${classInfo.id}&id=${qna.id}|}" th:text="${qna.title}"></a>
+                    </td>
+                    <td><span th:text="${qna.student.name}"></span></td>
+                    <td><span th:text="${#temporals.format(qna.createDate, 'yy/MM/dd HH:mm:ss')}"></span></td>
+                </tr>
+        </table>
+        <span>[</span><a th:href="@{|/classroom/qna?class=${classInfo.id}&page=0|}">더보기</a><span>]</span>
     </div>
+
+    <a class="btn btn-secondary" th:href="@{|/classroom/update/${classInfo.id}|}">학생 추가하기</a>
+    <a class="btn btn-primary" th:href="@{|/classroom/qna?class=${classInfo.id}&page=0|}">QnA RnA(?)</a>
+    <a class="btn btn-success" th:href="@{|/classroom/main|}">메인으로 돌아가기</a>
+    <p th:text="${classInfo.code}" id="code"></p>
+    <button id="copyBtn" onclick="copyToClipboard();" title="copy">주소복사</button>
 </div>
 </html>

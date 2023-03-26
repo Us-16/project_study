@@ -4,43 +4,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="how can i check letters within 3 letters">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentScoreRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/user/student/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="ca63cf60-53af-4911-906e-6e70826b2de4" name="변경" comment="test">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/dto/QuestionDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/chart/testChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/files/JeongYeon.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/ClassRoomService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/android/BoardApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/student/ClassRoomStudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/classroom/student/ClassRoomStudentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/com/example/app/question/QuestionService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/com/example/app/AppApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/com.example.app.AppApplicationTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/com.example.app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/classroom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/classroom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/javascript/classroom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/static/javascript/classroom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/createPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/createPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/files/0e293412-09a6-408a-a9ee-77b2a020c1cc_IMG_0131.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/files/5784ffb1-3450-41e4-86f9-22f47d567f4c_image0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/files/7b88310c-9a04-4996-bf66-7ddcd6d16940_IMG_0132.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/files/8163df86-963d-42f4-a9de-56340b635624_IMG_0133.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/files/886d4d49-d6a5-484e-9a20-7702dc26d9b2_IMG_0133.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/files/b070d9f6-be19-4bfc-8b40-5b17a1856b31_IMG_0132.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/static/files/tester.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/class_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/class_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/classroom/layout/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/main/templates/content/question/question_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-com.example.app.AppApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/ClassRoomController.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/compileTransaction/stash-dir/ClassRoomService.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/ClassRoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/classroom.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/classroom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/android/BoardApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/qna/QnAController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/qna/QnAController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/student/ClassRoomStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/classroom/student/ClassRoomStudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/question/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/0e293412-09a6-408a-a9ee-77b2a020c1cc_IMG_0131.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/5784ffb1-3450-41e4-86f9-22f47d567f4c_image0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/7b88310c-9a04-4996-bf66-7ddcd6d16940_IMG_0132.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/8163df86-963d-42f4-a9de-56340b635624_IMG_0133.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/886d4d49-d6a5-484e-9a20-7702dc26d9b2_IMG_0133.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/b070d9f6-be19-4bfc-8b40-5b17a1856b31_IMG_0132.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/files/tester.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/javascript/classroom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/javascript/classroom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/class_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/class_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/createPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/createPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/layout/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/student/studentDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/classroom/student/studentDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/content/question/question_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,10 +101,10 @@
       <list>
         <option value="Enum" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="SCSS File" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -132,29 +152,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/janghyolim/Code/project_study/app/src/main/resources/static/files&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6fd232251ba9e66f5bc7137b177b960b&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelOrder2": "2",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth2": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/janghyolim/IdeaProjects/project_study/app/src/main/resources/static/files",
+    "list.type.of.created.stylesheet": "SCSS",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "spring.configuration.checksum": "6fd232251ba9e66f5bc7137b177b960b"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.app.user" />
@@ -170,7 +190,7 @@
       <recent name="$PROJECT_DIR$/app/src/main/resources/templates/error" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AppApplicationTests.showScore">
+  <component name="RunManager" selected="Application.AppApplication">
     <configuration name="AppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.app.AppApplication" />
       <module name="app.main" />
@@ -184,7 +204,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppApplicationTests.createPost2 (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppApplicationTests.createQnA" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
@@ -197,7 +217,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.app.AppApplicationTests.createPost2&quot;" />
+            <option value="&quot;com.example.app.AppApplicationTests.createQnA&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -278,11 +298,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppApplicationTests.showScore" />
+        <item itemvalue="Gradle.AppApplicationTests.createQnA" />
         <item itemvalue="Gradle.AppApplicationTests.createScore" />
+        <item itemvalue="Gradle.AppApplicationTests.showScore" />
         <item itemvalue="Gradle.AppApplicationTests.createStudent (1)" />
         <item itemvalue="Application.AppApplication" />
-        <item itemvalue="Gradle.AppApplicationTests.createPost2 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -372,48 +392,6 @@
       <workItem from="1678871688294" duration="2258000" />
       <workItem from="1678874051781" duration="25048000" />
       <workItem from="1679228111054" duration="1141000" />
-    </task>
-    <task id="LOCAL-00012" summary="add - MySQL load data from android&#10;- Controller get json data from android&#10;- userService load data to MySQL with Repository&#10;- The Test result was successful&#10;- But need encoder when transfer json">
-      <created>1674922963458</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1674922963458</updated>
-    </task>
-    <task id="LOCAL-00013" summary="fix - signup logics&#10;- duplication check&#10;- with different result at different url to android&#10;- duplicate test was successful&#10;- (will be soon) GET -&gt; POST">
-      <created>1675404931515</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1675404931515</updated>
-    </task>
-    <task id="LOCAL-00014" summary="error fixed&#10;- LoginSuccessHandler error fixed">
-      <created>1675412622524</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1675412622524</updated>
-    </task>
-    <task id="LOCAL-00015" summary="add - AES256 Encoding&#10;- result would be successful to load by AES256&#10;- with GetMapping to watch the result">
-      <created>1675420074860</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1675420074860</updated>
-    </task>
-    <task id="LOCAL-00016" summary="!!!GIT Test!!!&#10;- key.class ignore">
-      <created>1675421976103</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1675421976103</updated>
-    </task>
-    <task id="LOCAL-00017" summary="!!!GIT Test2!!!&#10;- key.class ignore">
-      <created>1675422326513</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1675422326513</updated>
     </task>
     <task id="LOCAL-00018" summary="!!!GIT Test3!!!&#10;- key.class ignore">
       <created>1675422416318</created>
@@ -716,7 +694,49 @@
       <option name="project" value="LOCAL" />
       <updated>1679168780194</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="database 이상 무">
+      <created>1679482572890</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1679482572891</updated>
+    </task>
+    <task id="LOCAL-00062" summary="화면 배치">
+      <created>1679500110848</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1679500110848</updated>
+    </task>
+    <task id="LOCAL-00063" summary="check dup &amp;&amp; add register">
+      <created>1679586167582</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1679586167583</updated>
+    </task>
+    <task id="LOCAL-00064" summary="make QnA">
+      <created>1679646217160</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1679646217160</updated>
+    </task>
+    <task id="LOCAL-00065" summary="before meeting">
+      <created>1679658040580</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1679658040580</updated>
+    </task>
+    <task id="LOCAL-00066" summary="test">
+      <created>1679754098422</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1679754098422</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -746,12 +766,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit test&#10;- 이미지 업로드 진행 예정&#10;- 예제 참고하면서 진행 바람" />
-    <MESSAGE value="backup&#10;- 이미지 바로 불러오는 게 안됨&#10;- 그거 해결안되면 서버 역할은 없는거나 마찬가지임&#10;- 해결 전에 백업 한 차례 하겠음" />
-    <MESSAGE value="진짜 된거다?" />
-    <MESSAGE value="after merge&#10;- 별도의 패키지라 그런지 문제 없이 병합되었음" />
-    <MESSAGE value="왜 이거 날아감?" />
-    <MESSAGE value="entity modify&#10;- 설계 방향대로 엔티티 수정 중&#10;- 내일부터 View 관련 설계도 다시 진행해야할 것" />
     <MESSAGE value="success&#10;- page send to andorid&#10;- To send android, page -&gt; arraylist" />
     <MESSAGE value="git test" />
     <MESSAGE value="git test2" />
@@ -771,7 +785,13 @@
     <MESSAGE value="repairing detail" />
     <MESSAGE value="add tags" />
     <MESSAGE value="how can i check letters within 3 letters" />
-    <option name="LAST_COMMIT_MESSAGE" value="how can i check letters within 3 letters" />
+    <MESSAGE value="database 이상 무" />
+    <MESSAGE value="화면 배치" />
+    <MESSAGE value="check dup &amp;&amp; add register" />
+    <MESSAGE value="make QnA" />
+    <MESSAGE value="before meeting" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

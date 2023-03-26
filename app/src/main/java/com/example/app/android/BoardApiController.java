@@ -78,6 +78,7 @@ public class BoardApiController {
         ArrayList<Question> pageToList = new ArrayList<Question>();
 
         for(Question item : pageItem) {
+            item.setFilepath(this.questionService.getFilePath(item.getId()));
             pageToList.add(item);
         }
         return pageToList;

@@ -1,5 +1,6 @@
 package com.example.app.classroom;
 
+import com.example.app.DataNotFoundException;
 import com.example.app.classroom.student.ClassRoomStudent;
 import com.example.app.classroom.student.ClassRoomStudentRepository;
 import com.example.app.user.student.Student;
@@ -48,15 +49,24 @@ public class ClassRoomService {
         if (students == null){
             return ;
         }
-        System.out.println(students);
+        System.out.println("1. " + students);
         ClassRoomStudent crs;
         String[] studentList = students.split(" ");
         for(String student : studentList){
-            System.out.println(student); //이거 생각해보니 이메일로 그 계정의 아이디값을 얻어와야하네?!
+            System.out.println("2. " + student); //이거 생각해보니 이메일로 그 계정의 아이디값을 얻어와야하네?!
             Optional<Student> stu = studentRepository.findByEmail(student);
             if(stu.isPresent()) {
                 crs = new ClassRoomStudent();
                 crs.setClassRoom(classRoom);
+                System.out.println("3. " + stu.get().getId() + " ::: " + stu.get().getUsername());
+                System.out.println("4. " + classRoomStudentRepository.findByStudent_Id(stu.get().getId()));
+                //System.out.println("5. " + classRoomStudentRepository.findByParams(classRoom.getId(), stu.get().getId()).getStudent().getUsername());
+
+                    if (classRoomStudentRepository.findByParams(classRoom.getId(), stu.get().getId()) != null) {
+                        System.out.println("중복 ㅅㄱ " + classRoomStudentRepository.findByParams(classRoom.getId(), stu.get().getId()).getStudent().getUsername());
+                        continue;
+                    }
+
                 crs.setStudent(stu.get());
                 crs.setCreateDate(LocalDateTime.now());
                 this.classRoomStudentRepository.save(crs);
@@ -67,7 +77,7 @@ public class ClassRoomService {
 
     public ClassRoom getClassroom(Long id){
         Optional<ClassRoom> classroom = classRoomRepository.findById(id);
-        return classroom.orElse(null);
+        return classroom.orElseThrow(() -> new DataNotFoundException("데이터가 존재하지 않음"));
     }
     public List<ClassRoomStudent> getClassroomStudent(Long classId){
         System.out.println(classId);

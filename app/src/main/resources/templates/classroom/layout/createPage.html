@@ -1,4 +1,5 @@
-<html xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{classroom/class_base}">
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{classroom/class_base}">
 <div layout:fragment="classroom_content">
     <h1>Create</h1>
     <div id="create_container">
@@ -17,7 +18,7 @@
 
 <!--            </ul>-->
             <textarea name="students" placeholder="띄어쓰기로 구분해주세요"></textarea>
-            <input type="submit" value="Create"/>
+            <input type="submit" value="Create" class="btn btn-primary"/>
         </form>
 
         <span id="test"></span>
