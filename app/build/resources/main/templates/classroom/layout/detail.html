@@ -4,6 +4,7 @@
 <div layout:fragment="classroom_content">
     <h1>Detail</h1>
     <hr>
+
     <table id="c_detail_mainTable">
         <tr>
             <th>번호</th>
@@ -39,7 +40,11 @@
         </table>
         <span>[</span><a th:href="@{|/classroom/qna?class=${classInfo.id}&page=0|}">더보기</a><span>]</span>
     </div>
+
     <a class="btn btn-secondary" th:href="@{|/classroom/update/${classInfo.id}|}">학생 추가하기</a>
     <a class="btn btn-primary" th:href="@{|/classroom/qna?class=${classInfo.id}&page=0|}">QnA RnA(?)</a>
+    <a class="btn btn-success" th:href="@{|/classroom/main|}">메인으로 돌아가기</a>
+    <p th:text="${classInfo.code}" id="code"></p>
+    <button id="copyBtn" onclick="copyToClipboard();" title="copy">주소복사</button>
 </div>
 </html>

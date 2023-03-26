@@ -51,6 +51,12 @@ $(document).ready(function(){
         tag[index] = '';
         $(this).parent().remove();
     });
+
+    $('#copyBtn').click(function(){
+        copyToClipboard(document.querySelector('#code').textContent);
+        console.log(document.querySelector('#code'));
+        alert('주소를 복사했습니다.\n' + document.querySelector('#code').textContent);
+    })
 });
 $('#c_create_title').on('keyup', function (){
     var content = $(this).val().length;
@@ -59,3 +65,12 @@ $('#c_create_title').on('keyup', function (){
         alert('제목은 최소 3자 이상임');
     }
 });
+
+function copyToClipboard(val){
+    var t = document.createElement("textarea");
+    document.body.appendChild(t);
+    t.value = val;
+    t.select();
+    document.execCommand('copy');
+    document.body.removeChild(t);
+}

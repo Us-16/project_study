@@ -25,15 +25,15 @@
         </tr>
         <tr th:each="score, loop : ${studentScore}">
             <td th:text="${score.subject}"></td>
-            <td th:text="${score.score}"></td>
+            <td class="test" th:text="${score.score}"></td>
             <td th:text="${#temporals.format(score.createDate, 'yyyy/MM/dd HH:mm:ss')}"></td>
         </tr>
     </table>
-    <p>
-        <span ></span><br>
-        <span ></span><br>
-        <span ></span>
-    </p>
+
+
+    <canvas id="myChart"></canvas>
+    <script src="/chart/testChart.js"></script>
+
     <a class="btn btn-primary" th:href="@{|/classroom/detail/${class}|}">돌아가기</a>
 </div>
 </html>

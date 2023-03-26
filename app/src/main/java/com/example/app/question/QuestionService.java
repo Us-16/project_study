@@ -44,6 +44,10 @@ public class QuestionService {
         }
     }
 
+    public String getFilePath(Long q_id){
+        return this.questionRepository.getFilePath(q_id);
+    }
+
     public Question create(String subject, String  content, String filePath){
         //Tester
         Question q = new Question();

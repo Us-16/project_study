@@ -54,10 +54,4 @@ public class QnAController {
         mav.setViewName("classroom/QnA/QnACreate");
         return mav;
     }
-
-//    @PostMapping("/qna/create")
-//    public void QnAPost(@RequestParam(name="class") Long c_id, @Valid QnAForm qnAForm, Principal principal){
-//        System.out.print(principal.getName());
-//        //Student student = this.studentService.get
-//    } 왜 보류하나면, 아직 학생계정이 웹 사이트에서 어떻게 동작하게 되는지 설계를 하지 않았음;;
 }
