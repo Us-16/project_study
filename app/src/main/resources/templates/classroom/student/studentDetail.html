@@ -30,8 +30,10 @@
         </tr>
     </table>
 
-
-    <canvas id="myChart"></canvas>
+    <p>
+        <span th:text="${json}"></span>
+    </p>
+<!--    <canvas id="myChart"></canvas>-->
     <script src="/chart/testChart.js"></script>
 
     <a class="btn btn-primary" th:href="@{|/classroom/detail/${class}|}">돌아가기</a>

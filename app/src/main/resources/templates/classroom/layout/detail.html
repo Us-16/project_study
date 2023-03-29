@@ -15,7 +15,7 @@
         </tr>
         <tr th:each="student, loop : ${students}">
             <td style="width: 40px; font-size: 0.7em;"><span th:text="${loop.count}"></span></td>
-            <td style="width:80px; font-size: 1em;"><a th:href="@{|/classroom/student/${student.student.id}?class=${classInfo.id}|}" th:text="${student.student.name}"></a></td>
+            <td style="width:80px; font-size: 1em;"><a th:href="@{|/classroom/student?class=${classInfo.id}&student=${student.student.id}|}" th:text="${student.student.name}"></a></td>
             <td style="width:80px; font-size: 1em;"><span th:text="${student.student.school}"></span></td>
             <td style="width:40px; font-size: 1em;"><span th:text="${student.student.grade}"></span></td>
             <td style="width:150px; font-size: 0.8em;"><span th:text="${#temporals.format(student.createDate, 'yyyy/MM/dd HH:mm:ss')}"></span></td>

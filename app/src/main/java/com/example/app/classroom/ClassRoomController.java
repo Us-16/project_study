@@ -7,6 +7,8 @@ import com.example.app.user.student.StudentRepository;
 import com.example.app.user.student.StudentScoreRepository;
 import com.example.app.user.student.StudentService;
 import com.example.app.user.teacher.Teacher;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -71,12 +73,26 @@ public class ClassRoomController {
     }
 
     @PreAuthorize("isAuthenticated()")
-    @GetMapping("/student/{id}")
-    public ModelAndView studentDetail(@RequestParam(name="class") Long c_id, @PathVariable("id")Long id){
+    @GetMapping("/student")
+    public ModelAndView studentDetail(@RequestParam(name="class") Long c_id, @RequestParam(name="student") Long s_id){
         ModelAndView mav = new ModelAndView();
-        mav.addObject("studentInfo", userService.getStudent(id));
-        mav.addObject("studentScore", studentService.getScore(id));
+        mav.addObject("studentInfo", userService.getStudent(s_id));
+        mav.addObject("studentScore", studentService.getScore(s_id));
         mav.addObject("class", c_id);
+
+        //gson 보내기 해야함
+        Gson gson = new Gson();
+        JsonObject object = new JsonObject();
+
+        String userid = userService.getStudent(s_id).getUsername();
+        int grade = userService.getStudent(s_id).getGrade();
+
+        object.addProperty("ID", userid);
+        object.addProperty("Grade", grade);
+        String json = gson.toJson(object);
+        mav.addObject("json", json);
+
+
         mav.setViewName("classroom/student/studentDetail");
         return mav;
     }

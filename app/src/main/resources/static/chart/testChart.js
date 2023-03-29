@@ -35,3 +35,8 @@ var myChart = new Chart(chartArea, {
         }
     }
 });
+
+var jsonData = ${json};
+var jsonObject = JSON.stringify(jsonData);
+console.log(jsonData);
+console.log(jsonObject);
