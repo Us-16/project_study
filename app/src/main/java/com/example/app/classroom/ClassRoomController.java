@@ -80,19 +80,6 @@ public class ClassRoomController {
         mav.addObject("studentScore", studentService.getScore(s_id));
         mav.addObject("class", c_id);
 
-        //gson 보내기 해야함
-        Gson gson = new Gson();
-        JsonObject object = new JsonObject();
-
-        String userid = userService.getStudent(s_id).getUsername();
-        int grade = userService.getStudent(s_id).getGrade();
-
-        object.addProperty("ID", userid);
-        object.addProperty("Grade", grade);
-        String json = gson.toJson(object);
-        mav.addObject("json", json);
-
-
         mav.setViewName("classroom/student/studentDetail");
         return mav;
     }

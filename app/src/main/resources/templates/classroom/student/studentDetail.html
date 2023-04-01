@@ -33,8 +33,14 @@
     <p>
         <span th:text="${json}"></span>
     </p>
-<!--    <canvas id="myChart"></canvas>-->
+    <canvas id="myChart"></canvas>
     <script src="/chart/testChart.js"></script>
+<!--    <script th:inline="javascript">-->
+<!--    /*<![CDATA[*/-->
+<!--        var user = /*[[${json}]]*/;-->
+<!--        console.log(user);-->
+<!--    /*]]>*/-->
+<!--    </script>-->
 
     <a class="btn btn-primary" th:href="@{|/classroom/detail/${class}|}">돌아가기</a>
 </div>

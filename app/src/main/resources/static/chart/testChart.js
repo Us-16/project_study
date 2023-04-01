@@ -1,3 +1,22 @@
+var studentScore;
+function loadData(){
+    var xhr = new XMLHttpRequest();
+    var url = "http://localhost:8081/student";
+    xhr.open("GET", url, true);
+    xhr.onload = function(){
+        if(xhr.status===200 || xhr.status === 201){
+            var responseData = JSON.parse(xhr.responseText);
+            studentScore = responseData;
+            console.log(responseData);
+            console.log(xhr.statusText);
+        }
+        else
+            console.error(xhr.statusText);
+    }
+
+    xhr.send();
+}
+loadData();
 // 해당 부분은 JS파일을 따로 만들어서 사용해도 된다.
 // 차트를 그럴 영역을 dom요소로 가져온다.
 var chartArea = document.getElementById('myChart').getContext('2d');
@@ -35,8 +54,3 @@ var myChart = new Chart(chartArea, {
         }
     }
 });
-
-var jsonData = ${json};
-var jsonObject = JSON.stringify(jsonData);
-console.log(jsonData);
-console.log(jsonObject);
