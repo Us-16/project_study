@@ -24,6 +24,7 @@ import com.example.a16sserver.retrofit.RetrofitUtil;
 import com.example.a16sserver.retrofit.util.AES256;
 import com.example.a16sserver.retrofit.util.Hex;
 import com.example.a16sserver.springdo.LoginResultDO;
+import com.example.a16sserver.teacher.TeacherMainActivity;
 
 import java.util.HashMap;
 
@@ -164,7 +165,12 @@ public class LoginTestActivity extends AppCompatActivity {
             Intent intent = new Intent(LoginTestActivity.this, Main_activity.class);
             startActivity(intent);
             finish();
-        }else{
+        }else if(aes256.decrypt(lt.getCheck()).charAt(0) == 'T'){
+            Intent intent = new Intent(LoginTestActivity.this, TeacherMainActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        else{
             TextView fail = findViewById(R.id.Login_failMessage);
             fail.setText("아이디와 비밀번호를 다시 확인해주세요");//??????
         }

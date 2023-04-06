@@ -152,7 +152,8 @@ public class quiz2_solve extends AppCompatActivity {
 
         question_num.setText(String.valueOf(this.page + 1));
         question_content.setText(question.getContent());
-        String URL = "http://10.0.2.2:8080";
+        String URL = "http://10.0.2.2:8081";
+        System.out.println("FilePath: " + question.getFilepath());
         Glide.with(this).load(URL + question.getFilepath()).into(question_image);
         for(int i=0; i<5; i++){
             choicesView[i].setText(choices[i]);
