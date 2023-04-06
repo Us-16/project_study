@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name="com.example.a16sserver.teacher.TeacherMainActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.a16sserver.test.TestActivity"
             android:exported="false" />
         <activity
