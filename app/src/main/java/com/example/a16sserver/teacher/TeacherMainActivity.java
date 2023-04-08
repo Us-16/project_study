@@ -2,6 +2,7 @@ package com.example.a16sserver.teacher;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -11,9 +12,12 @@ import android.text.style.ForegroundColorSpan;
 import android.text.style.RelativeSizeSpan;
 import android.text.style.StyleSpan;
 import android.util.TypedValue;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.a16sserver.R;
+import com.example.a16sserver.tool.ConvertSpannable;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.HorizontalBarChart;
 import com.github.mikephil.charting.components.AxisBase;
@@ -48,9 +52,25 @@ public class TeacherMainActivity extends AppCompatActivity {
         headText();
         barChartTest();
         PrintMostSubject();
+        goToNext();
+        setPercentText();
+    }
+
+    private void goToNext() {
+        Button nextBtn = findViewById(R.id.teacher_main_btnGoToNext);
+        nextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TeacherMainActivity.this, QuestionInfoListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     private void headText() {
+        ConvertSpannable spannable = new ConvertSpannable();
         TextView head = findViewById(R.id.teacher_main_head);
         String teacher = "JorimJoram"; //나중에 알아서 잘 딱 바꾸세여(알잘딱바세)
         int num = 17268425;
@@ -62,9 +82,9 @@ public class TeacherMainActivity extends AppCompatActivity {
         String target = String.format("%s", teacher);
         String targetNum = String.format(Locale.KOREA, "%s 명", formattedNum);
 
-        SpannableString first = spannableString(full, target, Typeface.BOLD, 1.3f, Color.parseColor("#000000"));
+        SpannableString first = spannable.spannableString(full, target, Typeface.BOLD, 1.3f, Color.parseColor("#000000"));
 
-        head.setText(moreSpannable(first, full.indexOf(targetNum), full.indexOf(targetNum) + targetNum.length(), Typeface.BOLD, 1.1f, Color.BLACK));
+        head.setText(spannable.moreSpannable(first, full.indexOf(targetNum), full.indexOf(targetNum) + targetNum.length(), Typeface.BOLD, 1.1f, Color.BLACK));
         head.setTextSize(dpToPx(6));
     }
 
@@ -156,13 +176,14 @@ public class TeacherMainActivity extends AppCompatActivity {
         }
     }
 
-    public void PrintMostSubject(){
+    private void PrintMostSubject(){
+        ConvertSpannable spannable = new ConvertSpannable();
         TextView subjectTextView = findViewById(R.id.teacher_main_mostSubject);
 
         String full = String.format("%s 강사님은\n%s 과목을\n가장 많이 출제하셨습니다!", "Jorim", "코딩");
         String target = String.format("%s 과목", "코딩");
 
-        subjectTextView.setText(spannableString(full, target, Typeface.BOLD, 1.3f, Color.parseColor("#0085ff")));
+        subjectTextView.setText(spannable.spannableString(full, target, Typeface.BOLD, 1.3f, Color.parseColor("#0085ff")));
 
         //dp로 바꾸기 by GPT
 
@@ -171,48 +192,18 @@ public class TeacherMainActivity extends AppCompatActivity {
         subjectTextView.setTextSize(dpToPx(8));
     }
 
+    private void setPercentText(){
+        TextView percentTv = findViewById(R.id.teacher_main_percent);
+        double percent = 35.1;
+
+        percentTv.setText(String.format(Locale.KOREA,"%.1f%%", percent));
+        percentTv.setTextSize(dpToPx(10));
+        percentTv.setTextColor(Color.BLACK);
+        percentTv.setTypeface(percentTv.getTypeface(), Typeface.BOLD);
+    }
+
     private float dpToPx(float dp){
         return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, getResources().getDisplayMetrics());
-    }
-
-    /**
-     * 부분적으로 글자 타입(bold, italic, plain), 크기(1기준 배수), 색상 변경하는 메서드입니다.
-     * @param full
-     * @param target
-     * @param type
-     * @param proportion
-     * @param color
-     * @return
-     */
-    private SpannableString spannableString(String full, String target, int type ,float proportion, int color){
-        SpannableString spannableString = new SpannableString(full);
-
-        int startIndex = full.indexOf(target);
-        int endIndex = startIndex + target.length();
-
-        StyleSpan boldSpan = new StyleSpan(type);
-        RelativeSizeSpan sizeSpan = new RelativeSizeSpan(proportion);
-        ForegroundColorSpan colorSpan = new ForegroundColorSpan(color);
-
-        spannableString.setSpan(boldSpan, startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableString.setSpan(sizeSpan, startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableString.setSpan(colorSpan, startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-
-        return  spannableString;
-    }
-
-    private SpannableString moreSpannable(SpannableString full, int startIndex, int endIndex, int type, float proportion, int color){
-        SpannableString spannableString = new SpannableString(full);
-
-        StyleSpan boldSpan = new StyleSpan(type);
-        RelativeSizeSpan sizeSpan = new RelativeSizeSpan(proportion);
-        ForegroundColorSpan colorSpan = new ForegroundColorSpan(color);
-
-        spannableString.setSpan(boldSpan, startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableString.setSpan(sizeSpan, startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableString.setSpan(colorSpan, startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-
-        return spannableString;
     }
 
 }

@@ -86,15 +86,13 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
+                    android:id="@+id/teacher_main_percent"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_toEndOf="@id/correct_percent"
                     android:layout_below="@id/teacher_main_avg"
-                    android:text="35.1%"
-                    android:textSize="50dp"
                     android:paddingStart="30dp"
                     android:paddingTop="12dp"
-                    android:textColor="@color/black"
                     >
 
                 </TextView>
@@ -120,8 +118,20 @@
 
             </RelativeLayout>
 
+            <Button
+                android:id="@+id/teacher_main_btnGoToNext"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:text="문제 확인하러 가기"
+                android:textStyle="bold"
+                android:textSize="30dp">
+
+            </Button>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
+
+
     </ScrollView>
 
 
