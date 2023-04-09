@@ -1,14 +1,11 @@
 package com.example.a16sserver;
 
-import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -21,11 +18,9 @@ import com.example.a16sserver.springdo.Question;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.Iterator;
 
 public class quiz2_solve extends AppCompatActivity {
     CountDownTimer countDownTimer;//카운트다운 변수

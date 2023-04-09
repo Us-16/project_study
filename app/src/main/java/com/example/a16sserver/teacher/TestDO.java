@@ -1,5 +1,7 @@
 package com.example.a16sserver.teacher;
 
+import androidx.annotation.NonNull;
+
 public class TestDO {
     private Long id;
     private String questionTitle;
@@ -13,6 +15,12 @@ public class TestDO {
         this.subject = subject;
         this.view = view;
         this.correct = correct;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "data: " + id + " : " + questionTitle + " : " + subject;
     }
 
     public Long getId() {
