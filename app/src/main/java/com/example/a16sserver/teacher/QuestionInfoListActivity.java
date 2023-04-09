@@ -19,14 +19,18 @@ import java.util.List;
 
 public class QuestionInfoListActivity extends AppCompatActivity {
 
+    ArrayList<TestDO> dataList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_info_list);
 
         setHead("JorimJoram"); //받아온 데이터로 넘기면 됨
-        setListView();
+        this.onlyTestDatas();
+        this.setListView();
     }
+
 
     private void setHead(String username){
         ConvertSpannable spannable = new ConvertSpannable();
@@ -40,19 +44,22 @@ public class QuestionInfoListActivity extends AppCompatActivity {
      * 테스트 위해서 만드는 DO List입니다. 후에는 반드시 제거하시고 가져온 데이터로 나타내세여
      * @return
      */
-    private ArrayList<TestDO> onlyTestDatas(){
-        ArrayList<TestDO> dataList = new ArrayList<>();
+    private void onlyTestDatas(){
+        this.dataList = new ArrayList<TestDO>();
 
-        for(int i=0; i<10; i++){
-            dataList.add(new TestDO(0L+i, "question " + i, "Math " + i, 1000+i, 85/(i+1)));
+        for(int i=0; i<10000; i++){
+            dataList.add(new TestDO((long) i, "question " + i, "Math " + i, 1000+i, i));
         }
         //데이터 문제 없음. 데이터한테 하소연하지 마셈
-        return dataList;
     }
 
     private void setListView(){
         //참고한 거 따라해봤는데 되더라
+
         ListView listView = findViewById(R.id.question_list_data);
+        final ListAdapter listAdapter = new ListAdapter(this, this.dataList);
+
+        listView.setAdapter(listAdapter);
 
     }
     private float dpToPx(float dp){

@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".teacher.QuestionInfoListActivity"
-    android:orientation="vertical">
+    tools:context=".teacher.QuestionInfoListActivity">
 
-    <ScrollView
+    <TextView
+        android:id="@+id/teacher_question_list_head"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/teacher_question_list_head"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <ListView
-                android:id="@+id/question_list_data"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 
-            </ListView>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/question_list_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_question_list_head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        />
 
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </ScrollView>
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:id="@+id/custom_question_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_margin="10dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/custom_question_image"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/custom_question_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title" />
+
+        <TextView
+            android:id="@+id/custom_question_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="subject" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/teacher_question_list_viewImg"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/custom_question_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="view" />
+
+
+            <ImageView
+                android:id="@+id/teacher_question_list_correctImg"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"/>
+            <TextView
+                android:id="@+id/custom_question_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="correct" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
