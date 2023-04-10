@@ -2,13 +2,17 @@ package com.example.a16sserver.teacher;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.TypedValue;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.a16sserver.R;
 import com.example.a16sserver.retrofit.dto.Test;
@@ -60,6 +64,19 @@ public class QuestionInfoListActivity extends AppCompatActivity {
         final ListAdapter listAdapter = new ListAdapter(this, this.dataList);
 
         listView.setAdapter(listAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                //Toast.makeText(getApplicationContext(), listAdapter.getItem(position).getQuestionTitle(), Toast.LENGTH_LONG).show();
+                TestDO selectedItem = (TestDO)parent.getItemAtPosition(position);
+                String testName = Long.toString(selectedItem.getId());
+
+                Intent intent = new Intent(QuestionInfoListActivity.this, QuestionDetailActivity.class);
+                intent.putExtra("selectedItem", testName);
+                startActivity(intent);
+            }
+        });
 
     }
     private float dpToPx(float dp){

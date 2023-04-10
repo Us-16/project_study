@@ -15,6 +15,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/teacher_question_list_head"
+        app:layout_constraintStart_toStartOf="parent"/>
+
 
     <ListView
         android:layout_marginTop="10dp"
@@ -24,8 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/teacher_question_list_head"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBaseline_toBottomOf="parent"
-        />
+        app:layout_constraintBaseline_toBottomOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
