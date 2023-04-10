@@ -15,7 +15,9 @@
         android:theme="@style/Theme.16sServer"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <activity
+            android:name="com.example.a16sserver.teacher.QuestionDetailActivity"
+            android:exported="false" />
         <activity
             android:name="com.example.a16sserver.teacher.TeacherMainActivity"
             android:exported="false" />
