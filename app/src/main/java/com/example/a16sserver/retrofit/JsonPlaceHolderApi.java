@@ -8,6 +8,7 @@ import com.example.a16sserver.springdo.Question;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -43,4 +44,7 @@ public interface JsonPlaceHolderApi {
 
     @GET("api/teacher/{username}/{password}")
     Call<LoginResultDO> TeacherLogin(@Path("username")String test_id, @Path("password") String test_pw);
+
+    @GET("api/question/{t_id}")
+    Call<List<Question>> getByT_id(@Path("t_id")Long t_id);
 }

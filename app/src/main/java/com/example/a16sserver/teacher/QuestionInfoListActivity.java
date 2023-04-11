@@ -3,23 +3,21 @@ package com.example.a16sserver.teacher;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Typeface;
+import android.graphics.*;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 
 import com.example.a16sserver.R;
-import com.example.a16sserver.retrofit.dto.Test;
+import com.example.a16sserver.retrofit.*;
+import com.example.a16sserver.springdo.Question;
 import com.example.a16sserver.tool.ConvertSpannable;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import retrofit2.*;
 
 public class QuestionInfoListActivity extends AppCompatActivity {
 
@@ -31,7 +29,6 @@ public class QuestionInfoListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_question_info_list);
 
         setHead("JorimJoram"); //받아온 데이터로 넘기면 됨
-        this.onlyTestDatas();
         this.setListView();
     }
 
@@ -44,23 +41,15 @@ public class QuestionInfoListActivity extends AppCompatActivity {
         headText.setTextSize(dpToPx(8));
     }
 
-    /**
-     * 테스트 위해서 만드는 DO List입니다. 후에는 반드시 제거하시고 가져온 데이터로 나타내세여
-     * @return
-     */
-    private void onlyTestDatas(){
-        this.dataList = new ArrayList<TestDO>();
-
-        for(int i=0; i<10000; i++){
-            dataList.add(new TestDO((long) i, "question " + i, "Math " + i, 1000+i, i));
-        }
-        //데이터 문제 없음. 데이터한테 하소연하지 마셈
-    }
 
     private void setListView(){
         //참고한 거 따라해봤는데 되더라
-
         ListView listView = findViewById(R.id.question_list_data);
+
+        Retrofit retrofit = RetrofitUtil.Init();
+        JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
+        //Call<List<Question>> questionList = jsonPlaceHolderApi.getByT_id()
+
         final ListAdapter listAdapter = new ListAdapter(this, this.dataList);
 
         listView.setAdapter(listAdapter);
@@ -68,7 +57,6 @@ public class QuestionInfoListActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                //Toast.makeText(getApplicationContext(), listAdapter.getItem(position).getQuestionTitle(), Toast.LENGTH_LONG).show();
                 TestDO selectedItem = (TestDO)parent.getItemAtPosition(position);
                 String testName = Long.toString(selectedItem.getId());
 

@@ -3,7 +3,6 @@ package com.example.a16sserver.springdo;
 import java.io.Serializable;
 
 public class Question implements Serializable {
-    private static final long serialVersionUID = 1L;
 
     Long id;
     String subject;
