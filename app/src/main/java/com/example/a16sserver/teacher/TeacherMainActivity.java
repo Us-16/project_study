@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.a16sserver.R;
+import com.example.a16sserver.test.TestActivity;
 import com.example.a16sserver.tool.ConvertSpannable;
 import com.github.mikephil.charting.charts.HorizontalBarChart;
 import com.github.mikephil.charting.components.XAxis;
@@ -47,7 +48,16 @@ public class TeacherMainActivity extends AppCompatActivity {
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TeacherMainActivity.this, QuestionInfoListActivity.class);
+                //Intent intent = new Intent(TeacherMainActivity.this, QuestionInfoListActivity.class);
+
+                //데이터 전달 테스트
+                ArrayList<StudentParcelable> studentList = new ArrayList<>();
+                studentList.add(new StudentParcelable("Jorim", 3));
+                studentList.add(new StudentParcelable("HyeHwa", 4));
+                StudentList list = new StudentList(studentList);
+
+                Intent intent = new Intent(TeacherMainActivity.this, TestActivity.class);
+                intent.putExtra("studentList", list);
                 startActivity(intent);
             }
         });
