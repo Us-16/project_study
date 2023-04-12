@@ -48,6 +48,10 @@ public class QuestionService {
         return this.questionRepository.getFilePath(q_id);
     }
 
+    public List<Question> getQuestionByT_id(Long t_id){
+        return this.questionRepository.findByTeacher(t_id);
+    }
+
     public Question create(String subject, String  content, String filePath){
         //Tester
         Question q = new Question();

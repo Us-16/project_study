@@ -25,14 +25,10 @@ public class AccessApiController {
 
     @GetMapping("/teacher/{username}/{password}")
     public LoginResultDO loginTeacherResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception {
-        System.out.println("http://localhost:8080/api/teacher/"+username + "/" + password);
-
         return mobileService.LoginTeacher(setDecode(username, password).get(0),setDecode(username, password).get(1));
     }
     @GetMapping("/student/{username}/{password}")
     public LoginResultDO loginStudentResult(@PathVariable("username") String username, @PathVariable("password") String password) throws Exception {
-        System.out.println("http://localhost:8080/api/student/"+username + "/" + password);
-
         return mobileService.LoginStudent(setDecode(username, password).get(0),setDecode(username, password).get(1));
     }
     private ArrayList<String> setDecode(String username, String password) throws Exception{

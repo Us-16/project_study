@@ -47,7 +47,7 @@ public class MobileService {
             name = aes256.encrypt("name"+(random.nextInt(1000)+1));
             r_username = aes256.encrypt("username"+(random.nextInt(1000)+1));
             email = aes256.encrypt("email"+(random.nextInt(1000)+1));
-            check = aes256.encrypt("S-" + (random.nextInt(100) + 1));
+            check = aes256.encrypt("T-" + (random.nextInt(100) + 1));
             time = aes256.encrypt(""+ LocalDateTime.now());
         }
         send = new LoginResultDO(id, name, r_username, email, check, time);

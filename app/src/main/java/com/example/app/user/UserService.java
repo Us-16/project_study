@@ -86,7 +86,7 @@ public class UserService {
     }
 
     public Student getStudent(Long id){
-        return studentRepository.findById(id).orElseThrow(()->new DataNotFoundException("학생이 존재하지 않습니다."));
+        return studentRepository.findById(id).orElseThrow(()-> new DataNotFoundException("학생이 존재하지 않습니다."));
     }
 
     /**
@@ -98,7 +98,6 @@ public class UserService {
         if(this.studentRepository.findByUsername(username).equals(Optional.empty())) {
             return "true";
         }
-        return "false"; //check
+        return "false"; //check git test
     }
-
 }
