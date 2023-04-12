@@ -89,6 +89,11 @@ public class BoardApiController {
         return this.questionService.getList(0).getTotalPages();
     }
 
+    @GetMapping("/question/{id}")
+    List<Question> questionByTeacher(@PathVariable("id") Long t_id){
+        return questionService.getQuestionByT_id(t_id);
+    }
+
     public void MemTest(){
         Runtime runtime = Runtime.getRuntime();
 
