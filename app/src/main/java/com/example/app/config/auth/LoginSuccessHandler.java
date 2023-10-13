@@ -1,4 +1,4 @@
-package com.example.app.config;
+package com.example.app.config.auth;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
